@@ -49,6 +49,20 @@
             display: inline-block;
             border: 1px solid #000;
         }
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        #prev-image { left: 20px; }
+        #next-image { right: 20px; }
     </style>
 </head>
 <body>
@@ -73,7 +87,9 @@
     </div>
 
     <div id="canvas-container">
+        <div id="prev-image" class="nav-arrow">←</div>
         <canvas id="canvas"></canvas>
+        <div id="next-image" class="nav-arrow">→</div>
     </div>
 
     <script>
@@ -126,6 +142,7 @@
 
                 console.log('Canvas size:', canvas.width, 'x', canvas.height);
 
+                // Clear and draw the image first
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
                 currentImage = imagePath;
@@ -146,18 +163,19 @@
                             <span class="color-preview" style="background-color: ${color};"></span>
                             <input type="text" class="object-name" value="${annotation.object}">
                         `;
-
                         annotationInputs.appendChild(div);
 
-                        // Draw bbox
-                        const bbox = annotation.bbox;
-                        ctx.strokeStyle = color;
-                        ctx.lineWidth = 2;
-                        ctx.strokeRect(
-                            bbox[0], bbox[1],
-                            bbox[2] - bbox[0],
-                            bbox[3] - bbox[1]
-                        );
+                        // Draw bbox with a slight delay to ensure proper rendering
+                        if (annotation.bbox) {
+                            const bbox = annotation.bbox;
+                            ctx.strokeStyle = color;
+                            ctx.lineWidth = 2;
+                            ctx.strokeRect(
+                                bbox[0], bbox[1],
+                                bbox[2] - bbox[0],
+                                bbox[3] - bbox[1]
+                            );
+                        }
                     });
                 } else {
                     // Reset to single empty input if no annotations
@@ -177,15 +195,20 @@
         }
 
         imageSelect.addEventListener('change', (e) => {
+            localStorage.setItem('lastSelectedImage', e.target.value);
             loadImage(e.target.value);
         });
 
         if (imageSelect.value) {
+            const lastImage = localStorage.getItem('lastSelectedImage');
+            if (lastImage && Array.from(imageSelect.options).some(opt => opt.value === lastImage)) {
+                imageSelect.value = lastImage;
+            }
             loadImage(imageSelect.value);
         }
 
-        // Update the mouseup event handler
-        canvas.addEventListener('mouseup', (e) => {
+        // Update the mouseup event handler to wait for the save
+        canvas.addEventListener('mouseup', async (e) => {
             if (!isDrawing) return;
 
             isDrawing = false;
@@ -202,39 +225,46 @@
 
             // Get existing annotations
             const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
-
-            // Create a copy of existing annotations
             const updatedAnnotations = [...existingAnnotations];
 
-            // Update or add the annotation at currentAnnotationIndex
+            // Get the object name from the current input
             const objectName = document.querySelectorAll('.annotation-input')[currentAnnotationIndex]
                 .querySelector('.object-name').value;
 
-            updatedAnnotations[currentAnnotationIndex] = {
-                bbox: bbox,
-                object: objectName || ''
-            };
+            // Create new annotation or update existing one
+            if (currentAnnotationIndex >= updatedAnnotations.length) {
+                // Add new annotation
+                updatedAnnotations.push({
+                    bbox: bbox,
+                    object: objectName || ''
+                });
+            } else {
+                // Update existing annotation
+                updatedAnnotations[currentAnnotationIndex] = {
+                    bbox: bbox,
+                    object: objectName || ''
+                };
+            }
 
-            // Draw the new annotation immediately
-            ctx.strokeStyle = colors[currentAnnotationIndex % colors.length];
-            ctx.lineWidth = 2;
-            ctx.strokeRect(
-                bbox[0], bbox[1],
-                bbox[2] - bbox[0],
-                bbox[3] - bbox[1]
-            );
+            // Save to server and wait for completion
+            try {
+                const response = await fetch('/save_annotation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        image: currentImage,
+                        annotations: updatedAnnotations
+                    })
+                });
 
-            // Save to server without redrawing
-            fetch('/save_annotation', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    image: currentImage,
-                    annotations: updatedAnnotations
-                })
-            });
+                if (!response.ok) {
+                    throw new Error('Failed to save annotation');
+                }
+            } catch (error) {
+                console.error('Error saving annotation:', error);
+            }
         });
 
         // Update mousemove to draw all annotations
@@ -247,26 +277,30 @@
 
             // Redraw image and all existing annotations
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the current image (which should already be loaded)
             const img = new Image();
             img.src = `/img/${currentImage}`;
             ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-            // Draw existing annotations
-            const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
-            existingAnnotations.forEach((annotation, index) => {
-                const bbox = annotation.bbox;
-                if (bbox) {
-                    ctx.strokeStyle = colors[index % colors.length];
-                    ctx.lineWidth = 2;
-                    ctx.strokeRect(
-                        bbox[0], bbox[1],
-                        bbox[2] - bbox[0],
-                        bbox[3] - bbox[1]
-                    );
-                }
-            });
+            // Draw existing annotations from the server
+            const annotations = {{ annotations|tojson }};
+            if (annotations[currentImage]) {
+                annotations[currentImage].forEach((annotation, index) => {
+                    if (index !== currentAnnotationIndex && annotation.bbox) {  // Skip current annotation index
+                        const bbox = annotation.bbox;
+                        ctx.strokeStyle = colors[index % colors.length];
+                        ctx.lineWidth = 2;
+                        ctx.strokeRect(
+                            bbox[0], bbox[1],
+                            bbox[2] - bbox[0],
+                            bbox[3] - bbox[1]
+                        );
+                    }
+                });
+            }
 
-            // Draw current annotation being drawn
+            // Draw the current box being drawn
             const currentColor = colors[currentAnnotationIndex % colors.length];
             ctx.strokeStyle = currentColor;
             ctx.lineWidth = 2;
@@ -361,6 +395,32 @@
                 colorPreview.style.backgroundColor = colors[index % colors.length];
             });
         }
+
+        // Update the navigation function to reload data from server
+        async function navigateImage(direction) {
+            const options = Array.from(imageSelect.options);
+            const currentIndex = options.findIndex(opt => opt.value === imageSelect.value);
+            let newIndex = currentIndex + direction;
+
+            if (newIndex >= 0 && newIndex < options.length) {
+                imageSelect.value = options[newIndex].value;
+                localStorage.setItem('lastSelectedImage', imageSelect.value);
+
+                // Instead of fetching from server, use the existing annotations
+                loadImage(imageSelect.value);
+            }
+        }
+
+        document.getElementById('prev-image').addEventListener('click', () => navigateImage(-1));
+        document.getElementById('next-image').addEventListener('click', () => navigateImage(1));
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateImage(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateImage(1);
+            }
+        });
     </script>
 </body>
 </html>

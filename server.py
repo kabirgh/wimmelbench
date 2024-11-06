@@ -24,11 +24,13 @@ if not Path("annotations.json").exists():
 async def home(request: Request):
     # Get list of images from img directory
     img_dir = Path("img")
-    images = [
-        str(f.relative_to("img"))
-        for f in img_dir.glob("*")
-        if f.suffix.lower() in [".jpg", ".jpeg", ".png"]
-    ]
+    images = sorted(
+        [
+            str(f.relative_to("img"))
+            for f in img_dir.glob("*")
+            if f.suffix.lower() in [".jpg", ".jpeg", ".png"]
+        ]
+    )
 
     # Load existing annotations
     with open("annotations.json", "r") as f:
@@ -57,3 +59,11 @@ async def save_annotation(request: Request):
         json.dump(annotations, f, indent=2)
 
     return JSONResponse({"status": "success"})
+
+
+@app.get("/get_annotations")
+def get_annotations():
+    # Return the current annotations from your storage
+    with open("annotations.json", "r") as f:
+        annotations = json.load(f)
+    return annotations
