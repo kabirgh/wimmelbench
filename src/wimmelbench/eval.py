@@ -1,47 +1,63 @@
+import argparse
+import base64
 import os
+from typing import List
 
-from anthropic import Anthropic
 from dotenv import load_dotenv
+from PIL import Image, ImageDraw
+
+from wimmelbench.models import AnthropicModel, OpenAIModel
 
 load_dotenv()
 
-client = Anthropic(
-    api_key=os.environ.get("ANTHROPIC_API_KEY"),
-)
 
-system_prompt = """
-You are an AI assistant tasked with detecting objects in images and returning bounding box coordinates. You will be given an image and asked to find a specific object within it. You will also need to provide a confidence score for your identification.
-Your task is to return a JSON object containing a single bounding box for the requested object with your confidence score.
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
-1. First, you will be presented with an image:
-<image>
-{{IMAGE}}
-</image>
 
-2. You will be asked to identify a specific object within this image:
-<object_to_identify>
-{{OBJECT}}
-</object_to_identify>
+def draw_box(image_path: str, bbox: List[float]):
+    image = Image.open(image_path)
+    draw = ImageDraw.Draw(image)
 
-3. Carefully analyze the image to locate the specified object. Take note of its position, size, and any distinguishing features.
+    w, h = image.size
+    x1, y1, x2, y2 = bbox
 
-4. Assess your confidence in the identification and bounding box placement. Consider factors such as:
-- Clarity of the object in the image
-- Potential for confusion with similar objects
-- Partial occlusion or unusual angles
-The confidence score should be between 0 and 1.
+    # Convert normalized coordinates to pixel coordinates
+    box = (x1 * w, y1 * h, x2 * w, y2 * h)
 
-5. Return your result as a JSON object with the following structure:
-{
-  "bbox": [x1, y1, x2, y2],
-  "confidence": 0.95
-}
-Where:
-- The bounding box should be as tight as possible around the object while still including all of its visible parts
-- All coordinates should be normalized to be between 0 and 1, where (0,0) is the top-left corner of the image and (1,1) is the bottom-right corner
-- x1, y1: The coordinates of the top-left corner of the bounding box
-- x2, y2: The coordinates of the bottom-right corner of the bounding box
-- If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0]
+    # Draw rectangle
+    draw.rectangle(box, outline="red", width=6)
+    return image
 
-Provide your final output ONLY in the JSON format described above. Don't include any additional information or text in your response.
-"""
+
+def get_save_path(image_path: str, object_name: str, model: str) -> str:
+    filename = os.path.basename(image_path)
+    new_filename = filename.replace(".", f"_{model}_{object_name}.")
+    return os.path.join("results", new_filename)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("image_path", help="Path to input image")
+    parser.add_argument("object_name", help="Object to detect")
+    args = parser.parse_args()
+
+    img = encode_image(args.image_path)
+    models = [OpenAIModel(), AnthropicModel()]
+
+    for model in models:
+        result = model.detect_object(img, args.object_name)
+        print(f"\nResult for {model.model}: {result}")
+
+        if result["confidence"] > 0:
+            image = draw_box(args.image_path, result["bbox"])
+            save_path = get_save_path(args.image_path, args.object_name, model.model)
+            image.save(save_path, "JPEG")
+            print(f"Saved image with bounding box to {save_path}")
+        else:
+            print(f"No {args.object_name} detected")
+
+
+if __name__ == "__main__":
+    main()
