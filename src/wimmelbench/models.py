@@ -14,7 +14,7 @@ def encode_image(image_path):
 
 
 class AnthropicModel:
-    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it.
+    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it. The object may not be present in the image.
 
 Provide your result as a JSON object with the following structure:
 {
@@ -24,9 +24,10 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1, where (0,0) is the top-left corner of the image and (1,1) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For eg. "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
-- confidence: Your confidence score for the identification, between 0 and 1. For eg, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
-- If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
+
+If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
 
 Provide your final output ONLY in the JSON format described above.
 """
@@ -78,7 +79,7 @@ class OpenAIModel:
     Can also be used for OpenAI-compatible APIs like OpenRouter
     """
 
-    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it.
+    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it. The object may not be present in the image.
 
 Provide your result as a JSON object with the following structure:
 {
@@ -88,9 +89,10 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1, where (0,0) is the top-left corner of the image and (1,1) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For eg. "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
-- confidence: Your confidence score for the identification, between 0 and 1. For eg, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
-- If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
+
+If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
 
 Provide your final output ONLY in the JSON format described above.
 """
@@ -129,7 +131,12 @@ Provide your final output ONLY in the JSON format described above.
             response_format={"type": "json_object"},
         )
 
-        if response.error and response.error.get("code") == 429:  # type: ignore
+        # OpenRouter error handling
+        if (
+            hasattr(response, "error")
+            and response.error  # type: ignore
+            and response.error.get("code") == 429  # type: ignore
+        ):
             raise Exception("Rate limit exceeded")
 
         data = response.choices[0].message.content
@@ -139,7 +146,7 @@ Provide your final output ONLY in the JSON format described above.
 class GoogleModel:
     # Gemini wants to return coordinates from 0 to 1000 in the format [ymin, xmin, ymax, xmax]
     # https://ai.google.dev/gemini-api/docs/vision?lang=python#bbox
-    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it.
+    SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked to find a specific object within it. The object may not be present in the image.
 
 Provide your result as a JSON object with the following structure:
 {
@@ -149,9 +156,10 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1000, where (0,0) is the top-left corner of the image and (1000,1000) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For eg. "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
-- confidence: Your confidence score for the identification, between 0 and 1. For eg, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
-- If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
+
+If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
 
 Provide your final output ONLY in the JSON format described above.
 """
