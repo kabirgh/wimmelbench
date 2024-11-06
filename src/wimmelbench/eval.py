@@ -37,10 +37,6 @@ def main():
     args = parser.parse_args()
 
     models = [
-        OpenAIModel(
-            api_key=os.environ.get("OPENAI_API_KEY", "could-not-find-openai-api-key"),
-            model="gpt-4o-2024-08-06",
-        ),
         AnthropicModel(
             api_key=os.environ.get(
                 "ANTHROPIC_API_KEY", "could-not-find-anthropic-api-key"
@@ -52,6 +48,10 @@ def main():
                 "GOOGLE_AISTUDIO_API_KEY", "could-not-find-google-api-key"
             ),
             model="gemini-1.5-pro",
+        ),
+        OpenAIModel(
+            api_key=os.environ.get("OPENAI_API_KEY", "could-not-find-openai-api-key"),
+            model="gpt-4o-2024-08-06",
         ),
     ]
 

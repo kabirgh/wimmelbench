@@ -174,7 +174,7 @@ Provide your final output ONLY in the JSON format described above.
     def detect_object(self, image_path: str, object_name: str):
         pil_image = Image.open(image_path)
 
-        response = self.client.generate_content([pil_image, "Find the {object_name}"])
+        response = self.client.generate_content([pil_image, f"Find the {object_name}"])
 
         # Gemini likes adding a code fence
         data = json.loads(response.text.replace("```json\n", "").replace("\n```", ""))
