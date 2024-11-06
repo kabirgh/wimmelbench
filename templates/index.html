@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Annotation Tool</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-pane {
+            width: 300px;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+
+        #canvas-container {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #image-selector {
+            margin: 20px;
+        }
+        #annotations-container {
+            margin: 20px;
+        }
+        .annotation-input {
+            margin: 5px 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .color-preview {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-pane">
+        <div id="image-selector">
+            <select id="image-select">
+                {% for image in images %}
+                <option value="{{ image }}">{{ image }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div id="annotations-container">
+            <div id="annotation-inputs">
+                <div class="annotation-input">
+                    <span class="color-preview" style="background-color: #ff0000;"></span>
+                    <input type="text" class="object-name" placeholder="Object name">
+                </div>
+            </div>
+            <button id="add-annotation">+ Add Annotation</button>
+        </div>
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const imageSelect = document.getElementById('image-select');
+        const addAnnotationBtn = document.getElementById('add-annotation');
+        const annotationInputs = document.getElementById('annotation-inputs');
+
+        let isDrawing = false;
+        let startX, startY;
+        let currentImage = null;
+        let currentAnnotationIndex = 0;
+
+        // Define a list of colors for different annotations
+        const colors = [
+            '#ff0000', '#00ff00', '#0000ff', '#ffff00',
+            '#ff00ff', '#00ffff', '#ffa500', '#800080'
+        ];
+
+        addAnnotationBtn.addEventListener('click', () => {
+            const newIndex = document.querySelectorAll('.annotation-input').length;
+            const color = colors[newIndex % colors.length];
+
+            const div = document.createElement('div');
+            div.className = 'annotation-input';
+            div.innerHTML = `
+                <span class="color-preview" style="background-color: ${color};"></span>
+                <input type="text" class="object-name" placeholder="Object name">
+            `;
+
+            annotationInputs.appendChild(div);
+        });
+
+        function loadImage(imagePath) {
+            const img = new Image();
+            img.src = `/img/${imagePath}`;
+            img.onload = function() {
+                console.log('Image loaded:', img.width, 'x', img.height);
+
+                const containerWidth = canvas.parentElement.clientWidth;
+                const containerHeight = canvas.parentElement.clientHeight;
+                const scale = Math.min(
+                    containerWidth / img.width,
+                    containerHeight / img.height
+                );
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+
+                console.log('Canvas size:', canvas.width, 'x', canvas.height);
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                currentImage = imagePath;
+
+                // Draw existing annotations if they exist
+                const annotations = {{ annotations|tojson }};
+                if (annotations[imagePath]) {
+                    // Clear existing annotation inputs
+                    annotationInputs.innerHTML = '';
+
+                    // Create inputs and draw boxes for each annotation
+                    annotations[imagePath].forEach((annotation, index) => {
+                        // Add input field
+                        const color = colors[index % colors.length];
+                        const div = document.createElement('div');
+                        div.className = 'annotation-input';
+                        div.innerHTML = `
+                            <span class="color-preview" style="background-color: ${color};"></span>
+                            <input type="text" class="object-name" value="${annotation.object}">
+                        `;
+
+                        annotationInputs.appendChild(div);
+
+                        // Draw bbox
+                        const bbox = annotation.bbox;
+                        ctx.strokeStyle = color;
+                        ctx.lineWidth = 2;
+                        ctx.strokeRect(
+                            bbox[0], bbox[1],
+                            bbox[2] - bbox[0],
+                            bbox[3] - bbox[1]
+                        );
+                    });
+                } else {
+                    // Reset to single empty input if no annotations
+                    annotationInputs.innerHTML = `
+                        <div class="annotation-input">
+                            <span class="color-preview" style="background-color: ${colors[0]};"></span>
+                            <input type="text" class="object-name" placeholder="Object name">
+                        </div>
+                    `;
+                }
+            };
+
+            img.onerror = function() {
+                console.error('Error loading image:', imagePath);
+                console.error('Full image path:', img.src);
+            };
+        }
+
+        imageSelect.addEventListener('change', (e) => {
+            loadImage(e.target.value);
+        });
+
+        if (imageSelect.value) {
+            loadImage(imageSelect.value);
+        }
+
+        // Update the mouseup event handler
+        canvas.addEventListener('mouseup', (e) => {
+            if (!isDrawing) return;
+
+            isDrawing = false;
+            const rect = canvas.getBoundingClientRect();
+            const endX = e.clientX - rect.left;
+            const endY = e.clientY - rect.top;
+
+            const bbox = [
+                Math.min(startX, endX),
+                Math.min(startY, endY),
+                Math.max(startX, endX),
+                Math.max(startY, endY)
+            ];
+
+            // Get existing annotations
+            const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
+
+            // Create a copy of existing annotations
+            const updatedAnnotations = [...existingAnnotations];
+
+            // Update or add the annotation at currentAnnotationIndex
+            const objectName = document.querySelectorAll('.annotation-input')[currentAnnotationIndex]
+                .querySelector('.object-name').value;
+
+            updatedAnnotations[currentAnnotationIndex] = {
+                bbox: bbox,
+                object: objectName || ''
+            };
+
+            // Draw the new annotation immediately
+            ctx.strokeStyle = colors[currentAnnotationIndex % colors.length];
+            ctx.lineWidth = 2;
+            ctx.strokeRect(
+                bbox[0], bbox[1],
+                bbox[2] - bbox[0],
+                bbox[3] - bbox[1]
+            );
+
+            // Save to server without redrawing
+            fetch('/save_annotation', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    image: currentImage,
+                    annotations: updatedAnnotations
+                })
+            });
+        });
+
+        // Update mousemove to draw all annotations
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+
+            // Redraw image and all existing annotations
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const img = new Image();
+            img.src = `/img/${currentImage}`;
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+            // Draw existing annotations
+            const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
+            existingAnnotations.forEach((annotation, index) => {
+                const bbox = annotation.bbox;
+                if (bbox) {
+                    ctx.strokeStyle = colors[index % colors.length];
+                    ctx.lineWidth = 2;
+                    ctx.strokeRect(
+                        bbox[0], bbox[1],
+                        bbox[2] - bbox[0],
+                        bbox[3] - bbox[1]
+                    );
+                }
+            });
+
+            // Draw current annotation being drawn
+            const currentColor = colors[currentAnnotationIndex % colors.length];
+            ctx.strokeStyle = currentColor;
+            ctx.lineWidth = 2;
+            ctx.strokeRect(
+                startX,
+                startY,
+                currentX - startX,
+                currentY - startY
+            );
+        });
+
+        canvas.addEventListener('mousedown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            startX = e.clientX - rect.left;
+            startY = e.clientY - rect.top;
+
+            // Find the last input with focus or default to the last input
+            const inputs = document.querySelectorAll('.annotation-input');
+            const focusedInput = document.activeElement;
+            currentAnnotationIndex = Array.from(inputs).findIndex(input =>
+                input.contains(focusedInput)
+            );
+            if (currentAnnotationIndex === -1) {
+                currentAnnotationIndex = inputs.length - 1;
+            }
+
+            isDrawing = true;
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            isDrawing = false;
+        });
+
+        function redrawCanvas() {
+            if (!currentImage) return;
+
+            const img = new Image();
+            img.src = `/img/${currentImage}`;
+            img.onload = function() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                // Get existing annotations
+                const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
+
+                // Draw all valid annotations
+                existingAnnotations.forEach((annotation, index) => {
+                    if (annotation && annotation.bbox) {
+                        ctx.strokeStyle = colors[index % colors.length];
+                        ctx.lineWidth = 2;
+                        const bbox = annotation.bbox;
+                        ctx.strokeRect(
+                            bbox[0], bbox[1],
+                            bbox[2] - bbox[0],
+                            bbox[3] - bbox[1]
+                        );
+                    }
+                });
+            };
+        }
+
+        function saveAnnotations() {
+            const annotations = [];
+            const existingAnnotations = {{ annotations|tojson }}[currentImage] || [];
+
+            document.querySelectorAll('.annotation-input').forEach((input, index) => {
+                const objectName = input.querySelector('.object-name').value;
+                // Only include annotations that have both a name and a bbox
+                if (objectName && existingAnnotations[index]?.bbox) {
+                    annotations.push({
+                        bbox: existingAnnotations[index].bbox,
+                        object: objectName
+                    });
+                }
+            });
+
+            fetch('/save_annotation', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    image: currentImage,
+                    annotations: annotations
+                })
+            });
+        }
+
+        function updateAnnotationIndices() {
+            document.querySelectorAll('.annotation-input').forEach((input, index) => {
+                const colorPreview = input.querySelector('.color-preview');
+                colorPreview.style.backgroundColor = colors[index % colors.length];
+            });
+        }
+    </script>
+</body>
+</html>
