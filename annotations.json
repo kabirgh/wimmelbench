@@ -7,7 +7,8 @@
         0.8945827232796486,
         0.09491525423728814
       ],
-      "object": "sun"
+      "object": "sun",
+      "description": ""
     }
   ],
   "lufthansa-beach.jpg": [
@@ -18,7 +19,8 @@
         0.5239842197863139,
         0.5041604483305518
       ],
-      "object": "octopus"
+      "object": "octopus",
+      "description": ""
     }
   ],
   "lufthansa-turkish-bazaar.jpg": [
@@ -29,7 +31,8 @@
         0.0382499833540483,
         0.7235634334051787
       ],
-      "object": "faucet"
+      "object": "faucet",
+      "description": ""
     }
   ],
   "tigertom-beach.jpg": [
@@ -40,7 +43,8 @@
         0.47575475401797535,
         0.6011753737036861
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-birthday.jpg": [
@@ -51,7 +55,8 @@
         0.4407971268993313,
         0.9743097020618952
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-classroom.jpg": [
@@ -62,7 +67,8 @@
         0.6815824672921582,
         0.8892350751962235
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-classroom2.jpg": [
@@ -73,7 +79,8 @@
         0.3327462794417042,
         0.8175932841514474
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-cycles.jpg": [
@@ -84,7 +91,8 @@
         0.8477156340803537,
         0.9399813438529399
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-farm.jpg": [
@@ -95,7 +103,8 @@
         0.38741036304299664,
         0.6489365677335369
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-garden.jpg": [
@@ -106,7 +115,8 @@
         0.6773497751446882,
         0.8922201498230892
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-house.jpg": [
@@ -117,7 +127,8 @@
         0.8698225506281448,
         0.5787873140021936
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-intersection.jpg": [
@@ -128,7 +139,8 @@
         0.3327462794417042,
         0.6459514931066712
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-market.jpg": [
@@ -139,7 +151,8 @@
         0.12604162293672727,
         0.3832649259424921
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-park.jpg": [
@@ -150,7 +163,8 @@
         0.4047801777467889,
         0.8653544781812981
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-park2.jpg": [
@@ -161,7 +175,8 @@
         0.32642072215263573,
         0.28326492594249214
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-park3.jpg": [
@@ -172,7 +187,8 @@
         0.5393140760518736,
         0.26386194086786524
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-snow.jpg": [
@@ -183,7 +199,8 @@
         0.6350228536699888,
         0.6787873140021936
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "tigertom-zoo.jpg": [
@@ -194,7 +211,8 @@
         0.7554157709671279,
         0.7459514931066712
       ],
-      "object": "cartoon tiger"
+      "object": "cartoon tiger",
+      "description": ""
     }
   ],
   "walk-lake.jpg": [
@@ -205,7 +223,8 @@
         0.415286002074473,
         0.15789179161413391
       ],
-      "object": "bicycle"
+      "object": "bicycle",
+      "description": ""
     }
   ],
   "walk-townfarm.jpg": [
@@ -216,7 +235,8 @@
         0.6695566562596214,
         0.5952052244499548
       ],
-      "object": "soccer ball"
+      "object": "soccer ball",
+      "description": ""
     }
   ],
   "walk-townscene.jpg": [
@@ -227,7 +247,8 @@
         0.9912228857036643,
         0.7369962692260742
       ],
-      "object": "black cat"
+      "object": "black cat",
+      "description": ""
     }
   ],
   "whodoeswhat-city.jpg": [
@@ -238,18 +259,20 @@
         0.233756103515625,
         0.3877425378827906
       ],
-      "object": "cello"
+      "object": "cello",
+      "description": ""
     }
   ],
   "whodoeswhat-city2.jpg": [
     {
       "bbox": [
-        0.5401917404129793,
-        0.8444193912063134,
-        0.579394387001477,
-        0.8949152542372881
+        0.33392218696496917,
+        0.4436725957820575,
+        0.3342439083936738,
+        0.4444589557932384
       ],
-      "object": "saxophone"
+      "object": "saxophone",
+      "description": ""
     }
   ],
   "construction-snow.jpg": [
@@ -260,7 +283,8 @@
         0.9116555308092057,
         0.22033898305084745
       ],
-      "object": "santa"
+      "object": "santa",
+      "description": ""
     }
   ],
   "construction-evening.jpg": [
@@ -271,7 +295,8 @@
         0.5961395694135115,
         0.10734463276836158
       ],
-      "object": "person riding a horse"
+      "object": "person riding a horse",
+      "description": "A person is riding a dark horse near the top of the image, slightly right of center."
     }
   ],
   "construction-site.jpg": [
@@ -282,7 +307,8 @@
         0.236822568671121,
         0.9932203389830508
       ],
-      "object": "fox"
+      "object": "fox",
+      "description": ""
     }
   ],
   "kf-f1.jpg": [
@@ -293,7 +319,8 @@
         0.8261405672009865,
         0.584180790960452
       ],
-      "object": "f1 car"
+      "object": "f1 car",
+      "description": ""
     }
   ],
   "mitgutsch-beach.jpg": [
@@ -304,7 +331,8 @@
         0.49707602339181284,
         0.10867052023121387
       ],
-      "object": "pirate flag"
+      "object": "pirate flag",
+      "description": ""
     }
   ],
   "mitgutsch-carnival.jpg": [
@@ -315,7 +343,8 @@
         0.6167910447761195,
         0.3807909604519774
       ],
-      "object": "chef hat"
+      "object": "chef hat",
+      "description": ""
     }
   ],
   "mitgutsch-orchestra.jpg": [
@@ -326,7 +355,8 @@
         0.8566853482786229,
         0.12542372881355932
       ],
-      "object": "mandarin orange"
+      "object": "mandarin orange",
+      "description": ""
     }
   ],
   "mitgutsch-pirate.jpg": [
@@ -337,7 +367,8 @@
         0.9730517115804806,
         0.9028248587570622
       ],
-      "object": "couple kissing"
+      "object": "couple kissing",
+      "description": ""
     }
   ],
   "mitgutsch-pool.jpg": [
@@ -348,7 +379,8 @@
         0.5769537480063796,
         0.08088235294117647
       ],
-      "object": "tennis racket"
+      "object": "tennis racket",
+      "description": ""
     }
   ],
   "mitgutsch-townsquare.jpg": [
@@ -359,7 +391,8 @@
         0.30466101694915254,
         0.07231638418079096
       ],
-      "object": "kite"
+      "object": "kite",
+      "description": ""
     }
   ],
   "mitgutsch-water.jpg": [
@@ -370,7 +403,8 @@
         0.3466371027346637,
         0.9711538461538461
       ],
-      "object": "lobster"
+      "object": "lobster",
+      "description": ""
     }
   ],
   "montreal-snow.jpg": [
@@ -381,7 +415,8 @@
         0.03006442376521117,
         0.2998872604284104
       ],
-      "object": "bear"
+      "object": "bear",
+      "description": ""
     }
   ],
   "porsche-factory.jpg": [
@@ -392,7 +427,8 @@
         0.7960914454277287,
         0.07553551296505075
       ],
-      "object": "spider web"
+      "object": "spider web",
+      "description": ""
     }
   ],
   "porsche-hq.jpg": [
@@ -403,7 +439,8 @@
         0.12813884785819793,
         0.5774011299435028
       ],
-      "object": "toolbox"
+      "object": "toolbox",
+      "description": ""
     }
   ],
   "porsche-road.jpg": [
@@ -414,7 +451,8 @@
         0.4139586410635155,
         0.16271186440677965
       ],
-      "object": "quadcopter"
+      "object": "quadcopter",
+      "description": ""
     }
   ],
   "professions-intersection.jpg": [
@@ -425,7 +463,8 @@
         0.11053024645257654,
         0.5807909604519774
       ],
-      "object": "cactus"
+      "object": "cactus",
+      "description": ""
     }
   ],
   "professions-street.jpg": [
@@ -436,7 +475,8 @@
         0.9820761762509336,
         0.9796610169491525
       ],
-      "object": "scissors"
+      "object": "scissors",
+      "description": ""
     }
   ],
   "professions-townsquare.jpg": [
@@ -447,7 +487,8 @@
         0.7714712471994025,
         0.3502824858757062
       ],
-      "object": "pizza"
+      "object": "pizza",
+      "description": ""
     }
   ],
   "river-adventure-house.jpg": [
@@ -458,7 +499,8 @@
         0.16082089552238807,
         0.0903954802259887
       ],
-      "object": "whale"
+      "object": "whale",
+      "description": ""
     }
   ],
   "river-adventure-river.jpg": [
@@ -469,7 +511,8 @@
         0.1787313432835821,
         0.6067796610169491
       ],
-      "object": "macaw"
+      "object": "macaw",
+      "description": ""
     }
   ],
   "river-adventure-seaside.jpg": [
@@ -480,7 +523,8 @@
         0.21753731343283583,
         0.7378531073446327
       ],
-      "object": "man wearing overalls over a white shirt"
+      "object": "man wearing overalls over a white shirt",
+      "description": ""
     }
   ],
   "rodhunt-xmas.jpg": [
@@ -491,7 +535,8 @@
         0.9012256669069935,
         0.5966101694915255
       ],
-      "object": "menorah"
+      "object": "menorah",
+      "description": ""
     }
   ],
   "season-beach.jpg": [
@@ -502,7 +547,8 @@
         0.8247958426132146,
         0.17966101694915254
       ],
-      "object": "shuttlecock"
+      "object": "shuttlecock",
+      "description": ""
     }
   ],
   "season-winter.jpg": [
@@ -513,18 +559,8 @@
         0.1714922048997773,
         0.08361581920903954
       ],
-      "object": "santa"
-    }
-  ],
-  "whodoeswhat-city3.jpg": [
-    {
-      "bbox": [
-        0.6456489675516225,
-        0.8714768883878242,
-        0.6857459379615952,
-        0.9378531073446328
-      ],
-      "object": "yellow electrical box"
+      "object": "santa",
+      "description": ""
     }
   ]
 }
