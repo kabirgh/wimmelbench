@@ -10,5 +10,49 @@
       "object": "whale",
       "description": "A large, inflatable blue whale is located near the top left of the image, hovering over a yellow waterslide and swimming pool. The whale is depicted from a side profile, facing towards the right of the image, as if it is 'swimming' through the air. It has a cartoonish appearance with simple features."
     }
+  ],
+  "construction-evening.jpg": [
+    {
+      "bbox": [
+        0.593,
+        0.085,
+        0.64,
+        0.128
+      ],
+      "object": "person riding a horse",
+      "description": "A person riding a dark-colored horse can be seen on the grassy hilltop near the center-left of the image. The horse and rider appear small due to the distance."
+    },
+    {
+      "bbox": [
+        0.835,
+        0.017,
+        0.921,
+        0.116
+      ],
+      "object": "castle",
+      "description": "A castle is visible in the top right of the image.  It is light brown in colour and sits atop a small hill covered in trees. The trees in the foreground are primarily green and orange/brown.  The sky is a dark blue and a crescent moon can be seen just above the castle."
+    }
+  ],
+  "kf-winter.jpg": [
+    {
+      "bbox": [
+        0.822,
+        0.084,
+        0.871,
+        0.133
+      ],
+      "object": "sun",
+      "description": "A small, round, orange sun is located in the upper right corner of the image, against a light gray sky. It is positioned above the snowy hills and trees, appearing as a simple circle with an orange fill."
+    },
+    {
+      "bbox": [
+        0.169,
+        0.506,
+        0.517,
+        0.708
+      ],
+      "object": "log cabin",
+      "description": "A low, wide log cabin is located in the center left of the image.  Its pitched roof appears to be made of stacked logs, and is coloured olive green. The walls seem to be a light beige colour.  The open front of the cabin reveals two people inside, one appearing to serve a hot beverage and another organizing ice skates. A line of people stands at the counter.  There is a bench in front of the cabin where people are sitting.  There are evergreen trees nearby the cabin."
+    }
   ]
 }

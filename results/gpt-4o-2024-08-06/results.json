@@ -10,5 +10,49 @@
       "object": "whale",
       "description": "The whale is a blue decorative figure positioned at the top of the yellow water slide, situated in the upper left area of the image."
     }
+  ],
+  "construction-evening.jpg": [
+    {
+      "bbox": [
+        0.83,
+        0.11,
+        0.89,
+        0.18
+      ],
+      "object": "person riding a horse",
+      "description": "The person riding a horse is located on the top right side of the image, near the trees under the night sky. The horse is brown, and the rider is wearing an orange shirt."
+    },
+    {
+      "bbox": [
+        0.8,
+        0.05,
+        0.98,
+        0.25
+      ],
+      "object": "castle",
+      "description": "The castle is located in the top right corner of the image. It is set on a hill and is surrounded by trees, with a crescent moon and a star in the sky."
+    }
+  ],
+  "kf-winter.jpg": [
+    {
+      "bbox": [
+        0.95,
+        0.05,
+        1.0,
+        0.1
+      ],
+      "object": "sun",
+      "description": "The sun is located in the upper right corner of the image. It is a small, orange circle against the light grayish sky, adding a warm contrast to the snowy scene."
+    },
+    {
+      "bbox": [
+        0.2,
+        0.5,
+        0.4,
+        0.65
+      ],
+      "object": "log cabin",
+      "description": "The log cabin is located in the lower left section of the image. It's a rectangular structure with a green roof and light brown walls. There are people standing outside, engaged in various activities."
+    }
   ]
 }

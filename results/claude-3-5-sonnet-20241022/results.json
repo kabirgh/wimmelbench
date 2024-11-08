@@ -10,5 +10,49 @@
       "object": "whale",
       "description": "There is a small blue elephant-shaped water feature/slide in the children's pool area. This appears to be designed to look like a whale or elephant with water spraying from it. It's located in the smaller wading pool section near the main building, separate from the larger swimming pool. The feature is blue in color and appears to be a decorative element that sprays water for children to play with."
     }
+  ],
+  "construction-evening.jpg": [
+    {
+      "bbox": [
+        0.45,
+        0.1,
+        0.48,
+        0.15
+      ],
+      "object": "person riding a horse",
+      "description": "In the middle-background of the image, there is a small silhouetted figure riding a horse on top of a hill against the dark blue night sky. The rider and horse are depicted in black silhouette form, appearing as a small detail in the nighttime landscape with the crescent moon visible in the sky."
+    },
+    {
+      "bbox": [
+        0.92,
+        0.05,
+        0.98,
+        0.15
+      ],
+      "object": "castle",
+      "description": "The castle is located in the top-right corner of the image, perched on a hill surrounded by autumn-colored trees. It appears to be a medieval-style castle with multiple towers and battlements, rendered in a light gray or stone color. The castle has a few smaller buildings within its walls, including what appears to be a red-roofed structure. It's shown against a dark blue night sky with a crescent moon nearby."
+    }
+  ],
+  "kf-winter.jpg": [
+    {
+      "bbox": [
+        0.92,
+        0.05,
+        0.97,
+        0.1
+      ],
+      "object": "sun",
+      "description": "The sun appears in the top right corner of the image as a simple orange circle in a light grey sky with scattered clouds. It's a minimalist illustration style consistent with the rest of the winter scene drawing."
+    },
+    {
+      "bbox": [
+        0.35,
+        0.55,
+        0.45,
+        0.65
+      ],
+      "object": "log cabin",
+      "description": "There is a yellow/orange colored log cabin or warming hut located in the middle-lower portion of the image. It appears to be a simple structure with a sloped green roof and is surrounded by people gathered outside. The cabin seems to be a gathering point or rest area for the winter activities taking place on the snowy hillside. There are benches or tables visible outside the cabin where people are congregating."
+    }
   ]
 }
