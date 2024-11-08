@@ -24,7 +24,8 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1, where (0,0) is the top-left corner of the image and (1,1) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. Also describe its colour, pose, activity, and any other relevant details.
+  - An example description: "The red beach ball is near the top of the image, slightly left of center. It is above an umbrella and between two palm trees. The ball looks brand new."
 - confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
 
 If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
@@ -89,7 +90,8 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1, where (0,0) is the top-left corner of the image and (1,1) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. Also describe its colour, pose, activity, and any other relevant details.
+  - An example description: "The red beach ball is near the top of the image, slightly left of center. It is above an umbrella and between two palm trees. The ball looks brand new."
 - confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
 
 If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
@@ -156,7 +158,8 @@ Provide your result as a JSON object with the following structure:
 }
 Where:
 - bbox: The bounding box around the object you identified. All coordinates should be normalized to be between 0 and 1000, where (0,0) is the top-left corner of the image and (1000,1000) is the bottom-right corner.
-- description: A detailed description of the object you identified. Describe specifically where it is located in the image. For example: "it is in the top third of the image, slightly left of center. It is above a red beach ball." Also describe its colour, pose, activity, and any other relevant details.
+- description: A detailed description of the object you identified. Describe specifically where it is located in the image. Also describe its colour, pose, activity, and any other relevant details.
+  - An example description: "The red beach ball is near the top of the image, slightly left of center. It is above an umbrella and between two palm trees. The ball looks brand new."
 - confidence: Your confidence score for the identification, between 0 and 1. For example, if you are 50% sure the object is where you have described, provide a confidence of 0.5.
 
 If you do not see the object, provide a confidence score of 0 and the bounding box coordinates as [0, 0, 0, 0].
