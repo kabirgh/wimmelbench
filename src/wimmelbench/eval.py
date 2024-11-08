@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 from typing import List
 
@@ -32,9 +33,15 @@ def get_save_path(image_path: str, object_name: str, model: str) -> str:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("image_path", help="Path to input image")
-    parser.add_argument("object_name", help="Object to detect")
+    parser.add_argument("annotations_file", help="Path to JSON annotations file")
+    parser.add_argument(
+        "--filter", help="Only process images containing this string", default=None
+    )
     args = parser.parse_args()
+
+    # Load annotations
+    with open(args.annotations_file) as f:
+        annotations = json.load(f)
 
     models = [
         AnthropicModel(
@@ -55,19 +62,29 @@ def main():
         ),
     ]
 
-    for model in models:
-        save_path = get_save_path(args.image_path, args.object_name, model.model)
-        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    # Process each image and object in annotations
+    for image_name, objects in annotations.items():
+        if args.filter and args.filter not in image_name:
+            continue
 
-        result = model.detect_object(args.image_path, args.object_name)
-        print(f"\nResult for {model.model}: {result}")
+        image_path = os.path.join("img", image_name)
 
-        if result["confidence"] > 0:
-            image = draw_box(args.image_path, result["bbox"])
-            image.save(save_path, "JPEG")
-            print(f"Saved image with bounding box to {save_path}")
-        else:
-            print(f"No {args.object_name} detected")
+        for object_data in objects:
+            object_name = object_data["object"]
+
+            for model in models:
+                save_path = get_save_path(image_path, object_name, model.model)
+                os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+                result = model.detect_object(image_path, object_name)
+                print(f"\nResult for {model.model} on {image_path}: {result}")
+
+                if result["confidence"] > 0:
+                    image = draw_box(image_path, result["bbox"])
+                    image.save(save_path, "JPEG")
+                    print(f"Saved image with bounding box to {save_path}")
+                else:
+                    print(f"No {object_name} detected in {image_path}")
 
 
 if __name__ == "__main__":
