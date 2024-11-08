@@ -1,0 +1,14 @@
+{
+  "river-adventure-house.jpg": [
+    {
+      "bbox": [
+        0.245,
+        0.093,
+        0.31,
+        0.217
+      ],
+      "object": "whale",
+      "description": "The whale is a blue decorative figure positioned at the top of the yellow water slide, situated in the upper left area of the image."
+    }
+  ]
+}
