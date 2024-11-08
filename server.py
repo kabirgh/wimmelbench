@@ -55,8 +55,11 @@ async def save_annotation(request: Request):
         if ann["bbox"] is not None or ann["image"] in annotations
     ]
 
+    # Sort annotations by image name
+    sorted_annotations = dict(sorted(annotations.items()))
+
     with open("annotations.json", "w") as f:
-        json.dump(annotations, f, indent=2)
+        json.dump(sorted_annotations, f, indent=2)
 
     return JSONResponse({"status": "success"})
 
