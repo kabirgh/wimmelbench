@@ -271,6 +271,7 @@
             // Get the current object name input
             const currentInput = document.querySelectorAll('.annotation-input')[currentAnnotationIndex];
             const objectName = currentInput ? currentInput.querySelector('.object-name').value : '';
+            const description = currentInput ? currentInput.querySelector('.description-textarea').value : '';
 
             // Create new annotation or update existing one
             if (currentAnnotationIndex >= updatedAnnotations.length) {
@@ -417,12 +418,13 @@
 
             document.querySelectorAll('.annotation-input').forEach((input, index) => {
                 const objectName = input.querySelector('.object-name').value;
+                const description = input.querySelector('.description-textarea').value;
                 // Only include annotations that have both a name and a bbox
                 if (objectName && existingAnnotations[index]?.bbox) {
                     annotations.push({
                         bbox: existingAnnotations[index].bbox,
                         object: objectName,
-                        description: input.querySelector('.description-textarea').value
+                        description: description
                     });
                 }
             });
