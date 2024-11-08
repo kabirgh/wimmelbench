@@ -31,6 +31,10 @@ def get_save_path(image_path: str, object_name: str, model: str) -> str:
     return os.path.join("results", model.replace("/", "_"), new_filename)
 
 
+def get_results_path(model: str) -> str:
+    return os.path.join("results", model.replace("/", "_"), "results.json")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("annotations_file", help="Path to JSON annotations file")
@@ -62,29 +66,55 @@ def main():
         ),
     ]
 
-    # Process each image and object in annotations
-    for image_name, objects in annotations.items():
-        if args.filter and args.filter not in image_name:
-            continue
+    # Process each model
+    for model in models:
+        # Load or create results file for this model
+        results_file = get_results_path(model.model)
+        os.makedirs(os.path.dirname(results_file), exist_ok=True)
 
-        image_path = os.path.join("img", image_name)
+        if os.path.exists(results_file):
+            with open(results_file) as f:
+                results = json.load(f)
+        else:
+            results = {}
 
-        for object_data in objects:
-            object_name = object_data["object"]
+        # Process each image and object in annotations
+        for image_name, objects in annotations.items():
+            if args.filter and args.filter not in image_name:
+                continue
 
-            for model in models:
-                save_path = get_save_path(image_path, object_name, model.model)
-                os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            image_path = os.path.join("img", image_name)
+
+            # Initialize results for this image if not exists
+            if image_name not in results:
+                results[image_name] = []
+
+            for object_data in objects:
+                object_name = object_data["object"]
 
                 result = model.detect_object(image_path, object_name)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
 
-                if result["confidence"] > 0:
+                # Save result to model's results.json
+                result_entry = {
+                    "bbox": result["bbox"],
+                    "object": object_name,
+                    "description": result["description"],
+                }
+                results[image_name].append(result_entry)
+
+                if result["bbox"] != [0, 0, 0, 0]:
                     image = draw_box(image_path, result["bbox"])
+                    save_path = get_save_path(image_path, object_name, model.model)
+                    os.makedirs(os.path.dirname(save_path), exist_ok=True)
                     image.save(save_path, "JPEG")
                     print(f"Saved image with bounding box to {save_path}")
                 else:
                     print(f"No {object_name} detected in {image_path}")
+
+            # Save results after processing each image
+            with open(results_file, "w") as f:
+                json.dump(results, f, indent=2)
 
 
 if __name__ == "__main__":
