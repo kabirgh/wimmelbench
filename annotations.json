@@ -142,7 +142,7 @@
         0.7235634334051787
       ],
       "object": "faucet",
-      "description": "There is no faucet in this image."
+      "description": "A brass faucet is located near the bottom left of the image. It is attached to a concrete structure with classical ornaments. A person in a red shirt and yellow backpack is using the water coming out of the faucet to wash their face."
     }
   ],
   "mitgutsch-beach.jpg": [
@@ -358,7 +358,7 @@
         0.7378531073446327
       ],
       "object": "man wearing overalls over a white shirt",
-      "description": "A man wearing light blue overalls over a white shirt is located in the bottom-left quadrant of the image on the street near the water. He's leaning slightly forward and appears to be shouting or scaring away some of the nearby animals."
+      "description": "A man wearing blue overalls over a white shirt is located in the bottom-left quadrant of the image on the street near the water. He's leaning slightly forward and appears to be shouting or scaring away some of the nearby animals."
     }
   ],
   "rodhunt-xmas.jpg": [
@@ -527,6 +527,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger is located in the lower-middle portion of the image.  It appears to be running an obstacle course in a playground with other children."
+    },
+    {
+      "bbox": [
+        0.17577575566949918,
+        0.15165285465159845,
+        0.20350899130611097,
+        0.16833955280816376
+      ],
+      "object": "frisbee",
+      "description": "An orange frisbee is flying between two boys in the upper left quadrant of the image. The frisbee is flying just below the waterfront and above a path."
     }
   ],
   "tigertom-park2.jpg": [
@@ -563,6 +573,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon yellow and black striped tiger is located in the lower middle section of the image. It is on a sled, being pulled across the snowy ground. It is wearing a red and green hat, a red scarf, and smiling."
+    },
+    {
+      "bbox": [
+        0.4667733408080582,
+        0.27084458572525516,
+        0.48952594045865333,
+        0.31311567221114883
+      ],
+      "object": "birdhouse",
+      "description": "A wooden birdhouse is located in the upper middle section of the image, just to the left of a green house. Two birds are perched on the birdhouse."
     }
   ],
   "tigertom-zoo.jpg": [
@@ -575,6 +595,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger is located in the lower-middle portion of the image. It is yellow with black stripes and is depicted in a walking pose, carrying a basket of vegetables and watering can in its paws. In front of the tiger is a black and white dog."
+    },
+    {
+      "bbox": [
+        0.10805268130997998,
+        0.18741037397369545,
+        0.17278865232306012,
+        0.2280410453454772
+      ],
+      "object": "cucumber slices",
+      "description": "There are two cucumber slices near the top left corner of the image, inside a compartment with three rodents. They are next to two orange carrots, all of which are hanging from a hook attached to the compartment wall."
     }
   ],
   "walk-lake.jpg": [
@@ -623,6 +653,16 @@
       ],
       "object": "cello",
       "description": "A dark brown cello is leaning upright against the green wall of a house located in the middle-left of the image. "
+    },
+    {
+      "bbox": [
+        0.8388016083494252,
+        0.044380296685307345,
+        0.8776585425400153,
+        0.06833955280816377
+      ],
+      "object": "black cat",
+      "description": "A black cat is located near the top right corner of the image. It is walking leftward on a brick wall in the background."
     }
   ],
   "whodoeswhat-city2.jpg": [
