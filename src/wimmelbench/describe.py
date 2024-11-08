@@ -72,10 +72,10 @@ for image_file, objects in tqdm(items):
                 response = model.generate_content(
                     [
                         pil_image,
-                        f"""Describe the {obj['object']}. Note specifically where it is located in the image. Also describe its colour, pose, activity, and any other relevant details.
+                        f"""Describe the {obj['object']}. Note specifically where it is located in the image. Also describe its colour, pose, activity, nearby prominent features, and any other relevant details.
                         Here are examples of good descriptions:
                         - (lighthouse) The lighthouse stands at the far right of the image, covering the middle third of the picture vertically. It is a tall white cylindrical structure with a viewing deck near its top. It's situated on a small outcropping in the lake, with people fishing or observing from an attached dock.
-                        - (sedan) A red sedan car is located near the bottom right of the image. It is facing right, parked next to a blue house and behind a decorated christmas tree. A snow thrower is launching snow on to the car and startling the woman next to it.
+                        - (sedan) A red sedan car is located near the bottom right of the image. It is facing right, parked next to a blue house and behind a decorated christmas tree. A snow thrower is launching snow on to the car and startling the woman standing behind the car.
                         - (slide) A bright green slide extends into the lake in the mid-right portion of the image. People are sliding down it into the water, creating splashes where it meets the lake.
 
                         Provide only the description.

@@ -8,7 +8,7 @@
         0.10734463276836158
       ],
       "object": "person riding a horse",
-      "description": "A person is riding a dark horse near the top of the image, slightly right of center. The horse is on top of a hill, between trees with orange leaves."
+      "description": "A person is riding a dark horse near the top of the image, slightly right of center. The horse is on top of a hill, standing between trees with orange leaves."
     },
     {
       "bbox": [
@@ -106,7 +106,7 @@
         0.6728171647484623
       ],
       "object": "log cabin",
-      "description": "There is a cabin with an open front and roof made of logs in the middle left of the image. Staff in blue shirts behind the counter are serving hot drinks and ice skates."
+      "description": "There is a cabin with an open front. The triangle roof is made of logs in the middle left of the image. Staff in blue shirts behind the counter are serving hot drinks and ice skates."
     }
   ],
   "lufthansa-beach.jpg": [
@@ -142,7 +142,7 @@
         0.7235634334051787
       ],
       "object": "faucet",
-      "description": ""
+      "description": "There is no faucet in this image."
     }
   ],
   "mitgutsch-beach.jpg": [
@@ -154,7 +154,7 @@
         0.10867052023121387
       ],
       "object": "pirate flag",
-      "description": ""
+      "description": "A black pirate flag with a white skull and crossbones is located in the upper-middle section of the image.  It's hanging from a small wooden pole next to a child with a sword in his hand and paper boat on his head."
     }
   ],
   "mitgutsch-carnival.jpg": [
@@ -166,7 +166,7 @@
         0.3807909604519774
       ],
       "object": "chef hat",
-      "description": ""
+      "description": "A chef, wearing a white chef's hat, is standing near the center of the image, slightly to the right. He is wearing a white apron and holding a skewer with what looks like 3 cooked chickens."
     }
   ],
   "mitgutsch-fight.jpg": [
@@ -190,7 +190,7 @@
         0.12542372881355932
       ],
       "object": "mandarin orange",
-      "description": ""
+      "description": "A person wearing a mandarin orange-colored shirt is seated in a chair playing the cello. They are located in the lower right section of the image. The shirt is a vibrant orange color.  The person's pose is sitting with their legs slightly apart. Their activity is playing the cello as part of an orchestra."
     }
   ],
   "mitgutsch-pirate.jpg": [
@@ -202,7 +202,7 @@
         0.9028248587570622
       ],
       "object": "couple kissing",
-      "description": ""
+      "description": "A couple, consisting of a woman with reddish-brown hair and a man with dark brown hair, are kissing passionately in the bottom right quadrant of the image.  They are nestled within the dense green foliage of a tropical plant. The woman is wearing a red top, and the man wears a darker colored top. They are both situated on the ground, hidden slightly amongst the vegetation."
     }
   ],
   "mitgutsch-pool.jpg": [
@@ -214,7 +214,7 @@
         0.08088235294117647
       ],
       "object": "tennis racket",
-      "description": ""
+      "description": "A dark tennis racket lies on the ground near the top of the image, slightly to the right of center, on top of a towel and near some tennis balls."
     }
   ],
   "mitgutsch-townsquare.jpg": [
@@ -226,7 +226,7 @@
         0.07231638418079096
       ],
       "object": "kite",
-      "description": ""
+      "description": "A light-green kite is located in the upper left quadrant of the image, high above the street and slightly to the right of the top-left corner. It is caught in the foliage of a tree in a town square."
     }
   ],
   "mitgutsch-water.jpg": [
@@ -238,7 +238,7 @@
         0.9711538461538461
       ],
       "object": "lobster",
-      "description": ""
+      "description": "A small, reddish-orange lobster is partially visible near the bottom left corner of the image, peeking out from behind a net.  It appears to be sitting still and is not actively doing anything."
     }
   ],
   "montreal-snow.jpg": [
@@ -250,7 +250,7 @@
         0.2998872604284104
       ],
       "object": "bear",
-      "description": ""
+      "description": "A brown bear is located in the upper left corner of the image. It is facing right. Only the front half of the bear is visible."
     }
   ],
   "porsche-factory.jpg": [
@@ -262,7 +262,7 @@
         0.07553551296505075
       ],
       "object": "spider web",
-      "description": ""
+      "description": "A small, nearly invisible spider web is located in the upper right corner of the image. It is light grey or white in color. A person with a vacuum strapped to their back is sucking up the web."
     }
   ],
   "porsche-hq.jpg": [
@@ -274,7 +274,7 @@
         0.5774011299435028
       ],
       "object": "toolbox",
-      "description": ""
+      "description": "A red toolbox is located in the lower-left corner of the image, near a window washer on a lift.  It is open, suggesting use, and appears to contain various tools."
     }
   ],
   "porsche-road.jpg": [
@@ -286,7 +286,7 @@
         0.16271186440677965
       ],
       "object": "quadcopter",
-      "description": ""
+      "description": "A small, light-grey quadcopter is located in the upper-middle portion of the image, just above the Porsche sign.  It is flying horizontally, seemingly observing the scene."
     }
   ],
   "professions-intersection.jpg": [
@@ -298,7 +298,7 @@
         0.5807909604519774
       ],
       "object": "cactus",
-      "description": ""
+      "description": "A small, light green cactus is potted in the window of a light gray building on the left side of the image, near the middle vertically. In the window next to it is an orange cat. Both windows are above teal awning."
     }
   ],
   "professions-street.jpg": [
@@ -310,7 +310,7 @@
         0.9796610169491525
       ],
       "object": "scissors",
-      "description": ""
+      "description": "A pair of open silver scissors lies on the ground near the bottom right corner of the image, amongst other discarded items."
     }
   ],
   "professions-townsquare.jpg": [
@@ -322,7 +322,7 @@
         0.3502824858757062
       ],
       "object": "pizza",
-      "description": ""
+      "description": "A circular pizza is on a table in a cafe located in the mid-right section of the image.  It is light brown with darker brown spots. It is stationary and appears to be part of a meal setting."
     }
   ],
   "river-adventure-house.jpg": [
@@ -334,7 +334,7 @@
         0.0903954802259887
       ],
       "object": "whale",
-      "description": ""
+      "description": "A blue decorative whale is located at the top left of the image. It is on top of a gray pole which is part of a yellow water slide's support structure. Behind the whale are some trees."
     }
   ],
   "river-adventure-river.jpg": [
@@ -346,7 +346,7 @@
         0.6067796610169491
       ],
       "object": "macaw",
-      "description": ""
+      "description": "A scarlet macaw with yellow wingtips is flying near a wooden post near the left side of the boat's deck. It is pulling a rope or chain attached to treasure that a diver is holding out of the water."
     }
   ],
   "river-adventure-seaside.jpg": [
@@ -358,7 +358,7 @@
         0.7378531073446327
       ],
       "object": "man wearing overalls over a white shirt",
-      "description": ""
+      "description": "A man wearing light blue overalls over a white shirt is located in the bottom-left quadrant of the image on the street near the water. He's leaning slightly forward and appears to be shouting or scaring away some of the nearby animals."
     }
   ],
   "rodhunt-xmas.jpg": [
@@ -370,7 +370,7 @@
         0.5966101694915255
       ],
       "object": "menorah",
-      "description": ""
+      "description": "A gold menorah standing upright is located in the lower-middle section of the image, near the ice-skating rink. It's situated among other festive elements and people."
     }
   ],
   "season-beach.jpg": [
@@ -382,7 +382,7 @@
         0.17966101694915254
       ],
       "object": "shuttlecock",
-      "description": ""
+      "description": "A white shuttlecock is located in the upper right corner of the image. It is in flight between two cartoon bears playing badminton on the beach."
     }
   ],
   "season-winter.jpg": [
@@ -394,7 +394,7 @@
         0.08361581920903954
       ],
       "object": "santa",
-      "description": ""
+      "description": "Santa, dressed in his traditional red suit with white fur trimmings, is climbing into a chimney of a house with a blue roof in the top left section of the image. Only his legs and torso are visible."
     }
   ],
   "tigertom-beach.jpg": [
@@ -406,7 +406,7 @@
         0.6011753737036861
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A yellow tiger with black stripes is located in the middle of the image, slightly to the left. It is standing on two legs on the beach. The tiger may be talking or waving to a  person selling watches, towels, and hats to its right."
     }
   ],
   "tigertom-birthday.jpg": [
@@ -418,7 +418,7 @@
         0.9743097020618952
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger, yellow with black striped, is located in the bottom of the image, left of center. It's wearing a party hat and reaching out to get a blue balloon animal that a clown has made."
     }
   ],
   "tigertom-classroom.jpg": [
@@ -430,7 +430,7 @@
         0.8892350751962235
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger wearing a painter's apron is located in the bottom right quadrant of the image. It is sitting at a table with two other children, appearing to be painting or drawing."
     }
   ],
   "tigertom-classroom2.jpg": [
@@ -442,7 +442,7 @@
         0.8175932841514474
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is situated in the lower-middle portion of the image, sitting on a red chair at the left corner of a small table. It is holding a lunch box and water bottle."
     }
   ],
   "tigertom-cycles.jpg": [
@@ -454,7 +454,7 @@
         0.9399813438529399
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is located in the bottom right quadrant of the image. The tiger is helping too pull a large pumpkin with three other people in a pumpkin patch."
     }
   ],
   "tigertom-farm.jpg": [
@@ -466,7 +466,7 @@
         0.6489365677335369
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon orange and black striped tiger is hanging from the branches of an apple tree located in the lower-middle section of the image. Next to the tiger is a girl in a purple t-shirt."
     }
   ],
   "tigertom-garden.jpg": [
@@ -478,7 +478,7 @@
         0.8922201498230892
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is lying on a purple picnic blanket in the lower-right quadrant of the image. It is yellow with black stripes. It appears to be relaxing or sleeping, with its eyes closed and limbs sprawled out.  A gray MP3 player is next to it on the blanket. Also on the blanket is a young girl reading a book."
     }
   ],
   "tigertom-house.jpg": [
@@ -490,7 +490,7 @@
         0.5787873140021936
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A light orange tiger is located in the middle-right of the image, playing in a small wooden sandbox.  It is sitting down, facing to the left."
     }
   ],
   "tigertom-intersection.jpg": [
@@ -502,7 +502,7 @@
         0.6459514931066712
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger wearing a construction worker's vest and cap is located in the lower-middle section of the image, standing at a crosswalk. It is yellow and black, and holding a stop sign to direct traffic."
     }
   ],
   "tigertom-market.jpg": [
@@ -514,7 +514,7 @@
         0.3832649259424921
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is located on the left side of the image, near the flower stalls. It is yellow and black. It is walking on two legs out of a flower shop, holding a bouquet of pinkish red flowers."
     }
   ],
   "tigertom-park.jpg": [
@@ -526,7 +526,7 @@
         0.8653544781812981
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is located in the lower-middle portion of the image.  It appears to be running an obstacle course in a playground with other children."
     }
   ],
   "tigertom-park2.jpg": [
@@ -538,7 +538,7 @@
         0.28326492594249214
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A tiger is peeking from behind a willow tree in the upper left quadrant of the image. Only its head and tail are clearly visible."
     }
   ],
   "tigertom-park3.jpg": [
@@ -550,7 +550,7 @@
         0.26386194086786524
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "The cartoon tiger is located in the upper middle section of the image, on a walkway and near some children. It is yellow and black, walking on two legs, and carrying a ball or watermelon."
     }
   ],
   "tigertom-snow.jpg": [
@@ -562,7 +562,7 @@
         0.6787873140021936
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon yellow and black striped tiger is located in the lower middle section of the image. It is on a sled, being pulled across the snowy ground. It is wearing a red and green hat, a red scarf, and smiling."
     }
   ],
   "tigertom-zoo.jpg": [
@@ -574,7 +574,7 @@
         0.7459514931066712
       ],
       "object": "cartoon tiger",
-      "description": ""
+      "description": "A cartoon tiger is located in the lower-middle portion of the image. It is yellow with black stripes and is depicted in a walking pose, carrying a basket of vegetables and watering can in its paws. In front of the tiger is a black and white dog."
     }
   ],
   "walk-lake.jpg": [
@@ -586,7 +586,7 @@
         0.15789179161413391
       ],
       "object": "bicycle",
-      "description": ""
+      "description": "A red bicycle is located in the upper left quadrant of the image.  A child is carrying the bicycle, about to cross a wooden bridge that spans a stream."
     }
   ],
   "walk-townfarm.jpg": [
@@ -598,7 +598,7 @@
         0.5952052244499548
       ],
       "object": "soccer ball",
-      "description": ""
+      "description": "A small white soccer ball is located near the lower-middle section of the image. It's on a grassy field near a small child that is facing away from the ball."
     }
   ],
   "walk-townscene.jpg": [
@@ -610,7 +610,7 @@
         0.7369962692260742
       ],
       "object": "black cat",
-      "description": ""
+      "description": "A black cat is located in the bottom right corner of the image, near the stone wall and above a cyclist. It is facing left, appearing to be walking or casually strolling.  It is a solid black colour with a red collar."
     }
   ],
   "whodoeswhat-city.jpg": [
@@ -622,7 +622,7 @@
         0.3877425378827906
       ],
       "object": "cello",
-      "description": ""
+      "description": "A dark brown cello is leaning upright against the green wall of a house located in the middle-left of the image. "
     }
   ],
   "whodoeswhat-city2.jpg": [

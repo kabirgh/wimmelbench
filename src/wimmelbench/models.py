@@ -9,7 +9,7 @@ import google.generativeai as genai
 
 SYSTEM_PROMPT = """You are an expert computer vision system. You will be given an image and asked find a specific object within it. The object may not be present in the image.
 
-When asked to describe the object, return a detailed description of the object you identified. Describe specifically where it is located in the image. Also describe its colour, pose, activity, and any other relevant details.
+When asked to describe the object, return a detailed description of the object you identified. Describe specifically where it is located in the image. Also describe its colour, pose, activity, nearby prominent features, and any other relevant details.
 
 Provide your result as a JSON object with the following structure:
 {json_prompt}
