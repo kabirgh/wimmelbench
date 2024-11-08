@@ -10,9 +10,36 @@ from wimmelbench.models import AnthropicModel, OpenAIModel, GoogleModel
 
 load_dotenv()
 
+COLORS = [
+    "#ff0000",
+    "#00ff00",
+    "#0000ff",
+    "#ffff00",
+    "#ff00ff",
+    "#00ffff",
+    "#ffa500",
+    "#800080",
+]
 
-def draw_box(image_path: str, bbox: List[float]):
-    image = Image.open(image_path)
+MODEL_MAP = {
+    "claude": lambda: AnthropicModel(
+        api_key=os.environ.get("ANTHROPIC_API_KEY", "could-not-find-anthropic-api-key"),
+        model="claude-3-5-sonnet-20241022",
+    ),
+    "gemini": lambda: GoogleModel(
+        api_key=os.environ.get(
+            "GOOGLE_AISTUDIO_API_KEY", "could-not-find-google-api-key"
+        ),
+        model="gemini-1.5-pro-002",
+    ),
+    "gpt4o": lambda: OpenAIModel(
+        api_key=os.environ.get("OPENAI_API_KEY", "could-not-find-openai-api-key"),
+        model="gpt-4o-2024-08-06",
+    ),
+}
+
+
+def draw_box(image: Image.Image, bbox: List[float], color: str):
     draw = ImageDraw.Draw(image)
 
     w, h = image.size
@@ -21,13 +48,13 @@ def draw_box(image_path: str, bbox: List[float]):
     # Convert normalized coordinates to pixel coordinates
     box = (x1 * w, y1 * h, x2 * w, y2 * h)
 
-    draw.rectangle(box, outline="red", width=6)
+    draw.rectangle(box, outline=color, width=5)
     return image
 
 
-def get_save_path(image_path: str, object_name: str, model: str) -> str:
+def get_save_path(image_path: str, model: str) -> str:
     filename = os.path.basename(image_path)
-    new_filename = filename.replace(".", f"_{object_name}.")
+    new_filename = filename.replace(".", "_annotated.")
     return os.path.join("results", model.replace("/", "_"), new_filename)
 
 
@@ -46,30 +73,18 @@ def main():
         action="store_true",
         help="Skip images that already have results",
     )
+    parser.add_argument(
+        "--models",
+        help="Comma-separated list of models to use (claude,gemini,gpt4o)",
+        default="claude,gemini,gpt4o",
+    )
     args = parser.parse_args()
 
     # Load annotations
     with open(args.annotations_file) as f:
         annotations = json.load(f)
 
-    models = [
-        AnthropicModel(
-            api_key=os.environ.get(
-                "ANTHROPIC_API_KEY", "could-not-find-anthropic-api-key"
-            ),
-            model="claude-3-5-sonnet-20241022",
-        ),
-        GoogleModel(
-            api_key=os.environ.get(
-                "GOOGLE_AISTUDIO_API_KEY", "could-not-find-google-api-key"
-            ),
-            model="gemini-1.5-pro",
-        ),
-        OpenAIModel(
-            api_key=os.environ.get("OPENAI_API_KEY", "could-not-find-openai-api-key"),
-            model="gpt-4o-2024-08-06",
-        ),
-    ]
+    models = [MODEL_MAP[m.strip()]() for m in args.models.split(",")]
 
     # Process each model
     for model in models:
@@ -126,16 +141,20 @@ def main():
                 else:
                     results[image_name].append(result_entry)
 
-                if result["bbox"] != [0, 0, 0, 0]:
-                    image = draw_box(image_path, result["bbox"])
-                    save_path = get_save_path(image_path, object_name, model.model)
-                    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-                    image.save(save_path, "JPEG")
-                    print(f"Saved image with bounding box to {save_path}")
+            # Draw and save bounding boxes for each object in the image
+            image = Image.open(image_path)
+            for entry, color in zip(results[image_name], COLORS):
+                if entry["bbox"] != [0, 0, 0, 0]:
+                    image = draw_box(image, entry["bbox"], color)
                 else:
-                    print(f"No {object_name} detected in {image_path}")
+                    print(f"No {entry['object']} detected in {image_path}")
 
-            # Save results after processing each image
+            save_path = get_save_path(image_path, model.model)
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            image.save(save_path, "JPEG")
+            print(f"Saved image with bounding boxes to {save_path}")
+
+            # Save results file after processing each image
             with open(results_file, "w") as f:
                 json.dump(results, f, indent=2)
 

@@ -9,6 +9,16 @@
       ],
       "object": "person riding a horse",
       "description": "A person is riding a dark horse near the top of the image, slightly right of center. The horse is on top of a hill, between trees with orange leaves."
+    },
+    {
+      "bbox": [
+        0.8287075172022911,
+        0.00713288072478961,
+        0.9177451040230545,
+        0.11610074683801452
+      ],
+      "object": "castle",
+      "description": "A stone castle is in the top right corner of the image. It has red roofs on towers. The castle is situated on top of a hill and surrounded by trees."
     }
   ],
   "construction-site.jpg": [
@@ -21,6 +31,16 @@
       ],
       "object": "fox",
       "description": "The fox is in bottom left of the image. It is partially obscured between a cardboard box and a wall. Behind the fox is a ladder."
+    },
+    {
+      "bbox": [
+        0.01870738508735637,
+        0.3185212781547179,
+        0.2902941236308977,
+        0.5220708960917458
+      ],
+      "object": "concrete mixer truck",
+      "description": "A green concrete mixer truck is in the middle left of the image. It is on the border of a construction pit."
     }
   ],
   "construction-snow.jpg": [
@@ -33,6 +53,16 @@
       ],
       "object": "santa",
       "description": "Santa claus is in the top right of the image, between snow-covered trees and the yellow wall of a house. He is carrying a brown sack over his shoulder."
+    },
+    {
+      "bbox": [
+        0.6661198244198495,
+        0.6537480217993775,
+        0.8226470648073683,
+        0.7922201498230892
+      ],
+      "object": "sedan",
+      "description": "A red sedan car is located near the bottom right of the image. It is parked next to a blue house and behind a decorated christmas tree. A snow thrower is launching snow on to the car and startling the woman next to it."
     }
   ],
   "kf-f1.jpg": [
@@ -45,6 +75,16 @@
       ],
       "object": "f1 car",
       "description": "A pink f1 car is in the middle right of the image. It is facing up and to the left. The car is on a section of the road above water."
+    },
+    {
+      "bbox": [
+        0.13080428649958858,
+        0.74314182010462,
+        0.24544520159952002,
+        0.9772947766887607
+      ],
+      "object": "flamingo",
+      "description": "A large flamingo is located in the bottom left corner of the image. It is standing on one leg on a patch of green land, facing right."
     }
   ],
   "kf-winter.jpg": [
@@ -56,19 +96,29 @@
         0.09491525423728814
       ],
       "object": "sun",
-      "description": ""
+      "description": "The sun is drawn as a simple orange circle in the top right of the image. To the left there are clouds and to the bottom there is a snow covered landscape."
+    },
+    {
+      "bbox": [
+        0.09984805024905133,
+        0.5092280478725687,
+        0.44825918762088973,
+        0.6728171647484623
+      ],
+      "object": "log cabin",
+      "description": "There is a cabin with an open front and roof made of logs in the middle left of the image. Staff in blue shirts behind the counter are serving hot drinks and ice skates."
     }
   ],
   "lufthansa-beach.jpg": [
     {
       "bbox": [
-        0.44708565611562984,
-        0.40791507645996045,
-        0.5239842197863139,
-        0.5041604483305518
+        0.45186131944722163,
+        0.41387466301364334,
+        0.5220721738972126,
+        0.49968283639025335
       ],
       "object": "octopus",
-      "description": ""
+      "description": "A purple octopus is in the center of the image on top of a snorkelers head. The snorkeler is near a small boat and other swimmers."
     }
   ],
   "lufthansa-greece.jpg": [
@@ -578,13 +628,13 @@
   "whodoeswhat-city2.jpg": [
     {
       "bbox": [
-        0.33392218696496917,
-        0.4436725957820575,
-        0.3342439083936738,
-        0.4444589557932384
+        0.5395777041698345,
+        0.8474345847940697,
+        0.5791219571741616,
+        0.8922201498230892
       ],
       "object": "saxophone",
-      "description": ""
+      "description": "A man in a black suit in the bottom middle of the image is raising a saxophone above his head. He is standing in a park, next to an ambulance."
     }
   ],
   "whodoeswhat-city3.jpg": [
