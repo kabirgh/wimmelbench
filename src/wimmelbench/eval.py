@@ -41,6 +41,11 @@ def main():
     parser.add_argument(
         "--filter", help="Only process images containing this string", default=None
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip images that already have results",
+    )
     args = parser.parse_args()
 
     # Load annotations
@@ -83,6 +88,11 @@ def main():
             if args.filter and args.filter not in image_name:
                 continue
 
+            # Skip if image already has results and skip-existing is enabled
+            if args.skip_existing and image_name in results:
+                print(f"Skipping {image_name} - results already exist")
+                continue
+
             image_path = os.path.join("img", image_name)
 
             # Initialize results for this image if not exists
@@ -95,13 +105,26 @@ def main():
                 result = model.detect_object(image_path, object_name)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
 
-                # Save result to model's results.json
+                # Create new result entry
                 result_entry = {
                     "bbox": result["bbox"],
                     "object": object_name,
                     "description": result["description"],
                 }
-                results[image_name].append(result_entry)
+
+                # Find and replace existing entry with same object name, or append if not found
+                existing_index = next(
+                    (
+                        i
+                        for i, r in enumerate(results[image_name])
+                        if r["object"] == object_name
+                    ),
+                    None,
+                )
+                if existing_index is not None:
+                    results[image_name][existing_index] = result_entry
+                else:
+                    results[image_name].append(result_entry)
 
                 if result["bbox"] != [0, 0, 0, 0]:
                     image = draw_box(image_path, result["bbox"])
