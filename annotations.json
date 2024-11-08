@@ -71,6 +71,18 @@
       "description": ""
     }
   ],
+  "lufthansa-greece.jpg": [
+    {
+      "bbox": [
+        0.818549547996627,
+        0.7088741974209438,
+        0.9002707098836953,
+        0.8474440304201041
+      ],
+      "object": "trojan horse",
+      "description": "A large wooden horse is in the bottom right of the image. It is being dragged by a few people with ropes along the cliff edge."
+    }
+  ],
   "lufthansa-turkish-bazaar.jpg": [
     {
       "bbox": [
@@ -105,6 +117,18 @@
       ],
       "object": "chef hat",
       "description": ""
+    }
+  ],
+  "mitgutsch-fight.jpg": [
+    {
+      "bbox": [
+        0.07025760998589455,
+        0.08071442408628654,
+        0.13196480938416422,
+        0.19833659192587297
+      ],
+      "object": "man waving a white flag",
+      "description": "A man waving a white flag is in the top left of the image, by a broken a window. He is hung up on a light fixture by his jacket."
     }
   ],
   "mitgutsch-orchestra.jpg": [
@@ -561,6 +585,18 @@
       ],
       "object": "saxophone",
       "description": ""
+    }
+  ],
+  "whodoeswhat-city3.jpg": [
+    {
+      "bbox": [
+        0.6438674688187472,
+        0.8727628276472218,
+        0.6864390303448933,
+        0.9340111945992086
+      ],
+      "object": "yellow electrical box",
+      "description": "There is an open yellow electrical box in the bottom of the image, right of center. It is mounted on the external wall of an orange building. It is between large pipes to its left and a white car to its right. The car may be plugged into one of the many wires coming out of the box."
     }
   ]
 }
