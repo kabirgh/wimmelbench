@@ -1,0 +1,68 @@
+{
+  "construction-evening.jpg": [
+    {
+      "bbox": [
+        0.587,
+        0.075,
+        0.647,
+        0.123
+      ],
+      "object": "person riding a horse",
+      "description": "A person is riding a black horse on the grassy hill, above the construction site. They appear to be wearing a dark top, light-colored pants, and a riding helmet. They are located near the top center-left of the image."
+    },
+    {
+      "bbox": [
+        0.819,
+        0.014,
+        0.921,
+        0.122
+      ],
+      "object": "castle",
+      "description": "A castle is situated on a hilltop in the background to the right side of the image. It is a medieval-style castle with multiple towers and a crenellated wall. The castle is predominantly brown and gray in color, and is set against the backdrop of a night sky with a crescent moon. There appear to be trees surrounding the base of the castle-covered hill."
+    }
+  ],
+  "construction-site.jpg": [
+    {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object": "fox",
+      "description": "I could not find a fox in this image."
+    },
+    {
+      "bbox": [
+        0.027,
+        0.319,
+        0.292,
+        0.487
+      ],
+      "object": "concrete mixer truck",
+      "description": "The concrete mixer truck is located in the upper left quadrant of the image. It's situated on the street, partially obscuring the view of an ongoing construction site below street level. \n\nThe truck is light green with dark green stripes around the cylindrical mixer. The cabin is a standard truck design. The truck appears to be parked, with a worker standing near its rear, possibly interacting with the discharge chute. \n\nNearby features include construction cones on the street to its left, and some workers in orange safety vests on foot. Below it, within the construction site, there's brown earth and several construction workers, adding to the busy nature of the scene."
+    }
+  ],
+  "construction-snow.jpg": [
+    {
+      "bbox": [
+        0.84,
+        0.143,
+        0.894,
+        0.209
+      ],
+      "object": "santa",
+      "description": "Santa Claus is standing on a snow-covered hill behind the beige house with the brown roof. He is facing the viewer, and holding what appears to be a sack or large bag over his shoulder."
+    },
+    {
+      "bbox": [
+        0.664,
+        0.671,
+        0.815,
+        0.798
+      ],
+      "object": "sedan",
+      "description": "A small red sedan is parked in the snow in the bottom right of the image. Its roof is covered in snow, and a man is using a snow brush to clean it.  A group of children are building snowmen nearby.  A Christmas tree decorated with ornaments and a blue scarf is to the right of the snowmen.  A cat stands near the Christmas tree.  A person in orange pants and a green jacket appears to be decorating the tree. A house is behind the sedan and the snowmen. The house's roof and the skylight window are covered in snow, and a purple cat can be seen through the skylight window."
+    }
+  ]
+}

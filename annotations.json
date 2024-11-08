@@ -190,7 +190,7 @@
         0.12542372881355932
       ],
       "object": "mandarin orange",
-      "description": "A person wearing a mandarin orange-colored shirt is seated in a chair playing the cello. They are located in the lower right section of the image. The shirt is a vibrant orange color.  The person's pose is sitting with their legs slightly apart. Their activity is playing the cello as part of an orchestra."
+      "description": "A mandarin orange is being launched out of a tube in the top right corner of the image. The man playing the tuba is wearing a green shirt."
     }
   ],
   "mitgutsch-pirate.jpg": [
@@ -202,7 +202,7 @@
         0.9028248587570622
       ],
       "object": "couple kissing",
-      "description": "A couple, consisting of a woman with reddish-brown hair and a man with dark brown hair, are kissing passionately in the bottom right quadrant of the image.  They are nestled within the dense green foliage of a tropical plant. The woman is wearing a red top, and the man wears a darker colored top. They are both situated on the ground, hidden slightly amongst the vegetation."
+      "description": "A couple are kissing passionately in the bottom right quadrant of the image. They are nestled within the dense green foliage of a tropical plant. The woman is wearing a white top, and the man is wearing a red top. A pirate with a sword is creeping up on them."
     }
   ],
   "mitgutsch-pool.jpg": [
@@ -226,7 +226,7 @@
         0.07231638418079096
       ],
       "object": "kite",
-      "description": "A light-green kite is located in the upper left quadrant of the image, high above the street and slightly to the right of the top-left corner. It is caught in the foliage of a tree in a town square."
+      "description": "A multi-colored kite is located in the upper left quadrant of the image. It is caught in the foliage of a tree in a town square. The string from the kite is hanging down on to a park bench."
     }
   ],
   "mitgutsch-water.jpg": [
@@ -238,7 +238,7 @@
         0.9711538461538461
       ],
       "object": "lobster",
-      "description": "A small, reddish-orange lobster is partially visible near the bottom left corner of the image, peeking out from behind a net.  It appears to be sitting still and is not actively doing anything."
+      "description": "A small, dark red lobster is being carried by a man on a wooden board in the bottom of the image, left of center. The man is wearing a white shirt, dark trousers, and is walking to the right."
     }
   ],
   "montreal-snow.jpg": [
@@ -286,7 +286,7 @@
         0.16271186440677965
       ],
       "object": "quadcopter",
-      "description": "A small, light-grey quadcopter is located in the upper-middle portion of the image, just above the Porsche sign.  It is flying horizontally, seemingly observing the scene."
+      "description": "An orange quadcopter is located in the upper-middle portion of the image, flying near the roof of a Porsche building. It looks like one of the workers on the roof is controlling the quadcopter. There are several birds near it. "
     }
   ],
   "professions-intersection.jpg": [
@@ -322,7 +322,7 @@
         0.3502824858757062
       ],
       "object": "pizza",
-      "description": "A circular pizza is on a table in a cafe located in the mid-right section of the image.  It is light brown with darker brown spots. It is stationary and appears to be part of a meal setting."
+      "description": "A circular pizza is hanging outside a window mid-right section of the image. A rabbit is holding the pizza platter by white string. Another rabbit below in a chef's hat is looking up at the pizza."
     }
   ],
   "river-adventure-house.jpg": [
@@ -382,7 +382,7 @@
         0.17966101694915254
       ],
       "object": "shuttlecock",
-      "description": "A white shuttlecock is located in the upper right corner of the image. It is in flight between two cartoon bears playing badminton on the beach."
+      "description": "A shuttlecock is located in the upper right corner of the image. It is in flight between two cartoon bears playing badminton on the beach."
     }
   ],
   "season-winter.jpg": [
@@ -466,7 +466,7 @@
         0.6489365677335369
       ],
       "object": "cartoon tiger",
-      "description": "A cartoon orange and black striped tiger is hanging from the branches of an apple tree located in the lower-middle section of the image. Next to the tiger is a girl in a purple t-shirt."
+      "description": "A cartoon yellow and black striped tiger is hanging from the branches of an apple tree located in the lower-middle section of the image. Next to the tiger is a girl in a purple t-shirt."
     }
   ],
   "tigertom-garden.jpg": [
@@ -490,7 +490,7 @@
         0.5787873140021936
       ],
       "object": "cartoon tiger",
-      "description": "A light orange tiger is located in the middle-right of the image, playing in a small wooden sandbox.  It is sitting down, facing to the left."
+      "description": "A cartoon tiger with yellow and black stripes is located in the middle-right of the image, playing in a small wooden sandbox.  It is sitting down, facing to the left."
     }
   ],
   "tigertom-intersection.jpg": [

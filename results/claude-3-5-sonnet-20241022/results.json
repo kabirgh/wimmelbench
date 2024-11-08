@@ -16,21 +16,21 @@
       "bbox": [
         0.45,
         0.1,
-        0.48,
-        0.15
+        0.5,
+        0.2
       ],
       "object": "person riding a horse",
-      "description": "In the middle-background of the image, there is a small silhouetted figure riding a horse on top of a hill against the dark blue night sky. The rider and horse are depicted in black silhouette form, appearing as a small detail in the nighttime landscape with the crescent moon visible in the sky."
+      "description": "In the background of the image, there is a small silhouetted figure riding a horse on top of a hill against the dark blue night sky. The scene is placed between the construction site and the castle on the hilltop. The figure and horse appear as a dark outline against the moonlit sky, with trees visible around them."
     },
     {
       "bbox": [
-        0.92,
+        0.9,
         0.05,
         0.98,
         0.15
       ],
       "object": "castle",
-      "description": "The castle is located in the top-right corner of the image, perched on a hill surrounded by autumn-colored trees. It appears to be a medieval-style castle with multiple towers and battlements, rendered in a light gray or stone color. The castle has a few smaller buildings within its walls, including what appears to be a red-roofed structure. It's shown against a dark blue night sky with a crescent moon nearby."
+      "description": "The castle appears in the top right corner of the image, perched on a hilltop. It's a medieval-style fortress with multiple towers and crenellated walls, shown against a dark blue night sky with a crescent moon nearby. The castle has a reddish-orange glow coming from some of its windows, suggesting it's illuminated from within. It's surrounded by autumn-colored trees on the hillside."
     }
   ],
   "kf-winter.jpg": [
@@ -53,6 +53,50 @@
       ],
       "object": "log cabin",
       "description": "There is a yellow/orange colored log cabin or warming hut located in the middle-lower portion of the image. It appears to be a simple structure with a sloped green roof and is surrounded by people gathered outside. The cabin seems to be a gathering point or rest area for the winter activities taking place on the snowy hillside. There are benches or tables visible outside the cabin where people are congregating."
+    }
+  ],
+  "construction-site.jpg": [
+    {
+      "bbox": [
+        0.03,
+        0.79,
+        0.07,
+        0.85
+      ],
+      "object": "fox",
+      "description": "I can see a small fox character in the bottom left portion of the image. It appears to be part of some street art or a mural painted on a wall. The fox character has an exaggerated smiling expression and appears to be drawn in a cartoon style with orange/reddish coloring. It's located near where someone is holding an umbrella, and appears to be part of a larger decorative wall painting."
+    },
+    {
+      "bbox": [
+        0.05,
+        0.2,
+        0.2,
+        0.35
+      ],
+      "object": "concrete mixer truck",
+      "description": "There is a large green concrete mixer truck in the left portion of the image. The truck has a distinctive rotating drum in green color and is positioned near a construction site area. The mixer drum is shown in its characteristic cylindrical shape with spiral mixing blades visible on its exterior. The truck appears to be actively working at the construction site, with construction workers nearby."
+    }
+  ],
+  "construction-snow.jpg": [
+    {
+      "bbox": [
+        0.92,
+        0.15,
+        0.95,
+        0.2
+      ],
+      "object": "santa",
+      "description": "Santa Claus can be found in the upper right portion of the image, wearing his traditional red suit. He appears to be standing near a yellow-green building, possibly a community center or shop. He seems to be interacting with some children near the building's entrance. Santa is depicted in a cartoonish style consistent with the rest of the illustration's winter scene."
+    },
+    {
+      "bbox": [
+        0.85,
+        0.65,
+        0.92,
+        0.7
+      ],
+      "object": "sedan",
+      "description": "There is a red sedan visible in the lower right portion of the image. The car appears to have slid off the snowy road and is partially stuck in snow. It's a small passenger car with a typical sedan body style, colored in bright red. The car is positioned at an angle, suggesting it may have skidded in the winter conditions. There are people nearby and what appears to be some kind of shelter or structure behind it."
     }
   ]
 }
