@@ -25,7 +25,7 @@ Important criteria to consider (in order of importance):
 
 Further notes:
 - Do not award points simply for identifying the object, as the prediction model is told what object to look for
-    - If the predicted description places the object in a completely wrong location, or has completely incorrect details, give a rating of 0
+    - If the predicted description places the object in the wrong location, give a rating of 0
 - Focus primarily on how well the object itself and its location are described, rather than detailed descriptions of surrounding elements or complex relationships
 - Be lenient with descriptions of the pose (eg. "standing" and "walking" should be considered correct)
 - The ground truth description may not mention all the information that is present in the image. Ignore additional details in the predicted description unless they contradict the ground truth
