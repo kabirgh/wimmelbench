@@ -101,6 +101,15 @@
         0.0
       ],
       "description": "I could not find a mandarin orange in this image. There are many people playing various musical instruments in an orchestra."
+    },
+    "harp": {
+      "bbox": [
+        0.026,
+        0.207,
+        0.145,
+        0.564
+      ],
+      "description": "The harp is situated on the left side of the image, in the front row of the orchestra. It is a large, golden-brown instrument, with a curved neck and many strings. A woman wearing a pink top and blue skirt is seated playing it.  The bottom of the harp rests on a brown wooden area."
     }
   },
   "mitgutsch-pirate.jpg": {
@@ -216,6 +225,490 @@
         0.556
       ],
       "description": "The fire truck is located in the center-right portion of the image. It is red and white, facing diagonally towards the bottom right corner.  The truck's ladder is extended. Two firefighters can be seen in the cab. It appears to be at the scene of a construction site, as it is parked next to a dug-up area with an excavator and barrier tape. Across the street from the firetruck, on the other side of the crosswalk, is a green leafy tree.  "
+    }
+  },
+  "kf-f1.jpg": {
+    "f1 car": {
+      "bbox": [
+        0.725,
+        0.481,
+        0.878,
+        0.561
+      ],
+      "description": "An F1 racecar is depicted driving along the turquoise and orange track towards the top right corner. It is pink and says Miami on the side."
+    },
+    "flamingo": {
+      "bbox": [
+        0.125,
+        0.776,
+        0.374,
+        0.998
+      ],
+      "description": "A large pink flamingo stands on the edge of the water near the bottom left of the image. It faces right and appears to be looking towards the cityscape across the water. Its long legs and neck are fully extended and the shadow is visible below and slightly to the left. The flamingo's beak is a darker shade of pink compared to the rest of its body. The area surrounding the flamingo consists of some small green areas with squiggly lines that likely represent vegetation, along with several cartoon-style trees.  The water adjacent to the flamingo is light blue, with darker squiggly lines suggesting waves or ripples. A larger, darker blue area of water extends beyond this lighter area. A white sailboat with orange sails floats on the water to the lower right."
+    }
+  },
+  "kf-winter.jpg": {
+    "sun": {
+      "bbox": [
+        0.812,
+        0.083,
+        0.861,
+        0.133
+      ],
+      "description": "A round, orange sun is located in the top right of the image against the pale grey sky."
+    },
+    "log cabin": {
+      "bbox": [
+        0.162,
+        0.517,
+        0.453,
+        0.684
+      ],
+      "description": "A low, wide log cabin is situated just below the center left of the image. Its roof and walls appear to be constructed from stacked logs, depicted in a greenish-brown color. Inside the cabin, several small figures can be seen; some are facing the counter, suggesting they are ordering food or drink, while others are facing away, perhaps already served. A person in a teal shirt seems to be serving behind the counter on the left side, while another person in pink appears to be serving on the right side. Outside the cabin, numerous small figures are scattered around the area. Some are standing near the cabin, while others are skating on a nearby icy surface. Several evergreen trees, in varying shades of green and blue-purple, surround the skating area and the cabin. The area around the cabin and the skating rink is a light beige color, representing snow or ice."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "octopus": {
+      "bbox": [
+        0.46,
+        0.403,
+        0.527,
+        0.478
+      ],
+      "description": "An octopus is in the ocean just left of center, wearing goggles and a snorkel. It looks like it is facing slightly towards the left of the image."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "trojan horse": {
+      "bbox": [
+        0.815,
+        0.702,
+        0.9,
+        0.816
+      ],
+      "description": "The Trojan Horse is located near the bottom-right of the image, on the pinkish cliff overlooking the sea. It is a large, brown wooden horse with visible wheels underneath. Several small human figures are depicted around it, appearing to be pulling it with ropes, or standing on top of it."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "faucet": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I do not see a faucet in the provided image. The image shows the interior of a bustling marketplace, with numerous people browsing and shopping. There are various stalls displaying goods like spices, lamps, textiles, and ceramics, but no faucets are visible."
+    }
+  },
+  "montreal-snow.jpg": {
+    "bear": {
+      "bbox": [
+        0.0,
+        0.193,
+        0.057,
+        0.285
+      ],
+      "description": "A brown bear is standing at the edge of the woods on the left side of the image. It appears to be observing the people enjoying winter activities in the park. It is positioned in front of the trees but behind a small snow-covered hill. "
+    }
+  },
+  "porsche-factory.jpg": {
+    "spider web": {
+      "bbox": [
+        0.768,
+        0.017,
+        0.807,
+        0.057
+      ],
+      "description": "A small spider web is located between the upper floor (where the car is being spray-painted) and the ground floor in the top right corner of the image."
+    }
+  },
+  "porsche-hq.jpg": {
+    "toolbox": {
+      "bbox": [
+        0.116,
+        0.529,
+        0.151,
+        0.563
+      ],
+      "description": "The red toolbox is located on the middle left side of the image, on the scissor lift platform where a window cleaner is working. It's positioned to the right of the window cleaner."
+    }
+  },
+  "porsche-road.jpg": {
+    "quadcopter": {
+      "bbox": [
+        0.4,
+        0.126,
+        0.442,
+        0.16
+      ],
+      "description": "A small, black quadcopter is visible near the top center of the image, flying above the roof of a building with solar panels. It appears to be in motion, slightly tilted, and is located between a tree and some workers on the rooftop. The quadcopter is small relative to the other objects in the image, and its black color contrasts with the lighter-colored rooftop and green tree."
+    }
+  },
+  "professions-street.jpg": {
+    "scissors": {
+      "bbox": [
+        0.933,
+        0.851,
+        0.975,
+        0.895
+      ],
+      "description": "A pair of open scissors is lying on the street on the bottom right corner of the image amongst a pile of items including books, papers, a red pillow, and a red hat."
+    }
+  },
+  "professions-townsquare.jpg": {
+    "pizza": {
+      "bbox": [
+        0.723,
+        0.299,
+        0.759,
+        0.344
+      ],
+      "description": "A whole pizza is visible through the open window above the cafe's serving window. It's a round pizza, likely on a metal pan or tray. Part of it is obscured by the window frame."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "whale": {
+      "bbox": [
+        0.05,
+        0.019,
+        0.173,
+        0.113
+      ],
+      "description": "A large, inflatable blue whale is located in the top left corner of the image.  It appears to be attached to a tall pole, creating a playful waterslide feature.  A yellow slide is curving down from under the whale, ending in a pool.  A person is just sliding into the pool from the slide."
+    }
+  },
+  "river-adventure-river.jpg": {
+    "macaw": {
+      "bbox": [
+        0.168,
+        0.507,
+        0.225,
+        0.591
+      ],
+      "description": "A vibrant macaw, predominantly red and yellow with blue and green accents on its wings and tail, sits perched on the wooden piling next to the large red and white boat. It is oriented towards the left of the image, with its gaze directed slightly downwards. Its bright colors contrast sharply with the brown of the wooden piling and the green vegetation behind it."
+    }
+  },
+  "river-adventure-seaside.jpg": {
+    "man wearing overalls over a white shirt": {
+      "bbox": [
+        0.169,
+        0.654,
+        0.21,
+        0.753
+      ],
+      "description": "The man in overalls and white shirt is standing on the docks near the moored ship '\u041b\u0410\u0421\u0422\u0406\u0412\u041a\u0410'. He is facing left, and his right arm is raised. He appears to be directing a small, turquoise, three-wheeled vehicle with a cartoon cat logo on the side."
+    }
+  },
+  "rodhunt-xmas.jpg": {
+    "menorah": {
+      "bbox": [
+        0.848,
+        0.823,
+        0.885,
+        0.891
+      ],
+      "description": "A small menorah can be seen just to the left of the lower right Christmas tree. It's between the Christmas tree and the ice rink. It's white with unlit candles."
+    }
+  },
+  "season-beach.jpg": {
+    "shuttlecock": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a shuttlecock in the image. There are several rackets visible, but none of them have a shuttlecock nearby."
+    }
+  },
+  "season-winter.jpg": {
+    "santa": {
+      "bbox": [
+        0.147,
+        0.024,
+        0.175,
+        0.075
+      ],
+      "description": "Santa Claus is standing on the roof of a two-story grayish-white house with reddish-brown roof and trim. He is facing to the right.  The house has a wreath on the door and a snowman in front of the house."
+    }
+  },
+  "tigertom-beach.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.412,
+        0.48,
+        0.454,
+        0.591
+      ],
+      "description": "A cartoon tiger, wearing an orange and black striped costume, stands on the beach to the left of a kiosk selling chimes. The tiger is facing to the left."
+    },
+    "lifebuoy": {
+      "bbox": [
+        0.724,
+        0.9,
+        0.796,
+        0.956
+      ],
+      "description": "A child floats on an orange lifebuoy in a small pool near the bottom right of the image. The lifebuoy is round and appears inflated. Another child is jumping into the pool. A waiter in a black suit walks towards the pool, carrying a tray with drinks."
+    }
+  },
+  "tigertom-birthday.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.388,
+        0.776,
+        0.485,
+        0.967
+      ],
+      "description": "A cartoon tiger, wearing an orange and black striped costume, is located near the bottom left of the image. It is facing left and appears to be dancing or walking. The tiger is located on a brick patio and is near a clown holding a balloon animal."
+    }
+  },
+  "tigertom-classroom.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.533,
+        0.735,
+        0.662,
+        0.847
+      ],
+      "description": "A cartoon tiger wearing an orange and black striped apron sits at a table in the lower middle part of the image. It looks as though it's working on an arts and crafts project. The table is covered with a patterned cloth and there are scissors and glue on the table in front of it. "
+    },
+    "kitchen sponge": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I do not see a kitchen sponge in this image. There are a variety of classroom items such as tables, chairs, toys, art supplies, and a small sink area with hand soap and a trash can."
+    }
+  },
+  "tigertom-classroom2.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.243,
+        0.668,
+        0.317,
+        0.796
+      ],
+      "description": "A cartoon tiger, orange with black stripes, is seated on a table in the bottom left quadrant of the image.  It appears to be holding a green thermos. The table it sits on is light brown, cluttered with school supplies, and flanked by red chairs with orange seats. An orange backpack rests on the floor beneath the table.  To the tiger\u2019s left, a girl with blonde hair in a red top and blue jeans sits at the table, apparently drawing or writing something.  To the tiger\u2019s right, a boy with light brown hair wearing a red shirt and light brown pants walks past, headed toward the bottom left corner."
+    }
+  },
+  "tigertom-cycles.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.705,
+        0.854,
+        0.792,
+        0.922
+      ],
+      "description": "A cartoon tiger wearing an orange and black striped jumpsuit is located at the bottom right of the image.  It appears to be playfully wrestling with a large pumpkin alongside a group of children within a pumpkin patch. The tiger is on all fours, facing the children, as they attempt to move or lift the pumpkin."
+    }
+  },
+  "tigertom-farm.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.295,
+        0.557,
+        0.421,
+        0.657
+      ],
+      "description": "A cartoon tiger is sitting in an apple tree near the farmhouse. The tiger is orange with black stripes, and appears to be reaching for an apple.  The tree is to the right of the farmhouse and to the left of the group of children playing in the yard. A ladder leans against the trunk of the apple tree. A young girl with dark skin and black hair is also sitting in the tree."
+    },
+    "forklift": {
+      "bbox": [
+        0.878,
+        0.184,
+        0.986,
+        0.3
+      ],
+      "description": "A red forklift is located near the top right of the image. It appears to be parked in a field of sunflowers, next to a wooden barn with a brown roof. It is situated on the opposite side of the road. There are two people in the field near the forklift and sunflowers. "
+    }
+  },
+  "tigertom-garden.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.546,
+        0.778,
+        0.672,
+        0.87
+      ],
+      "description": "A cartoon tiger lies horizontally on a purple blanket on the grass, just below and to the right of the pool. The tiger is orange with black stripes and a white face. It appears to be napping, eyes closed, while listening to a purple music device that sits next to its head."
+    },
+    "pitcher of water": {
+      "bbox": [
+        0.216,
+        0.234,
+        0.24,
+        0.282
+      ],
+      "description": "A pitcher of water is on the table where people are about to have dinner. The table is located on a patio, which is attached to the house. The pitcher seems to be transparent and full of water. It is located in the top left quadrant of the image. "
+    }
+  },
+  "tigertom-house.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.807,
+        0.505,
+        0.852,
+        0.575
+      ],
+      "description": "The cartoon tiger is orange with black stripes. It is standing on its hind legs in a sandbox, holding a red bucket in its right paw. The sandbox is light brown and filled with yellow sand. The tiger is located to the right of the center of the image, near a wooden swing set and a flowering tree with pink blossoms."
+    },
+    "rake": {
+      "bbox": [
+        0.23,
+        0.582,
+        0.285,
+        0.616
+      ],
+      "description": "The rake is leaning against the fence next to the raised garden bed to the left of the house. It has a brown wooden handle and a metal head."
+    }
+  },
+  "tigertom-market.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.072,
+        0.266,
+        0.119,
+        0.378
+      ],
+      "description": "A cartoon tiger is visible on the left side of the image walking towards the market area.  It appears to be orange and black and is positioned in front of a florist's stall with many blooms. "
+    }
+  },
+  "tigertom-park.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.364,
+        0.75,
+        0.415,
+        0.821
+      ],
+      "description": "A cartoon tiger is shown near the bottom left portion of the image. It is orange with black stripes, and appears to be a stuffed animal, rather than alive. It is placed on a stand between two small flags, in the middle of what appears to be an obstacle course or track. A child running the course is running towards the tiger."
+    },
+    "frisbee": {
+      "bbox": [
+        0.213,
+        0.134,
+        0.236,
+        0.152
+      ],
+      "description": "A yellow frisbee is flying through the air between a person wearing a yellow shirt and light blue shorts and a person wearing an orange shirt and blue shorts. They appear to be playing catch."
+    }
+  },
+  "tigertom-park2.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There is no tiger in this image. There are multiple children and adults enjoying themselves in a park. Some are reading, relaxing, picking flowers and playing cards."
+    }
+  },
+  "tigertom-snow.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.538,
+        0.61,
+        0.623,
+        0.665
+      ],
+      "description": "A cartoon tiger is sledding down a small snowy hill in the lower middle of the image. It is orange and black and wearing a blue scarf. The sled is brown. To the tiger's right are two snowmen. To the left, there is a small frozen pond where children are ice skating."
+    },
+    "birdhouse": {
+      "bbox": [
+        0.533,
+        0.252,
+        0.557,
+        0.288
+      ],
+      "description": "The birdhouse is attached to a post on the left side of the crescent-shaped street. It appears small, light brown, and rectangular. It has a small, circular opening and a slanted roof."
+    }
+  },
+  "tigertom-zoo.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.621,
+        0.448,
+        0.75,
+        0.695
+      ],
+      "description": "A cartoon tiger is located slightly right of the center of the image. It's orange with black stripes and is walking towards the bottom right.  The tiger is holding a red watering can in its left hand and a basket of vegetables in its right hand. It appears to be tending to the various animal enclosures depicted in the image.  To the left of the tiger is a border collie dog running towards the bottom left, and to the right of the tiger is a large fish tank containing several fish and cats."
+    },
+    "cucumber slices": {
+      "bbox": [
+        0.11,
+        0.157,
+        0.146,
+        0.248
+      ],
+      "description": "A couple of cucumber slices are hanging from a wire spiral in the top left quadrant of the image. They are green and white and are positioned above the mouse enclosure."
+    }
+  },
+  "walk-lake.jpg": {
+    "bicycle": {
+      "bbox": [
+        0.371,
+        0.102,
+        0.417,
+        0.145
+      ],
+      "description": "The bicycle is located on the path on the far side of the stream, near the top left area of the image. It's small in size due to the perspective. A person is riding the bicycle, wearing a yellow shirt and blue shorts. The bicycle itself appears to be a light color, possibly white or silver, but it's difficult to see clearly due to its size and the angle. The cyclist is moving across the wooden bridge and approaching a section of the path that is obscured by trees."
+    }
+  },
+  "walk-townfarm.jpg": {
+    "soccer ball": {
+      "bbox": [
+        0.62,
+        0.559,
+        0.636,
+        0.577
+      ],
+      "description": "A small, round, black and white soccer ball sits on the grass in the lower middle of the image. It is near the feet of a child wearing an orange jersey and blue shorts. "
+    }
+  },
+  "walk-townscene.jpg": {
+    "black cat": {
+      "bbox": [
+        0.927,
+        0.72,
+        0.965,
+        0.754
+      ],
+      "description": "A small black cat is located near the bottom right corner of the image. It appears to be walking along a path to the right of a small bush towards the bottom right corner of the image."
+    }
+  },
+  "whodoeswhat-city.jpg": {
+    "cello": {
+      "bbox": [
+        0.206,
+        0.277,
+        0.241,
+        0.379
+      ],
+      "description": "The cello is standing upright just outside the front door of a green house. The cello is brown and positioned against the wall, slightly obscured by the leaves of a small bush or shrub."
+    },
+    "black cat": {
+      "bbox": [
+        0.174,
+        0.677,
+        0.201,
+        0.709
+      ],
+      "description": "A small black cat is walking on the sidewalk in front of the light green house. It is facing the lower left of the image. Just behind the cat, a man in black pants and a white jacket seems to be entering the house and leaving an upright bass leaning against the front exterior wall."
+    }
+  },
+  "whodoeswhat-city3.jpg": {
+    "yellow electrical box": {
+      "bbox": [
+        0.684,
+        0.892,
+        0.712,
+        0.957
+      ],
+      "description": "The small yellow electrical box is located in the lower right quadrant of the image, next to some piping, just left of the small white car. It's located in a construction area with a small orange office trailer where two people are visible inside, possibly working on computers. A small forklift appears to be parked in front of this area as well.  The electrical box itself is somewhat obscured by the pipes next to it."
     }
   }
 }

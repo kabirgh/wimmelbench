@@ -131,7 +131,7 @@ def main():
 
                 result = model.detect_object(image_path, object_name)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
-                # For rate limiting, sleep 1 second between requests
+                # For rate limiting
                 time.sleep(1)
 
                 # Store result with object name as key
