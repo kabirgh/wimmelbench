@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import argparse
 import math
+import os
 
 
 def calculate_bbox_area(bbox):
@@ -59,8 +60,9 @@ def main():
     parser = argparse.ArgumentParser(
         description="Process grading JSON and create GIoU vs Area Ratio plot."
     )
-    parser.add_argument("grading_json", help="Path to the grading JSON file")
-    parser.add_argument("results_json", help="Path to the results JSON file")
+    parser.add_argument(
+        "results_dir", help="Directory containing grading.json and results.json"
+    )
     parser.add_argument(
         "--output",
         "-o",
@@ -69,10 +71,14 @@ def main():
     )
     args = parser.parse_args()
 
+    # Construct paths to JSON files
+    grading_json_path = os.path.join(args.results_dir, "grading.json")
+    results_json_path = os.path.join(args.results_dir, "results.json")
+
     # Read both JSON files
-    with open(args.grading_json, "r") as f:
+    with open(grading_json_path, "r") as f:
         grading_data = json.load(f)
-    with open(args.results_json, "r") as f:
+    with open(results_json_path, "r") as f:
         results_data = json.load(f)
 
     # Process the data
