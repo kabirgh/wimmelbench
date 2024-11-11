@@ -1,10 +1,11 @@
 import argparse
 import json
 import os
+import time
 from typing import List
 
 from dotenv import load_dotenv
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 from wimmelbench.models import AnthropicModel, OpenAIModel, GoogleModel
 
@@ -39,16 +40,27 @@ MODEL_MAP = {
 }
 
 
-def draw_box(image: Image.Image, bbox: List[float], color: str):
+def draw_box(image: Image.Image, bbox: List[float], label: str, color: str):
     draw = ImageDraw.Draw(image)
 
+    # Draw bounding box
     w, h = image.size
     x1, y1, x2, y2 = bbox
-
     # Convert normalized coordinates to pixel coordinates
     box = (x1 * w, y1 * h, x2 * w, y2 * h)
 
-    draw.rectangle(box, outline=color, width=5)
+    draw.rectangle(box, outline=color, width=4)
+
+    # Text rendering
+    font = ImageFont.load_default(size=20)
+    # Calculate text position
+    text_x = x1 * w
+    text_y = y2 * h
+    # Draw text background and text
+    text_bbox = draw.textbbox((text_x, text_y), label, font=font)
+    draw.rectangle(text_bbox, fill=color)
+    draw.text((text_x, text_y), label, fill="black", font=font)
+
     return image
 
 
@@ -141,11 +153,19 @@ def main():
                 else:
                     results[image_name].append(result_entry)
 
+                # For rate limiting, sleep 1 second between requests
+                time.sleep(1)
+
             # Draw and save bounding boxes for each object in the image
             image = Image.open(image_path)
             for entry, color in zip(results[image_name], COLORS):
+                # First draw the ground truth bounding box
+                image = draw_box(
+                    image, object_data["bbox"], f"{entry["object"]} - actual", color
+                )
+
                 if entry["bbox"] != [0, 0, 0, 0]:
-                    image = draw_box(image, entry["bbox"], color)
+                    image = draw_box(image, entry["bbox"], "", color)
                 else:
                     print(f"No {entry['object']} detected in {image_path}")
 
