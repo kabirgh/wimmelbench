@@ -216,6 +216,15 @@
         0.07231638418079096
       ],
       "description": "A multi-colored delta kite is located in the upper left quadrant of the image. It is caught in the foliage of a tree in a town square. The string from the kite is hanging down on to a park bench."
+    },
+    "prop plane": {
+      "bbox": [
+        0.0018336861024111143,
+        0.4913492882115202,
+        0.1293393713408773,
+        0.6563992543007011
+      ],
+      "description": "A prop plane is located near on the left edge of the image, vertically near the center. It's coloured blue and white and is aiming diagonally down and right. There is a pilot in the plane."
     }
   },
   "mitgutsch-water.jpg": {
@@ -282,6 +291,15 @@
         0.5807909604519774
       ],
       "description": "A small, green cactus is potted in the window of a light gray building on the left side of the image, near the middle vertically. In the window next to it is an orange cat. Both windows are above teal awning."
+    },
+    "elephant": {
+      "bbox": [
+        0.28089016813739154,
+        0.6165006058388598,
+        0.4389546411277274,
+        0.9593843289275668
+      ],
+      "description": "There is an elephant standing on two legs near the bottom-middle of \nthe image. Its is holding a paintbrush and paint palette, wearing a purple top, and has an easel in front of it. The elephant is standing on the road. Mice are playing by its feet. Other animals are nearby."
     }
   },
   "professions-street.jpg": {
@@ -432,6 +450,15 @@
         0.8175932841514474
       ],
       "description": "A cartoon tiger is situated in the lower-middle portion of the image, sitting on a red chair at the left corner of a small table. It is holding a lunch box and water bottle."
+    },
+    "wash basin": {
+      "bbox": [
+        0.6318483345593863,
+        0.16953161431264696,
+        0.6876191607976364,
+        0.21759328415144735
+      ],
+      "description": "There's a white wash basin in the upper right quadrant of the image. It is in a section of wall with tiling. Above the sink is a mirror, to its left is a paper towel dispenser, and below it are bins. On the adjoining wall is the door. The entire scene is that of a classroom."
     }
   },
   "tigertom-cycles.jpg": {
@@ -503,6 +530,15 @@
         0.8474440304201041
       ],
       "description": "There is a rake in the bottom left corner of the image. It is visible through the doorway of a building with red walls and looks like its leaning against the wall. Next to the rake is a shovel."
+    },
+    "slide": {
+      "bbox": [
+        0.604356442467641,
+        0.5515411118353664,
+        0.765601399960861,
+        0.8734141791044776
+      ],
+      "description": "There's a green slide located in the bottom right quadrant of the image. It's supported by wooden poles. A boy wearing glasses and a green top with blue pants is standing at the top of the slide."
     }
   },
   "tigertom-intersection.jpg": {
@@ -565,6 +601,15 @@
         0.28326492594249214
       ],
       "description": "A tiger is peeking from behind a willow tree in the upper left quadrant of the image. Only its head and tail are clearly visible."
+    },
+    "trash bin": {
+      "bbox": [
+        0.9216346373915902,
+        0.26786479244841377,
+        0.9779252437703142,
+        0.4041604483305518
+      ],
+      "description": "There's a green trash bin near the right edge of the image, vertically slightly above center. The bin is in a park and placed near a path. Next to the bin is a girl reading on a wooden bench."
     }
   },
   "tigertom-park3.jpg": {
