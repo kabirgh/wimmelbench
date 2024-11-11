@@ -19,7 +19,7 @@ def main():
     args = parser.parse_args()
 
     # Load annotations and results
-    with open("annotations2.json") as f:
+    with open("annotations.json") as f:
         annotations = json.load(f)
     with open(args.results_file) as f:
         results = json.load(f)

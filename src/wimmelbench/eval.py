@@ -71,7 +71,7 @@ def get_save_path(image_path: str, model: str) -> str:
 
 
 def get_results_path(model: str) -> str:
-    return os.path.join("results", model.replace("/", "_"), "results2.json")
+    return os.path.join("results", model.replace("/", "_"), "results.json")
 
 
 def main():
