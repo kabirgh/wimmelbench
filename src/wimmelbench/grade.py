@@ -82,56 +82,47 @@ def grade(
     detailed_results = {}
 
     # Compare each image
-    for image_name in ground_truth:
+    for image_name in results:
         if name_filter and name_filter not in image_name:
             print(f"Skipping {image_name} because it doesn't match filter")
             continue
 
-        if image_name not in results:
-            print(f"Skipping {image_name} because it's not in results")
+        if image_name not in ground_truth:
+            print(f"Skipping {image_name} because it's not in ground truth")
             continue
 
         detailed_results[image_name] = []
 
-        # Track which ground truth objects were matched
-        matched_gt_objects = set()
-
         # Compare each predicted box to ground truth boxes
-        if image_name in results:
-            for pred_box in results[image_name]:
-                # Find the ground truth box that matches the predicted box using next()
-                try:
-                    gt_box = next(
-                        box
-                        for box in ground_truth[image_name]
-                        if box["object"] == pred_box["object"]
-                    )
+        for pred_box in results[image_name]:
+            # Find the ground truth box that matches the predicted box. Assume there is only one where "object" matches
+            # TODO: should this be keyed on "object" instead of an array index?
+            try:
+                gt_box = next(
+                    box
+                    for box in ground_truth[image_name]
+                    if box["object"] == pred_box["object"]
+                )
 
-                    if pred_box["bbox"] == [0, 0, 0, 0]:
-                        detailed_results[image_name].append(
-                            {
-                                "object": gt_box["object"],
-                                "giou": -1.0,  # GIoU can go to -1 in worst case
-                                "status": "not predicted",
-                            }
-                        )
-                    else:
-                        giou = calculate_giou(gt_box["bbox"], pred_box["bbox"])
-                        matched_gt_objects.add(gt_box["object"])
-
-                        detailed_results[image_name].append(
-                            {
-                                "object": pred_box["object"],
-                                "giou": giou,
-                                "status": "predicted",
-                            }
-                        )
-                except StopIteration:
-                    # No matching ground truth box found
-                    print(
-                        f"No matching ground truth box found for {pred_box['object']}"
+                if pred_box["bbox"] == [0, 0, 0, 0]:
+                    detailed_results[image_name].append(
+                        {
+                            "object": gt_box["object"],
+                            "giou": -1.0,  # GIoU can go to -1 in worst case
+                            "status": "not predicted",
+                        }
                     )
-                    continue
+                else:
+                    detailed_results[image_name].append(
+                        {
+                            "object": pred_box["object"],
+                            "giou": calculate_giou(gt_box["bbox"], pred_box["bbox"]),
+                            "status": "predicted",
+                        }
+                    )
+            except StopIteration:
+                print(f"No matching ground truth box found for {pred_box['object']}")
+                continue
 
     return detailed_results
 
