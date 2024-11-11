@@ -1,6 +1,40 @@
 import argparse
 import json
+import os
 from typing import Dict, List
+
+import google.generativeai as genai
+from tqdm import tqdm
+
+GRADING_PROMPT = """
+You are an expert at comparing image descriptions. I will provide you with two descriptions of the same object in an image - a ground truth description and a predicted description. Please rate how well the predicted description matches the ground truth on a scale of:
+
+0: Completely incorrect or missing critical details
+1: Partially correct but missing many important details or containing significant inaccuracies
+2: Majorly correct with some inaccuracies or missing details
+3: Mostly or fully correct, capturing the majority of key details and spatial relationships accurately
+
+Please provide a rating (0-3) and a brief explanation of your reasoning. Be somewhat lenient with your rating, since the ground truth description may not be perfect.
+
+Important criteria to consider (in order of importance):
+- The object itself and its key identifying details
+- The object's spatial location in the image
+- Color and appearance details of the object
+- Basic spatial relationships with immediately adjacent elements (less important)
+
+Focus primarily on how well the object itself and its location are described, rather than detailed descriptions of surrounding elements or complex relationships.
+
+Return your rating and explanation in the following JSON format:
+{{"rating": <rating>, "explanation": <explanation>}}
+
+Ground truth: {ground_truth_description}
+Predicted: {predicted_description}
+""".strip()
+
+genai.configure(
+    api_key=os.environ.get("GOOGLE_AISTUDIO_API_KEY", "could-not-find-google-api-key")
+)
+model = genai.GenerativeModel("gemini-1.5-flash-002")
 
 
 def load_json(path: str) -> Dict:
@@ -62,27 +96,48 @@ def calculate_giou(box1: List[float], box2: List[float]) -> float:
     return giou
 
 
+def rate_description(ground_truth_description: str, predicted_description: str) -> Dict:
+    """Rate the accuracy of a predicted description against a ground truth description."""
+    prompt = GRADING_PROMPT.format(
+        ground_truth_description=ground_truth_description,
+        predicted_description=predicted_description,
+    )
+    response = model.generate_content([prompt])
+    return json.loads(response.text.replace("```json\n", "").replace("\n```", ""))
+
+
 def grade(
-    annotations_path: str, results_path: str, name_filter: str | None = None
+    annotations_path: str,
+    results_path: str,
+    name_filter: str | None = None,
+    skip_existing: bool = False,
 ) -> Dict:
     """Grade the results against ground truth annotations.
 
     Args:
         annotations_path: Path to ground truth annotations JSON
         results_path: Path to model results JSON
-        name_filter: Optional string to filter image names (only process images containing this string)
+        name_filter: Optional string to filter image names
+        skip_existing: If True, skip grading objects that exist in the output grading.json
 
     Returns:
-        Tuple of (average IoU score, detailed results dict)
+        Detailed results dict
     """
     # Load files
     ground_truth = load_json(annotations_path)
     results = load_json(results_path)
 
-    detailed_results = {}
+    # Load existing grading results if skip_existing is True
+    output_dir = os.path.dirname(results_path)
+    grading_path = os.path.join(output_dir, "grading.json")
+    existing_results = {}
+    if skip_existing and os.path.exists(grading_path):
+        existing_results = load_json(grading_path)
 
-    # Compare each image
-    for image_name in results:
+    detailed_results = existing_results if skip_existing else {}
+
+    # Add tqdm progress bar around the image loop
+    for image_name in tqdm(results, desc="Grading results"):
         if name_filter and name_filter not in image_name:
             continue
 
@@ -90,14 +145,21 @@ def grade(
             print(f"Skipping {image_name} because it's not in ground truth")
             continue
 
-        detailed_results[image_name] = []
+        # Initialize the image results if not already present
+        if image_name not in detailed_results:
+            detailed_results[image_name] = []
 
         # Compare each predicted box to ground truth boxes
         for pred_box in results[image_name]:
-            # Find the ground truth box that matches the predicted box. Assume there is only one where "object" matches
-            # TODO: should this be keyed on "object" instead of an array index?
+            # Skip if this object was already graded
+            if skip_existing and any(
+                result["object"] == pred_box["object"]
+                for result in detailed_results.get(image_name, [])
+            ):
+                continue
+
             try:
-                gt_box = next(
+                actual_box = next(
                     box
                     for box in ground_truth[image_name]
                     if box["object"] == pred_box["object"]
@@ -106,17 +168,27 @@ def grade(
                 if pred_box["bbox"] == [0, 0, 0, 0]:
                     detailed_results[image_name].append(
                         {
-                            "object": gt_box["object"],
-                            "giou": -1.0,  # GIoU can go to -1 in worst case
+                            "object": actual_box["object"],
                             "status": "not predicted",
+                            "giou": -1.0,  # GIoU can go to -1 in worst case
+                            "description_grade": -1,
+                            "description_grade_reason": "",
                         }
                     )
                 else:
+                    rating = rate_description(
+                        actual_box["description"], pred_box["description"]
+                    )
+
                     detailed_results[image_name].append(
                         {
                             "object": pred_box["object"],
-                            "giou": calculate_giou(gt_box["bbox"], pred_box["bbox"]),
                             "status": "predicted",
+                            "giou": calculate_giou(
+                                actual_box["bbox"], pred_box["bbox"]
+                            ),
+                            "description_grade": rating["rating"],
+                            "description_grade_reason": rating["explanation"],
                         }
                     )
             except StopIteration:
@@ -137,8 +209,41 @@ if __name__ == "__main__":
     parser.add_argument(
         "--filter", help="Optional string to filter image names", default=None
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip grading objects that exist in the output grading.json",
+    )
 
     args = parser.parse_args()
 
-    details = grade(args.annotations, args.results, args.filter)
-    print(f"Results: {json.dumps(details, indent=2)}")
+    details = grade(args.annotations, args.results, args.filter, args.skip_existing)
+
+    # Save detailed results to grading.json
+    output_dir = os.path.dirname(args.results)
+    grading_path = os.path.join(output_dir, "grading.json")
+    print(f"Saving detailed results to {grading_path}")
+    with open(grading_path, "w") as f:
+        json.dump(details, f, indent=2)
+
+    # Create a summary of results and save to results.json
+    summary = {
+        "total_images": len(details),
+        "total_objects": sum(len(objs) for objs in details.values()),
+        "average_giou": sum(obj["giou"] for img in details.values() for obj in img)
+        / sum(len(objs) for objs in details.values()),
+        "average_description_grade": sum(
+            obj["description_grade"]
+            for img in details.values()
+            for obj in img
+            if obj["description_grade"] >= 0
+        )
+        / sum(
+            1
+            for img in details.values()
+            for obj in img
+            if obj["description_grade"] >= 0
+        ),
+    }
+
+    print(f"Summary: {json.dumps(summary, indent=2)}")
