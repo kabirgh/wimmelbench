@@ -147,52 +147,37 @@ def grade(
 
         # Initialize the image results if not already present
         if image_name not in detailed_results:
-            detailed_results[image_name] = []
+            detailed_results[image_name] = {}
 
-        # Compare each predicted box to ground truth boxes
-        for pred_box in results[image_name]:
+        # Compare each predicted object to ground truth objects
+        for object_name, predicted in results[image_name].items():
             # Skip if this object was already graded
-            if skip_existing and any(
-                result["object"] == pred_box["object"]
-                for result in detailed_results.get(image_name, [])
-            ):
+            if skip_existing and object_name in detailed_results.get(image_name, {}):
                 continue
 
             try:
-                actual_box = next(
-                    box
-                    for box in ground_truth[image_name]
-                    if box["object"] == pred_box["object"]
-                )
+                actual = ground_truth[image_name][object_name]
 
-                if pred_box["bbox"] == [0, 0, 0, 0]:
-                    detailed_results[image_name].append(
-                        {
-                            "object": actual_box["object"],
-                            "status": "not predicted",
-                            "giou": -1.0,  # GIoU can go to -1 in worst case
-                            "description_grade": -1,
-                            "description_grade_reason": "",
-                        }
-                    )
+                if predicted["bbox"] == [0, 0, 0, 0]:
+                    detailed_results[image_name][object_name] = {
+                        "status": "not found",
+                        "giou": -1.0,  # GIoU can go to -1 in worst case
+                        "description_grade": -1,
+                        "description_grade_reason": "",
+                    }
                 else:
                     rating = rate_description(
-                        actual_box["description"], pred_box["description"]
+                        actual["description"], predicted["description"]
                     )
 
-                    detailed_results[image_name].append(
-                        {
-                            "object": pred_box["object"],
-                            "status": "predicted",
-                            "giou": calculate_giou(
-                                actual_box["bbox"], pred_box["bbox"]
-                            ),
-                            "description_grade": rating["rating"],
-                            "description_grade_reason": rating["explanation"],
-                        }
-                    )
+                    detailed_results[image_name][object_name] = {
+                        "status": "predicted",
+                        "giou": calculate_giou(actual["bbox"], predicted["bbox"]),
+                        "description_grade": rating["rating"],
+                        "description_grade_reason": rating["explanation"],
+                    }
             except StopIteration:
-                print(f"No matching ground truth box found for {pred_box['object']}")
+                print(f"No matching ground truth box found for {object_name}")
                 continue
 
     return detailed_results
@@ -229,20 +214,24 @@ if __name__ == "__main__":
     # Create a summary of results and save to results.json
     summary = {
         "total_images": len(details),
-        "total_objects": sum(len(objs) for objs in details.values()),
-        "average_giou": sum(obj["giou"] for img in details.values() for obj in img)
-        / sum(len(objs) for objs in details.values()),
+        "total_objects": sum(len(img_objs) for img_objs in details.values()),
+        "average_giou": sum(
+            obj_details["giou"]
+            for img_objs in details.values()
+            for obj_details in img_objs.values()
+        )
+        / sum(len(img_objs) for img_objs in details.values()),
         "average_description_grade": sum(
-            obj["description_grade"]
-            for img in details.values()
-            for obj in img
-            if obj["description_grade"] >= 0
+            obj_details["description_grade"]
+            for img_objs in details.values()
+            for obj_details in img_objs.values()
+            if obj_details["description_grade"] >= 0
         )
         / sum(
             1
-            for img in details.values()
-            for obj in img
-            if obj["description_grade"] >= 0
+            for img_objs in details.values()
+            for obj_details in img_objs.values()
+            if obj_details["description_grade"] >= 0
         ),
     }
 
