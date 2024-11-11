@@ -19,7 +19,7 @@ def main():
     args = parser.parse_args()
 
     # Load annotations and results
-    with open("annotations.json") as f:
+    with open("annotations2.json") as f:
         annotations = json.load(f)
     with open(args.results_file) as f:
         results = json.load(f)
@@ -38,27 +38,25 @@ def main():
         image_results = results[image_name]
 
         # Match results with annotations by object name
-        for result, color in zip(image_results, COLORS):
+        for (object_name, result), color in zip(image_results.items(), COLORS):
             # Find matching annotation
-            annotation = next(
-                (a for a in image_annotations if a["object"] == result["object"]), None
-            )
+            annotation = image_annotations.get(object_name, None)
             if not annotation:
                 print(
-                    f"Warning: No annotation found for {result['object']} in {image_name}"
+                    f"Warning: No ground truth annotation found for {object_name} in {image_name}"
                 )
                 continue
 
             # Draw actual box
             image = draw_box(
-                image, annotation["bbox"], f"{result['object']} - actual", color
+                image, annotation["bbox"], f"{object_name} - actual", color
             )
 
             # Draw predicted box if it exists
             if result["bbox"] != [0, 0, 0, 0]:
                 image = draw_box(image, result["bbox"], "", color)
             else:
-                print(f"No {result['object']} detected in {image_name}")
+                print(f"No {object_name} detected in {image_name}")
 
         # Save annotated image
         os.makedirs(args.save_dir, exist_ok=True)
