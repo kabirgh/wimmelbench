@@ -71,7 +71,7 @@ def get_save_path(image_path: str, model: str) -> str:
 
 
 def get_results_path(model: str) -> str:
-    return os.path.join("results", model.replace("/", "_"), "results.json")
+    return os.path.join("results", model.replace("/", "_"), "results2.json")
 
 
 def main():
@@ -111,7 +111,7 @@ def main():
             results = {}
 
         # Process each image and object in annotations
-        for image_name, objects in annotations.items():
+        for image_name, details in annotations.items():
             if args.filter and args.filter not in image_name:
                 continue
 
@@ -119,21 +119,11 @@ def main():
 
             # Initialize results for this image if not exists
             if image_name not in results:
-                results[image_name] = []
+                results[image_name] = {}
 
-            for object_data in objects:
-                object_name = object_data["object"]
-
+            for object_name in details.keys():
                 # Check if this specific object already has results
-                existing_result = next(
-                    (
-                        r
-                        for r in results.get(image_name, [])
-                        if r["object"] == object_name
-                    ),
-                    None,
-                )
-                if args.skip_existing and existing_result is not None:
+                if args.skip_existing and object_name in results[image_name]:
                     print(
                         f"Skipping object {object_name} in {image_name} - results already exist"
                     )
@@ -144,47 +134,37 @@ def main():
                 # For rate limiting, sleep 1 second between requests
                 time.sleep(1)
 
-                # Create new result entry
-                result_entry = {
+                # Store result with object name as key
+                results[image_name][object_name] = {
                     "bbox": result["bbox"],
-                    "object": object_name,
                     "description": result["description"],
                 }
 
-                # Find and replace existing entry with same object name, or append if not found
-                existing_index = next(
-                    (
-                        i
-                        for i, r in enumerate(results[image_name])
-                        if r["object"] == object_name
-                    ),
-                    None,
-                )
-                if existing_index is not None:
-                    results[image_name][existing_index] = result_entry
-                else:
-                    results[image_name].append(result_entry)
-
             # Draw and save bounding boxes for each object in the image
             image = Image.open(image_path)
-            for entry, color in zip(results[image_name], COLORS):
+            for (object_name, entry), color in zip(results[image_name].items(), COLORS):
                 # Find matching annotation for this object
-                matching_annotation = next(
-                    (obj for obj in objects if obj["object"] == entry["object"]), None
+                actual_annotation = annotations.get(image_name, {}).get(
+                    object_name, None
                 )
-                if matching_annotation:
-                    # Draw the ground truth bounding box
-                    image = draw_box(
-                        image,
-                        matching_annotation["bbox"],
-                        f"{entry['object']} - actual",
-                        color,
+                if not actual_annotation:
+                    raise ValueError(
+                        f"ERROR: No ground truth annotation found for {object_name} in {image_name}"
                     )
 
+                # Draw the ground truth bounding box
+                image = draw_box(
+                    image,
+                    actual_annotation["bbox"],
+                    f"{object_name} - actual",
+                    color,
+                )
+
+                # Draw predicted box if it exists
                 if entry["bbox"] != [0, 0, 0, 0]:
                     image = draw_box(image, entry["bbox"], "", color)
                 else:
-                    print(f"No {entry['object']} detected in {image_path}")
+                    print(f"No {object_name} detected in {image_path}")
 
             save_path = get_save_path(image_path, model.model)
             os.makedirs(os.path.dirname(save_path), exist_ok=True)

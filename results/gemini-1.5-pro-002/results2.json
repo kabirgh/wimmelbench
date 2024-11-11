@@ -43,20 +43,20 @@
     "sedan": {
       "bbox": [
         0.664,
-        0.671,
-        0.815,
-        0.798
+        0.67,
+        0.817,
+        0.797
       ],
-      "description": "A small red sedan is parked in the snow in the bottom right of the image. Its roof is covered in snow, and a man is using a snow brush to clean it.  A group of children are building snowmen nearby.  A Christmas tree decorated with ornaments and a blue scarf is to the right of the snowmen.  A cat stands near the Christmas tree.  A person in orange pants and a green jacket appears to be decorating the tree. A house is behind the sedan and the snowmen. The house's roof and the skylight window are covered in snow, and a purple cat can be seen through the skylight window."
+      "description": "A small red sedan is parked in the snow in the bottom right of the image. Its roof and the ground around it are covered in snow. A man is seen throwing snow off the car. A family looks on from inside the nearby house. A Christmas tree stands decorated beside the house."
     },
     "santa": {
       "bbox": [
-        0.835,
-        0.207,
-        0.881,
-        0.274
+        0.844,
+        0.135,
+        0.891,
+        0.218
       ],
-      "description": "Santa Claus is located in the upper right corner of the image, near the trees covered in snow. He's wearing his red suit, white beard, and is carrying a sack of gifts on his back, looking like he's about to deliver them. He is standing on the snowy ground, next to a green house with a snow-covered roof."
+      "description": "Santa Claus is wearing his traditional red suit with white trim and a red hat. He is standing on a snowy hill behind the light green house, to the right of the moving truck. He appears to be looking down at the scene below, possibly checking to see who's been naughty or nice. He's not carrying a sack of presents in this scene. A brown cat is partially visible and standing next to him to the right of him. He is located between the evergreen trees on the snowy hill"
     }
   },
   "mitgutsch-beach.jpg": {
