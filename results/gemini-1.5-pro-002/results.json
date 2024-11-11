@@ -182,5 +182,39 @@
       "object": "soccer ball",
       "description": "The soccer ball is located near the bottom middle-left of the image, in the middle of a group of children playing soccer. It is white with black pentagonal and hexagonal patches. It appears to be mid-kick and slightly off the ground, surrounded by children in colorful activewear."
     }
+  ],
+  "professions-intersection.jpg": [
+    {
+      "bbox": [
+        0.093,
+        0.516,
+        0.114,
+        0.572
+      ],
+      "object": "cactus",
+      "description": "A small, green cactus is located inside the first floor window of the grey building on the left side of the image. It is positioned on the window sill. "
+    }
+  ],
+  "tigertom-intersection.jpg": [
+    {
+      "bbox": [
+        0.262,
+        0.501,
+        0.323,
+        0.635
+      ],
+      "object": "cartoon tiger",
+      "description": "The cartoon tiger is a crossing guard helping children cross the street. It's wearing an orange vest and holding a stop sign. The tiger is located near the center-left of the image, at an intersection. Several children with backpacks are walking in front of the tiger, using the crosswalk. Behind them, a red van is pulling up to the corner where the tiger stands."
+    },
+    {
+      "bbox": [
+        0.616,
+        0.239,
+        0.772,
+        0.389
+      ],
+      "object": "yellow bus",
+      "description": "The yellow bus is located in the top right quadrant of the image. It is parked next to a bus stop with a green roof. A person is exiting the bus, and several people are waiting nearby. The bus is positioned horizontally, facing left."
+    }
   ]
 }

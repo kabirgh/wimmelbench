@@ -216,5 +216,39 @@
       "object": "soccer ball",
       "description": "The soccer ball is located in the bottom portion of the image, being kicked around by children playing a game of soccer. It appears to be a classic black and white soccer ball in motion on the grass field. The ball is positioned between two players who are actively engaged in the game, with one player about to kick it while others are running nearby to join the play."
     }
+  ],
+  "professions-intersection.jpg": [
+    {
+      "bbox": [
+        0.02,
+        0.3,
+        0.05,
+        0.35
+      ],
+      "object": "cactus",
+      "description": "There appears to be a small green cactus in a pot being carried on a serving tray by one of the rabbit/bunny characters on the left side of the street. The bunny is one of two gray bunnies carrying food items on trays, likely heading towards the 'EAT ME' caf\u00e9 in the scene."
+    }
+  ],
+  "tigertom-intersection.jpg": [
+    {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "object": "cartoon tiger",
+      "description": "I do not see any cartoon tiger in this image. The image shows a busy street scene with various people, vehicles, and buildings. There are some artwork frames on the blue building wall showing hot air balloons and what appear to be other decorative images, but no tigers. The scene includes cars, a yellow school bus, pedestrians crossing the street, cyclists, and people going about their daily activities, but no tiger characters."
+    },
+    {
+      "bbox": [
+        0.65,
+        0.25,
+        0.75,
+        0.32
+      ],
+      "object": "yellow bus",
+      "description": "There is a yellow school bus or shuttle bus located in the middle-right portion of the image. The bus is facing right and appears to be at a bus stop with a green shelter/awning. It is stopped at a pedestrian crossing with white stripes on the road. There appears to be people getting on or off the bus. The bus has a distinctive boxy shape typical of school buses and is painted in a bright yellow color."
+    }
   ]
 }

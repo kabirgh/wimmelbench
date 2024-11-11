@@ -216,5 +216,39 @@
       "object": "soccer ball",
       "description": "The soccer ball is located in the bottom right portion of the image. It is a classic black and white patterned ball, actively being kicked by a child wearing a red shirt and black shorts."
     }
+  ],
+  "professions-intersection.jpg": [
+    {
+      "bbox": [
+        0.87,
+        0.85,
+        0.92,
+        0.95
+      ],
+      "object": "cactus",
+      "description": "The cactus is located in the bottom-right corner of the image. It is held by the giraffe and is green with several small red-orange flowers or spikes protruding from it. The giraffe is standing on the sidewalk next to a colorful group of animals."
+    }
+  ],
+  "tigertom-intersection.jpg": [
+    {
+      "bbox": [
+        0.34,
+        0.56,
+        0.38,
+        0.61
+      ],
+      "object": "cartoon tiger",
+      "description": "The cartoon tiger is walking across a crosswalk from left to right. It is dressed in a striped top and pants in yellow and black. The tiger is waving one arm and has a cheerful expression. Nearby, there are people crossing the street and a green car parked on the street."
+    },
+    {
+      "bbox": [
+        0.64,
+        0.33,
+        0.86,
+        0.5
+      ],
+      "object": "yellow bus",
+      "description": "The yellow bus is located on the right side of the image near the street. It is parked on the side of the road, behind a pedestrian crossing. The bus has a large front windshield and is next to a bus stop sign. There is a person walking towards the bus."
+    }
   ]
 }
