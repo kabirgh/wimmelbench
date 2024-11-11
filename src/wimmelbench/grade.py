@@ -84,7 +84,6 @@ def grade(
     # Compare each image
     for image_name in results:
         if name_filter and name_filter not in image_name:
-            print(f"Skipping {image_name} because it doesn't match filter")
             continue
 
         if image_name not in ground_truth:
