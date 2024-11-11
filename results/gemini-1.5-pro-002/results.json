@@ -46,16 +46,6 @@
   "construction-snow.jpg": [
     {
       "bbox": [
-        0.84,
-        0.143,
-        0.894,
-        0.209
-      ],
-      "object": "santa",
-      "description": "Santa Claus is standing on a snow-covered hill behind the beige house with the brown roof. He is facing the viewer, and holding what appears to be a sack or large bag over his shoulder."
-    },
-    {
-      "bbox": [
         0.664,
         0.671,
         0.815,
@@ -63,6 +53,16 @@
       ],
       "object": "sedan",
       "description": "A small red sedan is parked in the snow in the bottom right of the image. Its roof is covered in snow, and a man is using a snow brush to clean it.  A group of children are building snowmen nearby.  A Christmas tree decorated with ornaments and a blue scarf is to the right of the snowmen.  A cat stands near the Christmas tree.  A person in orange pants and a green jacket appears to be decorating the tree. A house is behind the sedan and the snowmen. The house's roof and the skylight window are covered in snow, and a purple cat can be seen through the skylight window."
+    },
+    {
+      "bbox": [
+        0.835,
+        0.207,
+        0.881,
+        0.274
+      ],
+      "object": "santa",
+      "description": "Santa Claus is located in the upper right corner of the image, near the trees covered in snow. He's wearing his red suit, white beard, and is carrying a sack of gifts on his back, looking like he's about to deliver them. He is standing on the snowy ground, next to a green house with a snow-covered roof."
     }
   ],
   "mitgutsch-beach.jpg": [

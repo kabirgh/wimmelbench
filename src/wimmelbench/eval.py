@@ -115,11 +115,6 @@ def main():
             if args.filter and args.filter not in image_name:
                 continue
 
-            # Skip if image already has results and skip-existing is enabled
-            if args.skip_existing and image_name in results:
-                print(f"Skipping {image_name} - results already exist")
-                continue
-
             image_path = os.path.join("img", image_name)
 
             # Initialize results for this image if not exists
@@ -128,6 +123,21 @@ def main():
 
             for object_data in objects:
                 object_name = object_data["object"]
+
+                # Check if this specific object already has results
+                existing_result = next(
+                    (
+                        r
+                        for r in results.get(image_name, [])
+                        if r["object"] == object_name
+                    ),
+                    None,
+                )
+                if args.skip_existing and existing_result is not None:
+                    print(
+                        f"Skipping object {object_name} in {image_name} - results already exist"
+                    )
+                    continue
 
                 result = model.detect_object(image_path, object_name)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
