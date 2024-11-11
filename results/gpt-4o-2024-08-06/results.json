@@ -108,6 +108,15 @@
         0.585
       ],
       "description": "The octopus is purple and located in the water, towards the center of the image. It is partially submerged, with its tentacles visible around a person wearing snorkeling gear."
+    },
+    "crab": {
+      "bbox": [
+        0.41,
+        0.62,
+        0.44,
+        0.65
+      ],
+      "description": "The crab is located in the lower third of the image, slightly to the right of the center. It is red in color and positioned on the sand near a sunbathing person with green flip-flops, just below a blue and white striped umbrella."
     }
   },
   "lufthansa-greece.jpg": {
@@ -163,6 +172,15 @@
         0.92
       ],
       "description": "The man waving a white flag is located in the bottom right portion of the image. He is wearing a white outfit, lying on the ground on his back, and holding a white flag up in the air. Nearby, there are people in animated poses, and the floor is wooden."
+    },
+    "bowling ball": {
+      "bbox": [
+        0.51,
+        0.57,
+        0.54,
+        0.6
+      ],
+      "description": "The bowling ball is black and located slightly to the right of the center of the image. It is on the floor in front of a group of people who appear to be crouching or dancing. The ball is near a man who is about to step on it, creating a sense of impending comedic chaos."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -247,6 +265,15 @@
         0.16
       ],
       "description": "The bear is a small brown figure located near the left side of the image, between two rocks. It is positioned among the trees, seemingly watching the activities around. It blends into the snowy landscape, giving an impression of stillness compared to the lively scene surrounding it."
+    },
+    "hockey puck": {
+      "bbox": [
+        0.17,
+        0.67,
+        0.19,
+        0.68
+      ],
+      "description": "The hockey puck is located on the ice rink area in the lower left quadrant of the image. It is small and black, positioned to the left of two players wearing skates and holding hockey sticks. The puck is to the lower right of a man in an orange shirt and a boy in a blue jacket, who are both playing hockey."
     }
   },
   "porsche-factory.jpg": {
@@ -437,6 +464,15 @@
         0.79
       ],
       "description": "A cartoon tiger standing on the left side of the table. It has a yellow body with black stripes, wears a party hat, and appears to be walking toward the clown with a blue balloon in its hand."
+    },
+    "boombox": {
+      "bbox": [
+        0.6,
+        0.48,
+        0.67,
+        0.54
+      ],
+      "description": "The boombox is located on the right side of the image, next to the pathway on the patio. It is gray with speakers and an antenna on top, placed next to some children playing and near a plant pot."
     }
   },
   "tigertom-classroom.jpg": {
@@ -508,6 +544,15 @@
         0.63
       ],
       "description": "The forklift is located in the upper right part of the image. It is parked near the field of sunflowers, behind the barn and near some trees. The forklift is pink and facing right."
+    },
+    "bird nest in a tree": {
+      "bbox": [
+        0.08,
+        0.2,
+        0.12,
+        0.23
+      ],
+      "description": "The bird nest is located in a tree on the left side of the image, slightly below the roofline of the house with the red roof. The nest is situated among the leaves and branches, visible as a small round structure."
     }
   },
   "tigertom-garden.jpg": {
@@ -528,6 +573,15 @@
         0.218
       ],
       "description": "The pitcher of water is located on the table near the top left area of the image. It is a clear glass pitcher sitting in front of one of the red chairs, with a light blue color indicating it is filled with water. The pitcher is placed near other dining items on the table, such as dishes and utensils."
+    },
+    "sunglasses": {
+      "bbox": [
+        0.47,
+        0.24,
+        0.495,
+        0.255
+      ],
+      "description": "A pair of sunglasses is located on the swing near the center of the image. They are dark in color and resting on the seat of the swing where a girl is relaxing."
     }
   },
   "tigertom-house.jpg": {
@@ -628,6 +682,15 @@
         0.49
       ],
       "description": "The trash bin is located on the right side of the image, near the wooden bench where a child is reading. It is a green bin with a circular emblem on the front and is placed on the grass near a pathway."
+    },
+    "banana": {
+      "bbox": [
+        0.77,
+        0.68,
+        0.84,
+        0.83
+      ],
+      "description": "The banana is held by a person in a red shirt and blue shorts, wearing a blue cap, standing next to a river. It is bright yellow and positioned on the right side of the image near the wooden bridge."
     }
   },
   "tigertom-park3.jpg": {
@@ -668,6 +731,15 @@
         0.62
       ],
       "description": "The cartoon tiger is located in the bottom center section of the image. It is wearing a green hat and appears to be riding a sled. The tiger has orange and black stripes and is positioned right of center, near children playing in the snow."
+    },
+    "owl": {
+      "bbox": [
+        0.12,
+        0.75,
+        0.14,
+        0.8
+      ],
+      "description": "The owl is perched on a leafless tree branch located towards the bottom right quadrant of the image. It is a small, brown bird with a round body shape and distinct, large eyes."
     }
   },
   "tigertom-zoo.jpg": {
@@ -699,6 +771,15 @@
         0.25
       ],
       "description": "A bicycle is located slightly to the right of center, near the top of the image. The bike is colored green, with two wheels visible as it appears to be airborne above a small bridge. The rider is performing a stunt, which suggests a playful and adventurous environment in this section of the forested area."
+    },
+    "soccer ball": {
+      "bbox": [
+        0.52,
+        0.52,
+        0.54,
+        0.55
+      ],
+      "description": "The soccer ball is floating in the river near the right center of the image. It is black and white and located in front of a person rowing a boat."
     }
   },
   "walk-townfarm.jpg": {

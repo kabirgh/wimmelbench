@@ -108,6 +108,15 @@
         0.4
       ],
       "description": "There is a small purple octopus swimming in the water among the beachgoers. The octopus appears to be wearing pink goggles/diving mask and is located in the middle section of the image, slightly to the left of center. It is swimming in the blue water alongside other people who are swimming and playing. The octopus seems to be enjoying itself, appearing playful and engaged in the beach activities like the other characters in the scene."
+    },
+    "crab": {
+      "bbox": [
+        0.45,
+        0.75,
+        0.48,
+        0.78
+      ],
+      "description": "There is a small red crab on the beach in the middle-lower portion of the image. The crab appears to be walking sideways across the sand, between beachgoers and their activities. It's depicted in a cartoon style with a bright red coloring, typical of a beach or shore crab. The crab is relatively small compared to the other elements in the scene and is positioned between someone lying on a beach towel and people enjoying a meal at a table."
     }
   },
   "lufthansa-greece.jpg": {
@@ -163,6 +172,15 @@
         0.3
       ],
       "description": "In the far right upper portion of the chaotic scene, there is a man waving a white flag or surrendering. He's wearing what appears to be blue clothing and is positioned near the green paneled wall. He's surrounded by the general mayhem of the room, with other figures nearby also in various states of distress or motion."
+    },
+    "bowling ball": {
+      "bbox": [
+        0.61,
+        0.45,
+        0.63,
+        0.48
+      ],
+      "description": "There is a black bowling ball visible in the chaotic scene, located in roughly the center-right portion of the image. It appears to be rolling or has been knocked loose during the mayhem, sitting on the wooden floor among the scattered people and overturned furniture. The bowling ball stands out as a small, round, black object amid the chaos of the cartoon scene."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -247,6 +265,15 @@
         0.18
       ],
       "description": "There is a brown bear visible in the upper left portion of the image. The bear is standing among the winter scene near some trees and rocks. It appears to be observing the winter activities taking place in the park. Several small red birds and squirrels are visible near the bear. The bear is drawn in the same illustration style as the rest of the scene, with a simple but clear design showing its brown fur and typical bear shape."
+    },
+    "hockey puck": {
+      "bbox": [
+        0.45,
+        0.7,
+        0.47,
+        0.71
+      ],
+      "description": "There is a small black hockey puck on the frozen pond/ice rink area in the center-lower portion of the image. The puck is being used in an informal hockey game by several people playing on the ice. It appears as a small black disc on the light blue-grey ice surface, with hockey players positioned around it."
     }
   },
   "porsche-factory.jpg": {
@@ -437,6 +464,15 @@
         0.85
       ],
       "description": "There is a cartoon character wearing a tiger costume in yellow and black stripes located near the bottom center of the image. The tiger character is standing on the stone patio area near the party table, appearing to be part of the party entertainment or a costumed guest. The tiger costume has the characteristic orange/yellow base with black stripes and appears to be standing upright in a playful pose next to someone in a chicken/bird costume."
+    },
+    "boombox": {
+      "bbox": [
+        0.85,
+        0.75,
+        0.88,
+        0.8
+      ],
+      "description": "There is a grey/silver boombox or portable radio located in the bottom right area of the image, sitting on the stone patio near where some children are playing with toys. It appears to be playing music, as indicated by musical notes drawn above it."
     }
   },
   "tigertom-classroom.jpg": {
@@ -508,6 +544,15 @@
         0.2
       ],
       "description": "A red forklift can be seen in the upper right portion of the image, near the sunflower field. It appears to be in operation, positioned next to what looks like some beehives or wooden boxes. The forklift is drawn in a cartoon style consistent with the rest of the illustration's farm scene."
+    },
+    "bird nest in a tree": {
+      "bbox": [
+        0.32,
+        0.25,
+        0.38,
+        0.35
+      ],
+      "description": "There appears to be a bird's nest located in a tree near the main house. It's visible in a small fruit tree in the garden area between the house and the barn. The tree has a wooden ladder leaning against it, suggesting someone may be checking on or tending to the nest. Several birds can be seen flying around the area near the nest, which adds to the authenticity of its location."
     }
   },
   "tigertom-garden.jpg": {
@@ -528,6 +573,15 @@
         0.34
       ],
       "description": "I can see what appears to be a white water pitcher on the large round dining table set up outdoors. The table is set with white place settings and appears to be prepared for a meal. The pitcher is positioned among other tableware items and has a typical water pitcher shape with a handle and spout."
+    },
+    "sunglasses": {
+      "bbox": [
+        0.25,
+        0.35,
+        0.27,
+        0.37
+      ],
+      "description": "There is a pair of sunglasses lying on the pink and white checkered picnic blanket in the lower portion of the image. The sunglasses appear to have been left on the blanket near where someone is lying down with what appears to be a stuffed tiger toy."
     }
   },
   "tigertom-house.jpg": {
@@ -628,6 +682,15 @@
         0.3
       ],
       "description": "There is a green cylindrical trash bin located in the right portion of the image, next to a wooden bench where someone is sitting and reading. The trash bin appears to be a public park-style waste receptacle mounted on a pole or stand."
+    },
+    "banana": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "There is no banana visible in this illustration. The image shows a spring or summer outdoor scene with children in a park or garden setting. There are various items like books, phones, and what appears to be picnic supplies, but no banana is present among these items. The scene includes a wooden bridge over a stream, flowering plants, trees (including a willow tree), and several children engaged in different activities."
     }
   },
   "tigertom-park3.jpg": {
@@ -668,6 +731,15 @@
         0
       ],
       "description": "I don't see a tiger in this winter scene. The image shows a busy winter landscape with people skiing, skating, and enjoying various winter activities. There are some animals present like deer, dogs, and birds, but no tiger is visible in the illustration."
+    },
+    "owl": {
+      "bbox": [
+        0.95,
+        0.7,
+        0.98,
+        0.75
+      ],
+      "description": "There is a brown owl perched in a bare tree branch on the far right side of the image. The owl appears to be observing the winter scene below, sitting upright in a characteristic owl pose. It's positioned among the snow-covered branches of one of the deciduous trees that line the right edge of the scene."
     }
   },
   "tigertom-zoo.jpg": {
@@ -699,6 +771,15 @@
         0.2
       ],
       "description": "There is a bicycle visible in the upper middle portion of the image, being ridden across a wooden bridge that spans the river/pond. The cyclist appears to be performing a trick or jump on the bridge. The bicycle is small in the overall scene but clearly distinguishable against the wooden bridge structure and the surrounding forest environment."
+    },
+    "soccer ball": {
+      "bbox": [
+        0.48,
+        0.45,
+        0.49,
+        0.46
+      ],
+      "description": "There is a small soccer ball floating in the water near the center of the pond. It appears to be white with the typical black pentagonal pattern and is drifting in the blue-green water, not far from a wooden dock and a red rowboat with someone in it."
     }
   },
   "walk-townfarm.jpg": {

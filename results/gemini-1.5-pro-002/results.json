@@ -108,6 +108,15 @@
         0.478
       ],
       "description": "An octopus is in the ocean just left of center, wearing goggles and a snorkel. It looks like it is facing slightly towards the left of the image."
+    },
+    "crab": {
+      "bbox": [
+        0.464,
+        0.917,
+        0.508,
+        0.957
+      ],
+      "description": "A small red crab is located on the beach, near the bottom center of the image. It appears to be facing to the left of the image and walking towards a teal and white beach umbrella.  A partially buried drink, with a straw, is in close proximity and above the crab, as well as a child making a sandcastle on the lower left. "
     }
   },
   "lufthansa-greece.jpg": {
@@ -163,6 +172,15 @@
         0.234
       ],
       "description": "A man waving a white flag from which pieces of paper are falling is visible in the top left part of the image. He is wearing a blue suit, is seated on a short wall, and appears to be looking down at the chaotic scene below him.  Behind him, one person climbs in through a broken window while another climbs out. The room has pale green walls with wood panelling."
+    },
+    "bowling ball": {
+      "bbox": [
+        0.1,
+        0.469,
+        0.113,
+        0.484
+      ],
+      "description": "A bowling ball can be seen lying on the floor amidst the chaotic scene. It's located slightly below the center-left portion of the image, amongst a group of people engaged in a brawl. Its color is predominantly dark gray or black.  It is not in motion. It's spatially close to a scattered pile of what appear to be pins, suggesting that it's part of the chaotic activity in the depicted scene."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -247,6 +265,15 @@
         0.285
       ],
       "description": "A brown bear is standing at the edge of the woods on the left side of the image. It appears to be observing the people enjoying winter activities in the park. It is positioned in front of the trees but behind a small snow-covered hill. "
+    },
+    "hockey puck": {
+      "bbox": [
+        0.283,
+        0.847,
+        0.295,
+        0.86
+      ],
+      "description": "The black hockey puck is located slightly left of center and near the bottom of the image. A person wearing a dark coral-colored long-sleeved top and light gray pants is skating towards the puck with a hockey stick. Another person is skating nearby wearing a light brown sweatshirt and light sage green pants."
     }
   },
   "porsche-factory.jpg": {
@@ -437,6 +464,15 @@
         0.967
       ],
       "description": "A cartoon tiger, wearing an orange and black striped costume, is located near the bottom left of the image. It is facing left and appears to be dancing or walking. The tiger is located on a brick patio and is near a clown holding a balloon animal."
+    },
+    "boombox": {
+      "bbox": [
+        0.787,
+        0.423,
+        0.864,
+        0.492
+      ],
+      "description": "The boombox is on the ground, slightly to the right of the long table laid out for the party.  It appears to be playing music, as indicated by the musical notes coming from the speakers. It is black and grey. It sits on the brick patio, next to a potted plant."
     }
   },
   "tigertom-classroom.jpg": {
@@ -508,6 +544,15 @@
         0.3
       ],
       "description": "A red forklift is located near the top right of the image. It appears to be parked in a field of sunflowers, next to a wooden barn with a brown roof. It is situated on the opposite side of the road. There are two people in the field near the forklift and sunflowers. "
+    },
+    "bird nest in a tree": {
+      "bbox": [
+        0.663,
+        0.933,
+        0.71,
+        0.969
+      ],
+      "description": "A small, light brown bird nest is nestled in the lower right quadrant of the image, in the branches of a small green bush along the dirt path. Several white birds are flying and perched nearby."
     }
   },
   "tigertom-garden.jpg": {
@@ -528,6 +573,15 @@
         0.282
       ],
       "description": "A pitcher of water is on the table where people are about to have dinner. The table is located on a patio, which is attached to the house. The pitcher seems to be transparent and full of water. It is located in the top left quadrant of the image. "
+    },
+    "sunglasses": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to find any sunglasses in the image provided."
     }
   },
   "tigertom-house.jpg": {
@@ -628,6 +682,15 @@
         0.392
       ],
       "description": "The trash bin is located on the right side of the image, near a wooden bench where a girl with blonde hair tied in two pigtails is reading a book. The trash bin is dark green and cylindrical, featuring a white rectangular opening on its top front. It has a recycling symbol, comprised of three white arrows forming a triangular loop, on its front side. The bin is positioned at the edge of the footpath that runs alongside the bench."
+    },
+    "banana": {
+      "bbox": [
+        0.76,
+        0.726,
+        0.783,
+        0.754
+      ],
+      "description": "A boy in a red t-shirt and blue baseball cap is standing near the stream and eating a yellow banana. It's partially peeled."
     }
   },
   "tigertom-park3.jpg": {
@@ -668,6 +731,15 @@
         0.665
       ],
       "description": "A cartoon tiger is sledding down a small snowy hill in the lower middle of the image. It is orange and black and wearing a blue scarf. The sled is brown. To the tiger's right are two snowmen. To the left, there is a small frozen pond where children are ice skating."
+    },
+    "owl": {
+      "bbox": [
+        0.886,
+        0.871,
+        0.927,
+        0.927
+      ],
+      "description": "The owl is perched on a snow-covered branch of a pine tree located at the bottom right of the image. It is predominantly brown with lighter brown accents. Its body faces towards the right side of the image, but its head is turned to look straight ahead. The branch the owl is on is very low to the ground, close to a small deer. The owl appears awake and alert."
     }
   },
   "tigertom-zoo.jpg": {
@@ -699,6 +771,15 @@
         0.145
       ],
       "description": "The bicycle is located on the path on the far side of the stream, near the top left area of the image. It's small in size due to the perspective. A person is riding the bicycle, wearing a yellow shirt and blue shorts. The bicycle itself appears to be a light color, possibly white or silver, but it's difficult to see clearly due to its size and the angle. The cyclist is moving across the wooden bridge and approaching a section of the path that is obscured by trees."
+    },
+    "soccer ball": {
+      "bbox": [
+        0.713,
+        0.542,
+        0.729,
+        0.56
+      ],
+      "description": "A white soccer ball is located in the water near the lower right portion of the image. It appears to be floating on the surface and no one is actively interacting with it.  It is within the pond, in between a small, red rowboat with people in it to the left, and a small wooden bridge/water crossing on the right, where a person appears to be bending over and picking something up in the stream."
     }
   },
   "walk-townfarm.jpg": {

@@ -75,6 +75,12 @@
       "description_grade_reason": "The predicted description mistakes the snorkeler for the octopus, getting the key identifying details entirely wrong. While it correctly identifies the general location (near center), describing the octopus's location as \"on top of a snorkeler's head\" is a crucial detail that is completely missed.  It also hallucinates details like the octopus \"wearing goggles and a snorkel\".",
       "giou": 0.5361656622783075,
       "status": "predicted"
+    },
+    "crab": {
+      "status": "predicted",
+      "giou": 0.014178114169344919,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the crab as small and red, and its location near the bottom center of the image. It also correctly describes the crab's pose as facing/moving left. However, it hallucinates several details not present in the image or the ground truth description, like the beach umbrella, drink, and child. While these extra details don't contradict the ground truth, they lower the score due to inaccuracy. The ground truth mentions a man above the crab, while the prediction misses this detail."
     }
   },
   "lufthansa-greece.jpg": {
@@ -115,6 +121,12 @@
       "description_grade_reason": "While the predicted description correctly identifies the man with the flag in the top left, it gets several key details wrong. The ground truth states he is hanging from a light fixture, while the prediction says he's seated on a wall.  The ground truth mentions a person falling to his right, while the prediction describes two people climbing through a broken window. These are significant inaccuracies regarding the man's situation and spatial relationships, warranting a low score despite correctly identifying some basic details and location.",
       "giou": 0.037574529743456,
       "status": "predicted"
+    },
+    "bowling ball": {
+      "status": "predicted",
+      "giou": -0.9928213534414981,
+      "description_grade": 0,
+      "description_grade_reason": "The predicted location of the bowling ball (below center-left) contradicts the ground truth (middle-right).  This is a critical error, regardless of other details."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -175,6 +187,12 @@
       "description_grade_reason": "The predicted description gets the bear's color and general location (left side) correct. It also correctly identifies it as being near trees and people enjoying winter activities. However, it misses the crucial detail that only the front half of the bear is visible.  Additionally, while \"at the edge of the woods\" is reasonable, it's not as precise as \"upper left corner\". The mention of a \"small snow-covered hill\" in front of the bear also seems inaccurate based on the ground truth's implication of rocks being nearby. While not explicitly contradictory, it introduces an element that doesn't seem present in the ground truth.",
       "giou": 0.3481922171901061,
       "status": "predicted"
+    },
+    "hockey puck": {
+      "status": "predicted",
+      "giou": -0.8646232447249541,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the puck's color and general location (near the bottom and slightly left of center aligns reasonably well with the lower left quadrant). While it adds extra detail about the clothing of nearby people, these details don't contradict the ground truth.  It misses the explicit mention of the ice rink, which is an important detail."
     }
   },
   "porsche-factory.jpg": {
@@ -311,6 +329,12 @@
       "description_grade_reason": "The predicted description gets most of the key details correct, including the tiger's location (bottom left) and the presence of the clown and balloon animal. However, it incorrectly describes the tiger's stripes as orange and black instead of black, and it misses the detail about the party hat.  It also makes an assumption about the tiger \"dancing or walking\" which isn't explicitly stated in the ground truth but isn't contradictory either. While it mentions the brick patio, this is less important than the tiger's features. The errors in color and the missing party hat detail prevent it from receiving a 3.",
       "giou": 0.2801819810749218,
       "status": "predicted"
+    },
+    "boombox": {
+      "status": "predicted",
+      "giou": 0.33875368146300733,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description gets most of the key details correct. The location is described as \"slightly to the right of the long table\" which, while not referencing the image edge, is accurate and more descriptive than the ground truth. The color is correctly identified as black and grey. The detail about playing music and the proximity to a potted plant are also correct.  It misses the detail about the tiled outdoor square and instead calls it a brick patio (which is a reasonable visual interpretation). Overall, it's a good description with minor inaccuracies."
     }
   },
   "tigertom-classroom.jpg": {
@@ -361,6 +385,12 @@
       "description_grade_reason": "The predicted description accurately captures the key details and location of the forklift. It correctly describes the color as red, its position in the top right near a sunflower field, and its state (parked/not in use).  The additional details about the barn, roof, road, and people are not present in the ground truth, but they don't contradict it, so they are ignored. The core description of the forklift itself is accurate.",
       "giou": 0.806531737661105,
       "status": "predicted"
+    },
+    "bird nest in a tree": {
+      "status": "predicted",
+      "giou": -0.29807914695896925,
+      "description_grade": 1,
+      "description_grade_reason": "While the predicted description correctly identifies the bird nest and its general location in the lower right, it makes several key errors. It describes the nest as being in a \"small green bush along the dirt path\", which contradicts the ground truth's \"likely a tree\".  It also fails to mention the chicks in the nest or the bird with a worm, which are important details. The mention of several white birds is partially correct (there is a parent bird present), but lacks important context."
     }
   },
   "tigertom-garden.jpg": {
@@ -375,6 +405,12 @@
       "description_grade_reason": "The predicted description correctly identifies the pitcher of water and its location in the top left quadrant of the image and on the table. However, it incorrectly states that the pitcher is full when the ground truth specifies it is half-full. It also adds details about the patio and people having dinner which, while not contradictory, are not mentioned in the ground truth and therefore not factored into the rating. The core details about the pitcher itself are mostly correct, but the incorrect fullness level prevents a higher rating.",
       "giou": 0.35906568653612314,
       "status": "predicted"
+    },
+    "sunglasses": {
+      "status": "not found",
+      "giou": -1.0,
+      "description_grade": -1,
+      "description_grade_reason": ""
     }
   },
   "tigertom-house.jpg": {
@@ -445,6 +481,12 @@
       "giou": 0.5140074081989967,
       "description_grade": 3,
       "description_grade_reason": "The predicted description accurately captures the trash bin's location on the right side, slightly above center (implied by bench and girl's position). It correctly describes its color as dark green, its cylindrical shape, and the white rectangular opening.  The additional details about the recycling symbol and its position relative to the footpath are consistent with the ground truth and enhance the description. Although the ground truth doesn't mention these details, their presence doesn't contradict it."
+    },
+    "banana": {
+      "status": "predicted",
+      "giou": -0.6839679582651422,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description captures the key details of the peeled banana and its location (bottom-right, implied by the boy's position and action). It correctly describes the boy holding it, and his attire. However, it misses the detail about the boy holding the banana in his *right* hand.  It also adds the detail of the boy being near a stream, which is not present in the ground truth, but this doesn't contradict the ground truth.  While 'eating' vs 'holding' are slightly different, it can be inferred the boy is about to eat the banana if it's peeled and in his hand. The 'yellow' descriptor is reasonable even if not mentioned explicitly in the ground truth."
     }
   },
   "tigertom-park3.jpg": {
@@ -473,6 +515,12 @@
       "description_grade_reason": "The predicted description gets the general location and action (sledding) correct. It also correctly identifies the tiger as orange and black (a reasonable alternative to yellow and black). However, it gets the scarf color wrong and misses the hat entirely.  While it correctly adds the detail of the sled being brown, the more important details of the hat and scarf outweigh this. The additional details about the snowmen and frozen pond are not present in the ground truth, but they don't contradict it either, so they are ignored for rating purposes.",
       "giou": 0.39361123836038414,
       "status": "predicted"
+    },
+    "owl": {
+      "status": "predicted",
+      "giou": 0.31777621611121665,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the owl's location in the bottom right, its brown color, and its perch on a branch. However, it inaccurately describes the branch as snow-covered and belonging to a pine tree, when the ground truth specifies a leafless tree.  The presence of a deer is also not mentioned in the ground truth. While the additional details about the owl's pose and alertness are not incorrect, they are not required for a higher rating."
     }
   },
   "tigertom-zoo.jpg": {
@@ -495,6 +543,12 @@
       "description_grade_reason": "While the predicted description gets the general location correct (upper left, near a bridge over a stream), it makes several key errors.  The bicycle is being *carried*, not ridden. The color is definitively red in the ground truth, but predicted as light/white/silver. The rider's clothing description is extraneous, though doesn't contradict the ground truth. The fact that it's small due to perspective is also not relevant to evaluating the description. The core details of the bicycle's state (carried vs. ridden) and color are incorrect, thus meriting a low score.",
       "giou": 0.6196539217682027,
       "status": "predicted"
+    },
+    "soccer ball": {
+      "status": "predicted",
+      "giou": -0.7082880807741356,
+      "description_grade": 1,
+      "description_grade_reason": "While the predicted description correctly identifies the soccer ball and its general location in the lower right portion of the image, it misses the crucial detail of the boy in the boat interacting with the ball.  This interaction is a key aspect of the ground truth.  Although it correctly identifies the ball floating, the omission of the boy and his attempt to retrieve the ball constitutes a significant missing detail, warranting a low score."
     }
   },
   "walk-townfarm.jpg": {
