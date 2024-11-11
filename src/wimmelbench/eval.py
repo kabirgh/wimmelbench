@@ -131,6 +131,8 @@ def main():
 
                 result = model.detect_object(image_path, object_name)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
+                # For rate limiting, sleep 1 second between requests
+                time.sleep(1)
 
                 # Create new result entry
                 result_entry = {
@@ -153,16 +155,21 @@ def main():
                 else:
                     results[image_name].append(result_entry)
 
-                # For rate limiting, sleep 1 second between requests
-                time.sleep(1)
-
             # Draw and save bounding boxes for each object in the image
             image = Image.open(image_path)
             for entry, color in zip(results[image_name], COLORS):
-                # First draw the ground truth bounding box
-                image = draw_box(
-                    image, object_data["bbox"], f"{entry["object"]} - actual", color
+                # Find matching annotation for this object
+                matching_annotation = next(
+                    (obj for obj in objects if obj["object"] == entry["object"]), None
                 )
+                if matching_annotation:
+                    # Draw the ground truth bounding box
+                    image = draw_box(
+                        image,
+                        matching_annotation["bbox"],
+                        f"{entry['object']} - actual",
+                        color,
+                    )
 
                 if entry["bbox"] != [0, 0, 0, 0]:
                     image = draw_box(image, entry["bbox"], "", color)
