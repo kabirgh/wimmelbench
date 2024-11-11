@@ -14,9 +14,9 @@ app.mount("/img", StaticFiles(directory="img"), name="img")
 # Setup templates
 templates = Jinja2Templates(directory="templates")
 
-# Create annotations.json if it doesn't exist
-if not Path("annotations.json").exists():
-    with open("annotations.json", "w") as f:
+# Create annotations2.json if it doesn't exist
+if not Path("annotations2.json").exists():
+    with open("annotations2.json", "w") as f:
         json.dump({}, f)
 
 
@@ -33,7 +33,7 @@ async def home(request: Request):
     )
 
     # Load existing annotations
-    with open("annotations.json", "r") as f:
+    with open("annotations2.json", "r") as f:
         annotations = json.load(f)
 
     return templates.TemplateResponse(
@@ -44,21 +44,19 @@ async def home(request: Request):
 @app.post("/save_annotation")
 async def save_annotation(request: Request):
     data = await request.json()
+    print(data)
 
-    with open("annotations.json", "r") as f:
+    with open("annotations2.json", "r") as f:
         annotations = json.load(f)
 
-    # Update to store array of annotations
-    annotations[data["image"]] = [
-        ann
-        for ann in data["annotations"]
-        if ann["bbox"] is not None or ann["image"] in annotations
-    ]
+    # Update annotations for the image
+    for image_name, details in data.items():
+        annotations[image_name] = details
 
     # Sort annotations by image name
     sorted_annotations = dict(sorted(annotations.items()))
 
-    with open("annotations.json", "w") as f:
+    with open("annotations2.json", "w") as f:
         json.dump(sorted_annotations, f, indent=2)
 
     return JSONResponse({"status": "success"})
@@ -67,6 +65,6 @@ async def save_annotation(request: Request):
 @app.get("/get_annotations")
 def get_annotations():
     # Return the current annotations from your storage
-    with open("annotations.json", "r") as f:
+    with open("annotations2.json", "r") as f:
         annotations = json.load(f)
     return annotations
