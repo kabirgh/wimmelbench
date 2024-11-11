@@ -166,7 +166,6 @@ def main():
             save_path = get_save_path(image_path, model.model)
             os.makedirs(os.path.dirname(save_path), exist_ok=True)
             image.save(save_path, "JPEG")
-            print(f"Saved image with bounding boxes to {save_path}")
 
             # Save results file after processing each image
             with open(results_file, "w") as f:

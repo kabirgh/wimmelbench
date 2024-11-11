@@ -377,6 +377,15 @@
         0.168
       ],
       "description": "The shuttlecock is located in the upper right area of the image. It is positioned slightly above and to the right of the bear holding a badminton racket. The shuttlecock is small, with a white feathered shape and a rounded base, making it distinct against the yellow background."
+    },
+    "giraffe": {
+      "bbox": [
+        0.38,
+        0.56,
+        0.48,
+        0.78
+      ],
+      "description": "The giraffe is standing upright in the middle of the image on the sandy beach. It has yellow skin with orange spots and a red swim ring around its neck. It is located near the center, just above the waterline, standing beside other beachgoers."
     }
   },
   "season-winter.jpg": {
@@ -408,6 +417,15 @@
         0.9
       ],
       "description": "The lifebuoy is located in the swimming pool area towards the bottom right of the image. It is green in color and is being used by a boy floating in the pool."
+    },
+    "cruise ship": {
+      "bbox": [
+        0.02,
+        0.08,
+        0.14,
+        0.13
+      ],
+      "description": "The cruise ship is located in the upper left section of the image, sailing on the ocean. It is colored white with red accents, detailed with several decks and windows. The ship is surrounded by seagulls flying nearby."
     }
   },
   "tigertom-birthday.jpg": {

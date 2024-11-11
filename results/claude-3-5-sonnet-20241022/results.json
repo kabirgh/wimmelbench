@@ -377,6 +377,15 @@
         0.22
       ],
       "description": "There is a small white shuttlecock being used by several animal characters playing badminton in the center-right portion of the image. The shuttlecock appears to be in mid-flight, suspended between some rabbits and other animals who are playing with badminton rackets. It's shown in a simple, cartoon style consistent with the rest of the illustration's whimsical beach scene."
+    },
+    "giraffe": {
+      "bbox": [
+        0.45,
+        0.45,
+        0.52,
+        0.65
+      ],
+      "description": "The giraffe is located in the center of the image on the beach. It has a long neck with a distinctive spotted pattern in yellow and brown colors. The giraffe is standing upright and appears to be holding what looks like a red float or ring around its neck. The giraffe is surrounded by various other animals enjoying beach activities, and its tall stature makes it stand out against the yellow sandy background."
     }
   },
   "season-winter.jpg": {
@@ -408,6 +417,15 @@
         0.33
       ],
       "description": "There is a white and red lifebuoy (life ring) leaning against a white beach chair near the middle of the image. It's located on the sandy beach area, positioned between the wooden boardwalk and the water. The lifebuoy appears to be a standard circular safety device with the typical red and white coloring pattern."
+    },
+    "cruise ship": {
+      "bbox": [
+        0.01,
+        0.05,
+        0.08,
+        0.1
+      ],
+      "description": "There is a small cruise ship visible in the background of the beach scene, in the upper left corner of the image. The ship appears as a sketched outline in white/grey colors against the turquoise blue water. It's drawn relatively small due to its distance from the beach, with several seagulls flying between it and the shore."
     }
   },
   "tigertom-birthday.jpg": {

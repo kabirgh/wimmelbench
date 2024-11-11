@@ -377,6 +377,15 @@
         0.17966101694915254
       ],
       "description": "A shuttlecock is located in the upper right corner of the image. It is in flight between two cartoon bears playing badminton on the beach."
+    },
+    "giraffe": {
+      "bbox": [
+        0.39579329907072985,
+        0.4019554899062776,
+        0.4951960844152114,
+        0.7743097020618951
+      ],
+      "description": "A giraffe is located in the center of the image. Its legs are partially submerged in the sea. There is a red inflatable ring around its neck. The giraffe has turned its head to look to the left."
     }
   },
   "season-winter.jpg": {
@@ -408,6 +417,15 @@
         0.2907276125096563
       ],
       "description": "There is a white and red lifebuoy in the upper right quadrant of the image. It is mounted to the side of a tall lifeguard's chair on the beach. Near the lifebuoy is a blue beach umbrella and a man in red swimming trunks. "
+    },
+    "cruise ship": {
+      "bbox": [
+        0.03122931237482473,
+        0.020541950470575995,
+        0.1393140695862851,
+        0.06983209012159661
+      ],
+      "description": "There's a white cruise ship in the top left corner of the image. It's quite small, indicating that it is far away, and looks like its sailing to the right. There are some birds in the same area of the image but those seem to be more in the foreground."
     }
   },
   "tigertom-birthday.jpg": {

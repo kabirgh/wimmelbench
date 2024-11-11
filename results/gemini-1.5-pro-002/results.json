@@ -377,6 +377,15 @@
         0.0
       ],
       "description": "I couldn't find a shuttlecock in the image. There are several rackets visible, but none of them have a shuttlecock nearby."
+    },
+    "giraffe": {
+      "bbox": [
+        0.401,
+        0.386,
+        0.487,
+        0.742
+      ],
+      "description": "A giraffe wearing an orange inflatable ring stands in the shallow water at the beach. It is facing slightly towards the left of the image and its head is near the centre of the image.  The giraffe is yellow with brown spots."
     }
   },
   "season-winter.jpg": {
@@ -408,6 +417,15 @@
         0.956
       ],
       "description": "A child floats on an orange lifebuoy in a small pool near the bottom right of the image. The lifebuoy is round and appears inflated. Another child is jumping into the pool. A waiter in a black suit walks towards the pool, carrying a tray with drinks."
+    },
+    "cruise ship": {
+      "bbox": [
+        0.024,
+        0.015,
+        0.131,
+        0.072
+      ],
+      "description": "A white cruise ship with dark windows is visible in the top left corner of the image. It is in the ocean, which appears blue. It is behind some people swimming and diving in the water."
     }
   },
   "tigertom-birthday.jpg": {
