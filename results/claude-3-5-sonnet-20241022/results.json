@@ -250,5 +250,27 @@
       "object": "yellow bus",
       "description": "There is a yellow school bus or shuttle bus located in the middle-right portion of the image. The bus is facing right and appears to be at a bus stop with a green shelter/awning. It is stopped at a pedestrian crossing with white stripes on the road. There appears to be people getting on or off the bus. The bus has a distinctive boxy shape typical of school buses and is painted in a bright yellow color."
     }
+  ],
+  "whodoeswhat-city2.jpg": [
+    {
+      "bbox": [
+        0.83,
+        0.75,
+        0.85,
+        0.78
+      ],
+      "object": "saxophone",
+      "description": "There appears to be a saxophone being played by a person in black clothing near the bottom right section of the image, close to the playground area. The person is standing on the grass while holding the brass-colored instrument."
+    },
+    {
+      "bbox": [
+        0.55,
+        0.35,
+        0.7,
+        0.45
+      ],
+      "object": "fire truck",
+      "description": "There is a red fire truck with an extended ladder in the middle-right portion of the image. It appears to be near a construction site where a blue excavator is working. The fire truck is parked on the street and has a distinctive silver/grey ladder extending from its top. It's a traditional style fire engine in bright red coloring."
+    }
   ]
 }

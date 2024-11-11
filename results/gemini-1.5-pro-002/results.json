@@ -216,5 +216,27 @@
       "object": "yellow bus",
       "description": "The yellow bus is located in the top right quadrant of the image. It is parked next to a bus stop with a green roof. A person is exiting the bus, and several people are waiting nearby. The bus is positioned horizontally, facing left."
     }
+  ],
+  "whodoeswhat-city2.jpg": [
+    {
+      "bbox": [
+        0.533,
+        0.849,
+        0.575,
+        0.992
+      ],
+      "object": "saxophone",
+      "description": "A man in a black suit is playing the saxophone in the lower center part of the image. He is standing on a grassy area next to the park."
+    },
+    {
+      "bbox": [
+        0.552,
+        0.325,
+        0.806,
+        0.556
+      ],
+      "object": "fire truck",
+      "description": "The fire truck is located in the center-right portion of the image. It is red and white, facing diagonally towards the bottom right corner.  The truck's ladder is extended. Two firefighters can be seen in the cab. It appears to be at the scene of a construction site, as it is parked next to a dug-up area with an excavator and barrier tape. Across the street from the firetruck, on the other side of the crosswalk, is a green leafy tree.  "
+    }
   ]
 }
