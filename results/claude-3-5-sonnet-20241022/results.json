@@ -1,25 +1,5 @@
 {
-  "river-adventure-house.jpg": {
-    "whale": {
-      "bbox": [
-        0.81,
-        0.22,
-        0.88,
-        0.28
-      ],
-      "description": "There is a small blue elephant-shaped water feature/slide in the children's pool area. This appears to be designed to look like a whale or elephant with water spraying from it. It's located in the smaller wading pool section near the main building, separate from the larger swimming pool. The feature is blue in color and appears to be a decorative element that sprays water for children to play with."
-    }
-  },
   "construction-evening.jpg": {
-    "person riding a horse": {
-      "bbox": [
-        0.45,
-        0.1,
-        0.5,
-        0.2
-      ],
-      "description": "In the background of the image, there is a small silhouetted figure riding a horse on top of a hill against the dark blue night sky. The scene is placed between the construction site and the castle on the hilltop. The figure and horse appear as a dark outline against the moonlit sky, with trees visible around them."
-    },
     "castle": {
       "bbox": [
         0.9,
@@ -28,38 +8,18 @@
         0.15
       ],
       "description": "The castle appears in the top right corner of the image, perched on a hilltop. It's a medieval-style fortress with multiple towers and crenellated walls, shown against a dark blue night sky with a crescent moon nearby. The castle has a reddish-orange glow coming from some of its windows, suggesting it's illuminated from within. It's surrounded by autumn-colored trees on the hillside."
-    }
-  },
-  "kf-winter.jpg": {
-    "sun": {
-      "bbox": [
-        0.92,
-        0.05,
-        0.97,
-        0.1
-      ],
-      "description": "The sun appears in the top right corner of the image as a simple orange circle in a light grey sky with scattered clouds. It's a minimalist illustration style consistent with the rest of the winter scene drawing."
     },
-    "log cabin": {
+    "person riding a horse": {
       "bbox": [
-        0.35,
-        0.55,
         0.45,
-        0.65
+        0.1,
+        0.5,
+        0.2
       ],
-      "description": "There is a yellow/orange colored log cabin or warming hut located in the middle-lower portion of the image. It appears to be a simple structure with a sloped green roof and is surrounded by people gathered outside. The cabin seems to be a gathering point or rest area for the winter activities taking place on the snowy hillside. There are benches or tables visible outside the cabin where people are congregating."
+      "description": "In the background of the image, there is a small silhouetted figure riding a horse on top of a hill against the dark blue night sky. The scene is placed between the construction site and the castle on the hilltop. The figure and horse appear as a dark outline against the moonlit sky, with trees visible around them."
     }
   },
   "construction-site.jpg": {
-    "fox": {
-      "bbox": [
-        0.03,
-        0.79,
-        0.07,
-        0.85
-      ],
-      "description": "I can see a small fox character in the bottom left portion of the image. It appears to be part of some street art or a mural painted on a wall. The fox character has an exaggerated smiling expression and appears to be drawn in a cartoon style with orange/reddish coloring. It's located near where someone is holding an umbrella, and appears to be part of a larger decorative wall painting."
-    },
     "concrete mixer truck": {
       "bbox": [
         0.05,
@@ -68,6 +28,15 @@
         0.35
       ],
       "description": "There is a large green concrete mixer truck in the left portion of the image. The truck has a distinctive rotating drum in green color and is positioned near a construction site area. The mixer drum is shown in its characteristic cylindrical shape with spiral mixing blades visible on its exterior. The truck appears to be actively working at the construction site, with construction workers nearby."
+    },
+    "fox": {
+      "bbox": [
+        0.03,
+        0.79,
+        0.07,
+        0.85
+      ],
+      "description": "I can see a small fox character in the bottom left portion of the image. It appears to be part of some street art or a mural painted on a wall. The fox character has an exaggerated smiling expression and appears to be drawn in a cartoon style with orange/reddish coloring. It's located near where someone is holding an umbrella, and appears to be part of a larger decorative wall painting."
     }
   },
   "construction-snow.jpg": {
@@ -88,6 +57,79 @@
         0.7
       ],
       "description": "There is a red sedan visible in the lower right portion of the image. The car appears to have slid off the snowy road and is partially stuck in snow. It's a small passenger car with a typical sedan body style, colored in bright red. The car is positioned at an angle, suggesting it may have skidded in the winter conditions. There are people nearby and what appears to be some kind of shelter or structure behind it."
+    }
+  },
+  "kf-f1.jpg": {
+    "f1 car": {
+      "bbox": [
+        0.78,
+        0.52,
+        0.85,
+        0.55
+      ],
+      "description": "There is a Formula 1 racing car visible on the winding race track, located in the right-middle portion of the image. The F1 car appears to be predominantly white in color with some red accents, racing along the grey track that weaves through this illustrated cityscape. It's positioned near the waterfront section of the track, just before the track curves toward the beach area. The car is shown from a top-down perspective, maintaining its position on the racing line of the circuit."
+    },
+    "flamingo": {
+      "bbox": [
+        0.15,
+        0.75,
+        0.25,
+        0.85
+      ],
+      "description": "There is a pink flamingo standing in the bottom-left portion of the image. The flamingo is depicted in a cartoonish style, standing on one leg in its characteristic pose among some green vegetation near the water's edge. It has the typical long neck, pink coloring, and black-tipped beak characteristic of flamingos. The bird stands out against the green and blue background of the coastal area."
+    }
+  },
+  "kf-winter.jpg": {
+    "log cabin": {
+      "bbox": [
+        0.35,
+        0.55,
+        0.45,
+        0.65
+      ],
+      "description": "There is a yellow/orange colored log cabin or warming hut located in the middle-lower portion of the image. It appears to be a simple structure with a sloped green roof and is surrounded by people gathered outside. The cabin seems to be a gathering point or rest area for the winter activities taking place on the snowy hillside. There are benches or tables visible outside the cabin where people are congregating."
+    },
+    "sun": {
+      "bbox": [
+        0.92,
+        0.05,
+        0.97,
+        0.1
+      ],
+      "description": "The sun appears in the top right corner of the image as a simple orange circle in a light grey sky with scattered clouds. It's a minimalist illustration style consistent with the rest of the winter scene drawing."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "octopus": {
+      "bbox": [
+        0.45,
+        0.35,
+        0.48,
+        0.4
+      ],
+      "description": "There is a small purple octopus swimming in the water among the beachgoers. The octopus appears to be wearing pink goggles/diving mask and is located in the middle section of the image, slightly to the left of center. It is swimming in the blue water alongside other people who are swimming and playing. The octopus seems to be enjoying itself, appearing playful and engaged in the beach activities like the other characters in the scene."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "trojan horse": {
+      "bbox": [
+        0.78,
+        0.75,
+        0.83,
+        0.82
+      ],
+      "description": "The Trojan Horse can be seen in the lower right portion of the image. It appears as a large dark brown wooden horse structure positioned near the cliff edge. The horse is depicted in the classical style, matching the ancient Greek/Roman setting of the illustration. It stands stationary among other ancient buildings with red roofs, and appears to be positioned at a slightly higher elevation on one of the pink-tinted rocky terraces. The horse's design is simple but recognizable as the famous deceptive gift of Greek mythology."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "faucet": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a faucet in this image. The image shows a busy, colorful bazaar or marketplace scene with many people shopping and walking through an ornate indoor arcade. There are numerous decorative items like lanterns, textiles, and various goods for sale in the shops, but I cannot identify a faucet anywhere in the scene."
     }
   },
   "mitgutsch-beach.jpg": {
@@ -124,15 +166,6 @@
     }
   },
   "mitgutsch-orchestra.jpg": {
-    "mandarin orange": {
-      "bbox": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "description": "I don't see a mandarin orange in this image. The image shows an orchestra or symphony with many musicians playing various instruments including strings (violins, cellos, bass), woodwinds (clarinets, flutes), brass instruments (trumpets, tubas), percussion, harp, and piano. The scene is set on a wooden stage or floor with warm lighting, but there is no mandarin orange visible anywhere in the scene."
-    },
     "harp": {
       "bbox": [
         0.02,
@@ -141,6 +174,15 @@
         0.35
       ],
       "description": "The harp is located in the far left side of the orchestra. It's a large golden concert harp being played by a musician in a pink/salmon colored outfit. The harp is positioned at the end of the curved orchestra formation, near the grand piano. It appears to be a traditional pedal harp with its characteristic curved neck and column, standing approximately 6 feet tall."
+    },
+    "mandarin orange": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a mandarin orange in this image. The image shows an orchestra or symphony with many musicians playing various instruments including strings (violins, cellos, bass), woodwinds (clarinets, flutes), brass instruments (trumpets, tubas), percussion, harp, and piano. The scene is set on a wooden stage or floor with warm lighting, but there is no mandarin orange visible anywhere in the scene."
     }
   },
   "mitgutsch-pirate.jpg": {
@@ -187,77 +229,6 @@
       "description": "I can see what appears to be a red lobster being hauled up from one of the fishing boats in the harbor. It's located in the lower middle portion of the image, being pulled up from the water by someone on a small wooden fishing boat. The lobster appears to be dangling from some kind of rope or fishing line against the turquoise-colored water background."
     }
   },
-  "tigertom-park3.jpg": {
-    "cartoon tiger": {
-      "bbox": [
-        0.45,
-        0.35,
-        0.52,
-        0.45
-      ],
-      "description": "In the center of the image, there is a yellow and black striped cartoon tiger standing upright on the paved pathway. The tiger appears to be interacting with some children on the wooden walkway/bridge. The tiger's stripes are clearly visible, and it appears to be standing in a friendly, welcoming pose. It's positioned near where several paths intersect in the playground scene."
-    },
-    "soccer ball": {
-      "bbox": [
-        0.55,
-        0.85,
-        0.58,
-        0.88
-      ],
-      "description": "The soccer ball is located in the bottom portion of the image, being kicked around by children playing a game of soccer. It appears to be a classic black and white soccer ball in motion on the grass field. The ball is positioned between two players who are actively engaged in the game, with one player about to kick it while others are running nearby to join the play."
-    }
-  },
-  "professions-intersection.jpg": {
-    "cactus": {
-      "bbox": [
-        0.02,
-        0.3,
-        0.05,
-        0.35
-      ],
-      "description": "There appears to be a small green cactus in a pot being carried on a serving tray by one of the rabbit/bunny characters on the left side of the street. The bunny is one of two gray bunnies carrying food items on trays, likely heading towards the 'EAT ME' caf\u00e9 in the scene."
-    }
-  },
-  "tigertom-intersection.jpg": {
-    "cartoon tiger": {
-      "bbox": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "description": "I do not see any cartoon tiger in this image. The image shows a busy street scene with various people, vehicles, and buildings. There are some artwork frames on the blue building wall showing hot air balloons and what appear to be other decorative images, but no tigers. The scene includes cars, a yellow school bus, pedestrians crossing the street, cyclists, and people going about their daily activities, but no tiger characters."
-    },
-    "yellow bus": {
-      "bbox": [
-        0.65,
-        0.25,
-        0.75,
-        0.32
-      ],
-      "description": "There is a yellow school bus or shuttle bus located in the middle-right portion of the image. The bus is facing right and appears to be at a bus stop with a green shelter/awning. It is stopped at a pedestrian crossing with white stripes on the road. There appears to be people getting on or off the bus. The bus has a distinctive boxy shape typical of school buses and is painted in a bright yellow color."
-    }
-  },
-  "whodoeswhat-city2.jpg": {
-    "saxophone": {
-      "bbox": [
-        0.83,
-        0.75,
-        0.85,
-        0.78
-      ],
-      "description": "There appears to be a saxophone being played by a person in black clothing near the bottom right section of the image, close to the playground area. The person is standing on the grass while holding the brass-colored instrument."
-    },
-    "fire truck": {
-      "bbox": [
-        0.55,
-        0.35,
-        0.7,
-        0.45
-      ],
-      "description": "There is a red fire truck with an extended ladder in the middle-right portion of the image. It appears to be near a construction site where a blue excavator is working. The fire truck is parked on the street and has a distinctive silver/grey ladder extending from its top. It's a traditional style fire engine in bright red coloring."
-    }
-  },
   "montreal-snow.jpg": {
     "bear": {
       "bbox": [
@@ -267,59 +238,6 @@
         0.18
       ],
       "description": "There is a brown bear visible in the upper left portion of the image. The bear is standing among the winter scene near some trees and rocks. It appears to be observing the winter activities taking place in the park. Several small red birds and squirrels are visible near the bear. The bear is drawn in the same illustration style as the rest of the scene, with a simple but clear design showing its brown fur and typical bear shape."
-    }
-  },
-  "kf-f1.jpg": {
-    "f1 car": {
-      "bbox": [
-        0.78,
-        0.52,
-        0.85,
-        0.55
-      ],
-      "description": "There is a Formula 1 racing car visible on the winding race track, located in the right-middle portion of the image. The F1 car appears to be predominantly white in color with some red accents, racing along the grey track that weaves through this illustrated cityscape. It's positioned near the waterfront section of the track, just before the track curves toward the beach area. The car is shown from a top-down perspective, maintaining its position on the racing line of the circuit."
-    },
-    "flamingo": {
-      "bbox": [
-        0.15,
-        0.75,
-        0.25,
-        0.85
-      ],
-      "description": "There is a pink flamingo standing in the bottom-left portion of the image. The flamingo is depicted in a cartoonish style, standing on one leg in its characteristic pose among some green vegetation near the water's edge. It has the typical long neck, pink coloring, and black-tipped beak characteristic of flamingos. The bird stands out against the green and blue background of the coastal area."
-    }
-  },
-  "lufthansa-beach.jpg": {
-    "octopus": {
-      "bbox": [
-        0.45,
-        0.35,
-        0.48,
-        0.4
-      ],
-      "description": "There is a small purple octopus swimming in the water among the beachgoers. The octopus appears to be wearing pink goggles/diving mask and is located in the middle section of the image, slightly to the left of center. It is swimming in the blue water alongside other people who are swimming and playing. The octopus seems to be enjoying itself, appearing playful and engaged in the beach activities like the other characters in the scene."
-    }
-  },
-  "lufthansa-greece.jpg": {
-    "trojan horse": {
-      "bbox": [
-        0.78,
-        0.75,
-        0.83,
-        0.82
-      ],
-      "description": "The Trojan Horse can be seen in the lower right portion of the image. It appears as a large dark brown wooden horse structure positioned near the cliff edge. The horse is depicted in the classical style, matching the ancient Greek/Roman setting of the illustration. It stands stationary among other ancient buildings with red roofs, and appears to be positioned at a slightly higher elevation on one of the pink-tinted rocky terraces. The horse's design is simple but recognizable as the famous deceptive gift of Greek mythology."
-    }
-  },
-  "lufthansa-turkish-bazaar.jpg": {
-    "faucet": {
-      "bbox": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "description": "I do not see a faucet in this image. The image shows a busy, colorful bazaar or marketplace scene with many people shopping and walking through an ornate indoor arcade. There are numerous decorative items like lanterns, textiles, and various goods for sale in the shops, but I cannot identify a faucet anywhere in the scene."
     }
   },
   "porsche-factory.jpg": {
@@ -355,6 +273,17 @@
       "description": "There is a small quadcopter drone flying in the upper right portion of the image, near the sky area. It appears to be blue in color and is shown flying alongside what looks like a small red airplane. The drone is one of several flying objects visible in that part of the scene above the Porsche facility."
     }
   },
+  "professions-intersection.jpg": {
+    "cactus": {
+      "bbox": [
+        0.02,
+        0.3,
+        0.05,
+        0.35
+      ],
+      "description": "There appears to be a small green cactus in a pot being carried on a serving tray by one of the rabbit/bunny characters on the left side of the street. The bunny is one of two gray bunnies carrying food items on trays, likely heading towards the 'EAT ME' caf\u00e9 in the scene."
+    }
+  },
   "professions-street.jpg": {
     "scissors": {
       "bbox": [
@@ -375,6 +304,17 @@
         0
       ],
       "description": "I do not see any pizza in this image. The image shows a whimsical street scene with various animal characters including pigs, bears, lions, and other creatures. There are bakery items (like what appears to be bread and pastries) and a food cart, but no pizza is visible. The scene includes colorful buildings, an orange car, and many characters engaged in different activities on the street."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "whale": {
+      "bbox": [
+        0.81,
+        0.22,
+        0.88,
+        0.28
+      ],
+      "description": "There is a small blue elephant-shaped water feature/slide in the children's pool area. This appears to be designed to look like a whale or elephant with water spraying from it. It's located in the smaller wading pool section near the main building, separate from the larger swimming pool. The feature is blue in color and appears to be a decorative element that sprays water for children to play with."
     }
   },
   "river-adventure-river.jpg": {
@@ -565,6 +505,26 @@
       "description": "There is a rake visible in the right portion of the image, near the playground area. It appears to be a wooden-handled rake being used by someone tending to a swing set or play area. The rake is oriented diagonally and is colored in a brown/beige tone, typical of a gardening tool. It's positioned near a wooden fence and a green slide in the playground section of what appears to be a community garden or backyard setting."
     }
   },
+  "tigertom-intersection.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see any cartoon tiger in this image. The image shows a busy street scene with various people, vehicles, and buildings. There are some artwork frames on the blue building wall showing hot air balloons and what appear to be other decorative images, but no tigers. The scene includes cars, a yellow school bus, pedestrians crossing the street, cyclists, and people going about their daily activities, but no tiger characters."
+    },
+    "yellow bus": {
+      "bbox": [
+        0.65,
+        0.25,
+        0.75,
+        0.32
+      ],
+      "description": "There is a yellow school bus or shuttle bus located in the middle-right portion of the image. The bus is facing right and appears to be at a bus stop with a green shelter/awning. It is stopped at a pedestrian crossing with white stripes on the road. There appears to be people getting on or off the bus. The bus has a distinctive boxy shape typical of school buses and is painted in a bright yellow color."
+    }
+  },
   "tigertom-market.jpg": {
     "cartoon tiger": {
       "bbox": [
@@ -607,16 +567,27 @@
       "description": "There is no cartoon tiger present in this image. The image shows an outdoor park or garden scene with several children engaged in various activities like reading, resting, and looking at flowers. There are butterflies, rabbits, and birds in the scene, along with natural elements like a willow tree, a stream with a wooden bridge, flowering bushes and trees, but no tigers - cartoon or otherwise."
     }
   },
-  "tigertom-snow.jpg": {
+  "tigertom-park3.jpg": {
     "cartoon tiger": {
       "bbox": [
-        0,
-        0,
-        0,
-        0
+        0.45,
+        0.35,
+        0.52,
+        0.45
       ],
-      "description": "I don't see a tiger in this winter scene. The image shows a busy winter landscape with people skiing, skating, and enjoying various winter activities. There are some animals present like deer, dogs, and birds, but no tiger is visible in the illustration."
+      "description": "In the center of the image, there is a yellow and black striped cartoon tiger standing upright on the paved pathway. The tiger appears to be interacting with some children on the wooden walkway/bridge. The tiger's stripes are clearly visible, and it appears to be standing in a friendly, welcoming pose. It's positioned near where several paths intersect in the playground scene."
     },
+    "soccer ball": {
+      "bbox": [
+        0.55,
+        0.85,
+        0.58,
+        0.88
+      ],
+      "description": "The soccer ball is located in the bottom portion of the image, being kicked around by children playing a game of soccer. It appears to be a classic black and white soccer ball in motion on the grass field. The ball is positioned between two players who are actively engaged in the game, with one player about to kick it while others are running nearby to join the play."
+    }
+  },
+  "tigertom-snow.jpg": {
     "birdhouse": {
       "bbox": [
         0.77,
@@ -625,6 +596,15 @@
         0.35
       ],
       "description": "There appears to be a small birdhouse mounted on one of the snow-covered houses in the village. It's located on the facade of one of the buildings in the row of colorful houses along the street, positioned just above head height. Given the winter scene, this birdhouse could provide shelter for local birds during the cold weather."
+    },
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a tiger in this winter scene. The image shows a busy winter landscape with people skiing, skating, and enjoying various winter activities. There are some animals present like deer, dogs, and birds, but no tiger is visible in the illustration."
     }
   },
   "tigertom-zoo.jpg": {
@@ -681,15 +661,6 @@
     }
   },
   "whodoeswhat-city.jpg": {
-    "cello": {
-      "bbox": [
-        0.15,
-        0.22,
-        0.18,
-        0.28
-      ],
-      "description": "There is a large cello or double bass visible leaning against the entrance of the green house with the red roof on the left side of the image. The wooden stringed instrument appears to be dark brown in color and is standing upright next to the doorway. Given its size and shape, it's most likely a cello though it could potentially be a double bass."
-    },
     "black cat": {
       "bbox": [
         0.49,
@@ -698,6 +669,35 @@
         0.48
       ],
       "description": "There is a small black cat sitting on the sidewalk near the corner of a building with blue shutters (appears to be a store called 'Nexap'). The cat is positioned in roughly the center of the image, between parked vehicles and pedestrians walking on the street. The cat appears to be in a sitting position, observing the busy street activity around it."
+    },
+    "cello": {
+      "bbox": [
+        0.15,
+        0.22,
+        0.18,
+        0.28
+      ],
+      "description": "There is a large cello or double bass visible leaning against the entrance of the green house with the red roof on the left side of the image. The wooden stringed instrument appears to be dark brown in color and is standing upright next to the doorway. Given its size and shape, it's most likely a cello though it could potentially be a double bass."
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "fire truck": {
+      "bbox": [
+        0.55,
+        0.35,
+        0.7,
+        0.45
+      ],
+      "description": "There is a red fire truck with an extended ladder in the middle-right portion of the image. It appears to be near a construction site where a blue excavator is working. The fire truck is parked on the street and has a distinctive silver/grey ladder extending from its top. It's a traditional style fire engine in bright red coloring."
+    },
+    "saxophone": {
+      "bbox": [
+        0.83,
+        0.75,
+        0.85,
+        0.78
+      ],
+      "description": "There appears to be a saxophone being played by a person in black clothing near the bottom right section of the image, close to the playground area. The person is standing on the grass while holding the brass-colored instrument."
     }
   },
   "whodoeswhat-city3.jpg": {

@@ -1,25 +1,5 @@
 {
-  "river-adventure-house.jpg": {
-    "whale": {
-      "bbox": [
-        0.245,
-        0.093,
-        0.31,
-        0.217
-      ],
-      "description": "The whale is a blue decorative figure positioned at the top of the yellow water slide, situated in the upper left area of the image."
-    }
-  },
   "construction-evening.jpg": {
-    "person riding a horse": {
-      "bbox": [
-        0.13,
-        0.14,
-        0.19,
-        0.2
-      ],
-      "description": "A person riding a horse is located on the left side of the image, near the hill. The horse is brown, and the rider is dressed in a black outfit, possibly wearing a helmet. Nearby, there is construction equipment and people engaged in various activities on the site."
-    },
     "castle": {
       "bbox": [
         0.85,
@@ -28,38 +8,18 @@
         0.22
       ],
       "description": "The castle is located in the upper right corner of the image. It is situated on top of a hill amidst autumn-colored trees. The castle features multiple turrets and red-roofed spires, and is illuminated by the moonlight."
-    }
-  },
-  "kf-winter.jpg": {
-    "sun": {
-      "bbox": [
-        0.95,
-        0.05,
-        1.0,
-        0.1
-      ],
-      "description": "The sun is located in the upper right corner of the image. It is a small, orange circle against the light grayish sky, adding a warm contrast to the snowy scene."
     },
-    "log cabin": {
+    "person riding a horse": {
       "bbox": [
-        0.2,
-        0.5,
-        0.4,
-        0.65
+        0.13,
+        0.14,
+        0.19,
+        0.2
       ],
-      "description": "The log cabin is located in the lower left section of the image. It's a rectangular structure with a green roof and light brown walls. There are people standing outside, engaged in various activities."
+      "description": "A person riding a horse is located on the left side of the image, near the hill. The horse is brown, and the rider is dressed in a black outfit, possibly wearing a helmet. Nearby, there is construction equipment and people engaged in various activities on the site."
     }
   },
   "construction-site.jpg": {
-    "fox": {
-      "bbox": [
-        0.23,
-        0.33,
-        0.32,
-        0.38
-      ],
-      "description": "The fox is located on the roof of a white building, towards the left side of the image. It is orange with a bushy tail and is sitting, looking forward."
-    },
     "concrete mixer truck": {
       "bbox": [
         0.08,
@@ -68,6 +28,15 @@
         0.52
       ],
       "description": "The concrete mixer truck is located on the left side of the image. It is green with a striped mixing drum and is parked with its front facing to the left. Two people wearing construction hats are nearby."
+    },
+    "fox": {
+      "bbox": [
+        0.23,
+        0.33,
+        0.32,
+        0.38
+      ],
+      "description": "The fox is located on the roof of a white building, towards the left side of the image. It is orange with a bushy tail and is sitting, looking forward."
     }
   },
   "construction-snow.jpg": {
@@ -88,6 +57,79 @@
         0.75
       ],
       "description": "The sedan is a red car located towards the lower right of the image. It is partially covered in snow, being cleared by a man with a large snowball. Nearby, there are children making snowmen and a person in green attire near a Christmas tree."
+    }
+  },
+  "kf-f1.jpg": {
+    "f1 car": {
+      "bbox": [
+        0.68,
+        0.78,
+        0.79,
+        0.88
+      ],
+      "description": "The F1 car is located near the bottom right of the image. It is on the race track, near the beach, and is white with red accents. It is positioned on the road among palm trees and buildings, with the ocean visible nearby."
+    },
+    "flamingo": {
+      "bbox": [
+        0.07,
+        0.6,
+        0.22,
+        0.81
+      ],
+      "description": "The flamingo is large and pink, located in the bottom left section of the image. It is standing on a small patch of green land, near the water. The bird is facing to the right, with one leg bent."
+    }
+  },
+  "kf-winter.jpg": {
+    "log cabin": {
+      "bbox": [
+        0.2,
+        0.5,
+        0.4,
+        0.65
+      ],
+      "description": "The log cabin is located in the lower left section of the image. It's a rectangular structure with a green roof and light brown walls. There are people standing outside, engaged in various activities."
+    },
+    "sun": {
+      "bbox": [
+        0.95,
+        0.05,
+        1.0,
+        0.1
+      ],
+      "description": "The sun is located in the upper right corner of the image. It is a small, orange circle against the light grayish sky, adding a warm contrast to the snowy scene."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "octopus": {
+      "bbox": [
+        0.436,
+        0.481,
+        0.491,
+        0.585
+      ],
+      "description": "The octopus is purple and located in the water, towards the center of the image. It is partially submerged, with its tentacles visible around a person wearing snorkeling gear."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "trojan horse": {
+      "bbox": [
+        0.72,
+        0.75,
+        0.79,
+        0.88
+      ],
+      "description": "The Trojan horse is located near the bottom right of the image. It is a large wooden structure shaped like a horse, standing on a rocky ledge above the sea. There are people gathered around it, and it is positioned next to a staircase."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "faucet": {
+      "bbox": [
+        0.06,
+        0.31,
+        0.1,
+        0.42
+      ],
+      "description": "The faucet is located towards the left side of the image, attached to a large stone or marble structure. It is being used by a man wearing a hat who is bending forward. The faucet is metallic and protrudes from the structure."
     }
   },
   "mitgutsch-beach.jpg": {
@@ -124,15 +166,6 @@
     }
   },
   "mitgutsch-orchestra.jpg": {
-    "mandarin orange": {
-      "bbox": [
-        0.065,
-        0.88,
-        0.091,
-        0.92
-      ],
-      "description": "A person sitting on a flight case in the bottom left corner is holding a mandarin orange in their left hand. The orange is small and round, typical in color for a mandarin."
-    },
     "harp": {
       "bbox": [
         0.01,
@@ -141,6 +174,15 @@
         0.45
       ],
       "description": "The harp is located on the left side of the image. It is a large, wooden instrument with a series of strings. A person is seated beside it, playing. The harp is prominent due to its height and distinctive shape, with a curved column and a triangular frame."
+    },
+    "mandarin orange": {
+      "bbox": [
+        0.065,
+        0.88,
+        0.091,
+        0.92
+      ],
+      "description": "A person sitting on a flight case in the bottom left corner is holding a mandarin orange in their left hand. The orange is small and round, typical in color for a mandarin."
     }
   },
   "mitgutsch-pirate.jpg": {
@@ -187,130 +229,6 @@
       "description": "The lobster is located in the bottom left section of the image. It is in the hands of a person wearing a white outfit near the edge of the water. The lobster is red and is prominently visible against the person's white clothing."
     }
   },
-  "tigertom-park3.jpg": {
-    "cartoon tiger": {
-      "bbox": [
-        0.43,
-        0.23,
-        0.5,
-        0.36
-      ],
-      "description": "The cartoon tiger is standing upright near the middle of the image. It is yellow with black stripes and has a friendly expression. It is wearing a green and yellow outfit and is visible just behind the pathway where people are walking, close to some bushes and trees."
-    },
-    "soccer ball": {
-      "bbox": [
-        0.73,
-        0.78,
-        0.77,
-        0.82
-      ],
-      "description": "The soccer ball is located in the bottom right portion of the image. It is a classic black and white patterned ball, actively being kicked by a child wearing a red shirt and black shorts."
-    }
-  },
-  "professions-intersection.jpg": {
-    "cactus": {
-      "bbox": [
-        0.87,
-        0.85,
-        0.92,
-        0.95
-      ],
-      "description": "The cactus is located in the bottom-right corner of the image. It is held by the giraffe and is green with several small red-orange flowers or spikes protruding from it. The giraffe is standing on the sidewalk next to a colorful group of animals."
-    }
-  },
-  "tigertom-intersection.jpg": {
-    "cartoon tiger": {
-      "bbox": [
-        0.34,
-        0.56,
-        0.38,
-        0.61
-      ],
-      "description": "The cartoon tiger is walking across a crosswalk from left to right. It is dressed in a striped top and pants in yellow and black. The tiger is waving one arm and has a cheerful expression. Nearby, there are people crossing the street and a green car parked on the street."
-    },
-    "yellow bus": {
-      "bbox": [
-        0.64,
-        0.33,
-        0.86,
-        0.5
-      ],
-      "description": "The yellow bus is located on the right side of the image near the street. It is parked on the side of the road, behind a pedestrian crossing. The bus has a large front windshield and is next to a bus stop sign. There is a person walking towards the bus."
-    }
-  },
-  "whodoeswhat-city2.jpg": {
-    "saxophone": {
-      "bbox": [
-        0.62,
-        0.78,
-        0.69,
-        0.85
-      ],
-      "description": "The saxophone is being held by a person wearing a dark suit near the bottom right corner of the image. The person is in a standing position and appears to be playing the instrument. They are located on a grass area, close to a path."
-    },
-    "fire truck": {
-      "bbox": [
-        0.48,
-        0.35,
-        0.75,
-        0.6
-      ],
-      "description": "The fire truck is red and located near the center right of the image. It is parked on the street next to the construction area, with its ladder extended towards the top of the image. Nearby, there are construction workers and vehicles. The fire truck has blue emergency lights on top and a visible driver in the cab."
-    }
-  },
-  "kf-f1.jpg": {
-    "f1 car": {
-      "bbox": [
-        0.68,
-        0.78,
-        0.79,
-        0.88
-      ],
-      "description": "The F1 car is located near the bottom right of the image. It is on the race track, near the beach, and is white with red accents. It is positioned on the road among palm trees and buildings, with the ocean visible nearby."
-    },
-    "flamingo": {
-      "bbox": [
-        0.07,
-        0.6,
-        0.22,
-        0.81
-      ],
-      "description": "The flamingo is large and pink, located in the bottom left section of the image. It is standing on a small patch of green land, near the water. The bird is facing to the right, with one leg bent."
-    }
-  },
-  "lufthansa-beach.jpg": {
-    "octopus": {
-      "bbox": [
-        0.436,
-        0.481,
-        0.491,
-        0.585
-      ],
-      "description": "The octopus is purple and located in the water, towards the center of the image. It is partially submerged, with its tentacles visible around a person wearing snorkeling gear."
-    }
-  },
-  "lufthansa-greece.jpg": {
-    "trojan horse": {
-      "bbox": [
-        0.72,
-        0.75,
-        0.79,
-        0.88
-      ],
-      "description": "The Trojan horse is located near the bottom right of the image. It is a large wooden structure shaped like a horse, standing on a rocky ledge above the sea. There are people gathered around it, and it is positioned next to a staircase."
-    }
-  },
-  "lufthansa-turkish-bazaar.jpg": {
-    "faucet": {
-      "bbox": [
-        0.06,
-        0.31,
-        0.1,
-        0.42
-      ],
-      "description": "The faucet is located towards the left side of the image, attached to a large stone or marble structure. It is being used by a man wearing a hat who is bending forward. The faucet is metallic and protrudes from the structure."
-    }
-  },
   "montreal-snow.jpg": {
     "bear": {
       "bbox": [
@@ -355,6 +273,17 @@
       "description": "The quadcopter is located on the top left corner of the image above the main building with 'Porsche' written on it. It has a gray body with four propellers and appears to be flying over the rooftop with workers."
     }
   },
+  "professions-intersection.jpg": {
+    "cactus": {
+      "bbox": [
+        0.87,
+        0.85,
+        0.92,
+        0.95
+      ],
+      "description": "The cactus is located in the bottom-right corner of the image. It is held by the giraffe and is green with several small red-orange flowers or spikes protruding from it. The giraffe is standing on the sidewalk next to a colorful group of animals."
+    }
+  },
   "professions-street.jpg": {
     "scissors": {
       "bbox": [
@@ -375,6 +304,17 @@
         0.57
       ],
       "description": "The pizza is located on a plate on a table in front of an orange cat sitting across from a rabbit. It is topped with pepperoni and appears to be half-eaten. This scene is to the right of the image in an outdoor dining area with a red chair and tablecloth."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "whale": {
+      "bbox": [
+        0.245,
+        0.093,
+        0.31,
+        0.217
+      ],
+      "description": "The whale is a blue decorative figure positioned at the top of the yellow water slide, situated in the upper left area of the image."
     }
   },
   "river-adventure-river.jpg": {
@@ -565,6 +505,26 @@
       "description": "The rake is located in the lower-left part of the image, leaning against the pink house next to the door. It is upright and appears to be a typical garden rake with a wooden handle."
     }
   },
+  "tigertom-intersection.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.34,
+        0.56,
+        0.38,
+        0.61
+      ],
+      "description": "The cartoon tiger is walking across a crosswalk from left to right. It is dressed in a striped top and pants in yellow and black. The tiger is waving one arm and has a cheerful expression. Nearby, there are people crossing the street and a green car parked on the street."
+    },
+    "yellow bus": {
+      "bbox": [
+        0.64,
+        0.33,
+        0.86,
+        0.5
+      ],
+      "description": "The yellow bus is located on the right side of the image near the street. It is parked on the side of the road, behind a pedestrian crossing. The bus has a large front windshield and is next to a bus stop sign. There is a person walking towards the bus."
+    }
+  },
   "tigertom-market.jpg": {
     "cartoon tiger": {
       "bbox": [
@@ -607,16 +567,27 @@
       "description": "The cartoon tiger is a small plush toy located on the bench to the left, near a person wearing a yellow shirt. It has a distinctive orange and black striped pattern typical of a tiger."
     }
   },
-  "tigertom-snow.jpg": {
+  "tigertom-park3.jpg": {
     "cartoon tiger": {
       "bbox": [
-        0.51,
-        0.57,
-        0.57,
-        0.62
+        0.43,
+        0.23,
+        0.5,
+        0.36
       ],
-      "description": "The cartoon tiger is located in the bottom center section of the image. It is wearing a green hat and appears to be riding a sled. The tiger has orange and black stripes and is positioned right of center, near children playing in the snow."
+      "description": "The cartoon tiger is standing upright near the middle of the image. It is yellow with black stripes and has a friendly expression. It is wearing a green and yellow outfit and is visible just behind the pathway where people are walking, close to some bushes and trees."
     },
+    "soccer ball": {
+      "bbox": [
+        0.73,
+        0.78,
+        0.77,
+        0.82
+      ],
+      "description": "The soccer ball is located in the bottom right portion of the image. It is a classic black and white patterned ball, actively being kicked by a child wearing a red shirt and black shorts."
+    }
+  },
+  "tigertom-snow.jpg": {
     "birdhouse": {
       "bbox": [
         0.67,
@@ -625,6 +596,15 @@
         0.88
       ],
       "description": "The birdhouse is located near the bottom right of the image, attached to a tree. It's a small, red structure with a circular opening, hanging from a tree branch. Below it are some trees and a deer walking by."
+    },
+    "cartoon tiger": {
+      "bbox": [
+        0.51,
+        0.57,
+        0.57,
+        0.62
+      ],
+      "description": "The cartoon tiger is located in the bottom center section of the image. It is wearing a green hat and appears to be riding a sled. The tiger has orange and black stripes and is positioned right of center, near children playing in the snow."
     }
   },
   "tigertom-zoo.jpg": {
@@ -681,15 +661,6 @@
     }
   },
   "whodoeswhat-city.jpg": {
-    "cello": {
-      "bbox": [
-        0.24,
-        0.37,
-        0.29,
-        0.53
-      ],
-      "description": "The cello is located outside the green house in the left-middle part of the image. It is leaning against the wall next to the open front door. The cello is brown and features the characteristic curved shape with sound holes."
-    },
     "black cat": {
       "bbox": [
         0.575,
@@ -698,6 +669,35 @@
         0.37
       ],
       "description": "A small black cat is located on the left side of the green house near the center left of the image. It is climbing on the fence in front of the house, facing to the right and partially obscured by the foliage."
+    },
+    "cello": {
+      "bbox": [
+        0.24,
+        0.37,
+        0.29,
+        0.53
+      ],
+      "description": "The cello is located outside the green house in the left-middle part of the image. It is leaning against the wall next to the open front door. The cello is brown and features the characteristic curved shape with sound holes."
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "fire truck": {
+      "bbox": [
+        0.48,
+        0.35,
+        0.75,
+        0.6
+      ],
+      "description": "The fire truck is red and located near the center right of the image. It is parked on the street next to the construction area, with its ladder extended towards the top of the image. Nearby, there are construction workers and vehicles. The fire truck has blue emergency lights on top and a visible driver in the cab."
+    },
+    "saxophone": {
+      "bbox": [
+        0.62,
+        0.78,
+        0.69,
+        0.85
+      ],
+      "description": "The saxophone is being held by a person wearing a dark suit near the bottom right corner of the image. The person is in a standing position and appears to be playing the instrument. They are located on a grass area, close to a path."
     }
   },
   "whodoeswhat-city3.jpg": {

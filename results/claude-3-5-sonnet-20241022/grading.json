@@ -1,510 +1,510 @@
 {
-  "river-adventure-house.jpg": {
-    "whale": {
-      "status": "predicted",
-      "giou": -0.9534720533339659,
-      "description_grade": 0,
-      "description_grade_reason": "While the prediction identifies a blue water feature, it misidentifies it as an elephant and describes it as spraying water, which is not mentioned in the ground truth.  Crucially, it incorrectly describes the location as being in a wading pool. The ground truth clearly places it on top of a water slide support structure."
-    }
-  },
   "construction-evening.jpg": {
-    "person riding a horse": {
-      "status": "predicted",
-      "giou": -0.6757840294323981,
-      "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies the person riding a horse in the background, it misses several key details. The ground truth specifies the horse is dark and the trees have orange leaves, which is not captured. More importantly, the predicted description mentions a \"dark blue night sky\" and \"moonlit sky\" which suggests a nighttime scene. The ground truth implies a daytime scene due to the mention of orange leaves and ongoing construction. The location is generally correct (background, on a hill), but the additional detail of \"slightly right of center\" is missing. Lastly, although the presence of the castle is not mentioned in the ground truth, associating the scene with a castle when one isn't present represents a significant inaccuracy and is heavily weighted toward a lower score."
-    },
     "castle": {
-      "status": "predicted",
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the castle's key details (medieval style, towers, red roofs/glow from windows which implies reddish color), and its location (top right, on a hill, surrounded by trees).  The additional details in the predicted description (crenellated walls, night sky, moon, autumn-colored trees) do not contradict the ground truth.  Although the ground truth doesn't mention these details, their presence doesn't detract from the accuracy of the core elements.",
       "giou": -0.16759723190586923,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the castle's key details (medieval style, towers, red roofs/glow from windows which implies reddish color), and its location (top right, on a hill, surrounded by trees).  The additional details in the predicted description (crenellated walls, night sky, moon, autumn-colored trees) do not contradict the ground truth.  Although the ground truth doesn't mention these details, their presence doesn't detract from the accuracy of the core elements."
-    }
-  },
-  "kf-winter.jpg": {
-    "sun": {
-      "status": "predicted",
-      "giou": -0.3302642545746043,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the sun's appearance as a simple orange circle, its location in the top right, and its relationship to the clouds.  The additional details about the sky color and minimalist style do not contradict the ground truth and can be ignored. The key details are correctly identified."
+      "status": "predicted"
     },
-    "log cabin": {
-      "status": "predicted",
-      "giou": 0.16993836327975553,
-      "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies key details like the log construction and the sloped roof. The location is reasonably accurate ('middle-lower' vs 'middle left'). However, the roof color is incorrect ('green' vs 'logs'), and the description of people 'gathered outside' doesn't accurately capture the specific activity of staff serving drinks and skates inside the open cabin."
+    "person riding a horse": {
+      "description_grade": 1,
+      "description_grade_reason": "While the predicted description correctly identifies the person riding a horse in the background, it misses several key details. The ground truth specifies the horse is dark and the trees have orange leaves, which is not captured. More importantly, the predicted description mentions a \"dark blue night sky\" and \"moonlit sky\" which suggests a nighttime scene. The ground truth implies a daytime scene due to the mention of orange leaves and ongoing construction. The location is generally correct (background, on a hill), but the additional detail of \"slightly right of center\" is missing. Lastly, although the presence of the castle is not mentioned in the ground truth, associating the scene with a castle when one isn't present represents a significant inaccuracy and is heavily weighted toward a lower score.",
+      "giou": -0.6757840294323981,
+      "status": "predicted"
     }
   },
   "construction-site.jpg": {
-    "fox": {
-      "status": "predicted",
-      "giou": -0.8855067921542346,
-      "description_grade": 0,
-      "description_grade_reason": "While the predicted description correctly identifies the fox and its location in the bottom left, it misinterprets the fox as a drawing or part of a mural. The ground truth clearly describes a real fox partially hidden behind a box. This misinterpretation of the object's fundamental nature overrides the correct location."
-    },
     "concrete mixer truck": {
-      "status": "predicted",
-      "giou": -0.10011932189508448,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details and location of the concrete mixer truck. It correctly identifies the color as green, its position on the left side of the image, and its association with a construction site (which aligns with being on the border of a construction pit).  The additional details about the drum, while not present in the ground truth, do not contradict it. The mention of workers is irrelevant as the ground truth doesn't mention them either way."
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the concrete mixer truck. It correctly identifies the color as green, its position on the left side of the image, and its association with a construction site (which aligns with being on the border of a construction pit).  The additional details about the drum, while not present in the ground truth, do not contradict it. The mention of workers is irrelevant as the ground truth doesn't mention them either way.",
+      "giou": -0.10011932189508448,
+      "status": "predicted"
+    },
+    "fox": {
+      "description_grade": 0,
+      "description_grade_reason": "While the predicted description correctly identifies the fox and its location in the bottom left, it misinterprets the fox as a drawing or part of a mural. The ground truth clearly describes a real fox partially hidden behind a box. This misinterpretation of the object's fundamental nature overrides the correct location.",
+      "giou": -0.8855067921542346,
+      "status": "predicted"
     }
   },
   "construction-snow.jpg": {
     "santa": {
-      "status": "predicted",
-      "giou": -0.2897552619172397,
       "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies Santa's location in the top right and his red suit, it misses several key details. The ground truth mentions a brown sack and snow-covered trees, which are absent from the prediction.  More importantly, the predicted description introduces inaccurate details about a yellow-green building, children, and an entrance, none of which are mentioned in the ground truth. While some leeway is allowed for interpretation, these additions create a significantly different scene than the one described in the ground truth."
+      "description_grade_reason": "While the predicted description correctly identifies Santa's location in the top right and his red suit, it misses several key details. The ground truth mentions a brown sack and snow-covered trees, which are absent from the prediction.  More importantly, the predicted description introduces inaccurate details about a yellow-green building, children, and an entrance, none of which are mentioned in the ground truth. While some leeway is allowed for interpretation, these additions create a significantly different scene than the one described in the ground truth.",
+      "giou": -0.2897552619172397,
+      "status": "predicted"
     },
     "sedan": {
-      "status": "predicted",
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the red sedan in the lower right and its general color. It also correctly infers it is stuck in the snow. However, it misses the key details of the blue house, the Christmas tree, and the snow thrower actively launching snow onto the car. While it mentions people nearby, it doesn't capture the interaction with the woman being startled. The mention of a \"shelter or structure\" is vague and doesn't accurately represent the house.",
       "giou": -0.3027738083421905,
-      "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the red sedan in the lower right and its general color. It also correctly infers it is stuck in the snow. However, it misses the key details of the blue house, the Christmas tree, and the snow thrower actively launching snow onto the car. While it mentions people nearby, it doesn't capture the interaction with the woman being startled. The mention of a \"shelter or structure\" is vague and doesn't accurately represent the house."
-    }
-  },
-  "mitgutsch-beach.jpg": {
-    "pirate flag": {
-      "status": "predicted",
-      "giou": -0.3673280386360723,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details of the pirate flag: its color (black), design (skull and crossbones), and general location (upper-middle/top center).  The additional details about the 'HOTEL' sign and beach/poolside structure do not contradict the ground truth and are not penalized. The description also correctly identifies its spatial relationship to the child ('next to')."
-    }
-  },
-  "mitgutsch-carnival.jpg": {
-    "chef hat": {
-      "status": "predicted",
-      "giou": -0.475918222272968,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details of the chef's hat: it's white, a chef's hat (toque), and worn by a vendor/food seller.  The location is correctly identified as the middle-right portion of the image. While the ground truth mentions chickens and a carnival, these are not relevant to the hat itself and the predicted description doesn't need to include them."
-    }
-  },
-  "mitgutsch-fight.jpg": {
-    "man waving a white flag": {
-      "status": "predicted",
-      "giou": -0.9398754711083032,
-      "description_grade": 0,
-      "description_grade_reason": "The predicted location of the man is incorrect (\"far right upper portion\" vs \"top left\"). This is a critical error, making the description completely incorrect despite mentioning the flag waving."
-    }
-  },
-  "mitgutsch-orchestra.jpg": {
-    "mandarin orange": {
-      "status": "not found",
-      "giou": -1.0,
-      "description_grade": -1,
-      "description_grade_reason": ""
-    },
-    "harp": {
-      "status": "predicted",
-      "giou": 0.12686159870955033,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details and location of the harp.  It correctly identifies its color as gold/golden, its position near the top-left (far left of the orchestra), and the fact that it's behind the piano and being played by a woman (musician). Although the woman's outfit is described as pink/salmon instead of red, this minor color discrepancy doesn't detract from the overall accuracy of the description. The additional details about the harp's type and size are consistent with the ground truth and image (although not mentioned in the ground truth) and contribute to the overall accuracy.  The left of the woodwind players spatial relation is implied by the 'end of the curved orchestra formation' description."
-    }
-  },
-  "mitgutsch-pirate.jpg": {
-    "couple kissing": {
-      "status": "predicted",
-      "giou": -0.9728729565358745,
-      "description_grade": 0,
-      "description_grade_reason": "The predicted description places the couple in a boat in the water, while the ground truth describes them amongst foliage. This is a major localization error, making the prediction completely incorrect despite mentioning a kissing couple."
-    }
-  },
-  "mitgutsch-pool.jpg": {
-    "tennis racket": {
-      "status": "predicted",
-      "giou": -0.9936317020254413,
-      "description_grade": 0,
-      "description_grade_reason": "The predicted location of the tennis racket is incorrect. The ground truth places it near the top of the image and by a pool, while the prediction places it near the bottom left by a water slide.  This significant spatial discrepancy warrants a 0 rating, regardless of other details."
-    }
-  },
-  "mitgutsch-townsquare.jpg": {
-    "kite": {
-      "status": "predicted",
-      "giou": -0.7519946317599683,
-      "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies the kite and its general location in the upper left portion of the image, it misses several key details.  The ground truth specifies the kite is *caught* in a tree, whereas the prediction says it's *flying above* the trees. This is a critical difference.  The kite's description as 'small blue' is inaccurate as the ground truth indicates it is multi-colored. The prediction also misses the detail about the string hanging down to a park bench. Although it correctly infers a public space with people, this isn't as important as the object's direct interaction with the tree and the string's location."
-    }
-  },
-  "mitgutsch-water.jpg": {
-    "lobster": {
-      "status": "predicted",
-      "giou": -0.9088433030907925,
-      "description_grade": 0,
-      "description_grade_reason": "The predicted description places the lobster being pulled up from the water, while the ground truth clearly states it's being carried by a man on a wooden board. This is a critical difference in location and action, making the prediction completely incorrect despite mentioning a red lobster."
-    }
-  },
-  "tigertom-park3.jpg": {
-    "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.4371977096624723,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the tiger's key details (yellow and black, walking on two legs), its location (upper middle/center, on a walkway, near children), and its appearance (striped).  The slight differences like \"standing\" vs. \"walking\" and \"ball/watermelon\" being omitted are minor and don't detract from the overall accuracy. The additional details about the walkway material and intersecting paths do not contradict the ground truth."
-    },
-    "soccer ball": {
-      "status": "predicted",
-      "giou": -0.7291359599334639,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately identifies the soccer ball's location in the bottom portion of the image and mentions it being kicked. The description of a classic black and white soccer ball matches general expectations and doesn't contradict the ground truth.  While the ground truth only mentions one boy kicking the ball, the predicted description of it being between players actively engaged in a game doesn't contradict this and provides reasonable detail consistent with the context of a soccer game."
-    }
-  },
-  "professions-intersection.jpg": {
-    "cactus": {
-      "status": "predicted",
-      "giou": -0.88506603293808,
-      "description_grade": 0,
-      "description_grade_reason": "The predicted description places the cactus on a tray being carried by a bunny. The ground truth describes it as potted in a window. This significant difference in location warrants a 0 rating, as the primary aspect of the object's description is incorrect."
-    }
-  },
-  "tigertom-intersection.jpg": {
-    "cartoon tiger": {
-      "status": "not found",
-      "giou": -1.0,
-      "description_grade": -1,
-      "description_grade_reason": ""
-    },
-    "yellow bus": {
-      "status": "predicted",
-      "giou": 0.24496190871576426,
-      "description_grade": 2,
-      "description_grade_reason": "The predicted description gets most of the key details correct, including the object (yellow bus), its general location (middle-right, which is close enough to upper right), and the activity (passengers getting on/off). It correctly identifies the crosswalk. However, it incorrectly states the bus is facing right.  It also adds detail about a green shelter/awning which is not mentioned in the ground truth, so we can't penalize it for this, but the lack of mention of the intersection is a missing detail."
-    }
-  },
-  "whodoeswhat-city2.jpg": {
-    "saxophone": {
-      "status": "predicted",
-      "giou": -0.9462943890639041,
-      "description_grade": 1,
-      "description_grade_reason": "While the prediction correctly identifies a saxophone being held by a person in black clothing, it makes several key errors. Firstly, the location is incorrect - bottom right vs. bottom middle. Secondly, the saxophone is described as being 'played,' which contradicts the ground truth. Finally, the description of it being near a playground is not mentioned in the ground truth (and may be incorrect). The description gets some elements correct (person, saxophone, black clothing) but misses crucial details regarding the location and action."
-    },
-    "fire truck": {
-      "status": "predicted",
-      "giou": 0.17062188931656758,
-      "description_grade": 2,
-      "description_grade_reason": "The predicted description gets most of the key details correct: it identifies the firetruck as red, places it in the middle-right (which is close enough to center-right), and mentions the extended ladder. However, it incorrectly states that the truck is parked, when the ground truth says it is moving towards a zebra crossing. It also adds the detail about a construction site and blue excavator, which while not contradicting the ground truth, are not mentioned and therefore not considered in the evaluation. The flashing blue lights are also missed."
-    }
-  },
-  "montreal-snow.jpg": {
-    "bear": {
-      "status": "predicted",
-      "giou": -0.5125031698743792,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately identifies the bear's color (brown), location (upper left portion), and facing direction (implied by observing activities, which would be to the right).  The mention of rocks and trees aligns with the ground truth.  Extra details about birds, squirrels, and illustration style are not relevant to the rating. The partial visibility is implicitly captured by 'near some trees and rocks', suggesting the bear isn't fully shown."
+      "status": "predicted"
     }
   },
   "kf-f1.jpg": {
     "f1 car": {
-      "status": "predicted",
-      "giou": 0.004819053644716742,
       "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies the location of the car in the right-middle portion of the image and its proximity to the water, it fails to accurately describe its key identifying detail - the pink color.  It incorrectly states the car is white with red accents. The description of the car facing diagonally up and left is also absent. Although the predicted description provides additional details about the surroundings, the significant color inaccuracy lowers the overall score."
+      "description_grade_reason": "While the predicted description correctly identifies the location of the car in the right-middle portion of the image and its proximity to the water, it fails to accurately describe its key identifying detail - the pink color.  It incorrectly states the car is white with red accents. The description of the car facing diagonally up and left is also absent. Although the predicted description provides additional details about the surroundings, the significant color inaccuracy lowers the overall score.",
+      "giou": 0.004819053644716742,
+      "status": "predicted"
     },
     "flamingo": {
-      "status": "predicted",
-      "giou": 0.3277358762081813,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures all the key details and spatial location of the flamingo. It correctly identifies the flamingo's color (pink), its pose (standing on one leg), and its location (bottom-left corner, on green land).  The additional details about the beak and cartoonish style do not contradict the ground truth and can be ignored. The mention of water's edge is consistent with the described green land likely being near water, adding further plausibility."
+      "description_grade_reason": "The predicted description accurately captures all the key details and spatial location of the flamingo. It correctly identifies the flamingo's color (pink), its pose (standing on one leg), and its location (bottom-left corner, on green land).  The additional details about the beak and cartoonish style do not contradict the ground truth and can be ignored. The mention of water's edge is consistent with the described green land likely being near water, adding further plausibility.",
+      "giou": 0.3277358762081813,
+      "status": "predicted"
+    }
+  },
+  "kf-winter.jpg": {
+    "log cabin": {
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies key details like the log construction and the sloped roof. The location is reasonably accurate ('middle-lower' vs 'middle left'). However, the roof color is incorrect ('green' vs 'logs'), and the description of people 'gathered outside' doesn't accurately capture the specific activity of staff serving drinks and skates inside the open cabin.",
+      "giou": 0.16993836327975553,
+      "status": "predicted"
+    },
+    "sun": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the sun's appearance as a simple orange circle, its location in the top right, and its relationship to the clouds.  The additional details about the sky color and minimalist style do not contradict the ground truth and can be ignored. The key details are correctly identified.",
+      "giou": -0.3302642545746043,
+      "status": "predicted"
     }
   },
   "lufthansa-beach.jpg": {
     "octopus": {
-      "status": "predicted",
-      "giou": -0.3024946328650757,
       "description_grade": 0,
-      "description_grade_reason": "Although the predicted description correctly identifies the octopus as purple and near the center of the image, it fails to mention the *critical* detail that it is on a snorkeler's head.  Instead, it places the octopus swimming freely amongst the other people.  This is a significant spatial mislocation and changes the entire context of the scene, warranting a 0 rating.  The added detail about pink goggles is irrelevant, as is the anthropomorphic interpretation of the octopus's enjoyment."
+      "description_grade_reason": "Although the predicted description correctly identifies the octopus as purple and near the center of the image, it fails to mention the *critical* detail that it is on a snorkeler's head.  Instead, it places the octopus swimming freely amongst the other people.  This is a significant spatial mislocation and changes the entire context of the scene, warranting a 0 rating.  The added detail about pink goggles is irrelevant, as is the anthropomorphic interpretation of the octopus's enjoyment.",
+      "giou": -0.3024946328650757,
+      "status": "predicted"
     }
   },
   "lufthansa-greece.jpg": {
     "trojan horse": {
-      "status": "predicted",
-      "giou": -0.10144736807959562,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the Trojan Horse's location in the bottom right and near the cliff edge. It also accurately describes it as a large, dark brown, wooden horse. However, it inaccurately states that the horse is stationary amongst buildings with red roofs. The ground truth clearly states it is being dragged by people. While some artistic license is permitted regarding pose (stationary vs being pulled), the surrounding buildings contradict the ground truth description of the cliff edge location."
+      "description_grade_reason": "The predicted description correctly identifies the Trojan Horse's location in the bottom right and near the cliff edge. It also accurately describes it as a large, dark brown, wooden horse. However, it inaccurately states that the horse is stationary amongst buildings with red roofs. The ground truth clearly states it is being dragged by people. While some artistic license is permitted regarding pose (stationary vs being pulled), the surrounding buildings contradict the ground truth description of the cliff edge location.",
+      "giou": -0.10144736807959562,
+      "status": "predicted"
     }
   },
   "lufthansa-turkish-bazaar.jpg": {
     "faucet": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
+    }
+  },
+  "mitgutsch-beach.jpg": {
+    "pirate flag": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details of the pirate flag: its color (black), design (skull and crossbones), and general location (upper-middle/top center).  The additional details about the 'HOTEL' sign and beach/poolside structure do not contradict the ground truth and are not penalized. The description also correctly identifies its spatial relationship to the child ('next to').",
+      "giou": -0.3673280386360723,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-carnival.jpg": {
+    "chef hat": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details of the chef's hat: it's white, a chef's hat (toque), and worn by a vendor/food seller.  The location is correctly identified as the middle-right portion of the image. While the ground truth mentions chickens and a carnival, these are not relevant to the hat itself and the predicted description doesn't need to include them.",
+      "giou": -0.475918222272968,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-fight.jpg": {
+    "man waving a white flag": {
+      "description_grade": 0,
+      "description_grade_reason": "The predicted location of the man is incorrect (\"far right upper portion\" vs \"top left\"). This is a critical error, making the description completely incorrect despite mentioning the flag waving.",
+      "giou": -0.9398754711083032,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-orchestra.jpg": {
+    "harp": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the harp.  It correctly identifies its color as gold/golden, its position near the top-left (far left of the orchestra), and the fact that it's behind the piano and being played by a woman (musician). Although the woman's outfit is described as pink/salmon instead of red, this minor color discrepancy doesn't detract from the overall accuracy of the description. The additional details about the harp's type and size are consistent with the ground truth and image (although not mentioned in the ground truth) and contribute to the overall accuracy.  The left of the woodwind players spatial relation is implied by the 'end of the curved orchestra formation' description.",
+      "giou": 0.12686159870955033,
+      "status": "predicted"
+    },
+    "mandarin orange": {
+      "description_grade": -1,
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
+    }
+  },
+  "mitgutsch-pirate.jpg": {
+    "couple kissing": {
+      "description_grade": 0,
+      "description_grade_reason": "The predicted description places the couple in a boat in the water, while the ground truth describes them amongst foliage. This is a major localization error, making the prediction completely incorrect despite mentioning a kissing couple.",
+      "giou": -0.9728729565358745,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-pool.jpg": {
+    "tennis racket": {
+      "description_grade": 0,
+      "description_grade_reason": "The predicted location of the tennis racket is incorrect. The ground truth places it near the top of the image and by a pool, while the prediction places it near the bottom left by a water slide.  This significant spatial discrepancy warrants a 0 rating, regardless of other details.",
+      "giou": -0.9936317020254413,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-townsquare.jpg": {
+    "kite": {
+      "description_grade": 1,
+      "description_grade_reason": "While the predicted description correctly identifies the kite and its general location in the upper left portion of the image, it misses several key details.  The ground truth specifies the kite is *caught* in a tree, whereas the prediction says it's *flying above* the trees. This is a critical difference.  The kite's description as 'small blue' is inaccurate as the ground truth indicates it is multi-colored. The prediction also misses the detail about the string hanging down to a park bench. Although it correctly infers a public space with people, this isn't as important as the object's direct interaction with the tree and the string's location.",
+      "giou": -0.7519946317599683,
+      "status": "predicted"
+    }
+  },
+  "mitgutsch-water.jpg": {
+    "lobster": {
+      "description_grade": 0,
+      "description_grade_reason": "The predicted description places the lobster being pulled up from the water, while the ground truth clearly states it's being carried by a man on a wooden board. This is a critical difference in location and action, making the prediction completely incorrect despite mentioning a red lobster.",
+      "giou": -0.9088433030907925,
+      "status": "predicted"
+    }
+  },
+  "montreal-snow.jpg": {
+    "bear": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately identifies the bear's color (brown), location (upper left portion), and facing direction (implied by observing activities, which would be to the right).  The mention of rocks and trees aligns with the ground truth.  Extra details about birds, squirrels, and illustration style are not relevant to the rating. The partial visibility is implicitly captured by 'near some trees and rocks', suggesting the bear isn't fully shown.",
+      "giou": -0.5125031698743792,
+      "status": "predicted"
     }
   },
   "porsche-factory.jpg": {
     "spider web": {
-      "status": "predicted",
-      "giou": -0.1423484845015603,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details of the spider web's size (small), location (upper right), and color (white/gray).  While it adds detail about the environment (pipes, ventilation ducts, car factory), these do not contradict the ground truth and are reasonable inferences. The fact that the predicted description doesn't mention the person vacuuming is irrelevant, as the ground truth might not always exhaustively list every interaction in the image."
+      "description_grade_reason": "The predicted description accurately captures the key details of the spider web's size (small), location (upper right), and color (white/gray).  While it adds detail about the environment (pipes, ventilation ducts, car factory), these do not contradict the ground truth and are reasonable inferences. The fact that the predicted description doesn't mention the person vacuuming is irrelevant, as the ground truth might not always exhaustively list every interaction in the image.",
+      "giou": -0.1423484845015603,
+      "status": "predicted"
     }
   },
   "porsche-hq.jpg": {
     "toolbox": {
-      "status": "predicted",
-      "giou": -0.9918776773932887,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location (bottom right) is completely different from the ground truth location (middle left).  The color is also incorrect.  Since location is a critical detail, the prediction receives the lowest score."
+      "description_grade_reason": "The predicted location (bottom right) is completely different from the ground truth location (middle left).  The color is also incorrect.  Since location is a critical detail, the prediction receives the lowest score.",
+      "giou": -0.9918776773932887,
+      "status": "predicted"
     }
   },
   "porsche-road.jpg": {
     "quadcopter": {
-      "status": "predicted",
-      "giou": -0.9569140889880878,
       "description_grade": 1,
-      "description_grade_reason": "While the prediction correctly identifies the quadcopter and its general location in the upper portion of the image, it gets several key details wrong. The ground truth specifies the quadcopter is orange, while the prediction says it's blue.  The ground truth mentions the quadcopter is near the roof of the Porsche building and being controlled by someone on the roof, while the prediction only mentions it being above the Porsche facility and alongside a red airplane (not mentioned in the ground truth). The presence of birds is also missed.  Due to the color error and missing the key detail about the roof interaction, the prediction only warrants a 1."
+      "description_grade_reason": "While the prediction correctly identifies the quadcopter and its general location in the upper portion of the image, it gets several key details wrong. The ground truth specifies the quadcopter is orange, while the prediction says it's blue.  The ground truth mentions the quadcopter is near the roof of the Porsche building and being controlled by someone on the roof, while the prediction only mentions it being above the Porsche facility and alongside a red airplane (not mentioned in the ground truth). The presence of birds is also missed.  Due to the color error and missing the key detail about the roof interaction, the prediction only warrants a 1.",
+      "giou": -0.9569140889880878,
+      "status": "predicted"
+    }
+  },
+  "professions-intersection.jpg": {
+    "cactus": {
+      "description_grade": 0,
+      "description_grade_reason": "The predicted description places the cactus on a tray being carried by a bunny. The ground truth describes it as potted in a window. This significant difference in location warrants a 0 rating, as the primary aspect of the object's description is incorrect.",
+      "giou": -0.88506603293808,
+      "status": "predicted"
     }
   },
   "professions-street.jpg": {
     "scissors": {
-      "status": "predicted",
-      "giou": -0.8230481487758112,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately identifies the scissors' key details (small, open - implied by \"lying\"), location (lower right corner), and basic spatial relationship with other items. The color discrepancy (silver vs. dark handle) is minor, especially given the prediction's acknowledgement of the small size and potential difficulty in discerning details.  The description of surrounding items as \"papers or books\" is a reasonable interpretation of \"discarded items.\""
+      "description_grade_reason": "The predicted description accurately identifies the scissors' key details (small, open - implied by \"lying\"), location (lower right corner), and basic spatial relationship with other items. The color discrepancy (silver vs. dark handle) is minor, especially given the prediction's acknowledgement of the small size and potential difficulty in discerning details.  The description of surrounding items as \"papers or books\" is a reasonable interpretation of \"discarded items.\"",
+      "giou": -0.8230481487758112,
+      "status": "predicted"
     }
   },
   "professions-townsquare.jpg": {
     "pizza": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
+    }
+  },
+  "river-adventure-house.jpg": {
+    "whale": {
+      "description_grade": 0,
+      "description_grade_reason": "While the prediction identifies a blue water feature, it misidentifies it as an elephant and describes it as spraying water, which is not mentioned in the ground truth.  Crucially, it incorrectly describes the location as being in a wading pool. The ground truth clearly places it on top of a water slide support structure.",
+      "giou": -0.9534720533339659,
+      "status": "predicted"
     }
   },
   "river-adventure-river.jpg": {
     "macaw": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     }
   },
   "river-adventure-seaside.jpg": {
     "man wearing overalls over a white shirt": {
-      "status": "predicted",
-      "giou": -0.5880945707412969,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the man's attire (blue overalls over a white shirt), his location in the bottom-left quadrant/left side near the water, and his leaning posture.  The additional details about the ship and vehicle are not contradictory to the ground truth. The slight difference in interpreting his action (scaring animals vs. interacting with something) doesn't detract from the overall accuracy of the core details."
+      "description_grade_reason": "The predicted description accurately captures the man's attire (blue overalls over a white shirt), his location in the bottom-left quadrant/left side near the water, and his leaning posture.  The additional details about the ship and vehicle are not contradictory to the ground truth. The slight difference in interpreting his action (scaring animals vs. interacting with something) doesn't detract from the overall accuracy of the core details.",
+      "giou": -0.5880945707412969,
+      "status": "predicted"
     }
   },
   "rodhunt-xmas.jpg": {
     "menorah": {
-      "status": "predicted",
-      "giou": -0.5664637815144752,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details and location of the menorah. It correctly describes it as golden, having nine branches (implied by \"traditional Hanukkah menorah\"), and standing upright (implied by \"standing on\"). The location is correctly identified as the right portion of the image, among the crowd/festive elements.  The additional details about the decorative surface are plausible and don't contradict the ground truth. The relative size is not relevant to the rating."
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the menorah. It correctly describes it as golden, having nine branches (implied by \"traditional Hanukkah menorah\"), and standing upright (implied by \"standing on\"). The location is correctly identified as the right portion of the image, among the crowd/festive elements.  The additional details about the decorative surface are plausible and don't contradict the ground truth. The relative size is not relevant to the rating.",
+      "giou": -0.5664637815144752,
+      "status": "predicted"
     }
   },
   "season-beach.jpg": {
     "shuttlecock": {
-      "status": "predicted",
-      "giou": -0.9225751622928887,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the shuttlecock and its state (mid-flight). The location is slightly off ('center-right' instead of 'upper right'), but still reasonably close.  The description inaccurately identifies the bears as 'rabbits and other animals,' which is a significant detail error. However, it correctly describes the shuttlecock as small and white and captures its general purpose within the scene."
+      "description_grade_reason": "The predicted description correctly identifies the shuttlecock and its state (mid-flight). The location is slightly off ('center-right' instead of 'upper right'), but still reasonably close.  The description inaccurately identifies the bears as 'rabbits and other animals,' which is a significant detail error. However, it correctly describes the shuttlecock as small and white and captures its general purpose within the scene.",
+      "giou": -0.9225751622928887,
+      "status": "predicted"
     }
   },
   "season-winter.jpg": {
     "santa": {
-      "status": "predicted",
-      "giou": -0.9566528607147662,
       "description_grade": 0,
-      "description_grade_reason": "The predicted description places Santa in the middle of the street in front of a white house, while the ground truth clearly states he is climbing into a chimney of a house with a blue roof in the top left. This significant discrepancy in location warrants a 0 rating, despite correctly identifying some aspects of Santa's attire (red suit).  The description also mistakes Santa for a snowman."
+      "description_grade_reason": "The predicted description places Santa in the middle of the street in front of a white house, while the ground truth clearly states he is climbing into a chimney of a house with a blue roof in the top left. This significant discrepancy in location warrants a 0 rating, despite correctly identifying some aspects of Santa's attire (red suit).  The description also mistakes Santa for a snowman.",
+      "giou": -0.9566528607147662,
+      "status": "predicted"
     }
   },
   "tigertom-beach.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.1237162940390847,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the tiger's key details (yellow with black stripes) and its general location (middle of the image). However, it misses the more precise location ('slightly to the left') and incorrectly describes the adjacent element as someone with a bicycle on a boardwalk instead of a vendor selling goods. While it mentions the beach scene, this is less important than accurately describing the tiger and its immediate surroundings. The boardwalk detail is a significant enough inaccuracy to lower the score from a 3."
+      "description_grade_reason": "The predicted description correctly identifies the tiger's key details (yellow with black stripes) and its general location (middle of the image). However, it misses the more precise location ('slightly to the left') and incorrectly describes the adjacent element as someone with a bicycle on a boardwalk instead of a vendor selling goods. While it mentions the beach scene, this is less important than accurately describing the tiger and its immediate surroundings. The boardwalk detail is a significant enough inaccuracy to lower the score from a 3.",
+      "giou": -0.1237162940390847,
+      "status": "predicted"
     },
     "lifebuoy": {
-      "status": "predicted",
-      "giou": -0.8952534933623618,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location of the lifebuoy is incorrect.  The ground truth places it in the upper right, mounted to a lifeguard's chair, while the prediction places it near the middle, leaning against a beach chair. This significant spatial discrepancy warrants a 0 rating, despite correctly identifying the object's colors."
+      "description_grade_reason": "The predicted location of the lifebuoy is incorrect.  The ground truth places it in the upper right, mounted to a lifeguard's chair, while the prediction places it near the middle, leaning against a beach chair. This significant spatial discrepancy warrants a 0 rating, despite correctly identifying the object's colors.",
+      "giou": -0.8952534933623618,
+      "status": "predicted"
     }
   },
   "tigertom-birthday.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.274326733986407,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description gets the basic details of the tiger's appearance (yellow with black stripes) and approximate location (bottom center is close enough to bottom left of center) correct. It also correctly identifies the party hat (implied by \"party entertainment or costumed guest\"). However, it misses the key detail of the tiger reaching for a balloon animal and misidentifies it as a costume rather than a cartoon tiger.  While it adds extra details about the patio and another costume, these don't contradict the ground truth, but the core description of the tiger's action is inaccurate."
+      "description_grade_reason": "The predicted description gets the basic details of the tiger's appearance (yellow with black stripes) and approximate location (bottom center is close enough to bottom left of center) correct. It also correctly identifies the party hat (implied by \"party entertainment or costumed guest\"). However, it misses the key detail of the tiger reaching for a balloon animal and misidentifies it as a costume rather than a cartoon tiger.  While it adds extra details about the patio and another costume, these don't contradict the ground truth, but the core description of the tiger's action is inaccurate.",
+      "giou": -0.274326733986407,
+      "status": "predicted"
     }
   },
   "tigertom-classroom.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.4908047752682012,
       "description_grade": 0,
-      "description_grade_reason": "The predicted description places the tiger on the floor between tables, while the ground truth clearly states it is sitting *at* a table with other children. This significant spatial discrepancy warrants a 0 rating, despite the correct identification of the tiger as a cartoon character."
+      "description_grade_reason": "The predicted description places the tiger on the floor between tables, while the ground truth clearly states it is sitting *at* a table with other children. This significant spatial discrepancy warrants a 0 rating, despite the correct identification of the tiger as a cartoon character.",
+      "giou": -0.4908047752682012,
+      "status": "predicted"
     },
     "kitchen sponge": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     }
   },
   "tigertom-classroom2.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.6804839056135896,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details and location of the tiger. It correctly describes the tiger as yellow with black stripes, sitting on a chair at a table in the middle-left (or lower-middle as in the ground truth) portion of the image.  The mention of school supplies and stuffed animal appearance are extra details not contradicting the ground truth, while the lunchbox and water bottle in the ground truth are less specific descriptions than \"school supplies.\"  The slight difference in location description (middle-left vs. lower-middle) is minor and doesn't detract from the overall accuracy."
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the tiger. It correctly describes the tiger as yellow with black stripes, sitting on a chair at a table in the middle-left (or lower-middle as in the ground truth) portion of the image.  The mention of school supplies and stuffed animal appearance are extra details not contradicting the ground truth, while the lunchbox and water bottle in the ground truth are less specific descriptions than \"school supplies.\"  The slight difference in location description (middle-left vs. lower-middle) is minor and doesn't detract from the overall accuracy.",
+      "giou": -0.6804839056135896,
+      "status": "predicted"
     }
   },
   "tigertom-cycles.jpg": {
     "cartoon tiger": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     }
   },
   "tigertom-farm.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.6045087855639898,
       "description_grade": 1,
-      "description_grade_reason": "While the prediction correctly identifies the tiger as a small, yellow and black striped cartoon character, it fails to accurately describe its location. The ground truth clearly places the tiger hanging from an apple tree in the lower-middle section, next to a girl. The prediction places it in a garden near the main house, among bushes/flowers, near playing children. This is a significant discrepancy in location and context.  Although some details are correct (e.g., the color and stripes), the inaccurate location drastically lowers the rating."
+      "description_grade_reason": "While the prediction correctly identifies the tiger as a small, yellow and black striped cartoon character, it fails to accurately describe its location. The ground truth clearly places the tiger hanging from an apple tree in the lower-middle section, next to a girl. The prediction places it in a garden near the main house, among bushes/flowers, near playing children. This is a significant discrepancy in location and context.  Although some details are correct (e.g., the color and stripes), the inaccurate location drastically lowers the rating.",
+      "giou": -0.6045087855639898,
+      "status": "predicted"
     },
     "forklift": {
-      "status": "predicted",
-      "giou": -0.2593319296728342,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the object (red forklift), its color (red), and general location (upper right, near the sunflower field). However, it incorrectly states that the forklift is \"in operation\" when the ground truth says it is \"not in use.\"  While it provides extra details about beehives/boxes and the cartoon style, these do not contradict the ground truth and are therefore not penalized. The inaccurate operational status prevents a rating of 3."
+      "description_grade_reason": "The predicted description correctly identifies the object (red forklift), its color (red), and general location (upper right, near the sunflower field). However, it incorrectly states that the forklift is \"in operation\" when the ground truth says it is \"not in use.\"  While it provides extra details about beehives/boxes and the cartoon style, these do not contradict the ground truth and are therefore not penalized. The inaccurate operational status prevents a rating of 3.",
+      "giou": -0.2593319296728342,
+      "status": "predicted"
     }
   },
   "tigertom-garden.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.5636675272098977,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description gets most of the key details correct, including the tiger's appearance (yellow with black stripes) and its relaxed pose. However, it misidentifies the blanket's color and pattern as pink and white checkered instead of purple.  It also places the tiger in the \"lower middle\" rather than \"lower right.\" While it correctly identifies the child, the omission of the MP3 player is a missed detail. Overall, it's a decent description, but with some inaccuracies."
+      "description_grade_reason": "The predicted description gets most of the key details correct, including the tiger's appearance (yellow with black stripes) and its relaxed pose. However, it misidentifies the blanket's color and pattern as pink and white checkered instead of purple.  It also places the tiger in the \"lower middle\" rather than \"lower right.\" While it correctly identifies the child, the omission of the MP3 player is a missed detail. Overall, it's a decent description, but with some inaccuracies.",
+      "giou": -0.5636675272098977,
+      "status": "predicted"
     },
     "pitcher of water": {
-      "status": "predicted",
-      "giou": -0.05667796532079135,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the pitcher on the table and its general location (though not as precisely as 'upper left quadrant').  It also gets the table's color correct. However, it misses the key detail that the pitcher is half-filled. It also adds details about the place settings and tableware that, while not contradictory to the ground truth, are not mentioned and therefore don't contribute to the score. The mention of 'other tableware' also suggests the pitcher isn't on the edge as the ground truth states."
+      "description_grade_reason": "The predicted description correctly identifies the pitcher on the table and its general location (though not as precisely as 'upper left quadrant').  It also gets the table's color correct. However, it misses the key detail that the pitcher is half-filled. It also adds details about the place settings and tableware that, while not contradictory to the ground truth, are not mentioned and therefore don't contribute to the score. The mention of 'other tableware' also suggests the pitcher isn't on the edge as the ground truth states.",
+      "giou": -0.05667796532079135,
+      "status": "predicted"
     }
   },
   "tigertom-house.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.6903291627746598,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the tiger's key features (yellow with black stripes), its approximate location (right portion of the image), and its action (sitting/playing). However, it misses the more precise location ('middle-right') and incorrectly adds a detail about another character, not mentioned in the ground truth. While the sandbox description is largely correct, the extra details about the fence and garden are irrelevant to the tiger itself and don't negatively impact the description of the tiger. The core description of the tiger is mostly correct, warranting a 2."
+      "description_grade_reason": "The predicted description correctly identifies the tiger's key features (yellow with black stripes), its approximate location (right portion of the image), and its action (sitting/playing). However, it misses the more precise location ('middle-right') and incorrectly adds a detail about another character, not mentioned in the ground truth. While the sandbox description is largely correct, the extra details about the fence and garden are irrelevant to the tiger itself and don't negatively impact the description of the tiger. The core description of the tiger is mostly correct, warranting a 2.",
+      "giou": -0.6903291627746598,
+      "status": "predicted"
     },
     "rake": {
-      "status": "predicted",
-      "giou": -0.9890206061105568,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location (right portion of the image, near a playground) is completely different from the ground truth location (bottom left corner, in a doorway of a red building).  This critical error overrides any correct details about the rake's appearance."
+      "description_grade_reason": "The predicted location (right portion of the image, near a playground) is completely different from the ground truth location (bottom left corner, in a doorway of a red building).  This critical error overrides any correct details about the rake's appearance.",
+      "giou": -0.9890206061105568,
+      "status": "predicted"
+    }
+  },
+  "tigertom-intersection.jpg": {
+    "cartoon tiger": {
+      "description_grade": -1,
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
+    },
+    "yellow bus": {
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description gets most of the key details correct, including the object (yellow bus), its general location (middle-right, which is close enough to upper right), and the activity (passengers getting on/off). It correctly identifies the crosswalk. However, it incorrectly states the bus is facing right.  It also adds detail about a green shelter/awning which is not mentioned in the ground truth, so we can't penalize it for this, but the lack of mention of the intersection is a missing detail.",
+      "giou": 0.24496190871576426,
+      "status": "predicted"
     }
   },
   "tigertom-market.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.15581289727375852,
       "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately captures the key details and location of the tiger. It correctly describes it as a cartoon tiger figure on the left side of the image, near flowers/plants (flower stalls).  The color description (yellow and black striped) matches, and while the ground truth mentions the tiger walking and holding flowers, and the prediction mentions it standing, this difference in pose is acceptable. The additional details about a statue/decoration and awning do not contradict the ground truth."
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the tiger. It correctly describes it as a cartoon tiger figure on the left side of the image, near flowers/plants (flower stalls).  The color description (yellow and black striped) matches, and while the ground truth mentions the tiger walking and holding flowers, and the prediction mentions it standing, this difference in pose is acceptable. The additional details about a statue/decoration and awning do not contradict the ground truth.",
+      "giou": -0.15581289727375852,
+      "status": "predicted"
     }
   },
   "tigertom-park.jpg": {
     "cartoon tiger": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     },
     "frisbee": {
-      "status": "predicted",
-      "giou": -0.9964709487996812,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location (bottom right, near tennis court) completely contradicts the ground truth location (upper left, below waterfront, above path).  Even if other details were correct, an incorrect location results in a 0 rating."
+      "description_grade_reason": "The predicted location (bottom right, near tennis court) completely contradicts the ground truth location (upper left, below waterfront, above path).  Even if other details were correct, an incorrect location results in a 0 rating.",
+      "giou": -0.9964709487996812,
+      "status": "predicted"
     }
   },
   "tigertom-park2.jpg": {
     "cartoon tiger": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
+    }
+  },
+  "tigertom-park3.jpg": {
+    "cartoon tiger": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the tiger's key details (yellow and black, walking on two legs), its location (upper middle/center, on a walkway, near children), and its appearance (striped).  The slight differences like \"standing\" vs. \"walking\" and \"ball/watermelon\" being omitted are minor and don't detract from the overall accuracy. The additional details about the walkway material and intersecting paths do not contradict the ground truth.",
+      "giou": -0.4371977096624723,
+      "status": "predicted"
+    },
+    "soccer ball": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately identifies the soccer ball's location in the bottom portion of the image and mentions it being kicked. The description of a classic black and white soccer ball matches general expectations and doesn't contradict the ground truth.  While the ground truth only mentions one boy kicking the ball, the predicted description of it being between players actively engaged in a game doesn't contradict this and provides reasonable detail consistent with the context of a soccer game.",
+      "giou": -0.7291359599334639,
+      "status": "predicted"
     }
   },
   "tigertom-snow.jpg": {
-    "cartoon tiger": {
-      "status": "not found",
-      "giou": -1.0,
-      "description_grade": -1,
-      "description_grade_reason": ""
-    },
     "birdhouse": {
-      "status": "predicted",
-      "giou": -0.9491087288009034,
       "description_grade": 0,
-      "description_grade_reason": "The predicted description places the birdhouse on a snow-covered house in a village, contradicting the ground truth which states it's next to a green house and has two birds on it.  The location is critically wrong, resulting in a 0 rating despite mentioning a birdhouse."
+      "description_grade_reason": "The predicted description places the birdhouse on a snow-covered house in a village, contradicting the ground truth which states it's next to a green house and has two birds on it.  The location is critically wrong, resulting in a 0 rating despite mentioning a birdhouse.",
+      "giou": -0.9491087288009034,
+      "status": "predicted"
+    },
+    "cartoon tiger": {
+      "description_grade": -1,
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     }
   },
   "tigertom-zoo.jpg": {
     "cartoon tiger": {
-      "status": "predicted",
-      "giou": -0.3907041354323263,
       "description_grade": 1,
-      "description_grade_reason": "The predicted description gets some key details correct, such as the tiger's appearance (yellow with black stripes) and the fact it's carrying a basket of vegetables. However, the location is inaccurate ('center-right' vs. 'lower-middle') which is a critical error.  The pose is also described differently ('walking' vs. 'standing upright'), but we can be lenient on pose differences. The presence of the dog in front of the tiger, a key spatial relationship from the ground truth, is completely missed."
+      "description_grade_reason": "The predicted description gets some key details correct, such as the tiger's appearance (yellow with black stripes) and the fact it's carrying a basket of vegetables. However, the location is inaccurate ('center-right' vs. 'lower-middle') which is a critical error.  The pose is also described differently ('walking' vs. 'standing upright'), but we can be lenient on pose differences. The presence of the dog in front of the tiger, a key spatial relationship from the ground truth, is completely missed.",
+      "giou": -0.3907041354323263,
+      "status": "predicted"
     },
     "cucumber slices": {
-      "status": "not found",
-      "giou": -1.0,
       "description_grade": -1,
-      "description_grade_reason": ""
+      "description_grade_reason": "",
+      "giou": -1.0,
+      "status": "not found"
     }
   },
   "walk-lake.jpg": {
     "bicycle": {
-      "status": "predicted",
-      "giou": -0.5988273729829453,
       "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies the bridge and general location (though 'upper middle' is not as accurate as 'upper left'), it incorrectly describes the bicycle as being ridden. The ground truth clearly states a child is *carrying* the bicycle. This is a crucial detail, meriting a low score.  The mention of a trick/jump further adds to the inaccuracy. While the color is missing, that alone would not drastically lower the score."
+      "description_grade_reason": "While the predicted description correctly identifies the bridge and general location (though 'upper middle' is not as accurate as 'upper left'), it incorrectly describes the bicycle as being ridden. The ground truth clearly states a child is *carrying* the bicycle. This is a crucial detail, meriting a low score.  The mention of a trick/jump further adds to the inaccuracy. While the color is missing, that alone would not drastically lower the score.",
+      "giou": -0.5988273729829453,
+      "status": "predicted"
     }
   },
   "walk-townfarm.jpg": {
     "soccer ball": {
-      "status": "predicted",
-      "giou": -0.9480778938832942,
       "description_grade": 1,
-      "description_grade_reason": "While the predicted description correctly identifies the soccer ball and its general location in the lower portion of the image, it places it in the lower *right*, which is inaccurate according to the ground truth ('lower-middle').  The prediction also adds details not present in the ground truth (e.g., 'road,' 'between some grazing cattle') and describes the child's clothing, which, while potentially correct, shouldn't be factored in when the ground truth lacks this information.  Although it mentions the child's proximity, the incorrect location of the ball lowers the score significantly."
+      "description_grade_reason": "While the predicted description correctly identifies the soccer ball and its general location in the lower portion of the image, it places it in the lower *right*, which is inaccurate according to the ground truth ('lower-middle').  The prediction also adds details not present in the ground truth (e.g., 'road,' 'between some grazing cattle') and describes the child's clothing, which, while potentially correct, shouldn't be factored in when the ground truth lacks this information.  Although it mentions the child's proximity, the incorrect location of the ball lowers the score significantly.",
+      "giou": -0.9480778938832942,
+      "status": "predicted"
     }
   },
   "walk-townscene.jpg": {
     "black cat": {
-      "status": "predicted",
-      "giou": -0.7293806691987231,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description gets the object (black cat) and its general location (right side) correct. It also correctly identifies its action (walking/prowling). However, it misses the crucial detail of the red collar and is less precise about the location ('near some bushes and shrubs' vs. 'bottom right corner, near the stone wall and above a cyclist'). While 'right side' is correct, 'bottom right' would have been more accurate. The mention of other animals and the village scene are irrelevant.  The description is majorly correct but lacks some key details and precision regarding location."
+      "description_grade_reason": "The predicted description gets the object (black cat) and its general location (right side) correct. It also correctly identifies its action (walking/prowling). However, it misses the crucial detail of the red collar and is less precise about the location ('near some bushes and shrubs' vs. 'bottom right corner, near the stone wall and above a cyclist'). While 'right side' is correct, 'bottom right' would have been more accurate. The mention of other animals and the village scene are irrelevant.  The description is majorly correct but lacks some key details and precision regarding location.",
+      "giou": -0.7293806691987231,
+      "status": "predicted"
     }
   },
   "whodoeswhat-city.jpg": {
-    "cello": {
-      "status": "predicted",
-      "giou": -0.5783455188711293,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately identifies the cello, its dark brown color, and its upright position leaning against the wall of a green house on the left side of the image. While it mentions the possibility of it being a double bass, it correctly leans towards cello, and uncertainty is acceptable. The slight discrepancy between \"entrance\" and \"wall\" is minor, particularly since the ground truth specifies \"middle-left\", which could well be near the entrance.  The red roof detail is extra but doesn't contradict the ground truth. Overall, the key details and location are correctly described."
-    },
     "black cat": {
-      "status": "predicted",
-      "giou": -0.9909340449295527,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location of the cat (center of the image, on the sidewalk) contradicts the ground truth (top right, on a brick wall).  This is a critical error."
+      "description_grade_reason": "The predicted location of the cat (center of the image, on the sidewalk) contradicts the ground truth (top right, on a brick wall).  This is a critical error.",
+      "giou": -0.9909340449295527,
+      "status": "predicted"
+    },
+    "cello": {
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately identifies the cello, its dark brown color, and its upright position leaning against the wall of a green house on the left side of the image. While it mentions the possibility of it being a double bass, it correctly leans towards cello, and uncertainty is acceptable. The slight discrepancy between \"entrance\" and \"wall\" is minor, particularly since the ground truth specifies \"middle-left\", which could well be near the entrance.  The red roof detail is extra but doesn't contradict the ground truth. Overall, the key details and location are correctly described.",
+      "giou": -0.5783455188711293,
+      "status": "predicted"
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "fire truck": {
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description gets most of the key details correct: it identifies the firetruck as red, places it in the middle-right (which is close enough to center-right), and mentions the extended ladder. However, it incorrectly states that the truck is parked, when the ground truth says it is moving towards a zebra crossing. It also adds the detail about a construction site and blue excavator, which while not contradicting the ground truth, are not mentioned and therefore not considered in the evaluation. The flashing blue lights are also missed.",
+      "giou": 0.17062188931656758,
+      "status": "predicted"
+    },
+    "saxophone": {
+      "description_grade": 1,
+      "description_grade_reason": "While the prediction correctly identifies a saxophone being held by a person in black clothing, it makes several key errors. Firstly, the location is incorrect - bottom right vs. bottom middle. Secondly, the saxophone is described as being 'played,' which contradicts the ground truth. Finally, the description of it being near a playground is not mentioned in the ground truth (and may be incorrect). The description gets some elements correct (person, saxophone, black clothing) but misses crucial details regarding the location and action.",
+      "giou": -0.9462943890639041,
+      "status": "predicted"
     }
   },
   "whodoeswhat-city3.jpg": {
     "yellow electrical box": {
-      "status": "predicted",
-      "giou": -0.48249886733489766,
       "description_grade": 2,
-      "description_grade_reason": "The predicted description correctly identifies the object as a yellow electrical box and places it in the lower right quadrant. However, it misses the crucial detail that the box is open and mounted on a building.  It also mischaracterizes the area as a construction/delivery zone when it's described as being next to a car and large pipes. While it mentions the box's placement relative to other objects, these objects are not described accurately."
+      "description_grade_reason": "The predicted description correctly identifies the object as a yellow electrical box and places it in the lower right quadrant. However, it misses the crucial detail that the box is open and mounted on a building.  It also mischaracterizes the area as a construction/delivery zone when it's described as being next to a car and large pipes. While it mentions the box's placement relative to other objects, these objects are not described accurately.",
+      "giou": -0.48249886733489766,
+      "status": "predicted"
     }
   }
 }

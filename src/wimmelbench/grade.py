@@ -49,7 +49,9 @@ model = genai.GenerativeModel("gemini-1.5-pro-002")
 def load_json(path: str) -> Dict:
     """Load and parse a JSON file."""
     with open(path) as f:
-        return json.load(f)
+        data = json.load(f)
+        # Sort the outer dictionary by keys
+        return dict(sorted(data.items()))
 
 
 def calculate_giou(box1: List[float], box2: List[float]) -> float:
@@ -196,7 +198,13 @@ def grade(
 
         # Save results after processing each image
         with open(grading_path, "w") as f:
-            json.dump(detailed_results, f, indent=2)
+            # Sort both levels of the dictionary before saving
+            sorted_results = {}
+            for image_name in sorted(detailed_results.keys()):
+                sorted_results[image_name] = dict(
+                    sorted(detailed_results[image_name].items())
+                )
+            json.dump(sorted_results, f, indent=2)
 
     return detailed_results
 
