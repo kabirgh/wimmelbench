@@ -259,5 +259,146 @@
       ],
       "description": "There is a brown bear visible in the upper left portion of the image. The bear is standing among the winter scene near some trees and rocks. It appears to be observing the winter activities taking place in the park. Several small red birds and squirrels are visible near the bear. The bear is drawn in the same illustration style as the rest of the scene, with a simple but clear design showing its brown fur and typical bear shape."
     }
+  },
+  "kf-f1.jpg": {
+    "f1 car": {
+      "bbox": [
+        0.78,
+        0.52,
+        0.85,
+        0.55
+      ],
+      "description": "There is a Formula 1 racing car visible on the winding race track, located in the right-middle portion of the image. The F1 car appears to be predominantly white in color with some red accents, racing along the grey track that weaves through this illustrated cityscape. It's positioned near the waterfront section of the track, just before the track curves toward the beach area. The car is shown from a top-down perspective, maintaining its position on the racing line of the circuit."
+    },
+    "flamingo": {
+      "bbox": [
+        0.15,
+        0.75,
+        0.25,
+        0.85
+      ],
+      "description": "There is a pink flamingo standing in the bottom-left portion of the image. The flamingo is depicted in a cartoonish style, standing on one leg in its characteristic pose among some green vegetation near the water's edge. It has the typical long neck, pink coloring, and black-tipped beak characteristic of flamingos. The bird stands out against the green and blue background of the coastal area."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "octopus": {
+      "bbox": [
+        0.45,
+        0.35,
+        0.48,
+        0.4
+      ],
+      "description": "There is a small purple octopus swimming in the water among the beachgoers. The octopus appears to be wearing pink goggles/diving mask and is located in the middle section of the image, slightly to the left of center. It is swimming in the blue water alongside other people who are swimming and playing. The octopus seems to be enjoying itself, appearing playful and engaged in the beach activities like the other characters in the scene."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "trojan horse": {
+      "bbox": [
+        0.78,
+        0.75,
+        0.83,
+        0.82
+      ],
+      "description": "The Trojan Horse can be seen in the lower right portion of the image. It appears as a large dark brown wooden horse structure positioned near the cliff edge. The horse is depicted in the classical style, matching the ancient Greek/Roman setting of the illustration. It stands stationary among other ancient buildings with red roofs, and appears to be positioned at a slightly higher elevation on one of the pink-tinted rocky terraces. The horse's design is simple but recognizable as the famous deceptive gift of Greek mythology."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "faucet": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a faucet in this image. The image shows a busy, colorful bazaar or marketplace scene with many people shopping and walking through an ornate indoor arcade. There are numerous decorative items like lanterns, textiles, and various goods for sale in the shops, but I cannot identify a faucet anywhere in the scene."
+    }
+  },
+  "porsche-factory.jpg": {
+    "spider web": {
+      "bbox": [
+        0.78,
+        0.05,
+        0.82,
+        0.08
+      ],
+      "description": "There is a small spider web visible in the upper right portion of the image, near some pipes or ventilation ducts. It appears to be a white/gray colored cobweb attached to the industrial infrastructure of the car factory."
+    }
+  },
+  "porsche-hq.jpg": {
+    "toolbox": {
+      "bbox": [
+        0.75,
+        0.85,
+        0.78,
+        0.88
+      ],
+      "description": "There is a turquoise-colored toolbox or maintenance equipment box located in the bottom right quarter of the image, near the grass area. It appears to be a standing cabinet-style toolbox or utility box positioned along a walkway. It's situated between the building and what appears to be a racetrack or testing area where cars are being driven."
+    }
+  },
+  "porsche-road.jpg": {
+    "quadcopter": {
+      "bbox": [
+        0.83,
+        0.02,
+        0.87,
+        0.05
+      ],
+      "description": "There is a small quadcopter drone flying in the upper right portion of the image, near the sky area. It appears to be blue in color and is shown flying alongside what looks like a small red airplane. The drone is one of several flying objects visible in that part of the scene above the Porsche facility."
+    }
+  },
+  "professions-street.jpg": {
+    "scissors": {
+      "bbox": [
+        0.92,
+        0.78,
+        0.95,
+        0.82
+      ],
+      "description": "There is a small pair of scissors lying on the ground in the lower right corner of the image, near some scattered papers or books. The scissors appear to be a basic pair with a dark handle, though the details are quite small in the illustration's style."
+    }
+  },
+  "professions-townsquare.jpg": {
+    "pizza": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see any pizza in this image. The image shows a whimsical street scene with various animal characters including pigs, bears, lions, and other creatures. There are bakery items (like what appears to be bread and pastries) and a food cart, but no pizza is visible. The scene includes colorful buildings, an orange car, and many characters engaged in different activities on the street."
+    }
+  },
+  "river-adventure-river.jpg": {
+    "macaw": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a macaw in this illustration. While there are many creatures and characters in this detailed cross-section view of a boat/restaurant on the water, including various people, dogs, and even fish visible underwater, I cannot identify any macaws or parrots in the scene. The image shows a busy multi-level boat with dining areas, machinery rooms below deck, and various activities happening both on the vessel and around it on the shore and water, but no macaw is present."
+    }
+  },
+  "river-adventure-seaside.jpg": {
+    "man wearing overalls over a white shirt": {
+      "bbox": [
+        0.15,
+        0.45,
+        0.18,
+        0.55
+      ],
+      "description": "There is a man wearing blue overalls over a white shirt standing near the water's edge on the left side of the image. He appears to be leaning forward or bending over towards the water, possibly interacting with or looking at something near the harbor wall. He is positioned just to the left of the docked 'Lastochka' ship, in front of a light blue vehicle."
+    }
+  },
+  "rodhunt-xmas.jpg": {
+    "menorah": {
+      "bbox": [
+        0.85,
+        0.65,
+        0.87,
+        0.68
+      ],
+      "description": "A menorah can be found in the right portion of the image, among the crowd of winter festival-goers. It appears to be a traditional golden Hanukkah menorah with nine branches, standing on what seems to be a decorative surface or table. The menorah is relatively small in the overall scene but is clearly visible as part of the diverse holiday decorations and celebrations depicted in this winter wonderland scene."
+    }
   }
 }
