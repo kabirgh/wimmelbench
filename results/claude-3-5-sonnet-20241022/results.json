@@ -132,6 +132,15 @@
         0
       ],
       "description": "I don't see a mandarin orange in this image. The image shows an orchestra or symphony with many musicians playing various instruments including strings (violins, cellos, bass), woodwinds (clarinets, flutes), brass instruments (trumpets, tubas), percussion, harp, and piano. The scene is set on a wooden stage or floor with warm lighting, but there is no mandarin orange visible anywhere in the scene."
+    },
+    "harp": {
+      "bbox": [
+        0.02,
+        0.15,
+        0.08,
+        0.35
+      ],
+      "description": "The harp is located in the far left side of the orchestra. It's a large golden concert harp being played by a musician in a pink/salmon colored outfit. The harp is positioned at the end of the curved orchestra formation, near the grand piano. It appears to be a traditional pedal harp with its characteristic curved neck and column, standing approximately 6 feet tall."
     }
   },
   "mitgutsch-pirate.jpg": {
@@ -399,6 +408,307 @@
         0.68
       ],
       "description": "A menorah can be found in the right portion of the image, among the crowd of winter festival-goers. It appears to be a traditional golden Hanukkah menorah with nine branches, standing on what seems to be a decorative surface or table. The menorah is relatively small in the overall scene but is clearly visible as part of the diverse holiday decorations and celebrations depicted in this winter wonderland scene."
+    }
+  },
+  "season-beach.jpg": {
+    "shuttlecock": {
+      "bbox": [
+        0.6,
+        0.2,
+        0.62,
+        0.22
+      ],
+      "description": "There is a small white shuttlecock being used by several animal characters playing badminton in the center-right portion of the image. The shuttlecock appears to be in mid-flight, suspended between some rabbits and other animals who are playing with badminton rackets. It's shown in a simple, cartoon style consistent with the rest of the illustration's whimsical beach scene."
+    }
+  },
+  "season-winter.jpg": {
+    "santa": {
+      "bbox": [
+        0.45,
+        0.3,
+        0.48,
+        0.35
+      ],
+      "description": "There is a snowman dressed as Santa standing in the middle of the street, in front of one of the white houses. The snowman-santa is wearing a traditional red coat and hat, and appears to be holding what looks like a shovel or broom. It's positioned between some parked cars on the street and the various animal characters playing in the snow."
+    }
+  },
+  "tigertom-beach.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.45,
+        0.45,
+        0.47,
+        0.48
+      ],
+      "description": "In this beach scene illustration, there is a small cartoon tiger character visible in the middle portion of the image. The tiger appears to be walking or standing near someone with a bicycle on the wooden boardwalk. The tiger is rendered in a yellow color with black stripes in a simple, child-friendly cartoon style."
+    },
+    "lifebuoy": {
+      "bbox": [
+        0.45,
+        0.3,
+        0.47,
+        0.33
+      ],
+      "description": "There is a white and red lifebuoy (life ring) leaning against a white beach chair near the middle of the image. It's located on the sandy beach area, positioned between the wooden boardwalk and the water. The lifebuoy appears to be a standard circular safety device with the typical red and white coloring pattern."
+    }
+  },
+  "tigertom-birthday.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.45,
+        0.75,
+        0.48,
+        0.85
+      ],
+      "description": "There is a cartoon character wearing a tiger costume in yellow and black stripes located near the bottom center of the image. The tiger character is standing on the stone patio area near the party table, appearing to be part of the party entertainment or a costumed guest. The tiger costume has the characteristic orange/yellow base with black stripes and appears to be standing upright in a playful pose next to someone in a chicken/bird costume."
+    }
+  },
+  "tigertom-classroom.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.48,
+        0.65,
+        0.53,
+        0.7
+      ],
+      "description": "There is a cartoon tiger character sitting on the floor near one of the tables in the classroom. It has yellow fur with black stripes and appears to be a stuffed animal or toy tiger. The tiger is positioned between two tables where children are engaged in activities - one table has people playing chess and another has people having lunch. It is sitting on the wooden floor in a casual pose."
+    },
+    "kitchen sponge": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a kitchen sponge in this image. The image shows a classroom or daycare setting with various activity areas including a sink area with cleaning supplies, but no clearly visible kitchen sponge. The room contains children engaged in different activities like chess, painting, building with blocks, and having lunch. There's a book shelf, art supplies, number cards on the wall, and other typical classroom materials, but no identifiable kitchen sponge."
+    }
+  },
+  "tigertom-classroom2.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.35,
+        0.45,
+        0.4,
+        0.5
+      ],
+      "description": "There is a yellow cartoon tiger with black stripes sitting at one of the classroom tables, approximately in the middle-left portion of the image. It appears to be a stuffed animal or toy tiger sitting on a chair at a desk with some school supplies. The tiger has a typical cartoonish appearance with distinctive black stripes on yellow fur."
+    }
+  },
+  "tigertom-cycles.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a cartoon tiger in this autumn/harvest themed illustration. The image shows a busy farm scene with many characters including cyclists, farmers, children playing, and people in Halloween costumes (including what appears to be a ghost and witch), but no tiger character is visible."
+    }
+  },
+  "tigertom-farm.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.35,
+        0.4,
+        0.37,
+        0.43
+      ],
+      "description": "There is a small cartoon tiger character in the garden area near the main house. It appears to be yellow with black stripes and is partially visible among the bushes/flowers, seeming to be playing or hiding near where some children are playing. The tiger is drawn in a friendly, cartoon style consistent with the overall illustration's whimsical nature."
+    },
+    "forklift": {
+      "bbox": [
+        0.85,
+        0.1,
+        0.92,
+        0.2
+      ],
+      "description": "A red forklift can be seen in the upper right portion of the image, near the sunflower field. It appears to be in operation, positioned next to what looks like some beehives or wooden boxes. The forklift is drawn in a cartoon style consistent with the rest of the illustration's farm scene."
+    }
+  },
+  "tigertom-garden.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.45,
+        0.75,
+        0.52,
+        0.8
+      ],
+      "description": "There appears to be a toy or stuffed tiger lying on a pink and white checkered picnic blanket in the lower middle portion of the image. The tiger appears to be yellow with black stripes in a playful lounging position, lying next to a child on the blanket. It appears to be a plush or stuffed animal rather than a real tiger."
+    },
+    "pitcher of water": {
+      "bbox": [
+        0.2,
+        0.3,
+        0.24,
+        0.34
+      ],
+      "description": "I can see what appears to be a white water pitcher on the large round dining table set up outdoors. The table is set with white place settings and appears to be prepared for a meal. The pitcher is positioned among other tableware items and has a typical water pitcher shape with a handle and spout."
+    }
+  },
+  "tigertom-house.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.65,
+        0.48,
+        0.68,
+        0.51
+      ],
+      "description": "There is a small cartoon tiger sitting in what appears to be a sandbox or play area in the right portion of the image. The tiger is yellow with black stripes and appears to be playing with another character. The sandbox is positioned near a wooden fence in the garden area of the cheerful springtime scene."
+    },
+    "rake": {
+      "bbox": [
+        0.91,
+        0.52,
+        0.94,
+        0.58
+      ],
+      "description": "There is a rake visible in the right portion of the image, near the playground area. It appears to be a wooden-handled rake being used by someone tending to a swing set or play area. The rake is oriented diagonally and is colored in a brown/beige tone, typical of a gardening tool. It's positioned near a wooden fence and a green slide in the playground section of what appears to be a community garden or backyard setting."
+    }
+  },
+  "tigertom-market.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.05,
+        0.15,
+        0.08,
+        0.25
+      ],
+      "description": "There is a decorative cartoon tiger figure near the left edge of the image, next to some flowers and potted plants. It appears to be a yellow and black striped tiger decoration or statue standing upright, possibly serving as a market decoration or display piece. It's positioned in front of a green awning."
+    }
+  },
+  "tigertom-park.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a cartoon tiger in this image. The image shows a busy outdoor recreational scene with many children engaged in various activities like swimming, playing sports, climbing, and using playground equipment. While there is what appears to be a teddy bear or stuffed animal visible in the house on the left side, I cannot identify any cartoon tiger character in the scene."
+    },
+    "frisbee": {
+      "bbox": [
+        0.85,
+        0.67,
+        0.88,
+        0.7
+      ],
+      "description": "A red frisbee can be seen in mid-air near the tennis court area in the bottom right section of the image. It appears to be thrown between two players who are engaged in a game. The frisbee is a small, circular disc shown in bright red color against the green background."
+    }
+  },
+  "tigertom-park2.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "There is no cartoon tiger present in this image. The image shows an outdoor park or garden scene with several children engaged in various activities like reading, resting, and looking at flowers. There are butterflies, rabbits, and birds in the scene, along with natural elements like a willow tree, a stream with a wooden bridge, flowering bushes and trees, but no tigers - cartoon or otherwise."
+    }
+  },
+  "tigertom-snow.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a tiger in this winter scene. The image shows a busy winter landscape with people skiing, skating, and enjoying various winter activities. There are some animals present like deer, dogs, and birds, but no tiger is visible in the illustration."
+    },
+    "birdhouse": {
+      "bbox": [
+        0.77,
+        0.32,
+        0.78,
+        0.35
+      ],
+      "description": "There appears to be a small birdhouse mounted on one of the snow-covered houses in the village. It's located on the facade of one of the buildings in the row of colorful houses along the street, positioned just above head height. Given the winter scene, this birdhouse could provide shelter for local birds during the cold weather."
+    }
+  },
+  "tigertom-zoo.jpg": {
+    "cartoon tiger": {
+      "bbox": [
+        0.45,
+        0.6,
+        0.52,
+        0.75
+      ],
+      "description": "There is a cartoon tiger standing upright in the center-right portion of the image. The tiger has yellow fur with black stripes, and appears to be carrying a basket of vegetables or plants. It has a friendly, smiling expression and is depicted in an anthropomorphic style, standing on two legs. The tiger is positioned on the tiled floor area near some glass terrariums and colorful parrots."
+    },
+    "cucumber slices": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see any cucumber slices in this image. The image shows a pet shop or animal habitat scene with various animals including mice, rabbits, guinea pigs, parrots, fish, cats, and a dog. There are carrots growing in a garden area, and various pet supplies and enclosures, but no visible cucumber slices."
+    }
+  },
+  "walk-lake.jpg": {
+    "bicycle": {
+      "bbox": [
+        0.45,
+        0.15,
+        0.5,
+        0.2
+      ],
+      "description": "There is a bicycle visible in the upper middle portion of the image, being ridden across a wooden bridge that spans the river/pond. The cyclist appears to be performing a trick or jump on the bridge. The bicycle is small in the overall scene but clearly distinguishable against the wooden bridge structure and the surrounding forest environment."
+    }
+  },
+  "walk-townfarm.jpg": {
+    "soccer ball": {
+      "bbox": [
+        0.78,
+        0.65,
+        0.8,
+        0.67
+      ],
+      "description": "There is a small soccer ball in the lower right portion of the pasture area. It appears to be near a small child wearing red clothing. The ball is positioned between some grazing cattle and the road on the right side of the image."
+    }
+  },
+  "walk-townscene.jpg": {
+    "black cat": {
+      "bbox": [
+        0.88,
+        0.75,
+        0.91,
+        0.78
+      ],
+      "description": "There is a small black cat visible on the right side of the image, near some bushes and shrubs. The cat appears to be walking or prowling along the edge of the path. It's one of several animals depicted in this busy village scene, and its dark fur creates a contrast against the lighter colored ground and greenery surrounding it."
+    }
+  },
+  "whodoeswhat-city.jpg": {
+    "cello": {
+      "bbox": [
+        0.15,
+        0.22,
+        0.18,
+        0.28
+      ],
+      "description": "There is a large cello or double bass visible leaning against the entrance of the green house with the red roof on the left side of the image. The wooden stringed instrument appears to be dark brown in color and is standing upright next to the doorway. Given its size and shape, it's most likely a cello though it could potentially be a double bass."
+    },
+    "black cat": {
+      "bbox": [
+        0.49,
+        0.45,
+        0.51,
+        0.48
+      ],
+      "description": "There is a small black cat sitting on the sidewalk near the corner of a building with blue shutters (appears to be a store called 'Nexap'). The cat is positioned in roughly the center of the image, between parked vehicles and pedestrians walking on the street. The cat appears to be in a sitting position, observing the busy street activity around it."
+    }
+  },
+  "whodoeswhat-city3.jpg": {
+    "yellow electrical box": {
+      "bbox": [
+        0.65,
+        0.5,
+        0.7,
+        0.7
+      ],
+      "description": "A yellow electrical or utility box is visible in the lower-right quadrant of the image. It appears to be a standard rectangular box mounted near what looks like a construction or delivery area. The box is positioned between some wire fencing and where workers seem to be handling cargo or materials. Its bright yellow color makes it stand out against the surrounding equipment and vehicles."
     }
   }
 }
