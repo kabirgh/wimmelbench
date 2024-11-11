@@ -64,5 +64,123 @@
       "object": "sedan",
       "description": "A small red sedan is parked in the snow in the bottom right of the image. Its roof is covered in snow, and a man is using a snow brush to clean it.  A group of children are building snowmen nearby.  A Christmas tree decorated with ornaments and a blue scarf is to the right of the snowmen.  A cat stands near the Christmas tree.  A person in orange pants and a green jacket appears to be decorating the tree. A house is behind the sedan and the snowmen. The house's roof and the skylight window are covered in snow, and a purple cat can be seen through the skylight window."
     }
+  ],
+  "mitgutsch-beach.jpg": [
+    {
+      "bbox": [
+        0.448,
+        0.027,
+        0.501,
+        0.125
+      ],
+      "object": "pirate flag",
+      "description": "The pirate flag is located above the center left area of the image, it is black and displays a white skull and crossbones. It appears to be attached to a pole that is being held up by a light skinned boy with short dark hair wearing white swimming trunks and a captains hat."
+    }
+  ],
+  "mitgutsch-carnival.jpg": [
+    {
+      "bbox": [
+        0.587,
+        0.406,
+        0.643,
+        0.454
+      ],
+      "object": "chef hat",
+      "description": "A chef with a tall white chef hat and white uniform stands facing the viewer amongst the crowds of people near the center-right of the image. He seems to be holding something in his hand, and is facing the group of children doing ring-around-the-rosy."
+    }
+  ],
+  "mitgutsch-fight.jpg": [
+    {
+      "bbox": [
+        0.113,
+        0.083,
+        0.196,
+        0.234
+      ],
+      "object": "man waving a white flag",
+      "description": "A man waving a white flag from which pieces of paper are falling is visible in the top left part of the image. He is wearing a blue suit, is seated on a short wall, and appears to be looking down at the chaotic scene below him.  Behind him, one person climbs in through a broken window while another climbs out. The room has pale green walls with wood panelling."
+    }
+  ],
+  "mitgutsch-orchestra.jpg": [
+    {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object": "mandarin orange",
+      "description": "I could not find a mandarin orange in this image. There are many people playing various musical instruments in an orchestra."
+    }
+  ],
+  "mitgutsch-pirate.jpg": [
+    {
+      "bbox": [
+        0.813,
+        0.907,
+        0.917,
+        0.987
+      ],
+      "object": "couple kissing",
+      "description": "In the bottom right corner of the image, a couple is kissing behind some large, bright green leaves. The woman has long brown hair and is wearing a red headscarf and top. The man has short brown curly hair and is wearing a bright red shirt.  Just below the kissing couple, a person with short yellow hair and a yellow-green shirt is holding a knife."
+    }
+  ],
+  "mitgutsch-pool.jpg": [
+    {
+      "bbox": [
+        0.542,
+        0.039,
+        0.588,
+        0.083
+      ],
+      "object": "tennis racket",
+      "description": "A green tennis racket lies on the grass near the top left corner of the swimming pool. It is positioned diagonally, with the handle pointing towards the bottom right and the head towards the top left. Near the tennis racket are a pair of white shoes, a rolled-up towel (or some other piece of white clothing), and a black dog looking away from the racket."
+    }
+  ],
+  "mitgutsch-townsquare.jpg": [
+    {
+      "bbox": [
+        0.375,
+        0.01,
+        0.435,
+        0.078
+      ],
+      "object": "kite",
+      "description": "A kite with a diamond shape and a long tail is visible in the top left of the image, near a tree in a park-like area. It appears to be light purple or lavender in color.  Several people around the tree and benches nearby are looking at or taking pictures of it with their phones. A man in a blue shirt appears to be running towards the kite with his arms outstretched."
+    }
+  ],
+  "mitgutsch-water.jpg": [
+    {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object": "lobster",
+      "description": "I could not find a lobster in this image."
+    }
+  ],
+  "tigertom-park3.jpg": [
+    {
+      "bbox": [
+        0.473,
+        0.153,
+        0.522,
+        0.246
+      ],
+      "object": "cartoon tiger",
+      "description": "A cartoon tiger, orange with black stripes, is walking on a paved path in a park. It appears to be holding a round green object, possibly a ball, in its right hand. To its right, some children are also walking along the path. To its left, a boy is riding a red tricycle. Behind it, a paved path winds into the treed area of the park, where an elderly person can be seen walking."
+    },
+    {
+      "bbox": [
+        0.621,
+        0.832,
+        0.648,
+        0.861
+      ],
+      "object": "soccer ball",
+      "description": "The soccer ball is located near the bottom middle-left of the image, in the middle of a group of children playing soccer. It is white with black pentagonal and hexagonal patches. It appears to be mid-kick and slightly off the ground, surrounded by children in colorful activewear."
+    }
   ]
 }

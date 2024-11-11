@@ -98,5 +98,123 @@
       "object": "sedan",
       "description": "The sedan is a red car located towards the lower right of the image. It is partially covered in snow, being cleared by a man with a large snowball. Nearby, there are children making snowmen and a person in green attire near a Christmas tree."
     }
+  ],
+  "mitgutsch-beach.jpg": [
+    {
+      "bbox": [
+        0.397,
+        0.093,
+        0.438,
+        0.153
+      ],
+      "object": "pirate flag",
+      "description": "The pirate flag is located near the top center of the image. It is black with a white skull and crossbones design. The flag is attached to a small pole on a sandy area near a wooden platform where children are playing. Several characters are nearby, including a child playing with a toy near the flag."
+    }
+  ],
+  "mitgutsch-carnival.jpg": [
+    {
+      "bbox": [
+        0.65,
+        0.45,
+        0.68,
+        0.52
+      ],
+      "object": "chef hat",
+      "description": "A chef wearing a white chef's hat is located in the central area of the image. The chef is holding a balancing scale with two orange balls in each hand. A group of people are actively engaging around the chef."
+    }
+  ],
+  "mitgutsch-fight.jpg": [
+    {
+      "bbox": [
+        0.72,
+        0.84,
+        0.78,
+        0.92
+      ],
+      "object": "man waving a white flag",
+      "description": "The man waving a white flag is located in the bottom right portion of the image. He is wearing a white outfit, lying on the ground on his back, and holding a white flag up in the air. Nearby, there are people in animated poses, and the floor is wooden."
+    }
+  ],
+  "mitgutsch-orchestra.jpg": [
+    {
+      "bbox": [
+        0.065,
+        0.88,
+        0.091,
+        0.92
+      ],
+      "object": "mandarin orange",
+      "description": "A person sitting on a flight case in the bottom left corner is holding a mandarin orange in their left hand. The orange is small and round, typical in color for a mandarin."
+    }
+  ],
+  "mitgutsch-pirate.jpg": [
+    {
+      "bbox": [
+        0.7,
+        0.05,
+        0.75,
+        0.12
+      ],
+      "object": "couple kissing",
+      "description": "The couple is located near the top right corner, just below the sign that reads 'K\u00e4thes K\u00fcche.' They are standing on a wooden platform, embracing each other with a kiss. The man is wearing a blue shirt, and the woman has long hair. There are other people on the platform around them."
+    }
+  ],
+  "mitgutsch-pool.jpg": [
+    {
+      "bbox": [
+        0.4,
+        0.2,
+        0.48,
+        0.3
+      ],
+      "object": "tennis racket",
+      "description": "The tennis racket is located on the left side of the image, near the top. It is leaning against a small structure among trees and people, and appears to be orange or brown in color."
+    }
+  ],
+  "mitgutsch-townsquare.jpg": [
+    {
+      "bbox": [
+        0.382,
+        0.124,
+        0.424,
+        0.183
+      ],
+      "object": "kite",
+      "description": "The kite is located towards the top-center of the image, above a tree. It is a diamond-shaped kite with a red and white checkered pattern, being flown by a person who is sitting on a bench."
+    }
+  ],
+  "mitgutsch-water.jpg": [
+    {
+      "bbox": [
+        0.19,
+        0.76,
+        0.23,
+        0.79
+      ],
+      "object": "lobster",
+      "description": "The lobster is located in the bottom left section of the image. It is in the hands of a person wearing a white outfit near the edge of the water. The lobster is red and is prominently visible against the person's white clothing."
+    }
+  ],
+  "tigertom-park3.jpg": [
+    {
+      "bbox": [
+        0.43,
+        0.23,
+        0.5,
+        0.36
+      ],
+      "object": "cartoon tiger",
+      "description": "The cartoon tiger is standing upright near the middle of the image. It is yellow with black stripes and has a friendly expression. It is wearing a green and yellow outfit and is visible just behind the pathway where people are walking, close to some bushes and trees."
+    },
+    {
+      "bbox": [
+        0.73,
+        0.78,
+        0.77,
+        0.82
+      ],
+      "object": "soccer ball",
+      "description": "The soccer ball is located in the bottom right portion of the image. It is a classic black and white patterned ball, actively being kicked by a child wearing a red shirt and black shorts."
+    }
   ]
 }

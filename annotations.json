@@ -12,13 +12,13 @@
     },
     {
       "bbox": [
-        0.8287075172022911,
-        0.00713288072478961,
-        0.9177451040230545,
-        0.11610074683801452
+        0.8306664050671397,
+        0.011602570640051739,
+        0.9167647118661918,
+        0.11460820952458169
       ],
       "object": "castle",
-      "description": "A stone castle is in the top right corner of the image. It has red roofs on towers. The castle is situated on top of a hill and surrounded by trees."
+      "description": "A stone medieval-style castle is in the top right corner of the image. It has red roofs on towers. The castle is situated on top of a hill and surrounded by trees."
     }
   ],
   "construction-site.jpg": [
@@ -407,6 +407,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A yellow tiger with black stripes is located in the middle of the image, slightly to the left. It is standing on two legs on the beach. The tiger may be talking or waving to a  person selling watches, towels, and hats to its right."
+    },
+    {
+      "bbox": [
+        0.6392555458174587,
+        0.24402644623368244,
+        0.6685513641874669,
+        0.2907276125096563
+      ],
+      "object": "lifebuoy",
+      "description": "There is a white and red lifebuoy in the upper right quadrant of the image. It is mounted to the side of a tall lifeguard's chair on the beach. Near the lifebuoy is a blue beach umbrella and a man in red swimming trunks. "
     }
   ],
   "tigertom-birthday.jpg": [
@@ -431,6 +441,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger wearing a painter's apron is located in the bottom right quadrant of the image. It is sitting at a table with two other children, appearing to be painting or drawing."
+    },
+    {
+      "bbox": [
+        0.5630670871629997,
+        0.25147592942578595,
+        0.5954581438484838,
+        0.2743097020618951
+      ],
+      "object": "kitchen sponge",
+      "description": "There is a kitchen sponge in the upper right quadrant of the image, just right of center. It is green and yellow, and is placed on a white wash basin."
     }
   ],
   "tigertom-classroom2.jpg": [
@@ -467,6 +487,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon yellow and black striped tiger is hanging from the branches of an apple tree located in the lower-middle section of the image. Next to the tiger is a girl in a purple t-shirt."
+    },
+    {
+      "bbox": [
+        0.869937267854571,
+        0.18741037397369545,
+        0.9937632285942466,
+        0.3056529856439847
+      ],
+      "object": "forklift",
+      "description": "There is a red forklift visible in the top right corner of the scene, near a field of tall sunflowers. It is facing right and is currently unused."
     }
   ],
   "tigertom-garden.jpg": [
@@ -479,6 +509,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger is lying on a purple picnic blanket in the lower-right quadrant of the image. It is yellow with black stripes. It appears to be relaxing or sleeping, with its eyes closed and limbs sprawled out.  A gray MP3 player is next to it on the blanket. Also on the blanket is a young girl reading a book."
+    },
+    {
+      "bbox": [
+        0.20328825462805386,
+        0.24253654959526172,
+        0.24058526249255163,
+        0.29968283639025334
+      ],
+      "object": "pitcher of water",
+      "description": "There is a pitcher of water in the upper left quadrant of the image. It is half-filled and placed on the left edge of a large white outdoor dining table. Near the table is a man barbecuing on a grill."
     }
   ],
   "tigertom-house.jpg": [
@@ -491,6 +531,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger with yellow and black stripes is located in the middle-right of the image, playing in a small wooden sandbox.  It is sitting down, facing to the left."
+    },
+    {
+      "bbox": [
+        0.064667586798413,
+        0.7729397528730343,
+        0.08274627944170418,
+        0.8474440304201041
+      ],
+      "object": "rake",
+      "description": "There is a rake in the bottom left corner of the image. It is visible through the doorway of a building with red walls and looks like its leaning against the wall. Next to the rake is a shovel."
     }
   ],
   "tigertom-intersection.jpg": [
@@ -503,6 +553,16 @@
       ],
       "object": "cartoon tiger",
       "description": "A cartoon tiger wearing a construction worker's vest and cap is located in the lower-middle section of the image, standing at a crosswalk. It is yellow and black, and holding a stop sign to direct traffic."
+    },
+    {
+      "bbox": [
+        0.6244411233013138,
+        0.22912747984947532,
+        0.7691869574078058,
+        0.42654850803204436
+      ],
+      "object": "yellow bus",
+      "description": "There is a yellow bus in the upper right quadrant of the image. It is parked at a bus stop and passengers are disembarking. The bus is facing toward the viewer of the image. Just in front of the bus is a zebra crossing and a 4-way intersection."
     }
   ],
   "tigertom-market.jpg": [
@@ -561,6 +621,16 @@
       ],
       "object": "cartoon tiger",
       "description": "The cartoon tiger is located in the upper middle section of the image, on a walkway and near some children. It is yellow and black, walking on two legs, and carrying a ball or watermelon."
+    },
+    {
+      "bbox": [
+        0.6456045840386636,
+        0.8191265486640763,
+        0.675966618424755,
+        0.8578917916141339
+      ],
+      "object": "soccer ball",
+      "description": "There is a soccer ball in the bottom right quadrant of the image. It is being kicked by a boy in a yellow jersey."
     }
   ],
   "tigertom-snow.jpg": [
@@ -622,13 +692,13 @@
   "walk-townfarm.jpg": [
     {
       "bbox": [
-        0.6561104483201579,
+        0.6551261842302798,
         0.57478349996308,
         0.6695566562596214,
-        0.5952052244499548
+        0.5966977617633876
       ],
       "object": "soccer ball",
-      "description": "A small white soccer ball is located near the lower-middle section of the image. It's on a grassy field near a small child that is facing away from the ball."
+      "description": "A small soccer ball is located near the lower-middle section of the image. It's on a grassy field near a small child that is facing away from the ball."
     }
   ],
   "walk-townscene.jpg": [
@@ -640,7 +710,7 @@
         0.7369962692260742
       ],
       "object": "black cat",
-      "description": "A black cat is located in the bottom right corner of the image, near the stone wall and above a cyclist. It is facing left, appearing to be walking or casually strolling.  It is a solid black colour with a red collar."
+      "description": "A black cat is located in the bottom right corner of the image, near the stone wall and above a cyclist. It is facing left, appearing to be walking or casually strolling. It is a solid black colour with a red collar."
     }
   ],
   "whodoeswhat-city.jpg": [
@@ -675,6 +745,16 @@
       ],
       "object": "saxophone",
       "description": "A man in a black suit in the bottom middle of the image is raising a saxophone above his head. He is standing in a park, next to an ambulance."
+    },
+    {
+      "bbox": [
+        0.5054642297519658,
+        0.3036223117705108,
+        0.833756103515625,
+        0.5728171647484622
+      ],
+      "object": "fire truck",
+      "description": "There is a fire truck located center-right in the image. It's a large red truck with an extendable ladder in the back. The blue lights on top of the cabin are flashing. The truck is headed to the right, and is approaching a zebra crossing."
     }
   ],
   "whodoeswhat-city3.jpg": [

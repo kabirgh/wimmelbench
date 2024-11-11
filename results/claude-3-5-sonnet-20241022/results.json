@@ -98,5 +98,123 @@
       "object": "sedan",
       "description": "There is a red sedan visible in the lower right portion of the image. The car appears to have slid off the snowy road and is partially stuck in snow. It's a small passenger car with a typical sedan body style, colored in bright red. The car is positioned at an angle, suggesting it may have skidded in the winter conditions. There are people nearby and what appears to be some kind of shelter or structure behind it."
     }
+  ],
+  "mitgutsch-beach.jpg": [
+    {
+      "bbox": [
+        0.45,
+        0.15,
+        0.5,
+        0.2
+      ],
+      "object": "pirate flag",
+      "description": "There is a black pirate flag (Jolly Roger) with the classic skull and crossbones design visible near the top center of the image, just below the 'HOTEL' sign. The flag appears to be mounted on what looks like part of a beach or poolside structure in this busy beach/resort scene."
+    }
+  ],
+  "mitgutsch-carnival.jpg": [
+    {
+      "bbox": [
+        0.66,
+        0.35,
+        0.68,
+        0.38
+      ],
+      "object": "chef hat",
+      "description": "There is a small white chef's hat being worn by what appears to be a vendor or food seller in the middle-right portion of the image. The person wearing the hat is standing near what looks like a food stall or counter area. The hat is the traditional tall white toque style typically associated with chefs."
+    }
+  ],
+  "mitgutsch-fight.jpg": [
+    {
+      "bbox": [
+        0.95,
+        0.2,
+        1.0,
+        0.3
+      ],
+      "object": "man waving a white flag",
+      "description": "In the far right upper portion of the chaotic scene, there is a man waving a white flag or surrendering. He's wearing what appears to be blue clothing and is positioned near the green paneled wall. He's surrounded by the general mayhem of the room, with other figures nearby also in various states of distress or motion."
+    }
+  ],
+  "mitgutsch-orchestra.jpg": [
+    {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "object": "mandarin orange",
+      "description": "I don't see a mandarin orange in this image. The image shows an orchestra or symphony with many musicians playing various instruments including strings (violins, cellos, bass), woodwinds (clarinets, flutes), brass instruments (trumpets, tubas), percussion, harp, and piano. The scene is set on a wooden stage or floor with warm lighting, but there is no mandarin orange visible anywhere in the scene."
+    }
+  ],
+  "mitgutsch-pirate.jpg": [
+    {
+      "bbox": [
+        0.65,
+        0.18,
+        0.7,
+        0.25
+      ],
+      "object": "couple kissing",
+      "description": "I can see a couple kissing in one of the small boats in the turquoise water, located in the right middle section of the image. The couple appears as cartoon characters in a whimsical illustration style, matching the overall pirate/seafaring theme of the image. They are shown in a small round boat, and their romantic moment stands out among the busy, chaotic activities happening all around them in this bustling harbor scene."
+    }
+  ],
+  "mitgutsch-pool.jpg": [
+    {
+      "bbox": [
+        0.15,
+        0.65,
+        0.17,
+        0.68
+      ],
+      "object": "tennis racket",
+      "description": "There appears to be a tennis racket on the ground near the bottom left portion of the image, near the base of the water slide structure. It's lying on the grass among some other recreational equipment and children's toys in that area."
+    }
+  ],
+  "mitgutsch-townsquare.jpg": [
+    {
+      "bbox": [
+        0.32,
+        0.12,
+        0.35,
+        0.15
+      ],
+      "object": "kite",
+      "description": "There is a small blue kite visible in the upper left portion of the image, flying above the trees. It appears to be a simple diamond-shaped kite with a tail streaming behind it. The kite is being flown in what seems to be a busy street or plaza scene with many people around."
+    }
+  ],
+  "mitgutsch-water.jpg": [
+    {
+      "bbox": [
+        0.345,
+        0.6,
+        0.37,
+        0.63
+      ],
+      "object": "lobster",
+      "description": "I can see what appears to be a red lobster being hauled up from one of the fishing boats in the harbor. It's located in the lower middle portion of the image, being pulled up from the water by someone on a small wooden fishing boat. The lobster appears to be dangling from some kind of rope or fishing line against the turquoise-colored water background."
+    }
+  ],
+  "tigertom-park3.jpg": [
+    {
+      "bbox": [
+        0.45,
+        0.35,
+        0.52,
+        0.45
+      ],
+      "object": "cartoon tiger",
+      "description": "In the center of the image, there is a yellow and black striped cartoon tiger standing upright on the paved pathway. The tiger appears to be interacting with some children on the wooden walkway/bridge. The tiger's stripes are clearly visible, and it appears to be standing in a friendly, welcoming pose. It's positioned near where several paths intersect in the playground scene."
+    },
+    {
+      "bbox": [
+        0.55,
+        0.85,
+        0.58,
+        0.88
+      ],
+      "object": "soccer ball",
+      "description": "The soccer ball is located in the bottom portion of the image, being kicked around by children playing a game of soccer. It appears to be a classic black and white soccer ball in motion on the grass field. The ball is positioned between two players who are actively engaged in the game, with one player about to kick it while others are running nearby to join the play."
+    }
   ]
 }
