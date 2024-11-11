@@ -216,6 +216,15 @@
         0.078
       ],
       "description": "A kite with a diamond shape and a long tail is visible in the top left of the image, near a tree in a park-like area. It appears to be light purple or lavender in color.  Several people around the tree and benches nearby are looking at or taking pictures of it with their phones. A man in a blue shirt appears to be running towards the kite with his arms outstretched."
+    },
+    "prop plane": {
+      "bbox": [
+        0.013,
+        0.381,
+        0.136,
+        0.49
+      ],
+      "description": "A small, light blue and white propeller plane is visible in the top left of the image. It appears to be flying low over the buildings and street below, tilting slightly towards the left side of the image. Two figures are visible inside the plane, one seemingly piloting and the other looking downwards as if taking a picture. "
     }
   },
   "mitgutsch-water.jpg": {
@@ -282,6 +291,15 @@
         0.572
       ],
       "description": "A small, green cactus is located inside the first floor window of the grey building on the left side of the image. It is positioned on the window sill. "
+    },
+    "elephant": {
+      "bbox": [
+        0.304,
+        0.622,
+        0.461,
+        0.977
+      ],
+      "description": "An elephant wearing a purple robe is painting on a canvas, standing on the street, slightly left of the image's center.  The elephant is facing left and holds a paintbrush in its trunk and a palette in its left hand.  A wooden easel holds the canvas.  Directly to the elephant's right, a light gray cow seems to be giving a presentation while holding a microphone."
     }
   },
   "professions-street.jpg": {
@@ -432,6 +450,15 @@
         0.796
       ],
       "description": "A cartoon tiger, orange with black stripes, is seated on a table in the bottom left quadrant of the image.  It appears to be holding a green thermos. The table it sits on is light brown, cluttered with school supplies, and flanked by red chairs with orange seats. An orange backpack rests on the floor beneath the table.  To the tiger\u2019s left, a girl with blonde hair in a red top and blue jeans sits at the table, apparently drawing or writing something.  To the tiger\u2019s right, a boy with light brown hair wearing a red shirt and light brown pants walks past, headed toward the bottom left corner."
+    },
+    "wash basin": {
+      "bbox": [
+        0.612,
+        0.153,
+        0.673,
+        0.202
+      ],
+      "description": "The washbasin is located to the right of the blackboard, in the corner of the classroom. It is white and rectangular. A mirror is hanging above it. There is a faucet at the back and the sink slopes downwards to a drain. Two green garbage bins are positioned on the floor beside it."
     }
   },
   "tigertom-cycles.jpg": {
@@ -503,6 +530,15 @@
         0.616
       ],
       "description": "The rake is leaning against the fence next to the raised garden bed to the left of the house. It has a brown wooden handle and a metal head."
+    },
+    "slide": {
+      "bbox": [
+        0.674,
+        0.612,
+        0.792,
+        0.831
+      ],
+      "description": "A green slide is in the lower-right corner, inside a fenced playground area. A person wearing a red baseball cap and blue jacket is getting ready to go down the slide. Two children are near the slide and appear to be on bikes. A swing set is near the slide in the playground. Pink-flowered trees are also nearby."
     }
   },
   "tigertom-intersection.jpg": {
@@ -565,6 +601,15 @@
         0.0
       ],
       "description": "There is no tiger in this image. There are multiple children and adults enjoying themselves in a park. Some are reading, relaxing, picking flowers and playing cards."
+    },
+    "trash bin": {
+      "bbox": [
+        0.91,
+        0.288,
+        0.969,
+        0.392
+      ],
+      "description": "The trash bin is located on the right side of the image, near a wooden bench where a girl with blonde hair tied in two pigtails is reading a book. The trash bin is dark green and cylindrical, featuring a white rectangular opening on its top front. It has a recycling symbol, comprised of three white arrows forming a triangular loop, on its front side. The bin is positioned at the edge of the footpath that runs alongside the bench."
     }
   },
   "tigertom-park3.jpg": {
