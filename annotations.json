@@ -208,13 +208,13 @@
   "mitgutsch-pool.jpg": [
     {
       "bbox": [
-        0.5322452229299364,
-        0.05248306997742663,
-        0.5769537480063796,
-        0.08088235294117647
+        0.5322096521665947,
+        0.05629946979267302,
+        0.5780953506775224,
+        0.08027985131562645
       ],
       "object": "tennis racket",
-      "description": "A dark tennis racket lies on the ground near the top of the image, slightly to the right of center, on top of a towel and near some tennis balls."
+      "description": "A dark tennis racket lies on the ground near the top of the image, slightly to the right of center. The racket is laid horizontally, with the handle pointing towards the left and the head towards the right. The racket is placed on top of a towel near the top-left corner of a pool. Nearby are some tennis balls, other towels and children and animals playing."
     }
   ],
   "mitgutsch-townsquare.jpg": [
@@ -744,14 +744,14 @@
         0.8922201498230892
       ],
       "object": "saxophone",
-      "description": "A man in a black suit in the bottom middle of the image is raising a saxophone above his head. He is standing in a park, next to an ambulance."
+      "description": "A man in a black suit in the bottom middle of the image is raising a saxophone above his head with his left hand. He is standing in a park, next to an ambulance. The saxophone looks ordinary and is not being played."
     },
     {
       "bbox": [
-        0.5054642297519658,
+        0.5044895590543125,
         0.3036223117705108,
-        0.833756103515625,
-        0.5728171647484622
+        0.8347317132717226,
+        0.5698320901215966
       ],
       "object": "fire truck",
       "description": "There is a fire truck located center-right in the image. It's a large red truck with an extendable ladder in the back. The blue lights on top of the cabin are flashing. The truck is headed to the right, and is approaching a zebra crossing."
