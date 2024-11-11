@@ -625,10 +625,10 @@
     },
     "yellow bus": {
       "bbox": [
-        0.615975739006374,
-        0.9040506570540567,
-        0.61664458452645,
-        0.9056529856439847
+        0.6244411233013138,
+        0.23508706640315816,
+        0.7670683133400092,
+        0.4250559707186115
       ],
       "description": "There is a yellow bus in the upper right quadrant of the image. It is parked at a bus stop and passengers are disembarking. The bus is facing toward the viewer of the image. Just in front of the bus is a zebra crossing and a 4-way intersection."
     }
@@ -662,15 +662,6 @@
         0.16833955280816376
       ],
       "description": "An orange frisbee is flying between two boys in the upper left quadrant of the image. The frisbee is flying just below the waterfront and above a path."
-    },
-    "ping pong ball": {
-      "bbox": [
-        0.24286391974832222,
-        0.2946829319399865,
-        0.25054288314560713,
-        0.30416044833055184
-      ],
-      "description": "There's a small ping pong ball visible in the top left quadrant of the image. Its above a green table, between two children who are actively playing ping pong."
     }
   },
   "tigertom-park2.jpg": {
