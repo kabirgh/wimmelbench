@@ -269,6 +269,12 @@
       "description_grade_reason": "The predicted description correctly identifies the shuttlecock and its state (mid-flight). The location is slightly off ('center-right' instead of 'upper right'), but still reasonably close.  The description inaccurately identifies the bears as 'rabbits and other animals,' which is a significant detail error. However, it correctly describes the shuttlecock as small and white and captures its general purpose within the scene.",
       "giou": -0.9225751622928887,
       "status": "predicted"
+    },
+    "giraffe": {
+      "status": "predicted",
+      "giou": 0.12291770371602853,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description captures all the key details and spatial relationships accurately. It correctly identifies the giraffe's central location, the red ring around its neck, and the fact that it's looking to the left (implied by 'holding' the ring).  The mention of the beach is consistent with the ground truth's 'sea' as beaches are next to the sea. The additional details about the giraffe's appearance and surrounding animals don't contradict the ground truth and are therefore acceptable."
     }
   },
   "season-winter.jpg": {
@@ -291,6 +297,12 @@
       "description_grade_reason": "The predicted location of the lifebuoy is incorrect.  The ground truth places it in the upper right, mounted to a lifeguard's chair, while the prediction places it near the middle, leaning against a beach chair. This significant spatial discrepancy warrants a 0 rating, despite correctly identifying the object's colors.",
       "giou": -0.8952534933623618,
       "status": "predicted"
+    },
+    "cruise ship": {
+      "status": "predicted",
+      "giou": -0.11195965024403928,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details of the cruise ship's location (top left corner, background, small size due to distance) and appearance (white/grey against blue water). The mention of seagulls doesn't contradict the ground truth (which mentions birds in the foreground)."
     }
   },
   "tigertom-birthday.jpg": {

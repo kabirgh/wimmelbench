@@ -269,6 +269,12 @@
       "description_grade_reason": "The predicted description accurately captures the shuttlecock's location in the upper right, and its position relative to the bear with the racket.  The description also correctly identifies key visual details like the white feathered shape and rounded base. While the ground truth mentions the two bears playing, the predicted description focusing on the bear with the racket doesn't contradict this and is sufficient to understand the context. The additional details about the size and background color are not incorrect and do not detract from the accuracy.",
       "giou": -0.4591084998988669,
       "status": "predicted"
+    },
+    "giraffe": {
+      "status": "predicted",
+      "giou": 0.38121039114816757,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description gets many key details correct, such as the red swim ring and the giraffe's central location. However, it inaccurately describes the giraffe as standing on the sandy beach when the ground truth clearly states its legs are partially submerged in the sea. This is a significant spatial inaccuracy, lowering the rating. The mention of other beachgoers is irrelevant as it's not mentioned in the ground truth.  While the color and appearance details are correct, they are less important than the location details."
     }
   },
   "season-winter.jpg": {
@@ -291,6 +297,12 @@
       "description_grade_reason": "The predicted location (bottom right, swimming pool) is completely different from the ground truth (upper right, beach, lifeguard chair).  The color is also incorrect (green vs. white and red). These are major inaccuracies in key identifying details and location.",
       "giou": -0.9410410177256895,
       "status": "predicted"
+    },
+    "cruise ship": {
+      "status": "predicted",
+      "giou": -0.13760623165692593,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the location (top left), color (white with red accents - extra detail not required but doesn't contradict), and movement (sailing to the right, implied by 'sailing on the ocean'). The additional details about decks and windows are consistent with a cruise ship.  The mention of seagulls reinforces the presence of birds mentioned in the ground truth. The small size/distance is implied by the description of the birds being in the foreground."
     }
   },
   "tigertom-birthday.jpg": {

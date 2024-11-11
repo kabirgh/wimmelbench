@@ -269,6 +269,12 @@
       "description_grade_reason": "",
       "giou": -1.0,
       "status": "not found"
+    },
+    "giraffe": {
+      "status": "predicted",
+      "giou": 0.7563110535067096,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the giraffe.  It correctly describes the giraffe standing in shallow water (equivalent to legs partially submerged), with an inflatable ring (orange is close enough to red), and facing left. The head being near the center is consistent with the giraffe being in the center.  The additional color details are consistent with a giraffe and do not contradict the ground truth."
     }
   },
   "season-winter.jpg": {
@@ -291,6 +297,12 @@
       "description_grade_reason": "The predicted description describes a completely different scenario with an orange lifebuoy in a pool near the bottom right, with children and a waiter. The ground truth describes a white and red lifebuoy mounted to a lifeguard's chair in the upper right of the image, on a beach.  The location, color, and context are all incorrect.",
       "giou": -0.9516106612149333,
       "status": "predicted"
+    },
+    "cruise ship": {
+      "status": "predicted",
+      "giou": 0.7457956457534988,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately identifies the cruise ship's key details (white, dark windows), its correct location (top left corner), and its direction of travel (implied by the ground truth's \"sailing to the right\" and the prediction's placement in the ocean). The additional detail about people swimming is not contradictory to the ground truth.  The relative size/distance is conveyed by the ground truth and implied by the predicted description's mention of an ocean, aligning with the concept of a far-off ship."
     }
   },
   "tigertom-birthday.jpg": {
