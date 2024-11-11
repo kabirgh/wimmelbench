@@ -272,5 +272,17 @@
       "object": "fire truck",
       "description": "There is a red fire truck with an extended ladder in the middle-right portion of the image. It appears to be near a construction site where a blue excavator is working. The fire truck is parked on the street and has a distinctive silver/grey ladder extending from its top. It's a traditional style fire engine in bright red coloring."
     }
+  ],
+  "montreal-snow.jpg": [
+    {
+      "bbox": [
+        0.02,
+        0.12,
+        0.06,
+        0.18
+      ],
+      "object": "bear",
+      "description": "There is a brown bear visible in the upper left portion of the image. The bear is standing among the winter scene near some trees and rocks. It appears to be observing the winter activities taking place in the park. Several small red birds and squirrels are visible near the bear. The bear is drawn in the same illustration style as the rest of the scene, with a simple but clear design showing its brown fur and typical bear shape."
+    }
   ]
 }
