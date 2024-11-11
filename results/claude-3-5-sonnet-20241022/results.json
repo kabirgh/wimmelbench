@@ -216,6 +216,15 @@
         0.15
       ],
       "description": "There is a small blue kite visible in the upper left portion of the image, flying above the trees. It appears to be a simple diamond-shaped kite with a tail streaming behind it. The kite is being flown in what seems to be a busy street or plaza scene with many people around."
+    },
+    "prop plane": {
+      "bbox": [
+        0.05,
+        0.15,
+        0.12,
+        0.22
+      ],
+      "description": "There is a small white prop plane visible in the left side of the image, near one of the pink buildings. It appears to be a toy or model airplane that has crashed or landed at an awkward angle against the building's wall. The plane has visible wings and a propeller at its front."
     }
   },
   "mitgutsch-water.jpg": {
@@ -282,6 +291,15 @@
         0.35
       ],
       "description": "There appears to be a small green cactus in a pot being carried on a serving tray by one of the rabbit/bunny characters on the left side of the street. The bunny is one of two gray bunnies carrying food items on trays, likely heading towards the 'EAT ME' caf\u00e9 in the scene."
+    },
+    "elephant": {
+      "bbox": [
+        0.45,
+        0.4,
+        0.55,
+        0.6
+      ],
+      "description": "There is a large grey elephant character sitting in the center of the street scene. The elephant is wearing a purple velvet robe or jacket and appears to be painting on a canvas that's set up on an easel. The elephant has distinctive large ears, a long trunk, and is shown in a sitting position while engaged in artistic activity. It appears to be one of the main focal points of the busy street scene, surrounded by various other animal characters."
     }
   },
   "professions-street.jpg": {
@@ -432,6 +450,15 @@
         0.5
       ],
       "description": "There is a yellow cartoon tiger with black stripes sitting at one of the classroom tables, approximately in the middle-left portion of the image. It appears to be a stuffed animal or toy tiger sitting on a chair at a desk with some school supplies. The tiger has a typical cartoonish appearance with distinctive black stripes on yellow fur."
+    },
+    "wash basin": {
+      "bbox": [
+        0.82,
+        0.18,
+        0.87,
+        0.25
+      ],
+      "description": "The wash basin appears to be a small white bathroom sink mounted on the wall in the upper right portion of the classroom. It is located near some tiled wall sections and appears to have a simple faucet fixture. The basin seems to be a standard classroom hand-washing station typical of elementary school settings."
     }
   },
   "tigertom-cycles.jpg": {
@@ -503,6 +530,15 @@
         0.58
       ],
       "description": "There is a rake visible in the right portion of the image, near the playground area. It appears to be a wooden-handled rake being used by someone tending to a swing set or play area. The rake is oriented diagonally and is colored in a brown/beige tone, typical of a gardening tool. It's positioned near a wooden fence and a green slide in the playground section of what appears to be a community garden or backyard setting."
+    },
+    "slide": {
+      "bbox": [
+        0.68,
+        0.55,
+        0.75,
+        0.75
+      ],
+      "description": "There is a green playground slide located in the right portion of the image. It appears to be a simple straight slide mounted on a wooden play structure. The slide is positioned near a wooden fence and some flowering bushes. There are children playing in the area around it, with some using the playground equipment. The slide is a typical outdoor playground slide in a bright turquoise or teal color."
     }
   },
   "tigertom-intersection.jpg": {
@@ -565,6 +601,15 @@
         0
       ],
       "description": "There is no cartoon tiger present in this image. The image shows an outdoor park or garden scene with several children engaged in various activities like reading, resting, and looking at flowers. There are butterflies, rabbits, and birds in the scene, along with natural elements like a willow tree, a stream with a wooden bridge, flowering bushes and trees, but no tigers - cartoon or otherwise."
+    },
+    "trash bin": {
+      "bbox": [
+        0.85,
+        0.2,
+        0.9,
+        0.3
+      ],
+      "description": "There is a green cylindrical trash bin located in the right portion of the image, next to a wooden bench where someone is sitting and reading. The trash bin appears to be a public park-style waste receptacle mounted on a pole or stand."
     }
   },
   "tigertom-park3.jpg": {
