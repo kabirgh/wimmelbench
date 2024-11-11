@@ -8,7 +8,7 @@
         0.10734463276836158
       ],
       "object": "person riding a horse",
-      "description": "A person is riding a dark horse near the top of the image, slightly right of center. The horse is on top of a hill, standing between trees with orange leaves."
+      "description": "A person is riding a dark horse near the top of the image, slightly right of center. The horse looks like it is in the background. The person and horse are on top of a hill, standing between trees with orange leaves. In the foreground, there is construction going on."
     },
     {
       "bbox": [
@@ -52,7 +52,7 @@
         0.22033898305084745
       ],
       "object": "santa",
-      "description": "Santa claus is in the top right of the image, between snow-covered trees and the yellow wall of a house. He is carrying a brown sack over his shoulder."
+      "description": "Santa claus is in the top right of the image, between snow-covered trees and the yellow wall of a house. He is carrying a brown sack over his shoulder and looks like he is walking downhill."
     },
     {
       "bbox": [
@@ -74,7 +74,7 @@
         0.584180790960452
       ],
       "object": "f1 car",
-      "description": "A pink f1 car is in the middle right of the image. It is facing up and to the left. The car is on a section of the road above water."
+      "description": "A pink f1 car is in the middle right of the image. It is facing diagonally up and to the left. The car is on a section of the road above water."
     },
     {
       "bbox": [
@@ -190,7 +190,7 @@
         0.12542372881355932
       ],
       "object": "mandarin orange",
-      "description": "A mandarin orange is being launched out of a tube in the top right corner of the image. The man playing the tuba is wearing a green shirt."
+      "description": "A mandarin orange is being launched out of a tuba in the top right corner of the image. The man playing the tuba is wearing a green shirt."
     }
   ],
   "mitgutsch-pirate.jpg": [
@@ -274,7 +274,7 @@
         0.5774011299435028
       ],
       "object": "toolbox",
-      "description": "A red toolbox is located in the lower-left corner of the image, near a window washer on a lift.  It is open, suggesting use, and appears to contain various tools."
+      "description": "A red toolbox is located in the middle left part of the image. It is on the roof of a building. Next to the toolbox is a person who is fixing a something on the rooftop."
     }
   ],
   "porsche-road.jpg": [
@@ -298,7 +298,7 @@
         0.5807909604519774
       ],
       "object": "cactus",
-      "description": "A small, light green cactus is potted in the window of a light gray building on the left side of the image, near the middle vertically. In the window next to it is an orange cat. Both windows are above teal awning."
+      "description": "A small, green cactus is potted in the window of a light gray building on the left side of the image, near the middle vertically. In the window next to it is an orange cat. Both windows are above teal awning."
     }
   ],
   "professions-street.jpg": [
@@ -496,7 +496,7 @@
         0.3056529856439847
       ],
       "object": "forklift",
-      "description": "There is a red forklift visible in the top right corner of the scene, near a field of tall sunflowers. It is facing right and is currently unused."
+      "description": "There is a red forklift visible in the top right corner of the scene, near a field of tall sunflowers. It is facing right and is currently not in use."
     }
   ],
   "tigertom-garden.jpg": [
@@ -630,7 +630,7 @@
         0.8578917916141339
       ],
       "object": "soccer ball",
-      "description": "There is a soccer ball in the bottom right quadrant of the image. It is being kicked by a boy in a yellow jersey."
+      "description": "There is a soccer ball in the bottom right quadrant of the image. It is being kicked by a boy in a yellow jersey. Near the ball are more soccer players."
     }
   ],
   "tigertom-snow.jpg": [
@@ -652,7 +652,7 @@
         0.31311567221114883
       ],
       "object": "birdhouse",
-      "description": "A wooden birdhouse is located in the upper middle section of the image, just to the left of a green house. Two birds are perched on the birdhouse."
+      "description": "A wooden birdhouse is located in the upper middle section of the image. To its right is a (human) house with green walls. Two birds are perched on the birdhouse."
     }
   ],
   "tigertom-zoo.jpg": [
@@ -698,7 +698,7 @@
         0.5966977617633876
       ],
       "object": "soccer ball",
-      "description": "A small soccer ball is located near the lower-middle section of the image. It's on a grassy field near a small child that is facing away from the ball."
+      "description": "A small soccer ball is located near the lower-middle section of the image. It's on a grassy field near a small child that is facing away from the ball. There are also trees and animals in the field."
     }
   ],
   "walk-townscene.jpg": [
@@ -710,7 +710,7 @@
         0.7369962692260742
       ],
       "object": "black cat",
-      "description": "A black cat is located in the bottom right corner of the image, near the stone wall and above a cyclist. It is facing left, appearing to be walking or casually strolling. It is a solid black colour with a red collar."
+      "description": "A black cat is located in the bottom right corner of the image, near the stone wall and above a cyclist. It is facing left, appearing to be walking or casually strolling. It is solid black with a red collar."
     }
   ],
   "whodoeswhat-city.jpg": [
