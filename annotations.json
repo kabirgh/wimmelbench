@@ -545,14 +545,14 @@
       ],
       "description": "There is a red forklift visible in the top right corner of the scene, near a field of tall sunflowers. It is facing right and is currently not in use."
     },
-    "bird nest": {
+    "bird nest in a tree": {
       "bbox": [
-        0.7275071706336316,
+        0.7253908245598965,
         0.9383182797377331,
-        0.7738479678913698,
-        0.984757463255925
+        0.7780852560269631,
+        0.9832649259424922
       ],
-      "description": "There is a bird nest in the lower right part of the image, nestled in the leaves on what is likely a tree (the trunk is not visible). There are three chicks in the nest. Just above the nest there's a flying bird with a worm in its mouth."
+      "description": "There is a bird nest in the lower right part of the image, nestled in the leaves on what is likely a tree (the trunk is not visible). There are three chicks in the nest. Just above the nest there's a flying bird with a worm in its mouth. Near the tree is a person leading a horse. There is also a yellow car on the other side of the fence."
     }
   },
   "tigertom-garden.jpg": {
