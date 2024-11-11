@@ -107,7 +107,7 @@
 
     <script>
         let annotations = {};
-        let lastFocusedAnnotationInput = null;
+        let drawingAnnotationInput = null;
         let drawingObjectName = null;
 
         async function fetchAnnotations() {
@@ -259,16 +259,13 @@
             startY = (e.clientY - rect.top) * scaleY;
 
             // Find the last input with focus or default to the last input
-            let objectName = null
-            if (lastFocusedAnnotationInput) {
-                objectName = lastFocusedAnnotationInput.querySelector('.object-name').value
-            } else {
+            if (!drawingAnnotationInput) {
                 const inputs = document.querySelectorAll('.annotation-input');
-                objectName = inputs[inputs.length - 1].querySelector('.object-name').value
+                drawingAnnotationInput = inputs[inputs.length - 1]
             }
 
+            drawingObjectName = drawingAnnotationInput.querySelector('.object-name').value;
             isDrawing = true;
-            drawingObjectName = objectName;
         });
 
         canvas.addEventListener('mousemove', (e) => {
@@ -331,7 +328,8 @@
             ];
 
             // Get the current object name input
-            const description = lastFocusedAnnotationInput ? lastFocusedAnnotationInput.querySelector('.description-textarea').value : '';
+            console.log(drawingAnnotationInput)
+            const description = drawingAnnotationInput.querySelector('.description-textarea').value;
 
             // Update annotations
             annotations[currentImage][drawingObjectName] = {
@@ -409,7 +407,7 @@
                 loadImage(imageSelect.value);
             }
 
-            lastFocusedAnnotationInput = null
+            drawingAnnotationInput = null
             drawingObjectName = null
             isDrawing = false
         }
@@ -427,7 +425,7 @@
 
         annotationInputs.addEventListener('click', (e) => {
             // So that we know which bounding box we are drawing
-            lastFocusedAnnotationInput = e.target.closest('.annotation-input')
+            drawingAnnotationInput = e.target.closest('.annotation-input')
         })
 
         // Add event listener for input changes
