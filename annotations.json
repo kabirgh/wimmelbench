@@ -108,6 +108,15 @@
         0.49968283639025335
       ],
       "description": "A purple octopus is in the center of the image on top of a snorkelers head. The snorkeler is near a small boat and other swimmers."
+    },
+    "crab": {
+      "bbox": [
+        0.4413548601177196,
+        0.9144799335230016,
+        0.47427102666967913,
+        0.966847015494731
+      ],
+      "description": "There is a small red crab on the beach in the bottom-middle of the image. The crab's pincers are raised and it looks like its facing away. Just above the crab is a man in black swimming trunks lying down on a blue mat."
     }
   },
   "lufthansa-greece.jpg": {
@@ -163,6 +172,15 @@
         0.19833659192587297
       ],
       "description": "A man waving a white flag is in the top left of the image, by a broken a window. He is hung up on a light fixture by his jacket. To his right is a person falling, visible behind a broken window. Below him are people fighting each other."
+    },
+    "bowling ball": {
+      "bbox": [
+        0.702006271026302,
+        0.5867026730704457,
+        0.719638837278223,
+        0.611623134897716
+      ],
+      "description": "A small black bowling ball is in the middle-right of the image. It is in between two mean wearing blue. The man on the right has punched the man on the left who is reeling backwards. The bowling ball may have left the left man's hands, but this is unclear."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -247,6 +265,15 @@
         0.2998872604284104
       ],
       "description": "A brown bear is located in the upper left corner of the image. It is facing right. Only the front half of the bear is visible. Nearby are some small rocks, leafless trees, other animals, and people skiing."
+    },
+    "hockey puck": {
+      "bbox": [
+        0.37757960635143845,
+        0.856373964624594,
+        0.39118133891712537,
+        0.8743097020618951
+      ],
+      "description": "There's a black hockey puck on the ice skating rink in the lower left quadrant of the image. A few people playing ice hockey are nearby."
     }
   },
   "porsche-factory.jpg": {
@@ -437,6 +464,15 @@
         0.9743097020618952
       ],
       "description": "A cartoon tiger, yellow with black striped, is located in the bottom of the image, left of center. It's wearing a party hat and reaching out to get a blue balloon animal that a clown has made."
+    },
+    "boombox": {
+      "bbox": [
+        0.8117377508268592,
+        0.43175342267469186,
+        0.887831025204416,
+        0.5056529856439846
+      ],
+      "description": "There's a gray boombox on the right side of the image, vertically just above center. Its placed on the top-right corner of a tiled outdoor square. It looks like its playing music. To the left of the boombox people are dancing. Just behind it is a potted plant. To the right there are leaves arranged in a pattern on what could be a mat."
     }
   },
   "tigertom-classroom.jpg": {
@@ -508,6 +544,15 @@
         0.3056529856439847
       ],
       "description": "There is a red forklift visible in the top right corner of the scene, near a field of tall sunflowers. It is facing right and is currently not in use."
+    },
+    "bird nest": {
+      "bbox": [
+        0.7275071706336316,
+        0.9383182797377331,
+        0.7738479678913698,
+        0.984757463255925
+      ],
+      "description": "There is a bird nest in the lower right part of the image, nestled in the leaves on what is likely a tree (the trunk is not visible). There are three chicks in the nest. Just above the nest there's a flying bird with a worm in its mouth."
     }
   },
   "tigertom-garden.jpg": {
@@ -528,6 +573,15 @@
         0.29968283639025334
       ],
       "description": "There is a pitcher of water in the upper left quadrant of the image. It is half-filled and placed on the left edge of a large white outdoor dining table. Near the table is a man barbecuing on a grill."
+    },
+    "sunglasses": {
+      "bbox": [
+        0.5296288127394113,
+        0.21273861682684753,
+        0.5598649170439122,
+        0.23550373191264137
+      ],
+      "description": "A pair of dark sunglasses are lying on the floor near the top of the image, just right of center horizontally. There's a pair of sandals to the left of the glasses. Just above them both is a girl lying down on a blue seat, reading."
     }
   },
   "tigertom-house.jpg": {
@@ -571,10 +625,10 @@
     },
     "yellow bus": {
       "bbox": [
-        0.6244411233013138,
-        0.22912747984947532,
-        0.7691869574078058,
-        0.42654850803204436
+        0.615975739006374,
+        0.9040506570540567,
+        0.61664458452645,
+        0.9056529856439847
       ],
       "description": "There is a yellow bus in the upper right quadrant of the image. It is parked at a bus stop and passengers are disembarking. The bus is facing toward the viewer of the image. Just in front of the bus is a zebra crossing and a 4-way intersection."
     }
@@ -608,6 +662,15 @@
         0.16833955280816376
       ],
       "description": "An orange frisbee is flying between two boys in the upper left quadrant of the image. The frisbee is flying just below the waterfront and above a path."
+    },
+    "ping pong ball": {
+      "bbox": [
+        0.24286391974832222,
+        0.2946829319399865,
+        0.25054288314560713,
+        0.30416044833055184
+      ],
+      "description": "There's a small ping pong ball visible in the top left quadrant of the image. Its above a green table, between two children who are actively playing ping pong."
     }
   },
   "tigertom-park2.jpg": {
@@ -628,6 +691,15 @@
         0.4041604483305518
       ],
       "description": "There's a green trash bin near the right edge of the image, vertically slightly above center. The bin is in a park and placed near a path. Next to the bin is a girl reading on a wooden bench."
+    },
+    "banana": {
+      "bbox": [
+        0.8147616401912073,
+        0.7593843289275668,
+        0.8495596366864779,
+        0.8057174789182899
+      ],
+      "description": "There's a peeled banana in the bottom right quadrant of the image. A boy is holding it in his right hand. The boy is dressed in a red shirt, blue shorts, and a blue baseball cap."
     }
   },
   "tigertom-park3.jpg": {
@@ -668,6 +740,15 @@
         0.31311567221114883
       ],
       "description": "A wooden birdhouse is located in the upper middle section of the image. To its right is a (human) house with green walls. Two birds are perched on the birdhouse."
+    },
+    "owl": {
+      "bbox": [
+        0.9073965869011044,
+        0.877232517562484,
+        0.9295683068744207,
+        0.9340111945992086
+      ],
+      "description": "A brown owl is perched on a branch of a leafless tree in the bottom right corner of the image. Nearby there are other trees and animals. "
     }
   },
   "tigertom-zoo.jpg": {
@@ -699,6 +780,15 @@
         0.15789179161413391
       ],
       "description": "A red bicycle is located in the upper left quadrant of the image.  A child is carrying the bicycle, about to cross a wooden bridge that spans a stream."
+    },
+    "soccer ball": {
+      "bbox": [
+        0.6877917358582356,
+        0.5718037066862385,
+        0.7032544438890687,
+        0.5922201498230891
+      ],
+      "description": "A soccer ball is floating in a lake in the center-right of the image. Nearby a boy in a small boat is reaching out with a stick towards the ball, probably attempting to retrieve it."
     }
   },
   "walk-townfarm.jpg": {
