@@ -153,6 +153,12 @@
       "description_grade_reason": "While the predicted description correctly identifies some aspects of the kite (diamond-shaped, red and white checkered pattern), it fails to accurately describe its location. The ground truth clearly places the kite 'caught in the foliage of a tree,' implying it's not actively being flown and is entangled.  The predicted description says it's 'being flown by a person,' which contradicts the ground truth. Additionally, 'top-center' is not a precise enough match for 'upper left quadrant' given the kite's entanglement in a tree is a key detail. The mention of a person on the bench is not present in the ground truth, further adding to the inaccuracies.",
       "giou": -0.8330918918835889,
       "status": "predicted"
+    },
+    "prop plane": {
+      "status": "predicted",
+      "giou": -0.3257597373389394,
+      "description_grade": 1,
+      "description_grade_reason": "The predicted description gets some key details correct, such as the blue and white color. However, the location is inaccurate \u2013 \"upper left\" is not the same as \"left edge, vertically near the center.\" Additionally, the predicted description states it is flying horizontally, contradicting the ground truth's \"aiming diagonally down and right.\" While it acknowledges the plane's orientation, the descriptions are not compatible.  The presence of a pilot is also missed."
     }
   },
   "mitgutsch-water.jpg": {
@@ -201,6 +207,12 @@
       "description_grade_reason": "The predicted location of the cactus in the bottom-right is completely incorrect. The ground truth places it on the left side, near the middle vertically. This significant spatial discrepancy warrants a 0 rating, regardless of any correct details about the cactus' appearance.",
       "giou": -0.9820779320871261,
       "status": "predicted"
+    },
+    "elephant": {
+      "status": "predicted",
+      "giou": 0.30938213205970333,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the elephant. It correctly describes the elephant's attire (purple robe), the paintbrush and palette, and the easel's position.  The location ('slightly left of center in the lower half') aligns well with 'bottom-middle'. While the ground truth mentions mice and other animals, their presence isn't crucial to the elephant's description, and their absence in the prediction doesn't detract from its accuracy. The act of 'engaging in painting' is consistent with the tools the elephant is holding."
     }
   },
   "professions-street.jpg": {
@@ -309,6 +321,12 @@
       "description_grade_reason": "While the prediction correctly identifies the tiger and some elements of the scene, it misses several key details and misrepresents its location. The tiger is described as being *on* the table, rather than on a chair *at* the table as in the ground truth.  The table is described as being in the 'center-left', which is somewhat ambiguous but leans more towards incorrect than correct given the ground truth description 'lower-middle'.  Although it mentions the tiger is sitting, it fails to mention the key details of the lunchbox and water bottle the tiger is holding.",
       "giou": -0.40701100853121225,
       "status": "predicted"
+    },
+    "wash basin": {
+      "status": "predicted",
+      "giou": -0.5054256233739908,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description gets the key details of the wash basin correct (white, oval shape, faucet and mirror above) and its general location (right side). However, it misplaces the bins (they are below, not to the left) and describes the wall as light blue when the ground truth doesn't mention a color (being lenient towards predicted details not mentioned in the ground truth). While it correctly identifies the mirror's position above, the paper towel dispenser's location to the left is missing.  The incorrect placement of the bins and missing paper towel dispenser warrant a deduction, making the prediction 'majorly correct with some inaccuracies'."
     }
   },
   "tigertom-cycles.jpg": {
@@ -359,6 +377,12 @@
       "description_grade_reason": "The predicted description accurately captures the key details and location of the rake. It correctly describes the rake as being in the lower-left, leaning against the building (the color difference between 'red' and 'pink' is minor), and next to the door.  The additional details about the rake's appearance and handle do not contradict the ground truth. The mention of a typical garden rake with a wooden handle provides more detail than the ground truth, but aligns with the general context.",
       "giou": -0.9374147630796822,
       "status": "predicted"
+    },
+    "slide": {
+      "status": "predicted",
+      "giou": 0.30259954845037706,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the slide. It correctly identifies the color as green, its position in the right portion of the image, and the material of the supporting structure as wood.  While the ground truth specifies the bottom right quadrant, the prediction's 'right portion' is acceptable, especially given the additional context of the play area and swing set, which implicitly refines the location. The descriptions of the boy/child are also consistent, although the predicted description lacks the clothing details. This omission is not considered a significant flaw, as the focus should be on the slide itself.  The 'climbing up the ladder' vs. 'standing at the top' can be considered equivalent in this context."
     }
   },
   "tigertom-intersection.jpg": {
@@ -403,6 +427,12 @@
       "description_grade_reason": "The predicted description places the tiger on a bench near a person, which contradicts the ground truth description of it being behind a willow tree.  The location is completely wrong, making the prediction critically flawed despite correctly identifying some visual details like the stripes.",
       "giou": -0.9178762687258588,
       "status": "predicted"
+    },
+    "trash bin": {
+      "status": "predicted",
+      "giou": -0.5230538944153207,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the trash bin. It correctly describes the color (green), the general location (right side, near a bench and path), and even adds a detail about an emblem, which doesn't contradict the ground truth.  While the ground truth specifies the vertical position as slightly above center, the predicted description omits this - however, the other locational details are sufficient for a rating of 3."
     }
   },
   "tigertom-park3.jpg": {

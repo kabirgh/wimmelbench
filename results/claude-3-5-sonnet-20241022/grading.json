@@ -153,6 +153,12 @@
       "description_grade_reason": "While the predicted description correctly identifies the kite and its general location in the upper left portion of the image, it misses several key details.  The ground truth specifies the kite is *caught* in a tree, whereas the prediction says it's *flying above* the trees. This is a critical difference.  The kite's description as 'small blue' is inaccurate as the ground truth indicates it is multi-colored. The prediction also misses the detail about the string hanging down to a park bench. Although it correctly infers a public space with people, this isn't as important as the object's direct interaction with the tree and the string's location.",
       "giou": -0.7519946317599683,
       "status": "predicted"
+    },
+    "prop plane": {
+      "status": "predicted",
+      "giou": -0.5981834030608155,
+      "description_grade": 1,
+      "description_grade_reason": "While the predicted description correctly identifies the prop plane and its general location on the left side, it introduces significant inaccuracies. It incorrectly describes the plane as small, a toy/model, and crashed/landed awkwardly against a building.  The ground truth describes it as a full-sized plane with a pilot, aiming diagonally down and right. The color description is also partially incorrect, missing the blue color mentioned in the ground truth. Although the prediction mentions the propeller, the numerous inaccuracies outweigh the correct placement and partial color description."
     }
   },
   "mitgutsch-water.jpg": {
@@ -201,6 +207,12 @@
       "description_grade_reason": "The predicted description places the cactus on a tray being carried by a bunny. The ground truth describes it as potted in a window. This significant difference in location warrants a 0 rating, as the primary aspect of the object's description is incorrect.",
       "giou": -0.88506603293808,
       "status": "predicted"
+    },
+    "elephant": {
+      "status": "predicted",
+      "giou": -0.5071091142688301,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description captures most key details: the elephant's purple top, easel, central location, and act of painting. However, it incorrectly describes the elephant as sitting rather than standing on two legs, which is a significant detail. While it mentions the street location, it doesn't specify the bottom-middle position.  It also misses the paintbrush and palette, and the mice at its feet."
     }
   },
   "professions-street.jpg": {
@@ -309,6 +321,12 @@
       "description_grade_reason": "The predicted description accurately captures the key details and location of the tiger. It correctly describes the tiger as yellow with black stripes, sitting on a chair at a table in the middle-left (or lower-middle as in the ground truth) portion of the image.  The mention of school supplies and stuffed animal appearance are extra details not contradicting the ground truth, while the lunchbox and water bottle in the ground truth are less specific descriptions than \"school supplies.\"  The slight difference in location description (middle-left vs. lower-middle) is minor and doesn't detract from the overall accuracy.",
       "giou": -0.6804839056135896,
       "status": "predicted"
+    },
+    "wash basin": {
+      "status": "predicted",
+      "giou": -0.6774920570699882,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the wash basin. It correctly identifies it as a small, white, wall-mounted sink in the upper right portion of the classroom, near tiled walls.  The mention of the faucet is a correct additional detail. The description of it as a standard classroom hand-washing station is consistent with the ground truth's mention of the scene being a classroom. While the ground truth provides more details about surrounding objects, the predicted description focuses on the wash basin itself and its location accurately."
     }
   },
   "tigertom-cycles.jpg": {
@@ -359,6 +377,12 @@
       "description_grade_reason": "The predicted location (right portion of the image, near a playground) is completely different from the ground truth location (bottom left corner, in a doorway of a red building).  This critical error overrides any correct details about the rake's appearance.",
       "giou": -0.9890206061105568,
       "status": "predicted"
+    },
+    "slide": {
+      "status": "predicted",
+      "giou": 0.264417143670933,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the slide's general location (right side) and material (mounted on a wooden structure). However, it misses the more precise location (bottom right) and gets the color wrong (turquoise/teal instead of green). It also doesn't mention the boy at the top, which is a key detail. While it mentions children playing, it doesn't specifically mention the boy on top of the slide. The presence of the wooden fence and bushes aren't mentioned in the ground truth so are disregarded."
     }
   },
   "tigertom-intersection.jpg": {
@@ -403,6 +427,12 @@
       "description_grade_reason": "",
       "giou": -1.0,
       "status": "not found"
+    },
+    "trash bin": {
+      "status": "predicted",
+      "giou": -0.5147975790847298,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details and location of the trash bin.  It correctly identifies the color (green), shape (cylindrical), and general location (right portion of the image, next to a wooden bench). The additional detail about it being a \"public park-style\" bin mounted on a stand/pole, while not present in the ground truth, doesn't contradict it.  The ground truth specifies the bin's location as \"near the right edge\" and \"slightly above center\" which aligns well with \"right portion\".  The relationship to the bench and reader is also correctly described."
     }
   },
   "tigertom-park3.jpg": {

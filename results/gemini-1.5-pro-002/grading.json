@@ -153,6 +153,12 @@
       "description_grade_reason": "The predicted description correctly identifies the kite's location (top left), its general shape (diamond with tail), and its proximity to a tree in a park-like setting. However, it misses the crucial detail that the kite is caught in the tree's foliage, and its color description is vague ('light purple or lavender') without acknowledging the multi-colored nature mentioned in the ground truth.  The additional details about people's reactions and the man running are not relevant as they do not pertain to the kite's details/location and are not mentioned in the ground truth.",
       "giou": -0.498534911640215,
       "status": "predicted"
+    },
+    "prop plane": {
+      "status": "predicted",
+      "giou": -0.06759244655911274,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description captures all key details from the ground truth.  It correctly identifies the object (prop plane), its color (blue and white), and its approximate location (top left, which aligns with \"left edge near center\" given the diagonal trajectory). The direction of the plane is also consistent; \"diagonally down and right\" aligns with \"tilting slightly towards the left\" given the observer's perspective from within the plane. While the ground truth mentions one pilot, the prediction of two figures (one piloting) doesn't contradict this and is a reasonable interpretation.  The additional detail about the plane flying low is acceptable as it doesn't conflict with the ground truth."
     }
   },
   "mitgutsch-water.jpg": {
@@ -201,6 +207,12 @@
       "description_grade_reason": "The predicted description accurately captures the key details and location of the cactus. It correctly describes it as small and green, placed in the window of a gray building on the left side.  While the ground truth provides additional context about a cat and awning, these are not necessary to identify the cactus and its location. The predicted description's mention of the window sill further clarifies the cactus's position and is consistent with the ground truth. ",
       "giou": 0.5150259785338549,
       "status": "predicted"
+    },
+    "elephant": {
+      "status": "predicted",
+      "giou": 0.6988624580010802,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the key details of the elephant: its purple top (described as a robe, which is acceptable), its action of painting, the presence of the paintbrush and palette, and the easel. The location is correctly described as slightly left of center and on the street/road. The presence of the mice and other animals are mentioned in the ground truth but their details are not crucial, and the prediction doesn't contradict these details."
     }
   },
   "professions-street.jpg": {
@@ -309,6 +321,12 @@
       "description_grade_reason": "The predicted description gets the general location and pose of the tiger correct ('seated' vs. 'sitting'), and correctly identifies it as holding a container ('green thermos' vs. 'lunch box and water bottle'). However, it incorrectly places the tiger *on* the table, rather than on a chair *at* the table as described in the ground truth. The color description is consistent with a typical cartoon tiger, but since the ground truth does not mention color, this doesn't increase the score. The other details about the backpack, other children, and table contents are extra details not in the ground truth and are ignored.",
       "giou": 0.5192192112248943,
       "status": "predicted"
+    },
+    "wash basin": {
+      "status": "predicted",
+      "giou": 0.19549615789929697,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the wash basin's key details (white, rectangular) and its location (right side, corner, below mirror). The additional details about the faucet, drain, and bins are consistent with a typical wash basin and do not contradict the ground truth. Although the ground truth mentions the paper towel dispenser and the tiled wall, their absence in the predicted description doesn't detract significantly, as the core details and location are correct."
     }
   },
   "tigertom-cycles.jpg": {
@@ -359,6 +377,12 @@
       "description_grade_reason": "While the prediction correctly identifies some details like the rake's material (brown wooden handle, metal head), it fails to accurately describe its location. The ground truth places the rake inside a building, leaning against a wall near a shovel, while the prediction places it outside against a fence next to a raised garden bed. This significant difference in location warrants a low score despite correctly capturing some of the object's properties.",
       "giou": -0.9449963388489552,
       "status": "predicted"
+    },
+    "slide": {
+      "status": "predicted",
+      "giou": 0.3028189124804144,
+      "description_grade": 2,
+      "description_grade_reason": "The predicted description correctly identifies the slide's color and location in the bottom right. It also mentions a person at the top of the slide, although the clothing description is inaccurate.  It gets some details wrong about the person on the slide and adds extra details about the surrounding environment that aren't mentioned in the ground truth (other children, swing set, trees).  While these extra details aren't necessarily incorrect, they don't contribute to the core description of the *slide* itself and its immediate context. The ground truth mentions the slide's wooden supports, which is missing in the predicted description."
     }
   },
   "tigertom-intersection.jpg": {
@@ -403,6 +427,12 @@
       "description_grade_reason": "",
       "giou": -1.0,
       "status": "not found"
+    },
+    "trash bin": {
+      "status": "predicted",
+      "giou": 0.5140074081989967,
+      "description_grade": 3,
+      "description_grade_reason": "The predicted description accurately captures the trash bin's location on the right side, slightly above center (implied by bench and girl's position). It correctly describes its color as dark green, its cylindrical shape, and the white rectangular opening.  The additional details about the recycling symbol and its position relative to the footpath are consistent with the ground truth and enhance the description. Although the ground truth doesn't mention these details, their presence doesn't contradict it."
     }
   },
   "tigertom-park3.jpg": {
