@@ -124,9 +124,6 @@ def main():
             for object_name in details.keys():
                 # Check if this specific object already has results
                 if args.skip_existing and object_name in results[image_name]:
-                    print(
-                        f"Skipping object {object_name} in {image_name} - results already exist"
-                    )
                     continue
 
                 result = model.detect_object(image_path, object_name)
