@@ -151,7 +151,7 @@
         0.6167910447761195,
         0.3807909604519774
       ],
-      "description": "A chef, wearing a white chef's hat, is standing near the center of the image, slightly to the right. He is wearing a white apron and holding a skewer with what looks like 3 cooked chickens."
+      "description": "A chef, wearing a white chef's hat, is standing near the center of the image, slightly to the right. He is wearing a white apron and holding a skewer with what looks like 3 cooked chickens. Nearby are children and people engaged in various activities at the carnival."
     }
   },
   "mitgutsch-fight.jpg": {
@@ -162,7 +162,7 @@
         0.13196480938416422,
         0.19833659192587297
       ],
-      "description": "A man waving a white flag is in the top left of the image, by a broken a window. He is hung up on a light fixture by his jacket."
+      "description": "A man waving a white flag is in the top left of the image, by a broken a window. He is hung up on a light fixture by his jacket. To his right is a person falling, visible behind a broken window. Below him are people fighting each other."
     }
   },
   "mitgutsch-orchestra.jpg": {
@@ -173,7 +173,7 @@
         0.8566853482786229,
         0.12542372881355932
       ],
-      "description": "A mandarin orange is being launched out of a tuba in the top right corner of the image. The man playing the tuba is wearing a green shirt."
+      "description": "A mandarin orange is being launched out of a tuba in the top right corner of the image. The man playing the tuba is wearing a green shirt and is seated in the back row of an orchestra."
     },
     "harp": {
       "bbox": [
@@ -226,7 +226,7 @@
         0.3466371027346637,
         0.9711538461538461
       ],
-      "description": "A small, dark red lobster is being carried by a man on a wooden board in the bottom of the image, left of center. The man is wearing a white shirt, dark trousers, and is walking to the right."
+      "description": "A small, dark red lobster is being carried by a man on a wooden board in the bottom of the image, left of center. The man is wearing a white shirt, dark trousers, and is walking to the right. Near the man and lobster is a pond, boats, and other people."
     }
   },
   "montreal-snow.jpg": {
@@ -237,7 +237,7 @@
         0.03006442376521117,
         0.2998872604284104
       ],
-      "description": "A brown bear is located in the upper left corner of the image. It is facing right. Only the front half of the bear is visible."
+      "description": "A brown bear is located in the upper left corner of the image. It is facing right. Only the front half of the bear is visible. Nearby are some small rocks, leafless trees, other animals, and people skiing."
     }
   },
   "porsche-factory.jpg": {
