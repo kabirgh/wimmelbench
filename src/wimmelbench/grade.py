@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import time
 from typing import Dict, List
 
 import google.generativeai as genai
@@ -14,19 +15,27 @@ You are an expert at comparing image descriptions. I will provide you with two d
 2: Majorly correct with some inaccuracies or missing details
 3: Mostly or fully correct, capturing the majority of key details and spatial relationships accurately
 
-Please provide a rating (0-3) and a brief explanation of your reasoning. Be somewhat lenient with your rating, since the ground truth description may not be perfect.
+Please provide a rating (0-3) and a brief explanation of your reasoning.
 
 Important criteria to consider (in order of importance):
-- The object itself and its key identifying details
+- The object's key identifying details (NOT the presence of the object, which is known to the prediction model)
 - The object's spatial location in the image
 - Color and appearance details of the object
-- Basic spatial relationships with immediately adjacent elements (less important)
+- Basic spatial relationships with adjacent elements (less important)
 
-Focus primarily on how well the object itself and its location are described, rather than detailed descriptions of surrounding elements or complex relationships.
+Further notes:
+- Do not award points simply for identifying the object, as the prediction model is told what object to look for
+    - If the predicted description places the object in a completely wrong location, or has completely incorrect details, give a rating of 0
+- Focus primarily on how well the object itself and its location are described, rather than detailed descriptions of surrounding elements or complex relationships
+- Be lenient with descriptions of the pose (eg. "standing" and "walking" should be considered correct)
+- The ground truth description may not mention all the information that is present in the image. Ignore additional details in the predicted description unless they contradict the ground truth
+- Ignore comments on style and other non-object details
+
 
 Return your rating and explanation in the following JSON format:
 {{"rating": <rating>, "explanation": <explanation>}}
 
+Object: {object_name}
 Ground truth: {ground_truth_description}
 Predicted: {predicted_description}
 """.strip()
@@ -34,7 +43,7 @@ Predicted: {predicted_description}
 genai.configure(
     api_key=os.environ.get("GOOGLE_AISTUDIO_API_KEY", "could-not-find-google-api-key")
 )
-model = genai.GenerativeModel("gemini-1.5-flash-002")
+model = genai.GenerativeModel("gemini-1.5-pro-002")
 
 
 def load_json(path: str) -> Dict:
@@ -96,9 +105,12 @@ def calculate_giou(box1: List[float], box2: List[float]) -> float:
     return giou
 
 
-def rate_description(ground_truth_description: str, predicted_description: str) -> Dict:
+def rate_description(
+    object_name: str, ground_truth_description: str, predicted_description: str
+) -> Dict:
     """Rate the accuracy of a predicted description against a ground truth description."""
     prompt = GRADING_PROMPT.format(
+        object_name=object_name,
         ground_truth_description=ground_truth_description,
         predicted_description=predicted_description,
     )
@@ -167,8 +179,10 @@ def grade(
                     }
                 else:
                     rating = rate_description(
-                        actual["description"], predicted["description"]
+                        object_name, actual["description"], predicted["description"]
                     )
+                    # Rate limiting
+                    time.sleep(1)
 
                     detailed_results[image_name][object_name] = {
                         "status": "predicted",
@@ -179,6 +193,10 @@ def grade(
             except StopIteration:
                 print(f"No matching ground truth box found for {object_name}")
                 continue
+
+        # Save results after processing each image
+        with open(grading_path, "w") as f:
+            json.dump(detailed_results, f, indent=2)
 
     return detailed_results
 
@@ -204,17 +222,16 @@ if __name__ == "__main__":
 
     details = grade(args.annotations, args.results, args.filter, args.skip_existing)
 
-    # Save detailed results to grading.json
-    output_dir = os.path.dirname(args.results)
-    grading_path = os.path.join(output_dir, "grading.json")
-    print(f"Saving detailed results to {grading_path}")
-    with open(grading_path, "w") as f:
-        json.dump(details, f, indent=2)
-
     # Create a summary of results and save to results.json
     summary = {
         "total_images": len(details),
         "total_objects": sum(len(img_objs) for img_objs in details.values()),
+        "total_not_found": sum(
+            1
+            for img_objs in details.values()
+            for obj_details in img_objs.values()
+            if obj_details["status"] == "not found"
+        ),
         "average_giou": sum(
             obj_details["giou"]
             for img_objs in details.values()
