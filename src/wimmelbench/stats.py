@@ -1,8 +1,7 @@
 import json
 from statistics import mean, median, stdev
-from typing import Any, Dict, List, Tuple
+from typing import Dict, List, Tuple
 import matplotlib.pyplot as plt
-import argparse
 import math
 import os
 
@@ -179,11 +178,6 @@ def plot_correlations(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Process grading JSON and create comparative plots across models."
-    )
-    args = parser.parse_args()
-
     # Read annotations once
     with open("annotations.json", "r") as f:
         annotations_data = json.load(f)
