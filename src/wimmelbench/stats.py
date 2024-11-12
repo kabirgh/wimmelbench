@@ -70,8 +70,23 @@ def plot_giou_distribution(
             color=MODEL_COLORS[model_name],
         )
 
+        # Add statistics text box
+        stats_text = f"mean: {mean(gious):.2f}\nmedian: {median(gious):.2f}\nstdev: {stdev(gious):.2f}"
+        axes[idx].text(
+            0.95,
+            0.95,
+            stats_text,
+            transform=axes[idx].transAxes,
+            bbox=dict(facecolor="white", alpha=0.8),
+            verticalalignment="top",
+            horizontalalignment="right",
+            fontsize=10,
+        )
+
         axes[idx].set_xlabel("GIoU")
         axes[idx].set_ylabel("Count")
+        axes[idx].set_xlim(-1, 1)
+        axes[idx].set_ylim(0, 16)
         axes[idx].set_title(f"{model_name}\nGIoU distribution")
         axes[idx].grid(True, alpha=0.3)
 
@@ -135,6 +150,7 @@ def plot_correlations(
             transform=axes[0, col].transAxes,
             bbox=dict(facecolor="white", alpha=0.8),
             horizontalalignment="right",
+            verticalalignment="bottom",
         )
         axes[0, col].set_ylim(-1, 1)
         axes[0, col].set_xscale("log")
