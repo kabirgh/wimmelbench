@@ -163,6 +163,7 @@ def main():
 
     for img_id, img_data in grading_data.items():
         for obj_id, grading in img_data.items():
+            # Important: only consider predicted objects
             if grading["status"] == "predicted":
                 gious.append(grading["giou"])
                 grades.append(grading["description_grade"])
@@ -175,17 +176,11 @@ def main():
     output_path = os.path.join(output_dir, "correlations.png")
     plot_correlations(gious, grades, area_ratios, output_path)
 
-    # Extract GIoU values and create plot
-    gious = [
-        grading["giou"]
-        for val in grading_data.values()
-        for grading in val.values()
-        if grading["status"] == "predicted"
-    ]
+    # Create GIoU distribution plot
     output_path = os.path.join(output_dir, "giou_distribution.png")
     plot_giou_distribution(gious, output_path)
 
-    # Create a plot of the distribution of the area ratios
+    # Create area ratio distribution plot
     area_ratios = [
         calculate_area_ratio(annotation["bbox"])
         for val in annotations_data.values()
