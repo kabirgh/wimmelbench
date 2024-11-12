@@ -1,6 +1,7 @@
+from collections import defaultdict
 import json
 from statistics import mean, median, stdev
-from typing import Dict, List, Tuple
+from typing import Dict, List, Mapping, Tuple
 import matplotlib.pyplot as plt
 import math
 import os
@@ -177,6 +178,88 @@ def plot_correlations(
     plt.close()
 
 
+def plot_grade_distribution(
+    grades_by_model: Mapping[str, Mapping[int, int]],
+    output_path: str,
+) -> None:
+    """Create a horizontal stacked bar chart showing grade distribution for each model."""
+    models = list(grades_by_model.keys())
+    grade_labels = ["Correct (2-3)", "Not Found", "Incorrect (0-1)"]
+    grade_mapping = {
+        -1: "Not Found",
+        0: "Incorrect (0-1)",
+        1: "Incorrect (0-1)",
+        2: "Correct (2-3)",
+        3: "Correct (2-3)",
+    }
+
+    # Create percentage data
+    percentages = []
+    for model in models:
+        total = sum(grades_by_model[model].values())
+        mapped_grades = defaultdict(int)
+        for grade, count in grades_by_model[model].items():
+            mapped_grades[grade_mapping[grade]] += count
+        model_percentages = [
+            mapped_grades[grade] / total * 100 for grade in grade_labels
+        ]
+        percentages.append(model_percentages)
+
+    # Create the stacked bar chart
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+    # Colors for each grade
+    colors = ["#1e5d86", "#33858d", "#61aa90"]
+
+    # Keep track of left positions for each bar
+    lefts = [0] * len(models)
+
+    # Slightly more spacing than default but less than previous
+    bar_height = 0.6  # Increased from 0.5 to 0.6
+
+    # Create bars for each grade
+    for grade_idx in range(len(grade_labels)):
+        values = [p[grade_idx] for p in percentages]
+        bars = ax.barh(
+            models,
+            values,
+            left=lefts,
+            label=grade_labels[grade_idx],
+            color=colors[grade_idx],
+            height=bar_height,
+        )
+
+        # Update left positions for next set of bars
+        lefts = [left + value for left, value in zip(lefts, values)]
+
+        # Add percentage labels below each bar segment
+        for idx, rect in enumerate(bars):
+            width = rect.get_width()
+            if width > 0:  # Only show non-zero values
+                bar_middle = rect.get_x() + width / 2
+                ax.text(
+                    bar_middle,
+                    idx + 0.325,
+                    f"{width:.0f}%",
+                    ha="center",
+                    va="bottom",
+                )
+
+    # Customize the chart
+    ax.set_title("Grade distribution by model", pad=20)
+    ax.set_ylabel("Model")
+    ax.set_xlabel("Percentage")
+    ax.legend(title="Grades", bbox_to_anchor=(1.05, 1), loc="upper left")
+
+    # Adjust layout to prevent label cutoff
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close()
+
+
 def main():
     # Read annotations once
     with open("annotations.json", "r") as f:
@@ -184,6 +267,8 @@ def main():
 
     # Collect data for each model
     data_by_model = {}
+    # {model_name: {grade_int: count}}
+    all_grades_by_model = defaultdict(lambda: defaultdict(int))
 
     for model_name, results_dir in MODEL_DIRS.items():
         grading_path = os.path.join(results_dir, "grading.json")
@@ -204,6 +289,8 @@ def main():
                             annotations_data[img_id][obj_id]["bbox"]
                         )
                     )
+                # Count all grades including not found
+                all_grades_by_model[model_name][grading["description_grade"]] += 1
 
         data_by_model[model_name] = (gious, grades, area_ratios)
 
@@ -226,6 +313,10 @@ def main():
     )
     plot_area_ratio_distribution(
         area_ratios, os.path.join(output_dir, "area_ratio_distribution.png")
+    )
+    plot_grade_distribution(
+        all_grades_by_model,
+        os.path.join(output_dir, "grade_distribution.png"),
     )
 
 
