@@ -21,7 +21,7 @@ MODEL_COLORS = {
 }
 
 
-def calculate_area_ratio(bbox: List[float]) -> float:
+def calculate_area_ratio_percentage(bbox: List[float]) -> float:
     # bbox format is [x1, y1, x2, y2]
     width = bbox[2] - bbox[0]
     height = bbox[3] - bbox[1]
@@ -92,7 +92,7 @@ def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> 
     )
 
     plt.xscale("log")
-    plt.xlabel("Area ratio (%) - log scale")
+    plt.xlabel("Area ratio (%, log scale)")
     plt.ylabel("Count")
     plt.title("Distribution of ground truth area ratios")
     plt.grid(True, which="major", alpha=0.3)
@@ -109,44 +109,47 @@ def plot_correlations(
     """Create a 3x3 grid of correlation plots comparing all models."""
     fig, axes = plt.subplots(3, 3, figsize=(20, 20))
 
-    plot_titles = [
-        "GIoU vs Area Ratio",
-        "Description Grade vs Area Ratio",
-        "Description Grade vs GIoU",
-    ]
     alpha = 0.9
 
     for col, (model_name, (gious, grades, area_ratios)) in enumerate(
         data_by_model.items()
-    ):  # Changed row to col
+    ):
+        # Add model name only to the first row
+        axes[0, col].set_title(model_name, pad=10, fontweight="bold", fontsize=16)
+
         # Plot 1: GIoU vs log area ratio
-        axes[0, col].scatter(  # Swapped indices
-            area_ratios, gious, alpha=alpha, color=MODEL_COLORS[model_name]
+        axes[0, col].scatter(
+            area_ratios,
+            gious,
+            alpha=alpha,
+            color=MODEL_COLORS[model_name],
         )
-        axes[0, col].set_title(
-            f"{plot_titles[0]} - {model_name}\nR² = {calculate_r_squared(area_ratios, gious):.2f}"
+        # Add R² inside the plot instead of title
+        axes[0, col].text(
+            0.95,
+            0.05,
+            f"R² = {calculate_r_squared([math.log(r) for r in area_ratios], gious):.2f}",
+            transform=axes[0, col].transAxes,
+            bbox=dict(facecolor="white", alpha=0.8),
+            horizontalalignment="right",
         )
         axes[0, col].set_ylim(-1, 1)
         axes[0, col].set_xscale("log")
         axes[0, col].set_ylabel("GIoU")
-        axes[0, col].set_xlabel("Area ratio (%)")
+        axes[0, col].set_xlabel("Area ratio (%, log scale)")
 
         # Plot 2: Description grade vs area ratio
-        axes[1, col].scatter(  # Swapped indices
+        axes[1, col].scatter(
             area_ratios, grades, alpha=alpha, color=MODEL_COLORS[model_name]
         )
-        axes[1, col].set_title(f"{plot_titles[1]} - {model_name}")
         axes[1, col].set_yticks(range(4))
         axes[1, col].set_xscale("log")
         axes[1, col].set_ylabel("Description grade")
-        axes[1, col].set_xlabel("Area ratio (%)")
+        axes[1, col].set_xlabel("Area ratio (%, log scale)")
 
         # Plot 3: Description grade vs GIoU
-        axes[2, col].scatter(
-            gious, grades, alpha=alpha, color=MODEL_COLORS[model_name]
-        )  # Swapped indices
-        axes[2, col].set_title(f"{plot_titles[2]} - {model_name}")
-        axes[2, col].set_yticks(range(6))
+        axes[2, col].scatter(gious, grades, alpha=alpha, color=MODEL_COLORS[model_name])
+        axes[2, col].set_yticks(range(4))
         axes[2, col].set_ylabel("Description grade")
         axes[2, col].set_xlabel("GIoU")
         axes[2, col].set_xlim(-1, 1)
@@ -184,7 +187,9 @@ def main():
                     gious.append(grading["giou"])
                     grades.append(grading["description_grade"])
                     area_ratios.append(
-                        calculate_area_ratio(annotations_data[img_id][obj_id]["bbox"])
+                        calculate_area_ratio_percentage(
+                            annotations_data[img_id][obj_id]["bbox"]
+                        )
                     )
 
         data_by_model[model_name] = (gious, grades, area_ratios)
@@ -195,7 +200,7 @@ def main():
 
     # Calculate area ratios once for all annotations
     area_ratios = [
-        calculate_area_ratio(annotation["bbox"])
+        calculate_area_ratio_percentage(annotation["bbox"])
         for val in annotations_data.values()
         for annotation in val.values()
     ]
