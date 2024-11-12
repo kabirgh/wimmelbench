@@ -82,7 +82,9 @@ def plot_giou_distribution(
 
 def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> None:
     """Create a histogram of area ratios."""
-    bins = [0.01, 0.0215, 0.0464, 0.1, 0.215, 0.464, 1.0, 2.15, 4.64, 10, 21.5]
+    num_bins, start, end = 8, 0.1, 10
+    multiplier = (end / start) ** (1 / num_bins)
+    bins = [start * (multiplier**i) for i in range(num_bins + 1)]
 
     plt.hist(
         area_ratios,
@@ -96,7 +98,8 @@ def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> 
     plt.ylabel("Count")
     plt.title("Distribution of ground truth area ratios")
     plt.grid(True, which="major", alpha=0.3)
-    plt.xticks(bins, [f"{x:.3g}" for x in bins])
+    # Format x-axis ticks with fewer decimal places for cleaner look
+    plt.xticks(bins, [f"{x:.2g}" for x in bins], rotation=45)
     plt.tight_layout()
     plt.savefig(output_path)
     plt.close()
