@@ -90,9 +90,10 @@ def plot_correlations(
     gious: List[float], grades: List[float], area_ratios: List[float], output_path: str
 ) -> None:
     """
-    Create a figure with two subplots:
+    Create a figure with three subplots:
     1. GIoU vs log area ratio
     2. Description grade vs area ratio
+    3. Description grade vs GIoU
 
     Args:
         gious: List of GIoU values
@@ -100,7 +101,7 @@ def plot_correlations(
         area_ratios: List of area ratios
         output_path: Path where to save the plot
     """
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
+    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(20, 6))
 
     # Plot 1: GIoU vs log area ratio
     ax1.scatter(area_ratios, gious, alpha=0.5)
@@ -108,7 +109,7 @@ def plot_correlations(
     ax1.set_xlabel("Area Ratio (%) - Log Scale")
     ax1.set_ylabel("GIoU")
     ax1.set_title(
-        f"GIoU vs Area Ratio (R² = {calculate_r_squared(area_ratios, gious):.3f})"
+        f"GIoU vs Area Ratio (R² = {calculate_r_squared(area_ratios, gious):.2f})"
     )
     ax1.grid(True, alpha=0.3)
 
@@ -117,10 +118,15 @@ def plot_correlations(
     ax2.set_xscale("log")
     ax2.set_xlabel("Area Ratio (%) - Log Scale")
     ax2.set_ylabel("Description Grade")
-    ax2.set_title(
-        f"Description Grade vs Area Ratio (R² = {calculate_r_squared(area_ratios, grades):.3f})"
-    )
+    ax2.set_title("Description Grade vs Area Ratio")
     ax2.grid(True, alpha=0.3)
+
+    # Plot 3: Description grade vs GIoU
+    ax3.scatter(gious, grades, alpha=0.5)
+    ax3.set_xlabel("GIoU")
+    ax3.set_ylabel("Description Grade")
+    ax3.set_title("Description Grade vs GIoU")
+    ax3.grid(True, alpha=0.3)
 
     plt.tight_layout()
     plt.savefig(output_path)
