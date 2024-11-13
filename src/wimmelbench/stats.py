@@ -184,14 +184,14 @@ def plot_grade_distribution(
 ) -> None:
     """Create a horizontal stacked bar chart showing grade distribution for each model."""
     models = list(grades_by_model.keys())
-    grade_labels = ["Correct (2-3)", "Not Found", "Incorrect (0-1)"]
     grade_mapping = {
+        3: "Mostly correct",
+        2: "Partly correct",
         -1: "Not Found",
-        0: "Incorrect (0-1)",
-        1: "Incorrect (0-1)",
-        2: "Correct (2-3)",
-        3: "Correct (2-3)",
+        1: "Partly incorrect",
+        0: "Mostly incorrect",
     }
+    grade_labels = list(grade_mapping.values())
 
     # Create percentage data
     percentages = []
@@ -212,7 +212,7 @@ def plot_grade_distribution(
     ax.spines["right"].set_visible(False)
 
     # Colors for each grade
-    colors = ["#1e5d86", "#33858d", "#61aa90"]
+    colors = ["#234f81", "#1d6c8a", "#cccccc", "#9a3670", "#722c6e"]
 
     # Keep track of left positions for each bar
     lefts = [0] * len(models)
