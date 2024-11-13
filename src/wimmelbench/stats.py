@@ -91,7 +91,7 @@ def plot_giou_distribution(
         axes[idx].grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(output_path)
+    plt.savefig(output_path, dpi=300)
     plt.close()
 
 
@@ -116,7 +116,7 @@ def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> 
     # Format x-axis ticks with fewer decimal places for cleaner look
     plt.xticks(bins, [f"{x:.2g}" for x in bins], rotation=45)
     plt.tight_layout()
-    plt.savefig(output_path)
+    plt.savefig(output_path, dpi=300)
     plt.close()
 
 
@@ -174,7 +174,7 @@ def plot_correlations(
         axes[2, col].set_xlim(-1, 1)
 
     plt.tight_layout()
-    plt.savefig(output_path)
+    plt.savefig(output_path, dpi=300)
     plt.close()
 
 
@@ -256,7 +256,7 @@ def plot_grade_distribution(
 
     # Adjust layout to prevent label cutoff
     plt.tight_layout()
-    plt.savefig(output_path)
+    plt.savefig(output_path, dpi=300)
     plt.close()
 
 
