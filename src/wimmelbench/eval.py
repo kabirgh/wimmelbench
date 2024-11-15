@@ -64,14 +64,27 @@ def draw_box(image: Image.Image, bbox: List[float], label: str, color: str):
     return image
 
 
-def get_save_path(image_path: str, model: str) -> str:
+def get_save_path(image_path: str, model: str, find_object: str | None = None) -> str:
     filename = os.path.basename(image_path)
     new_filename = filename.replace(".", "_annotated.")
-    return os.path.join("results", model.replace("/", "_"), new_filename)
+    base_path = "results"
+    model_path = model.replace("/", "_")
+
+    if find_object:
+        # Create path like: results/claude-3/red_car/image_annotated.jpg
+        return os.path.join(
+            base_path, model_path, find_object.replace(" ", "_"), new_filename
+        )
+    else:
+        # Original path: results/claude-3/image_annotated.jpg
+        return os.path.join(base_path, model_path, new_filename)
 
 
-def get_results_path(model: str) -> str:
-    return os.path.join("results", model.replace("/", "_"), "results.json")
+def get_results_path(model: str, find_object: str | None = None) -> str:
+    base_path = os.path.join("results", model.replace("/", "_"))
+    if find_object:
+        return os.path.join(base_path, f"results_{find_object}.json")
+    return os.path.join(base_path, "results.json")
 
 
 def main():
@@ -90,6 +103,11 @@ def main():
         help="Comma-separated list of models to use (claude,gemini,gpt4o)",
         default="claude,gemini,gpt4o",
     )
+    parser.add_argument(
+        "--find-object",
+        help="Search for this specific object in all images, ignoring annotations",
+        default=None,
+    )
     args = parser.parse_args()
 
     # Load annotations
@@ -100,8 +118,7 @@ def main():
 
     # Process each model
     for model in models:
-        # Load or create results file for this model
-        results_file = get_results_path(model.model)
+        results_file = get_results_path(model.model, args.find_object)
         os.makedirs(os.path.dirname(results_file), exist_ok=True)
 
         if os.path.exists(results_file):
@@ -110,7 +127,7 @@ def main():
         else:
             results = {}
 
-        # Process each image and object in annotations
+        # Process each image
         for image_name, details in annotations.items():
             if args.filter and args.filter not in image_name:
                 continue
@@ -121,53 +138,70 @@ def main():
             if image_name not in results:
                 results[image_name] = {}
 
-            for object_name in details.keys():
-                # Check if this specific object already has results
-                if args.skip_existing and object_name in results[image_name]:
+            if args.find_object:
+                if args.skip_existing and args.find_object in results[image_name]:
                     continue
 
-                result = model.detect_object(image_path, object_name)
+                # Search for specific object instead of using annotations
+                result = model.detect_object(image_path, args.find_object)
                 print(f"\nResult for {model.model} on {image_path}: {result}")
-                # For rate limiting
                 time.sleep(1)
 
-                # Store result with object name as key
-                results[image_name][object_name] = {
+                results[image_name][args.find_object] = {
                     "bbox": result["bbox"],
                     "description": result["description"],
                 }
+            else:
+                # Original annotation-based processing
+                for object_name in details.keys():
+                    if args.skip_existing and object_name in results[image_name]:
+                        continue
 
-            # Draw and save bounding boxes for each object in the image
+                    result = model.detect_object(image_path, object_name)
+                    print(f"\nResult for {model.model} on {image_path}: {result}")
+                    time.sleep(1)
+
+                    results[image_name][object_name] = {
+                        "bbox": result["bbox"],
+                        "description": result["description"],
+                    }
+
+            # Draw and save bounding boxes
             image = Image.open(image_path)
             for (object_name, entry), color in zip(results[image_name].items(), COLORS):
-                # Find matching annotation for this object
-                actual_annotation = annotations.get(image_name, {}).get(
-                    object_name, None
-                )
-                if not actual_annotation:
-                    raise ValueError(
-                        f"ERROR: No ground truth annotation found for {object_name} in {image_name}"
+                if not args.find_object:
+                    # Only draw ground truth if not in find-object mode
+                    actual_annotation = annotations.get(image_name, {}).get(
+                        object_name, None
                     )
-
-                # Draw the ground truth bounding box
-                image = draw_box(
-                    image,
-                    actual_annotation["bbox"],
-                    f"{object_name} - actual",
-                    color,
-                )
+                    if not actual_annotation:
+                        raise ValueError(
+                            f"ERROR: No ground truth annotation found for {object_name} in {image_name}"
+                        )
+                    image = draw_box(
+                        image,
+                        actual_annotation["bbox"],
+                        f"{object_name} - actual",
+                        color,
+                    )
 
                 # Draw predicted box if it exists
                 if entry["bbox"] != [0, 0, 0, 0]:
-                    image = draw_box(image, entry["bbox"], "", color)
+                    image = draw_box(
+                        image,
+                        entry["bbox"],
+                        object_name if args.find_object else "",
+                        color,
+                    )
                 else:
                     print(f"No {object_name} detected in {image_path}")
 
-            save_path = get_save_path(image_path, model.model)
+            save_path = get_save_path(
+                image_path, model.model, args.find_object if args.find_object else None
+            )
             os.makedirs(os.path.dirname(save_path), exist_ok=True)
             image.save(save_path, "JPEG")
 
-            # Save results file after processing each image
             with open(results_file, "w") as f:
                 json.dump(results, f, indent=2)
 
