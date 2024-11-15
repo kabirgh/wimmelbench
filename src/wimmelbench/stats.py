@@ -2,9 +2,10 @@ from collections import defaultdict
 import json
 from statistics import mean, median, stdev
 from typing import Dict, List, Mapping, Tuple
-import matplotlib.pyplot as plt
+from matplotlib import ticker, pyplot as plt
 import math
 import os
+import argparse
 
 MODEL_DIRS = {
     "Claude 3.6 Sonnet": "results/claude-3-5-sonnet-20241022",
@@ -50,6 +51,7 @@ def plot_giou_distribution(
 ) -> None:
     """Create side-by-side histograms of GIoU values for all models."""
     fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+    fig.suptitle("GIoU distribution by model", fontsize=14)
 
     bucket_size = 0.05
     buckets = [round(i * bucket_size - 1.0, 2) for i in range(41)]
@@ -68,6 +70,7 @@ def plot_giou_distribution(
             width=bucket_size,
             align="edge",
             color=MODEL_COLORS[model_name],
+            zorder=3,
         )
 
         # Add statistics text box
@@ -87,7 +90,7 @@ def plot_giou_distribution(
         axes[idx].set_ylabel("Count")
         axes[idx].set_xlim(-1, 1)
         axes[idx].set_ylim(0, 16)
-        axes[idx].set_title(f"{model_name}\nGIoU distribution")
+        axes[idx].set_title(model_name)
         axes[idx].grid(True, alpha=0.3)
 
     plt.tight_layout()
@@ -104,17 +107,17 @@ def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> 
     plt.hist(
         area_ratios,
         bins=bins,
+        color="#234f81",
         edgecolor="black",
-        alpha=0.5,
+        zorder=3,
     )
 
+    plt.grid(True, which="major", alpha=0.2)
     plt.xscale("log")
     plt.xlabel("Area ratio (%, log scale)")
     plt.ylabel("Count")
     plt.title("Distribution of ground truth area ratios")
-    plt.grid(True, which="major", alpha=0.3)
-    # Format x-axis ticks with fewer decimal places for cleaner look
-    plt.xticks(bins, [f"{x:.2g}" for x in bins], rotation=45)
+    plt.xticks(bins, [f"{x:.2g}" for x in bins])
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
@@ -124,58 +127,67 @@ def plot_correlations(
     data_by_model: Dict[str, Tuple[List[float], List[float], List[float]]],
     output_path: str,
 ) -> None:
-    """Create a 3x3 grid of correlation plots comparing all models."""
-    fig, axes = plt.subplots(3, 3, figsize=(20, 20))
-
+    """Create three separate 1x3 plots comparing all models."""
     alpha = 0.9
+    plot_types = [
+        ("giou_vs_area", "GIoU vs Area ratio"),
+        ("grade_vs_area", "Description grade vs Area ratio"),
+        ("grade_vs_giou", "Description grade vs GIoU"),
+    ]
 
-    for col, (model_name, (gious, grades, area_ratios)) in enumerate(
-        data_by_model.items()
-    ):
-        # Add model name only to the first row
-        axes[0, col].set_title(model_name, pad=10, fontweight="bold", fontsize=16)
+    for plot_type, title in plot_types:
+        fig, axes = plt.subplots(1, 3, figsize=(20, 6))
+        fig.suptitle(title, fontsize=16, y=1.01)
 
-        # Plot 1: GIoU vs log area ratio
-        axes[0, col].scatter(
-            area_ratios,
-            gious,
-            alpha=alpha,
-            color=MODEL_COLORS[model_name],
-        )
-        # Add R² inside the plot instead of title
-        axes[0, col].text(
-            0.95,
-            0.05,
-            f"R² = {calculate_r_squared([math.log(r) for r in area_ratios], gious):.2f}",
-            transform=axes[0, col].transAxes,
-            bbox=dict(facecolor="white", alpha=0.8),
-            horizontalalignment="right",
-            verticalalignment="bottom",
-        )
-        axes[0, col].set_ylim(-1, 1)
-        axes[0, col].set_xscale("log")
-        axes[0, col].set_ylabel("GIoU")
-        axes[0, col].set_xlabel("Area ratio (%, log scale)")
+        for col, (model_name, (gious, grades, area_ratios)) in enumerate(
+            data_by_model.items()
+        ):
+            axes[col].set_title(model_name)
 
-        # Plot 2: Description grade vs area ratio
-        axes[1, col].scatter(
-            area_ratios, grades, alpha=alpha, color=MODEL_COLORS[model_name]
-        )
-        axes[1, col].set_yticks(range(4))
-        axes[1, col].set_xscale("log")
-        axes[1, col].set_ylabel("Description grade")
-        axes[1, col].set_xlabel("Area ratio (%, log scale)")
+            if plot_type == "giou_vs_area":
+                axes[col].scatter(
+                    area_ratios, gious, alpha=alpha, color=MODEL_COLORS[model_name]
+                )
+                axes[col].text(
+                    0.95,
+                    0.05,
+                    f"R² = {calculate_r_squared([math.log(r) for r in area_ratios], gious):.2f}",
+                    transform=axes[col].transAxes,
+                    bbox=dict(facecolor="white", alpha=0.8),
+                    horizontalalignment="right",
+                    verticalalignment="bottom",
+                )
+                axes[col].set_ylim(-1, 1)
+                axes[col].set_xscale("log")
+                axes[col].set_xticks([0.02, 0.1, 1, 10])
+                axes[col].set_xticklabels(["0.02", "0.1", "1", "10"])
+                axes[col].set_ylabel("GIoU")
+                axes[col].set_xlabel("Area ratio (%, log scale)")
 
-        # Plot 3: Description grade vs GIoU
-        axes[2, col].scatter(gious, grades, alpha=alpha, color=MODEL_COLORS[model_name])
-        axes[2, col].set_yticks(range(4))
-        axes[2, col].set_ylabel("Description grade")
-        axes[2, col].set_xlabel("GIoU")
-        axes[2, col].set_xlim(-1, 1)
+            elif plot_type == "grade_vs_area":
+                axes[col].scatter(
+                    area_ratios, grades, alpha=alpha, color=MODEL_COLORS[model_name]
+                )
+                axes[col].set_yticks(range(4))
+                axes[col].set_xscale("log")
+                axes[col].set_xticks([0.02, 0.1, 1, 10])
+                axes[col].set_xticklabels(["0.02", "0.1", "1", "10"])
+                axes[col].set_ylabel("Description grade")
+                axes[col].set_xlabel("Area ratio (%, log scale)")
 
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=300)
-    plt.close()
+            else:  # grade_vs_giou
+                axes[col].scatter(
+                    gious, grades, alpha=alpha, color=MODEL_COLORS[model_name]
+                )
+                axes[col].set_yticks(range(4))
+                axes[col].set_ylabel("Description grade")
+                axes[col].set_xlabel("GIoU")
+                axes[col].set_xlim(-1, 1)
+
+        plt.tight_layout()
+        output_file = output_path.replace(".png", f"_{plot_type}.png")
+        plt.savefig(output_file, dpi=300, bbox_inches="tight")
+        plt.close()
 
 
 def plot_grade_distribution(
@@ -261,6 +273,27 @@ def plot_grade_distribution(
 
 
 def main():
+    # Add argument parser
+    parser = argparse.ArgumentParser(
+        description="Generate statistical plots for model comparisons."
+    )
+    parser.add_argument(
+        "--correlations", action="store_true", help="Generate correlation plots"
+    )
+    parser.add_argument(
+        "--giou", action="store_true", help="Generate GIoU distribution plot"
+    )
+    parser.add_argument(
+        "--area", action="store_true", help="Generate area ratio distribution plot"
+    )
+    parser.add_argument(
+        "--grades", action="store_true", help="Generate grade distribution plot"
+    )
+    args = parser.parse_args()
+
+    # If no specific plots are requested, generate all plots
+    generate_all = not any([args.correlations, args.giou, args.area, args.grades])
+
     # Read annotations once
     with open("annotations.json", "r") as f:
         annotations_data = json.load(f)
@@ -305,19 +338,26 @@ def main():
         for annotation in val.values()
     ]
 
-    # Create plots
-    plot_correlations(data_by_model, os.path.join(output_dir, "correlations.png"))
-    plot_giou_distribution(
-        {model: data[0] for model, data in data_by_model.items()},
-        os.path.join(output_dir, "giou_distribution.png"),
-    )
-    plot_area_ratio_distribution(
-        area_ratios, os.path.join(output_dir, "area_ratio_distribution.png")
-    )
-    plot_grade_distribution(
-        all_grades_by_model,
-        os.path.join(output_dir, "grade_distribution.png"),
-    )
+    # Create plots based on arguments
+    if args.correlations or generate_all:
+        plot_correlations(data_by_model, os.path.join(output_dir, "correlations.png"))
+
+    if args.giou or generate_all:
+        plot_giou_distribution(
+            {model: data[0] for model, data in data_by_model.items()},
+            os.path.join(output_dir, "giou_distribution.png"),
+        )
+
+    if args.area or generate_all:
+        plot_area_ratio_distribution(
+            area_ratios, os.path.join(output_dir, "area_ratio_distribution.png")
+        )
+
+    if args.grades or generate_all:
+        plot_grade_distribution(
+            all_grades_by_model,
+            os.path.join(output_dir, "grade_distribution.png"),
+        )
 
 
 if __name__ == "__main__":
