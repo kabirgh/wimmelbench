@@ -1,0 +1,552 @@
+{
+  "kf-f1.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope within the provided image. The illustration showcases various elements related to a location, but a telescope is not depicted among them."
+    }
+  },
+  "porsche-hq.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in the provided image. The image is a cross-section of a car design, testing, and production facility."
+    }
+  },
+  "tigertom-birthday.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image. While there are party favors, binoculars and similar objects are not present."
+    }
+  },
+  "tigertom-classroom.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I do not see a telescope in this image. This image shows the interior of a lively classroom or daycare center. Several children are engaged in various activities such as painting, building with blocks, playing chess and cards, and having snacks."
+    }
+  },
+  "tigertom-classroom2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a telescope in the image. There are many objects related to a school environment, like desks, chairs, bookshelves, stationery, backpacks, and a blackboard. Children engage in various activities such as drawing, reading, playing, and running around. While some objects might resemble parts of a telescope, like the rolled-up posters or the broom handle, there isn't a distinct, recognizable telescope present."
+    }
+  },
+  "tigertom-cycles.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image."
+    }
+  },
+  "tigertom-farm.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a telescope in this image. It appears to be a detailed illustration of a farm scene including various buildings, people, and animals."
+    }
+  },
+  "tigertom-garden.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in the image provided."
+    }
+  },
+  "tigertom-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to find a telescope in this image. There are many different activities happening including a family gathering, children playing, and gardening."
+    }
+  },
+  "tigertom-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in this image."
+    }
+  },
+  "tigertom-market.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There appears to be no telescope in this image. This image depicts a bustling market scene filled with people buying and selling various goods like fruits, vegetables, baked items, ice creams, and flowers."
+    }
+  },
+  "tigertom-park.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There is no telescope in this image. The image depicts various children playing in a park and some swimming in a lake."
+    }
+  },
+  "tigertom-park2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There is no telescope in the image. The image depicts children enjoying various activities in a park setting, such as playing cards, reading, relaxing on a bench, using a smartphone, picking flowers, and observing butterflies. There's a small wooden bridge over a stream, trees, flowers, and small animals like rabbits and insects.  Several birds are also depicted flying or perched in trees."
+    }
+  },
+  "tigertom-park3.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in the image. There are children playing on various playground equipment like slides, swings, seesaws, and spring riders, and others are playing soccer.  There are also adults present, some walking and some pushing strollers."
+    }
+  },
+  "tigertom-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image."
+    }
+  },
+  "tigertom-zoo.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a telescope in the provided image. It mostly depicts a collection of various pets and their enclosures."
+    }
+  },
+  "construction-evening.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in the image."
+    }
+  },
+  "construction-site.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image."
+    }
+  },
+  "construction-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I cannot find a telescope in this image."
+    }
+  },
+  "kf-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in the image."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in the provided image."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in the provided image."
+    }
+  },
+  "mitgutsch-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.752,
+        0.14,
+        0.828,
+        0.183
+      ],
+      "description": "A telescope is located near the upper-right portion of the image, atop a brown wooden platform with a ladder leading up to it.  Several children surround the platform. A child with a black pirate flag can be seen standing nearby. Nautical flags hang from the railing of the platform. "
+    }
+  },
+  "mitgutsch-carnival.jpg": {
+    "telescope": {
+      "bbox": [
+        0.531,
+        0.091,
+        0.62,
+        0.207
+      ],
+      "description": "The telescope is positioned on a green stand at a shooting gallery stall. The telescope is black with a small white target attached. Several small figures appear to be using or waiting to use the telescope."
+    }
+  },
+  "mitgutsch-fight.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in the image. There are many objects scattered throughout the scene during what appears to be a chaotic event or riot, but a telescope is not among them."
+    }
+  },
+  "mitgutsch-orchestra.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image. The scene appears to depict a musical orchestra performing on a stage, with various musicians playing different instruments and a conductor leading them. There is no telescope visible among the instruments or within the concert hall."
+    }
+  },
+  "mitgutsch-pirate.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in the provided image."
+    }
+  },
+  "mitgutsch-pool.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There is no telescope in the image."
+    }
+  },
+  "mitgutsch-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I do not see a telescope in this image."
+    }
+  },
+  "mitgutsch-water.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a telescope in the image provided."
+    }
+  },
+  "montreal-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image. There are people enjoying a variety of winter activities such as ice skating, sledding, cross-country skiing, and building a snowman.  There are also vendors selling hot cocoa, roasted chestnuts, and maple taffy."
+    }
+  },
+  "porsche-factory.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "There is no telescope in the image. The image is of a car factory."
+    }
+  },
+  "porsche-road.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image. There are many other objects, such as cars, buildings, and people, but there does not seem to be any telescope among them."
+    }
+  },
+  "professions-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0.101,
+        0.258,
+        0.16,
+        0.305
+      ],
+      "description": "A brown bear is using binoculars while lying on the teal roof of the two-story tan and red building on the left side of the image."
+    }
+  },
+  "professions-street.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I'm sorry, I couldn't find a telescope in the provided image."
+    }
+  },
+  "professions-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in the image."
+    }
+  },
+  "river-adventure-river.jpg": {
+    "telescope": {
+      "bbox": [
+        0.708,
+        0.319,
+        0.734,
+        0.351
+      ],
+      "description": "A young boy with dark hair and wearing a dark shirt and pants is looking through a telescope towards the police boat on the right side of the image. The telescope is light brown and located on the deck towards the stern of the large multi-level boat."
+    }
+  },
+  "river-adventure-seaside.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image."
+    }
+  },
+  "rodhunt-xmas.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I could not find a telescope in this image."
+    }
+  },
+  "season-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in this image."
+    }
+  },
+  "season-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to locate a telescope in the provided image."
+    }
+  },
+  "walk-lake.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I do not see any telescope in the image provided."
+    }
+  },
+  "walk-townfarm.jpg": {
+    "telescope": {
+      "bbox": [
+        0.152,
+        0.49,
+        0.2,
+        0.526
+      ],
+      "description": "An elderly woman is holding a telescope to her eye just left of center in the image. She has gray hair, wears a gray sweater, brown skirt and holds a red umbrella in her other hand. She stands along the left fence of the cow pasture, facing one of the brown and white cows."
+    }
+  },
+  "walk-townscene.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in this image."
+    }
+  },
+  "whodoeswhat-city.jpg": {
+    "telescope": {
+      "bbox": [
+        0.801,
+        0.293,
+        0.906,
+        0.428
+      ],
+      "description": "A telescope is visible inside the top floor of a slate-roofed, two-story house with dormer windows. The house is located towards the right side of the image. The telescope is pointing out one of the house's windows, perhaps towards the treehouse visible in the background. Several people are inside the room with the telescope and other objects, possibly antiques or curios, are visible within the space."
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I couldn't find a telescope in this image."
+    }
+  },
+  "whodoeswhat-city3.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I did not find a telescope in this image."
+    }
+  },
+  "tigertom-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "I am unable to find a telescope in the image provided. Therefore, I am returning a default bounding box [0,0,0,0].  There are many people enjoying a variety of activities at the beach such as building sand castles, vendors selling various items, swimming, eating and laying out on beach chairs under umbrellas. There is even a small pool in the lower right of the image."
+    }
+  }
+}

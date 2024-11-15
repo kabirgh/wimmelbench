@@ -1,0 +1,552 @@
+{
+  "tigertom-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.45,
+        0.1,
+        0.5
+      ],
+      "description": "The telescope is located near the bottom-left corner of the image, behind a person with a pink hat. It is mounted on a tripod next to an ice cream cart. The telescope is small and angled towards the beach."
+    }
+  },
+  "tigertom-birthday.jpg": {
+    "telescope": {
+      "bbox": [
+        0.75,
+        0.01,
+        0.8,
+        0.1
+      ],
+      "description": "The telescope is on a tabletop in the left-center area, near a magician character in a red cloak and hat. The telescope is gray and pointed toward the grass, sitting among other items like balloons and candles."
+    }
+  },
+  "tigertom-classroom.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "There is no telescope in the image. The scene depicts a colorful classroom with children engaging in various activities such as painting, building with blocks, reading, and playing chess."
+    }
+  },
+  "tigertom-classroom2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.07,
+        0.47,
+        0.1,
+        0.57
+      ],
+      "description": "The telescope is located on the bookshelf behind the boy sitting on the floor with a book, on the left side of the image. It is gray and pointed upwards, resting among other books and objects on the shelf."
+    }
+  },
+  "tigertom-cycles.jpg": {
+    "telescope": {
+      "bbox": [
+        0.1,
+        0.06,
+        0.15,
+        0.11
+      ],
+      "description": "The telescope is located in the top-middle section of the image. A person wearing green clothes is holding the telescope, looking up into the sky. The setting is a forested brown landscape, indicating the scene is happening during autumn."
+    }
+  },
+  "tigertom-farm.jpg": {
+    "telescope": {
+      "bbox": [
+        0.76,
+        0.04,
+        0.81,
+        0.12
+      ],
+      "description": "The telescope is located near the top right corner of the image, next to the beehives in the forest area. It has a black and white design and is positioned pointing upwards toward the sky."
+    }
+  },
+  "tigertom-garden.jpg": {
+    "telescope": {
+      "bbox": [
+        0.6,
+        0.4,
+        0.65,
+        0.5
+      ],
+      "description": "A small telescope located in the treehouse, on the right side, being used by a child looking out through the treehouse window. The telescope is pointing slightly upward, and it is surrounded by children."
+    }
+  },
+  "tigertom-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0.65,
+        0.05,
+        0.7,
+        0.1
+      ],
+      "description": "The telescope is located on the rooftop of the two-story pink house. It is situated near the edge, to the right of the solar panel. The telescope is white, and it is pointed slightly upward, facing the front of the house."
+    }
+  },
+  "tigertom-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0.26,
+        0.03,
+        0.31,
+        0.24
+      ],
+      "description": "The telescope is in the upper left corner on a rooftop. It is white and appears to be pointing towards the sky. The roof is red and the telescope is near a chimney-like structure."
+    }
+  },
+  "tigertom-market.jpg": {
+    "telescope": {
+      "bbox": [
+        0.37,
+        0.29,
+        0.43,
+        0.34
+      ],
+      "description": "The telescope is located on the right center, being used by a person. It is depicted as a slender cylindrical object with a narrowing towards the end. The telescope is aimed outward, suggesting it is being used to look at something in the distance."
+    }
+  },
+  "tigertom-park.jpg": {
+    "telescope": {
+      "bbox": [
+        0.496,
+        0.031,
+        0.544,
+        0.054
+      ],
+      "description": "The telescope is located near the top center of the image, slightly to the right, placed on the grass. It is positioned behind a small brown fence and next to a tree, with a red and a green picnic blanket nearby. The telescope is angled upward, directed towards the sky, and is colored dark grey or black."
+    }
+  },
+  "tigertom-park2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.52,
+        0.35,
+        0.58,
+        0.43
+      ],
+      "description": "The telescope is located to the right side of the image, just above the stream and below the wooden bridge. It is a small object, and appears to be handheld. It is being used by a person standing on the grass in front of some flowers."
+    }
+  },
+  "tigertom-park3.jpg": {
+    "telescope": {
+      "bbox": [
+        0.43,
+        0.21,
+        0.46,
+        0.27
+      ],
+      "description": "The telescope is located near the upper center of the image. It is mounted on a pole with a grey color, positioned near a pathway. It is being looked through by a person wearing a hat and blue shirt. The telescope is aimed slightly downward as the person observes from it."
+    }
+  },
+  "tigertom-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0.47,
+        0.16,
+        0.49,
+        0.21
+      ],
+      "description": "The telescope is a small object located on the roof of the shop with the red car parked nearby. It is pointed towards the sky and is colored mostly in gray."
+    }
+  },
+  "tigertom-zoo.jpg": {
+    "telescope": {
+      "bbox": [
+        0.82,
+        0.08,
+        0.89,
+        0.23
+      ],
+      "description": "The telescope is located near the top right corner of the image, slightly above the red and black striped snake on the tree branch. It is a small, thin tube with a lens at one end, attached to the top of a wooden pole."
+    }
+  },
+  "construction-evening.jpg": {
+    "telescope": {
+      "bbox": [
+        0.01,
+        0.22,
+        0.08,
+        0.3
+      ],
+      "description": "A telescope is on the top of the hill on the left side of the image. It's mounted on a tripod, next to a couple having a picnic. The telescope is angled slightly upwards, facing the sky."
+    }
+  },
+  "construction-site.jpg": {
+    "telescope": {
+      "bbox": [
+        0.04,
+        0.2,
+        0.08,
+        0.23
+      ],
+      "description": "The telescope is on a balcony at the bottom left corner of the image. It is placed near the edge beside two flower pots and a person watering the plants."
+    }
+  },
+  "construction-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0.25,
+        0.08,
+        0.3,
+        0.15
+      ],
+      "description": "The telescope is located near the top left of the image, set up on a snow-covered hill. It's mounted on a tripod and a child is looking through it. The telescope is dark in color and positioned in a snowy outdoor area where other children are sledding and playing."
+    }
+  },
+  "kf-f1.jpg": {
+    "telescope": {
+      "bbox": [
+        0.47,
+        0.17,
+        0.53,
+        0.24
+      ],
+      "description": "The telescope is located at the top left of the image. It is drawn in a cartoon style, mounted on a tripod, and pointed upwards. It is near a character with an exclamation mark and a brightly colored rooster statue."
+    }
+  },
+  "kf-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0.188,
+        0.315,
+        0.215,
+        0.341
+      ],
+      "description": "The telescope is located on the left side of the image. It is placed on a tripod and is between two people engaged in a snowball fight. The telescope is small and colored in a light shade, contrasting with the darker color of the tripod."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.019,
+        0.25,
+        0.073,
+        0.42
+      ],
+      "description": "The telescope is held by a person walking on the beach in the lower left corner of the image. It is a long, narrow, black cylindrical object, pointing upwards as the individual uses it to gaze into the distance."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "telescope": {
+      "bbox": [
+        0.18,
+        0.75,
+        0.22,
+        0.8
+      ],
+      "description": "The telescope is located in the bottom-left quadrant of the image near the shore. It's positioned on a wooden tripod and is brown in color, facing outward towards the sea. There are small boats and figures around it."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "telescope": {
+      "bbox": [
+        0.027,
+        0.611,
+        0.046,
+        0.666
+      ],
+      "description": "The telescope is located on the left side of the image, attached to a stone column. It appears to be a metallic cylindrical object, positioned horizontally at eye level for people to look through, suggesting it is an observational device."
+    }
+  },
+  "mitgutsch-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.38,
+        0.41,
+        0.4,
+        0.47
+      ],
+      "description": "A small telescope mounted on a tripod located near the bottom center of the image, just left of the lifeguard tower. It is near a green and white umbrella and a person seated nearby."
+    }
+  },
+  "mitgutsch-carnival.jpg": {
+    "telescope": {
+      "bbox": [
+        0.77,
+        0.13,
+        0.81,
+        0.17
+      ],
+      "description": "The telescope is located on top of one of the trailers in the upper right area of the image. It is small and black, with its characteristic cylindrical shape aiming upward."
+    }
+  },
+  "mitgutsch-fight.jpg": {
+    "telescope": {
+      "bbox": [
+        0.32,
+        0.07,
+        0.38,
+        0.15
+      ],
+      "description": "The telescope is located in the upper center of the image, near a window with broken glass. It is held by a person in a dark suit who is being propelled backwards, with part of the telescope extending outwards towards the broken window. The telescope is primarily gray in color and is pointed diagonally upwards."
+    }
+  },
+  "mitgutsch-orchestra.jpg": {
+    "telescope": {
+      "bbox": [
+        0.88,
+        0.78,
+        0.93,
+        0.88
+      ],
+      "description": "The telescope is located in the bottom-right corner of the image. It's being carried by a person with a camera crew. The telescope is long and silver, resembling a boom microphone, held horizontally."
+    }
+  },
+  "mitgutsch-pirate.jpg": {
+    "telescope": {
+      "bbox": [
+        0.55,
+        0.3,
+        0.6,
+        0.33
+      ],
+      "description": "A telescope held by a person on the main deck of a ship. The telescope is brown and pointed towards the top right corner of the image. The person is among a group of people on the ship, which has white sails and is located in the center-right area of the image."
+    }
+  },
+  "mitgutsch-pool.jpg": {
+    "telescope": {
+      "bbox": [
+        0.0,
+        0.8,
+        0.05,
+        0.95
+      ],
+      "description": "The telescope is located in the bottom-left corner of the image. It is a black telescope mounted on a tripod, with a person standing next to it."
+    }
+  },
+  "mitgutsch-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0.07,
+        0.27,
+        0.12,
+        0.31
+      ],
+      "description": "The telescope is located on the balcony of a pink building on the left side of the image. It is a cylindrical object slightly angled towards the sky, supported by a tripod. The telescope is white with some metallic parts and positioned next to two green aliens and a small robot."
+    }
+  },
+  "mitgutsch-water.jpg": {
+    "telescope": {
+      "bbox": [
+        0.57,
+        0.33,
+        0.6,
+        0.37
+      ],
+      "description": "The telescope is located on the upper level of the pier structure, next to the 'Fischereiamt' sign. It is being used by a person who is looking through it. The telescope is positioned horizontally and appears to be silver or gray in color."
+    }
+  },
+  "montreal-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "There is no telescope in the image. The image shows a winter scene with people ice skating, skiing, and enjoying various winter activities."
+    }
+  },
+  "porsche-factory.jpg": {
+    "telescope": {
+      "bbox": [
+        0.57,
+        0.04,
+        0.6,
+        0.1
+      ],
+      "description": "The telescope is located near the top right section of the image, on a platform with a person who appears to be doing maintenance work. It is gray and positioned horizontally."
+    }
+  },
+  "porsche-hq.jpg": {
+    "telescope": {
+      "bbox": [
+        0.15,
+        0.26,
+        0.185,
+        0.31
+      ],
+      "description": "The telescope is located inside the building on the left side, on a stand in a room with scientists and monitors. The telescope is compact and primarily grey in color, pointed diagonally upward."
+    }
+  },
+  "porsche-road.jpg": {
+    "telescope": {
+      "bbox": [
+        0.75,
+        0.18,
+        0.82,
+        0.25
+      ],
+      "description": "The telescope is located near the top right corner of the image, on the roof of the building with a red Porsche logo. It is pointed upwards and is positioned near the trees and other buildings."
+    }
+  },
+  "professions-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0.1,
+        0.05,
+        0.23,
+        0.17
+      ],
+      "description": "The telescope is located on the roof of the building on the left side of the image. It is being used by a green animal lying next to two other animals, including a cat and a dog. The telescope is angled slightly upwards and appears to be a typical two-lens spyglass style in a grey color."
+    }
+  },
+  "professions-street.jpg": {
+    "telescope": {
+      "bbox": [
+        0.38,
+        0.04,
+        0.42,
+        0.08
+      ],
+      "description": "The telescope is on the left side of the image on top of a yellow crane, near the roof of a blue house. It is positioned horizontally and facing the right side of the image."
+    }
+  },
+  "professions-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0.67,
+        0.43,
+        0.72,
+        0.47
+      ],
+      "description": "The telescope is located on top of the green hill to the right of the central cafe. It is a small object with a silver/grayish body and a black lens pointing upward, sitting on a tripod. It is just above the brown box with a grey handle."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0.28,
+        0.4,
+        0.32,
+        0.43
+      ],
+      "description": "The telescope is located on the deck of the ship in the bottom left area of the image. It is mounted on a red and white pole and is being looked through by a character wearing a life vest."
+    }
+  },
+  "river-adventure-river.jpg": {
+    "telescope": {
+      "bbox": [
+        0.53,
+        0.12,
+        0.56,
+        0.2
+      ],
+      "description": "The telescope is located near the upper right corner of the boat's deck, pointing upwards. It is gray and stands on a tripod, near a person standing on the deck."
+    }
+  },
+  "river-adventure-seaside.jpg": {
+    "telescope": {
+      "bbox": [
+        0.145,
+        0.048,
+        0.182,
+        0.087
+      ],
+      "description": "A telescope is mounted on the roof of the building in the upper part of the image. The telescope is angled slightly upward, positioned on a small platform with metal railings. It is surrounded by a few seagulls and near a window where a person is looking out."
+    }
+  },
+  "rodhunt-xmas.jpg": {
+    "telescope": {
+      "bbox": [
+        0.48,
+        0.36,
+        0.51,
+        0.4
+      ],
+      "description": "A brown telescope mounted on a tripod, located near the center-right of the image. It is positioned in front of a white igloo, and a couple of people in red winter clothing are near it."
+    }
+  },
+  "season-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0.087,
+        0.242,
+        0.118,
+        0.299
+      ],
+      "description": "The telescope is gray and metallic, resting on a small stand. It's positioned slightly above the middle of the image, located to the right of the sheep and adjacent to the owl. Nearby are paint cans and a small sand pit."
+    }
+  },
+  "season-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0.6,
+        0.25,
+        0.68,
+        0.33
+      ],
+      "description": "A telescope is located on the rooftop of the building in the middle-right portion of the image. It's pointed upwards with a white body and a dark lens. Nearby, there is an orange cat sitting beside the telescope on the roof."
+    }
+  },
+  "walk-lake.jpg": {
+    "telescope": {
+      "bbox": [
+        0.27,
+        0.47,
+        0.31,
+        0.5
+      ],
+      "description": "The telescope is located on top of a small red trailer with a satellite dish. It's positioned on the left side of the image, alongside other equipment on the roof. The telescope is grey in color and is pointing slightly upwards, mounted on a tripod stand."
+    }
+  },
+  "walk-townfarm.jpg": {
+    "telescope": {
+      "bbox": [
+        0.83,
+        0.02,
+        0.88,
+        0.13
+      ],
+      "description": "The telescope is located at the top right section of the image, in front of the shed. It is on a tripod and is surrounded by a signpost. The color is mostly gray, and it is angled slightly upward."
+    }
+  },
+  "walk-townscene.jpg": {
+    "telescope": {
+      "bbox": [
+        0.51,
+        0.29,
+        0.55,
+        0.34
+      ],
+      "description": "The telescope is located in the central area of the image, positioned on the ground next to a construction worker. It is silver and mounted on a tripod. The telescope is pointed slightly upwards."
+    }
+  },
+  "whodoeswhat-city.jpg": {
+    "telescope": {
+      "bbox": [
+        0.28,
+        0.05,
+        0.36,
+        0.18
+      ],
+      "description": "The telescope is on the flat rooftop of a building in the mid-left part of the image. It's placed on a stand and appears to be angled slightly upwards. The telescope is positioned near some solar panels on the roof, and a person is nearby working or interacting with the rooftop items."
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.27,
+        0.41,
+        0.3,
+        0.44
+      ],
+      "description": "The telescope is located near the bottom left on the corner of a rooftop. It is mounted and angled upwards, surrounded by a wooden structure. The roof is gray with a small, pointed turret nearby also in the image."
+    }
+  },
+  "whodoeswhat-city3.jpg": {
+    "telescope": {
+      "bbox": [
+        0.166,
+        0.05,
+        0.183,
+        0.15
+      ],
+      "description": "The telescope is located on the upper part of a building with a striped tower. It is positioned on the balcony near the top left corner of the image. The telescope is black with narrow cylindrical optics and is mounted on a tripod next to a person wearing a red shirt."
+    }
+  }
+}

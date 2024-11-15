@@ -1,0 +1,552 @@
+{
+  "construction-evening.jpg": {
+    "telescope": {
+      "bbox": [
+        0.758,
+        0.38,
+        0.795,
+        0.42
+      ],
+      "description": "In the middle-right portion of the image, there is a person using what appears to be a small telescope or spotting scope. The telescope is dark in color and appears to be handheld. The person using it is positioned near some rocks or a construction area, and they seem to be observing something in the distance. The telescope is oriented horizontally and is a relatively small part of the overall busy construction scene."
+    }
+  },
+  "construction-site.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy construction site with various vehicles (cement mixer, dump truck, crane) and workers. There are also people waiting at what appears to be a train or subway platform at the bottom of the image. While there are many tools and equipment visible, I cannot identify a telescope among them."
+    }
+  },
+  "construction-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this winter scene. The image shows a busy winter construction or moving scene with various vehicles including excavators, a crane truck, and other construction equipment. There are many people engaged in winter activities like sledding and snowman building, as well as what appears to be a construction or moving project, but no telescope is visible in the image."
+    }
+  },
+  "kf-f1.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a telescope in this image. The image shows an illustrated map or scene with various elements including a race track, palm trees, buildings, a Ferris wheel, beaches, boats, and various recreational activities. While there are many interesting structures and objects, including what appears to be a yacht club, entertainment venues, and city buildings, I cannot identify a telescope among them."
+    }
+  },
+  "kf-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this winter scene. The image shows a busy snow-covered hill with many people engaging in winter activities like skiing, sledding, and snowman building. There is a small lodge or warming hut at the bottom of the hill, and numerous evergreen trees throughout, but no telescope is visible in the illustration."
+    }
+  },
+  "lufthansa-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this beach scene. The image shows many beach and water activities including kitesurfing, kayaking, swimming, sunbathing, and people playing on the beach. There are various beach accessories like umbrellas, towels, and beach balls, as well as a lighthouse in the background, but no telescope is visible in the illustration."
+    }
+  },
+  "lufthansa-greece.jpg": {
+    "telescope": {
+      "bbox": [
+        0.85,
+        0.3,
+        0.87,
+        0.33
+      ],
+      "description": "There appears to be a small telescope or viewing device in the upper right quadrant of the image. It's set up on what looks like a stand or tripod, and appears to be bronze or golden in color. The telescope is positioned near one of the red-roofed buildings in the ancient Roman/Greek-style cityscape. Someone appears to be using or standing near the telescope, looking outward from their elevated position on the hillside."
+    }
+  },
+  "lufthansa-turkish-bazaar.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image appears to be an illustration of a busy Middle Eastern bazaar or marketplace with many people shopping and browsing various stalls. There are colorful lanterns hanging from the ceiling, shops selling various goods, and decorative arches, but I cannot identify a telescope among the items shown."
+    }
+  },
+  "mitgutsch-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this beach/resort scene. The image shows a busy beach with many people engaging in various activities, beach chairs, changing rooms, a hotel sign, and beach toys like balls, but I cannot identify a telescope among the items shown."
+    }
+  },
+  "mitgutsch-carnival.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a lively carnival or fair scene with various rides and attractions including a Ferris wheel, carousels, swing rides, and carnival games. There are many people enjoying the festivities, carnival booths, and attractions, but no telescope is visible in the scene."
+    }
+  },
+  "mitgutsch-fight.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this chaotic scene. The image shows a crowded room with many cartoon characters in various states of panic or chaos. There are wooden floors, green paneled walls with windows, and numerous overturned chairs, but no telescope is visible among the items shown."
+    }
+  },
+  "mitgutsch-orchestra.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "There is no telescope present in this image. The image shows an orchestra or symphonic band with various musical instruments including strings (violins, cellos, double bass), woodwinds (clarinets, flutes), brass (trumpets, tubas), percussion instruments, a harp, and a grand piano. The musicians are arranged in a typical orchestra formation with a conductor at the center front."
+    }
+  },
+  "mitgutsch-pirate.jpg": {
+    "telescope": {
+      "bbox": [
+        0.83,
+        0.52,
+        0.85,
+        0.55
+      ],
+      "description": "There appears to be a small telescope or spyglass being used by a character in one of the smaller boats in the right portion of the image. The telescope is dark in color and is being held up to look through it by a figure wearing red clothing. The boat they're in is one of several smaller vessels surrounding the larger pirate ship in the turquoise waters of what appears to be a pirate cove or harbor."
+    }
+  },
+  "mitgutsch-pool.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy water park scene with a large twisting water slide on the left side and a swimming pool on the right side. There are many people engaged in various water activities, but no telescope is visible in the scene."
+    }
+  },
+  "mitgutsch-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0.48,
+        0.38,
+        0.5,
+        0.42
+      ],
+      "description": "There appears to be a white-colored telescope or viewing scope positioned near the central fountain in the plaza. It seems to be a public viewing telescope, standing upright on some sort of pedestal or mount. Several people are gathered around it, and someone appears to be looking through it. The telescope is relatively small compared to the surrounding elements in the scene."
+    }
+  },
+  "mitgutsch-water.jpg": {
+    "telescope": {
+      "bbox": [
+        0.68,
+        0.62,
+        0.72,
+        0.65
+      ],
+      "description": "I can see a telescope mounted on one of the wooden fishing boats in the harbor. It appears to be a handheld brass or bronze-colored telescope being pointed by someone on the boat. The boat is located in the right-central portion of the image, among several other fishing vessels in the busy harbor scene."
+    }
+  },
+  "montreal-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this winter scene illustration. The image shows many people engaged in various winter activities like ice skating, playing hockey, sledding, and skiing. There are also food stands selling hot cocoa and chestnuts, and some winter wildlife like cardinals and squirrels, but no telescope is visible in the illustration."
+    }
+  },
+  "porsche-factory.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a car manufacturing facility or assembly line with various stages of car production. There are multiple car bodies in different colors (red, blue, green, purple) being worked on by workers in red uniforms. The facility has multiple levels and sections including what appears to be a viewing gallery for visitors, but no telescope is visible in the scene."
+    }
+  },
+  "porsche-hq.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy automotive research and development facility with various sections including design studios, testing areas, offices, and a race track. There are multiple cars, people working, and various pieces of automotive testing equipment, but no telescope is visible."
+    }
+  },
+  "porsche-road.jpg": {
+    "telescope": {
+      "bbox": [
+        0.48,
+        0.38,
+        0.52,
+        0.42
+      ],
+      "description": "There appears to be a small telescope being used by a person in the central roundabout area near the large metallic sculpture/structure. The telescope is positioned on a tripod and is being used to look upward, possibly at the architectural features of the Porsche building or the small planes flying overhead. It's located in the grassy circular area in the middle of the scene."
+    }
+  },
+  "professions-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a telescope in this whimsical street scene. There is a camera on a tripod in the middle of the street being used by what appears to be a hippo character, but no telescope is visible. The scene shows various animal characters engaged in different activities on a city street, with buildings and shops in the background, but a telescope is not among the objects present."
+    }
+  },
+  "professions-street.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a whimsical street scene with anthropomorphized animals going about their daily activities. There are various objects like cars, bicycles, construction equipment, and houses, but no telescope is visible in the scene. The closest optical instruments might be some lamps or light fixtures, but no actual telescope is present."
+    }
+  },
+  "professions-townsquare.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this whimsical street scene. The image shows various cartoon animals going about their daily activities in a colorful town with multiple buildings and shops. There are bears, pigs, cats, lions, and other animals, along with various objects like a yellow car, a bicycle, musical instruments, and food items, but no telescope is visible in the scene."
+    }
+  },
+  "river-adventure-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0.28,
+        0.35,
+        0.31,
+        0.45
+      ],
+      "description": "There appears to be a telescope mounted on a tripod on the left side of the image, near the large passenger boat. The telescope is positioned on what seems to be the dock or pier area, and appears to be black or dark in color. It's set up in a way that would allow visitors to view activities on the water or surrounding area."
+    }
+  },
+  "river-adventure-river.jpg": {
+    "telescope": {
+      "bbox": [
+        0.37,
+        0.01,
+        0.39,
+        0.03
+      ],
+      "description": "There appears to be a small telescope mounted on a pole or post near the deck railing of the boat, in the upper portion of the vessel. It's positioned approximately in the middle section of the boat, above the dining area. The telescope appears to be fairly small and metallic in color, though it's drawn in a simple illustrative style consistent with the rest of the image."
+    }
+  },
+  "river-adventure-seaside.jpg": {
+    "telescope": {
+      "bbox": [
+        0.63,
+        0.17,
+        0.65,
+        0.21
+      ],
+      "description": "There appears to be a small telescope or spyglass being used by a person standing in one of the windows of the orange/brown building on the right side of the image. The person is positioned at what looks like a second-floor window, observing the harbor scene below during sunset."
+    }
+  },
+  "rodhunt-xmas.jpg": {
+    "telescope": {
+      "bbox": [
+        0.87,
+        0.51,
+        0.89,
+        0.53
+      ],
+      "description": "There appears to be a small telescope mounted on a tripod or stand in the lower right quadrant of the image. It's positioned near a group of people and some decorated Christmas trees. The telescope appears to be black in color and is being used by festival-goers to observe something in the winter sky. It's a relatively small object in the busy winter carnival scene."
+    }
+  },
+  "season-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a beach or seaside scene with many cartoon animals engaged in various summer activities like swimming, surfing, fishing, and playing on the beach. While there are various objects and accessories (like badminton rackets, umbrellas, and fishing rods), I cannot identify a telescope among them."
+    }
+  },
+  "season-winter.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a telescope in this festive winter scene. The image shows various cartoon animals enjoying winter activities in front of decorated houses. While there are many objects like Christmas trees, cars, sleds, and winter sports equipment, I cannot identify a telescope among them."
+    }
+  },
+  "tigertom-beach.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this beach scene. The image shows a busy beach with many people engaged in various activities like swimming, sunbathing, building sandcastles, and relaxing on lounge chairs. There are beach umbrellas, a wooden pier, a cruise ship in the distance, and various beach accessories, but no telescope is visible in the illustration."
+    }
+  },
+  "tigertom-birthday.jpg": {
+    "telescope": {
+      "bbox": [
+        0.87,
+        0.65,
+        0.91,
+        0.7
+      ],
+      "description": "There appears to be a small telescope being held by someone standing near the bottom right area of the image, at what looks like a birthday party or celebration. It appears to be a dark colored, handheld telescope being used by someone wearing red clothing who is looking at something off in the distance."
+    }
+  },
+  "tigertom-classroom.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a telescope in this image. The image shows a classroom or daycare setting with various activity areas including a reading corner with bookshelves, a game/chess table, an art easel, a building blocks area with colorful blocks, and a sink area. There are learning materials on the walls including numbers and pictures, but no telescope is visible."
+    }
+  },
+  "tigertom-classroom2.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy classroom scene with various objects like desks, chairs, a chalkboard, bookshelves, and children engaged in different activities, but there is no telescope visible."
+    }
+  },
+  "tigertom-cycles.jpg": {
+    "telescope": {
+      "bbox": [
+        0.37,
+        0.75,
+        0.41,
+        0.8
+      ],
+      "description": "There appears to be a person holding what looks like a telescope or similar viewing device in the apple orchard area in the lower middle portion of the image. The figure is shown standing among several other people who are picking apples, with the telescope pointed upward. The telescope appears to be small and handheld, typical of the kind used for casual observation."
+    }
+  },
+  "tigertom-farm.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this farm scene. The image shows a busy farm with various buildings including a house, barn, and animal pens. There are people engaged in different farm activities, farm animals like cows, pigs, and horses, and various farm equipment and vehicles. However, I cannot locate a telescope anywhere in the image."
+    }
+  },
+  "tigertom-garden.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy backyard scene with various activities including swimming, grilling, playing in a treehouse, on a trampoline, and having a picnic under a gazebo. There are also several garden elements like flowers and bushes, but no telescope is visible."
+    }
+  },
+  "tigertom-house.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a cheerful spring or summer scene with a pink house, a church, and various outdoor activities happening in a garden/yard setting. There are people having a meal outdoors, children playing on playground equipment, and others gardening and cycling, but no telescope is visible."
+    }
+  },
+  "tigertom-intersection.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy street scene with various people, vehicles, a crossing guard, storefronts with hot air balloon and other decorative pictures, pedestrians crossing the street, cyclists, and people engaged in various activities, but there is no telescope visible."
+    }
+  },
+  "tigertom-market.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy farmer's market or produce marketplace with various stalls selling fruits, vegetables, and prepared foods. There are many people shopping, vendors behind stalls, and colorful umbrellas and awnings, but no telescope is visible in the scene."
+    }
+  },
+  "tigertom-park.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy outdoor recreational scene with various activities including swimming, sports, playground equipment, and games, but no telescope is visible. There are many children engaged in different activities like playing soccer, tennis, climbing, swimming, and using playground equipment, but none of them are using or near a telescope."
+    }
+  },
+  "tigertom-park2.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a park or garden scene with several people engaged in various outdoor activities like reading, picnicking, and enjoying nature. There are phones and books visible, but no telescope. The scene includes a wooden bridge over a stream, flowering plants, trees (including a prominent weeping willow), and some wildlife like birds and rabbits."
+    }
+  },
+  "tigertom-park3.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy playground scene with various play equipment and activities including slides, swings, a merry-go-round, spring riders, soccer players, and children engaging in different recreational activities. While there are many objects and people in the scene, there is no telescope visible."
+    }
+  },
+  "tigertom-snow.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this winter scene. The image shows a busy winter landscape with people skiing, skating, sledding, and enjoying various winter activities. There are houses, shops, Santa's sleigh in the sky, and various winter decorations, but no telescope is visible in the image."
+    }
+  },
+  "tigertom-zoo.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a pet shop or animal habitat scene with various animals including rabbits, mice, parrots, cats, a dog, and a snake. There are multiple enclosures, exercise wheels, food bowls, and toys, but no telescope is visible in the scene."
+    }
+  },
+  "walk-lake.jpg": {
+    "telescope": {
+      "bbox": [
+        0.42,
+        0.5,
+        0.44,
+        0.52
+      ],
+      "description": "There appears to be a small telescope or spotting scope mounted on a tripod near the brown trailer/cabin structure in the middle of the image. It's positioned on the dirt path, where several people are gathered around. The telescope is silver/grey in color and appears to be set up for viewing, possibly for wildlife observation or forest monitoring purposes."
+    }
+  },
+  "walk-townfarm.jpg": {
+    "telescope": {
+      "bbox": [
+        0.87,
+        0.67,
+        0.89,
+        0.72
+      ],
+      "description": "I can see a person holding what appears to be a telescope in the bottom right portion of the image. They are standing on the road near some other people, using the telescope presumably to observe the animals in the field. The telescope appears to be a handheld device and is pointed toward the field where there are cows and other animals grazing."
+    }
+  },
+  "walk-townscene.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this image. The image shows a busy rural/suburban scene with various vehicles, construction work, pedestrians, and activities taking place on a winding road. There are houses, trees, and a gas station in the background, but no telescope is visible in the scene."
+    }
+  },
+  "whodoeswhat-city.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I don't see a telescope in this busy street scene. The image shows a lively neighborhood with various vehicles, buildings, and people engaged in different activities. While there are many objects and details in the scene, including musical instruments, bicycles, cars, and various shop fronts, I cannot identify a telescope anywhere in the image."
+    }
+  },
+  "whodoeswhat-city2.jpg": {
+    "telescope": {
+      "bbox": [
+        0.78,
+        0.78,
+        0.82,
+        0.85
+      ],
+      "description": "There is a telescope being used by someone in the bottom right area of the park/green space. The telescope appears to be black in color and mounted on a stand. The person is looking up through it, presumably at something in the sky. It is situated near what appears to be the edge of the park area, close to where some people are walking on a path."
+    }
+  },
+  "whodoeswhat-city3.jpg": {
+    "telescope": {
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "I do not see a telescope in this busy street scene. The image shows various vehicles including a fire truck, delivery vans, cars, and a bus, as well as several buildings including what appears to be an auto service center, a medical facility, and various shops. There are many people engaged in different activities, but I cannot identify any telescope in the scene."
+    }
+  }
+}
