@@ -2,7 +2,7 @@ from collections import defaultdict
 import json
 from statistics import mean, median, stdev
 from typing import Dict, List, Mapping, Tuple
-from matplotlib import ticker, pyplot as plt
+from matplotlib import pyplot as plt
 import math
 import os
 import argparse
