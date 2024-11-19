@@ -109,6 +109,7 @@ def plot_area_ratio_distribution(area_ratios: List[float], output_path: str) -> 
         bins=bins,
         color="#234f81",
         edgecolor="black",
+        linewidth=0.5,
         zorder=3,
     )
 

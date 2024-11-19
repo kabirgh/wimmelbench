@@ -5,7 +5,7 @@ from typing import Mapping
 
 import matplotlib.pyplot as plt
 
-from wimmelbench.stats import MODEL_DIRS
+from wimmelbench.stats import MODEL_DIRS, MODEL_COLORS
 
 
 def plot_hallucination_stats(
@@ -22,8 +22,8 @@ def plot_hallucination_stats(
         )
         model_stats[model] = (hallucinated / total) * 100
 
-    # Prepare data for plotting
-    models = list(model_stats.keys())
+    # Sort models alphabetically
+    models = sorted(model_stats.keys())
     hallucinated_pcts = [model_stats[model] for model in models]
 
     # Create the bar chart
@@ -32,8 +32,12 @@ def plot_hallucination_stats(
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
-    # Create horizontal bars
-    bars = ax.barh(models, hallucinated_pcts, color="#234f81")
+    # Create horizontal bars with model-specific colors
+    bars = ax.barh(
+        models,
+        hallucinated_pcts,
+        color=[MODEL_COLORS[model] for model in models],  # Use model-specific colors
+    )
 
     # Add percentage labels
     for rect in bars:
