@@ -125,8 +125,8 @@
     "bowling ball": {
       "status": "predicted",
       "giou": -0.8465002906304212,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description correctly identifies the color and location of the bowling ball. While the ground truth gives more context about the surrounding scene, the predicted description accurately captures the ball's key details and position. The description of people 'crouching or dancing' does not contradict the ground truth description of men fighting.  The additional detail about someone about to step on the ball is not present in the ground truth but doesn't contradict it."
+      "description_grade": 0,
+      "description_grade_reason": "The predicted description places the bowling ball on the floor, while the ground truth clearly states it is in the air. This is a critical spatial detail, making the prediction fundamentally incorrect despite getting the color right."
     }
   },
   "mitgutsch-orchestra.jpg": {

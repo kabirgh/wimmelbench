@@ -125,8 +125,8 @@
     "bowling ball": {
       "status": "predicted",
       "giou": -0.9413430264819126,
-      "description_grade": 3,
-      "description_grade_reason": "The predicted description accurately identifies the bowling ball as black and locates it correctly in the center-right portion of the image.  While the ground truth is vague about the ball's motion, the prediction's suggestion of rolling or being knocked loose doesn't contradict the ground truth. The size description ('small') also aligns. The additional details about the scene are irrelevant, as we are focused on the bowling ball description."
+      "description_grade": 0,
+      "description_grade_reason": "Although the predicted description correctly identifies the bowling ball as black and roughly in the center-right, it incorrectly states that it is on the floor. The ground truth clearly states it is in the air.  This significant spatial inaccuracy warrants a 0 rating."
     }
   },
   "mitgutsch-orchestra.jpg": {

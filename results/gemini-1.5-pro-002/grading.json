@@ -126,7 +126,7 @@
       "status": "predicted",
       "giou": -0.9928213534414981,
       "description_grade": 0,
-      "description_grade_reason": "The predicted location of the bowling ball (below center-left) contradicts the ground truth (middle-right).  This is a critical error, regardless of other details."
+      "description_grade_reason": "The predicted location of the bowling ball is completely wrong (\"lying on the floor amidst the chaotic scene...below the center-left\") compared to the ground truth (\"middle-right...in the air\"). This fundamental error outweighs any correct details about the color."
     }
   },
   "mitgutsch-orchestra.jpg": {
