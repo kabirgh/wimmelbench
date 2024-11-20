@@ -198,11 +198,11 @@ def plot_grade_distribution(
     """Create a horizontal stacked bar chart showing grade distribution for each model."""
     models = list(grades_by_model.keys())
     grade_mapping = {
-        3: "Mostly correct",
-        2: "Partly correct",
+        3: "Correct",
+        2: "Mostly correct",
         -1: "Not Found",
-        1: "Partly incorrect",
-        0: "Mostly incorrect",
+        1: "Partly correct",
+        0: "Incorrect",
     }
     grade_labels = list(grade_mapping.values())
 
